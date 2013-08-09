@@ -2,6 +2,7 @@
 #include <curl/curl.h>
 #include <jsoncpp/json/json.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <memory.h>
 #include <sstream>
 
@@ -9,19 +10,7 @@ using std::stringstream;
 using std::ostream;
 using std::string;
 
-size_t response(void *ptr, size_t size, size_t nmemb, void *user_data)
-{
-    Json::Reader reader;
-    Json::Value root;
-
-    const char* buffer = (const char*)ptr;
-    size_t len = size * nmemb;
-
-    ostream* stream = (stringstream*)user_data;
-    stream->write(buffer, len);
-
-    return len;
-}
+typedef uint64_t Val; // todo remove
 
 class Protocol
 {
@@ -71,7 +60,34 @@ void Protocol::train(int size)
         return;
     }
 
-    printf("got train task: %s\n", result.toStyledString().c_str());
+    printf("got train task:\n%s\n", result.toStyledString().c_str());
+
+    challenge(result["id"].asCString(), result["size"].asInt(), result["operators"]);
+}
+
+void Protocol::challenge(const string& id, int size, const Json::Value& operators)
+{
+    printf("Challenge:\tid: %s size: %d operators: %s\n", id.c_str(), size, operators.toStyledString().c_str());
+    
+    Json::Value args;
+
+    Val inp[] = { 0xB445FBB8CDDCF9F8, 0xEFE7EA693DD952DE, 0x6D326AEEB275CF14, 0xBB5F96D91F43B9F3,
+                  0xF246BDD3CFDEE59E, 0x28E6839E4B1EEBC1, 0x9273A5C811B2217B, 0xA841129BBAB18B3E,
+                  0x0, 0x1, 0xaa5555aa5555aaaa, 0xff00000000000000, 0x00ff000000000000 };
+
+    for (int i = 0; i < sizeof(inp) / sizeof(*inp); i++) {
+        char buffer[100];
+        snprintf(buffer, sizeof(buffer), "0x%lx", inp[i]);
+        args[i] = buffer;
+    }
+
+    Json::Value request;
+    Json::Value response;
+    request["id"] = id;
+    request["arguments"] = args;
+    printf("req: %s\n", request.toStyledString().c_str());
+    send("eval", request, response);
+    printf("res: %s\n", response.toStyledString().c_str());
 }
 
 void Protocol::print_tasks()
@@ -154,7 +170,7 @@ int main(void)
 {
     Protocol p;
 
-    p.print_tasks();
+//    p.print_tasks();
     p.train(3);
 
     return 0;

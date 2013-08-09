@@ -234,6 +234,7 @@ private:
 	int stack_top;
 
 	int count;
+	bool done;
 
 	Callback* callback_;
 };
@@ -242,6 +243,7 @@ void Generator::generate(int size, Callback* callback)
 {
 	ASSERT(size > 1);
 
+    done = false;
     callback_ = callback;
 	left = size - 1;
 	ptr = 0;
@@ -252,7 +254,9 @@ void Generator::generate(int size, Callback* callback)
 
 void Generator::emit(Expr e, int opnds)
 {
-//	printf("alph: emit %d at %d\n", e.op, ptr);
+	if (done)
+		return;
+
 	--left;
 	int save_next_opnd = next_opnd;
 	for (int i = 0; i < opnds; i++)
@@ -266,7 +270,6 @@ void Generator::emit(Expr e, int opnds)
 
 void Generator::gen()
 {
-//	printf("gen left=%d ptr=%d\n", left, ptr);
 	if (next_opnd == ptr) {
 		built();
 		return;
@@ -304,7 +307,7 @@ void Generator::gen()
 
 void Generator::built()
 {
-	callback_->action(&arena[0]);
+	done = !callback_->action(&arena[0]);
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -315,7 +318,7 @@ class Verifier: public Callback
 {
 public:
 	Verifier() : count(0) {}
-	void addPair(Val input, Val output);
+	void add(Val input, Val output);
 
 	virtual bool action(Expr* program);
 
@@ -326,7 +329,7 @@ private:
 	int count;
 };
 
-void Verifier::addPair(Val input, Val output)
+void Verifier::add(Val input, Val output)
 {
 	pairs.push_back(std::pair<Val,Val>(input, output));
 }
@@ -339,7 +342,10 @@ bool Verifier::action(Expr* program)
 		}
     }
     printf("%6d: %s\n", ++count, program->program().c_str());
-    return true;
+	for (Pairs::iterator it = pairs.begin(); it != pairs.end(); ++it) {
+		printf("    0x%016lx -> 0x%016lx\n", (*it).first, (*it).second);
+    }
+    return false;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -359,40 +365,42 @@ private:
 bool Printer::action(Expr* e)
 {
     printf("%6d: %s\n", ++count, e->program().c_str());
+    return true;
 }
 
 int main()
 {
     printf("Hello alph!\n");
-    Context ctx;
 
-    ctx.push(0x1122334455667788);
     Expr* e = new Expr(SHR16, new Expr(NOT, new Expr(VAR, 0)));
     printf("%s\n", e->program().c_str());
-    printf("0x%016lx\n", e->eval(&ctx));
+    printf("0x%016lx\n", e->run(0x1122334455667788));
     delete e;
-    ctx.pop();
 
-    ctx.push(0x1122334455667788);
     // P = (lambda (x) (fold x 0 (lambda (y z) (or y z))))
     e = new Expr(FOLD, new Expr(VAR, 0), new Expr(C0), new Expr(PLUS, new Expr(VAR, 1), new Expr(VAR, 2)));
     printf("%s\n", e->program().c_str());
-    printf("0x%016lx\n", e->eval(&ctx));
+    printf("0x%016lx\n", e->run(0x1122334455667788));
     delete e;
-    ctx.pop();
 
     printf("\nTesting Generator\n");
     Generator g;
     Printer p;
-    g.generate(4, &p);
-
+    g.generate(6, &p);
+/*
     printf("\nTesting Verifier\n");
     Verifier v;
-    v.addPair(0x1122334455667788, 0x0000EEDDCCBBAA99);
-    v.addPair(5, 0x0000FFFFFFFFFFFF);
-    v.addPair(6, 0x0000FFFFFFFFFFFF);
-    v.addPair(7, 0x0000FFFFFFFFFFFF);
-    g.generate(6, &v);
-
+    Val inp[] = { 0xB445FBB8CDDCF9F8, 0xEFE7EA693DD952DE, 0x6D326AEEB275CF14, 0xBB5F96D91F43B9F3, 0xF246BDD3CFDEE59E, 0x28E6839E4B1EEBC1, 0x9273A5C811B2217B, 0xA841129BBAB18B3E };
+    Val out[] = { 0x0B445FBB8CDDCF9F, 0x0EFE7EA693DD952D, 0x06D326AEEB275CF1, 0x0BB5F96D91F43B9F, 0x0F246BDD3CFDEE59, 0x028E6839E4B1EEBC, 0x09273A5C811B2217, 0x0A841129BBAB18B3 };
+    for (int i = 0; i < sizeof(inp) / sizeof(*inp); i++) {
+        v.add(inp[i], out[i]);
+    }
+    v.add(0x000000000000001E, 0x0000000000000002);
+    v.add(0x0000000000008020, 0x0000000000000802);
+    v.add(0x000000000000334E, 0x0000000000000334);
+    v.add(0x0000000000000000, 0x0000000000000000);
+    v.add(0x0000000000000018, 0x0000000000000001);
+    g.generate(30, &v);
+*/
 	return 0;
 }

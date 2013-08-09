@@ -230,7 +230,7 @@ void Protocol::solve_my_tasks(int up_to_size)
 {
     retrieve_my_tasks();
 
-    for (int size = 3; size <= up_to_size; size++) {
+    for (int size = up_to_size; size <= up_to_size; size++) {
         // find an unsolved task of appropriate size.
         for (int i = 0; i < my_tasks_.size(); i++) {
             Json::Value& item = my_tasks_[i];
@@ -260,7 +260,7 @@ bool Protocol::send(const char* command, const Json::Value& request, Json::Value
     curl_easy_setopt(curl, CURLOPT_POSTFIELDS, data_string.c_str());
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, response);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, this);
-    curl_easy_setopt(curl, CURLOPT_TIMEOUT, 10);
+    curl_easy_setopt(curl, CURLOPT_TIMEOUT, 30);
 
     // Perform the request, res will get the return code 
     CURLcode res = curl_easy_perform(curl);
@@ -272,8 +272,10 @@ bool Protocol::send(const char* command, const Json::Value& request, Json::Value
    
     Json::Reader reader;
     if (!reader.parse(stream, result)) {
-        fprintf(stderr, "Failed to parse Json");
-        return false;
+        fprintf(stderr, "Failed to parse Json\n");
+        printf("sleeping for 5 sec...\n");
+        sleep(5);
+        return send(command, request, result);
     }
 
     return true;
@@ -302,11 +304,15 @@ int main(int argc, char* argv[])
 {
     Protocol p;
 
-#if 1
-    p.print_tasks();
-    //p.solve_my_tasks(3);
-#else
-    if (argc > 2) {
+    if (argc < 2)
+        return 1;
+
+    string arg = argv[1];
+    if (arg == "print")
+        p.print_tasks();
+    else if (arg == "solve_my" && argc > 2)
+        p.solve_my_tasks(atoi(argv[2]));
+    else if (argc > 2) {
         Json::Value allowed;
         allowed[0] = "and";
         allowed[1] = "not";
@@ -315,7 +321,6 @@ int main(int argc, char* argv[])
     } else {
         p.train(10);
     }
-#endif
 
     return 0;
 }

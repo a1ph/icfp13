@@ -29,9 +29,10 @@ public:
 
     void train(int size);
 
-    void challenge(const string& id, int size, const Json::Value& operators);
+    bool challenge(const string& id, int size, const Json::Value& operators);
 
     void print_tasks();
+    void solve_my_tasks(int up_to_size);
 
     void guess(const string& id, const string &program, Json::Value& result);
 
@@ -39,12 +40,14 @@ private:
     bool send(const char* command, const Json::Value& request, Json::Value& result);
 
     void get_data(const char* data, size_t len);
+    void retrieve_my_tasks();
 
     static size_t response(void *ptr, size_t size, size_t nmemb, void *user_data);
 
     CURL *curl;
     ostream* stream_;
     uint64_t started_;
+    Json::Value my_tasks_;
 };
 
 Protocol::Protocol()
@@ -80,11 +83,12 @@ void Protocol::train(int size)
 class Solver : public Verifier
 {
 public:
-    Solver(const string& id, Protocol* protocol) : id_(id), protocol_(protocol) {}
+    Solver(const string& id, Protocol* protocol) : id_(id), protocol_(protocol), win_(false) {}
     virtual bool action(Expr* program);
 
     Protocol* protocol_;
     string id_;
+    bool win_;
 };
 
 bool Solver::action(Expr* program)
@@ -99,8 +103,10 @@ bool Solver::action(Expr* program)
     Json::Value result;
     protocol_->guess(id_, program->program(), result);
 
-    if (result["status"] == "win")
+    if (result["status"] == "win") {
+        win_ = true;
         return false;
+    }
 
     if (result["status"] == "mismatch") {
         Json::Value values = result["values"];
@@ -115,7 +121,7 @@ bool Solver::action(Expr* program)
     return false;
 }
 
-void Protocol::challenge(const string& id, int size, const Json::Value& operators)
+bool Protocol::challenge(const string& id, int size, const Json::Value& operators)
 {
     started_ = timestamp();
     printf("Challenge ACCEPTED:\nid: %s\nsize: %d\noperators: %s", id.c_str(), size, operators.toStyledString().c_str());
@@ -166,6 +172,7 @@ void Protocol::challenge(const string& id, int size, const Json::Value& operator
     g.generate(size, &solver);
 
     printf("CHALLENGE done in %lu ms\n", timestamp() - started_);
+    return solver.win_;
 }
 
 void Protocol::guess(const string& id, const string &program, Json::Value& result)
@@ -186,28 +193,57 @@ void Protocol::guess(const string& id, const string &program, Json::Value& resul
 
 void Protocol::print_tasks()
 {
-    Json::Value request;
-    Json::Value root; // todo obtain it.
-    if (!send("myproblems", request, root)) {
-        fprintf(stderr, "Requst failed\n");
-        return;
-    }
+    retrieve_my_tasks();
 
     int sizes[31];
+    int wins[31];
     memset(sizes, 0, sizeof(sizes));
+    memset(wins, 0, sizeof(wins));
 
-    for (int i = 0; i < root.size(); i++) {
-        const Json::Value& item = root[i];
+    for (int i = 0; i < my_tasks_.size(); i++) {
+        const Json::Value& item = my_tasks_[i];
         unsigned size = item["size"].asUInt();
         bool solved = item["solved"].asBool();
         int time_left = item.get("timeLeft", Json::Value(-1)).asInt();
         printf("%4i: %s %3u %10s %10d\n", i, item["id"].asCString(), size, solved ? "SOLVED" : "", time_left);
-        if (size <= 30)
+        if (size <= 30) {
             ++sizes[size];
+            if (solved)
+                ++wins[size];
+        }
     }
 
     for (int i = 0; i <= 30; i++)
-        printf("size %2d: %3d items\n", i, sizes[i]);
+        printf("size %2d: %2d / %2d\n", i, wins[i], sizes[i]);
+}
+
+void Protocol::retrieve_my_tasks()
+{
+    Json::Value request;
+    if (!send("myproblems", request, my_tasks_)) {
+        fprintf(stderr, "Requst failed\n");
+        return;
+    }
+}
+
+void Protocol::solve_my_tasks(int up_to_size)
+{
+    retrieve_my_tasks();
+
+    for (int size = 3; size <= up_to_size; size++) {
+        // find an unsolved task of appropriate size.
+        for (int i = 0; i < my_tasks_.size(); i++) {
+            Json::Value& item = my_tasks_[i];
+            if (item["size"].asInt() != size)
+                continue;
+            if (item["solved"].asBool())
+                continue;
+
+            bool win = challenge(item["id"].asString(), item["size"].asInt(), item["operators"]);
+            if (win)
+                item["solved"] = true;
+        }
+    }
 }
 
 bool Protocol::send(const char* command, const Json::Value& request, Json::Value& result)
@@ -266,8 +302,9 @@ int main(int argc, char* argv[])
 {
     Protocol p;
 
-#if 0
+#if 1
     p.print_tasks();
+    //p.solve_my_tasks(3);
 #else
     if (argc > 2) {
         Json::Value allowed;

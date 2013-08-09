@@ -325,10 +325,12 @@ int main()
     printf("\nTesting Generator\n");
     Generator g0;
     Printer p;
-    g0.allow_all();
-    g0.generate(3, &p);
+    g0.add_allowed_op(PLUS);
+    g0.add_allowed_op(NOT);
+    g0.add_allowed_op(TFOLD);
+    g0.generate(5, &p);
 
-#if 1
+#if 0
     printf("\nTesting Verifier\n");
     Generator g;
     Verifier v;

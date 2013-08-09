@@ -128,7 +128,9 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
 
     Val inp[] = { 0xB445FBB8CDDCF9F8, 0xEFE7EA693DD952DE, 0x6D326AEEB275CF14, 0xBB5F96D91F43B9F3,
                   0xF246BDD3CFDEE59E, 0x28E6839E4B1EEBC1, 0x9273A5C811B2217B, 0xA841129BBAB18B3E,
-                  0x0, 0x1, 0xaa5555aa5555aaaa,
+                  0x0, 0x1, 2, 3, 4, 5,
+                  0xaa5555aa5555aaaa,
+                  0xcc660330660f0cc0,
                   0xff00000000000000,
                   0x00ff000000000000,
                   0x0000ff0000000000,
@@ -137,6 +139,7 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
                   0x0000000000ff0000,
                   0x000000000000ff00,
                   0x00000000000000ff,
+                  6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 23, 47, 48, 53, 63, 80, 81, 99, 120, 183, 246
     };
 
     Json::Value inputs;
@@ -237,7 +240,9 @@ void Protocol::print_tasks()
         unsigned size = item["size"].asUInt();
         bool solved = item["solved"].asBool();
         int time_left = item.get("timeLeft", Json::Value(-1)).asInt();
-        printf("%4i: %s %3u %10s %10d\n", i, item["id"].asCString(), size, solved ? "SOLVED" : "", time_left);
+        Json::Value operators = item["operators"];
+        printf("%4i: %s %3u %10s %10d     ops:%3d\n", i, item["id"].asCString(), size, solved ? "SOLVED" : "", time_left,
+            operators.size());
         if (size <= 30) {
             ++sizes[size];
             if (solved)
@@ -246,8 +251,15 @@ void Protocol::print_tasks()
     }
     printf("\n");
 
-    for (int i = 3; i <= 30; i++)
+    int total_wins = 0;
+    int total = 0;
+    for (int i = 3; i <= 30; i++) {
         printf("size %2d: %2d / %2d\n", i, wins[i], sizes[i]);
+        total_wins += wins[i];
+        total += sizes[i];
+    }
+
+    printf("\nTotal: %d / %d   %.1f%%\n", total_wins, total, 100. * total_wins / total);
 }
 
 void Protocol::retrieve_my_tasks()
@@ -271,6 +283,19 @@ void Protocol::solve_my_tasks(int up_to_size)
             if (item["size"].asInt() != size)
                 continue;
             if (item["solved"].asBool())
+                continue;
+            if (item["timeLeft"].isNumeric() && item["timeLeft"].asInt() == 0)
+                continue;
+            if (item["operators"].size() > 4)
+                continue;
+            bool has_tfold = false;
+            for (int j = 0; j < item["operators"].size(); j++) {
+                if (item["operators"][j].asString() == "tfold") {
+                    has_tfold = true;
+                    break;
+                }
+            }
+            if (!has_tfold)
                 continue;
 
             printf("\n################################ %d #################################\n", ++count);
@@ -348,14 +373,13 @@ int main(int argc, char* argv[])
         p.print_tasks();
     else if (arg == "solve_my" && argc > 2)
         p.solve_my_tasks(atoi(argv[2]));
-    else if (argc > 2) {
+    else if (arg == "train" && argc > 2)
+        p.train(atoi(argv[2]));
+    else if (arg == "chal" && argc > 3) {
         Json::Value allowed;
         allowed[0] = "and";
         allowed[1] = "not";
-        p.challenge(argv[1], atoi(argv[2]), allowed);
-
-    } else {
-        p.train(10);
+        p.challenge(argv[2], atoi(argv[3]), allowed);
     }
 
     return 0;

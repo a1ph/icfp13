@@ -167,11 +167,32 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         sscanf(outputs[i].asCString(), "%lx", &out);
         solver.add(inp[i], out);
     }
-    g.allow_all();
+
+    for (int i = 0; i < operators.size(); i++) {
+        string ops = operators[i].asString();
+        Op op;
+        if (ops == "tfold") op = TFOLD;
+        else if (ops == "xor") op = XOR;
+        else if (ops == "and") op = AND;
+        else if (ops == "plus") op = PLUS;
+        else if (ops == "or") op = OR;
+        else if (ops == "not") op = NOT;
+        else if (ops == "shl1") op = SHL1;
+        else if (ops == "shr1") op = SHR1;
+        else if (ops == "shr4") op = SHR4;
+        else if (ops == "shr16") op = SHR16;
+        else if (ops == "fold") op = FOLD;
+        else if (ops == "if0") op = IF0;
+        else {
+            fprintf(stderr, "Unknow op %s in allowed ops\n", ops.c_str());
+            exit(1);
+        }
+        g.add_allowed_op(op);
+    }
     printf("start generation at %lu ms\n", timestamp() - started_);
     g.generate(size, &solver);
 
-    printf("CHALLENGE done in %lu ms\n", timestamp() - started_);
+    printf("\t\t\t\t\t\t\tCHALLENGE done in %lu ms\n\n", timestamp() - started_);
     return solver.win_;
 }
 
@@ -212,8 +233,9 @@ void Protocol::print_tasks()
                 ++wins[size];
         }
     }
+    printf("\n");
 
-    for (int i = 0; i <= 30; i++)
+    for (int i = 3; i <= 30; i++)
         printf("size %2d: %2d / %2d\n", i, wins[i], sizes[i]);
 }
 

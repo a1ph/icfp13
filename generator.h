@@ -127,6 +127,7 @@ private:
 
     bool scoped[50];
 	Expr arena[50];
+	Expr* parents[50];
 	int ptr;
 	int next_opnd;
 	int left;

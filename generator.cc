@@ -166,7 +166,7 @@ void Generator::generate(int size, Callback* callback)
 	allowed_ops_.add(C0);
 	allowed_ops_.add(C1);
 	allowed_ops_.add(VAR);
-printf("allowed ops=%x\n", allowed_ops_.set_);
+    printf("allowed ops=%x\n", allowed_ops_.set_);
 	gen();
 }
 
@@ -184,6 +184,7 @@ void Generator::emit(Expr e, int opnds)
 	int save_next_opnd = next_opnd;
 	for (int i = 0; i < opnds; i++) {
 		scoped[next_opnd] = scoped[ptr];
+		parents[next_opnd] = &arena[ptr];
 		e.opnd[i] = &arena[next_opnd++];
 	}
 	if (e.op == FOLD)
@@ -220,8 +221,11 @@ void Generator::gen()
     	return;
     }
 
+    Op parent_op = parents[ptr]->op;
+
 	if (left > 0) {
-		emit(Expr(C0), 0);
+		if (parent_op != PLUS && parent_op != XOR && parent_op != OR)
+		    emit(Expr(C0), 0);
 		emit(Expr(C1), 0);
 		int vars = scoped[ptr] ? 3 : 1;
 		for (int i = 0; i < vars; ++i)
@@ -229,7 +233,8 @@ void Generator::gen()
 	}
 
 	if (left > 1) {
-		emit(Expr(NOT), 1);
+		if (parent_op != NOT)
+		    emit(Expr(NOT), 1);
 		emit(Expr(SHL1), 1);
 		emit(Expr(SHR1), 1);
 		emit(Expr(SHR4), 1);
@@ -327,8 +332,8 @@ int main()
     Printer p;
     g0.add_allowed_op(PLUS);
     g0.add_allowed_op(NOT);
-    g0.add_allowed_op(TFOLD);
-    g0.generate(5, &p);
+  //  g0.add_allowed_op(TFOLD);
+    g0.generate(6, &p);
 
 #if 0
     printf("\nTesting Verifier\n");

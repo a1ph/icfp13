@@ -198,7 +198,7 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
     printf("\t\t\t\t\t\t\tCHALLENGE done in %lu ms\n\n", timestamp() - started_);
 
     // make sure we start a new challenge in a virgin timeslot.
-    int sleep_time = 5;
+    int sleep_time = 15;
     printf("sleeping for %d sec", sleep_time);
     for (int i = 0; i < sleep_time; i++) {
         sleep(1);

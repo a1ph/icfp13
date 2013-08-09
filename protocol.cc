@@ -193,6 +193,17 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
     g.generate(size, &solver);
 
     printf("\t\t\t\t\t\t\tCHALLENGE done in %lu ms\n\n", timestamp() - started_);
+
+    // make sure we start a new challenge in a virgin timeslot.
+    int sleep_time = 5;
+    printf("sleeping for %d sec", sleep_time);
+    for (int i = 0; i < sleep_time; i++) {
+        sleep(1);
+        printf(".");
+        fflush(stdout);
+    }
+    printf("\n");
+
     return solver.win_;
 }
 
@@ -252,6 +263,7 @@ void Protocol::solve_my_tasks(int up_to_size)
 {
     retrieve_my_tasks();
 
+    int count = 0;
     for (int size = up_to_size; size <= up_to_size; size++) {
         // find an unsolved task of appropriate size.
         for (int i = 0; i < my_tasks_.size(); i++) {
@@ -260,6 +272,8 @@ void Protocol::solve_my_tasks(int up_to_size)
                 continue;
             if (item["solved"].asBool())
                 continue;
+
+            printf("\n################################ %d #################################\n", ++count);
 
             bool win = challenge(item["id"].asString(), item["size"].asInt(), item["operators"]);
             if (win)
@@ -291,7 +305,7 @@ bool Protocol::send(const char* command, const Json::Value& request, Json::Value
         fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
         return false;
     }
-   
+
     Json::Reader reader;
     if (!reader.parse(stream, result)) {
         fprintf(stderr, "Failed to parse Json\n");

@@ -148,6 +148,7 @@ void Generator::allow_all()
 {
 	for (int op = FIRST_OP; op < MAX_OP; op++)
 		add_allowed_op((Op)op);
+	allowed_ops_.del(TFOLD);
 }
 
 void Generator::generate(int size, Callback* callback)
@@ -269,14 +270,18 @@ void Verifier::add(Val input, Val output)
 bool Verifier::action(Expr* program)
 {
 	for (Pairs::iterator it = pairs.begin(); it != pairs.end(); ++it) {
-		if (program->run((*it).first) != (*it).second) {
+		Val actual = program->run((*it).first);
+		if (actual != (*it).second) {
+//			printf("%s failed 0x%lx -> 0x%lx\n", program->program().c_str(), (*it).first, actual);
 			return true;
 		}
     }
     printf("%6d: %s\n", ++count, program->program().c_str());
+#if 0
 	for (Pairs::iterator it = pairs.begin(); it != pairs.end(); ++it) {
 		printf("    0x%016lx -> 0x%016lx\n", (*it).first, (*it).second);
     }
+#endif
     return false;
 }
 
@@ -289,6 +294,8 @@ bool Printer::action(Expr* e)
     printf("%6d: %s\n", ++count, e->program().c_str());
     return true;
 }
+
+#ifdef TEST
 
 int main()
 {
@@ -346,3 +353,4 @@ int main()
 
 	return 0;
 }
+#endif

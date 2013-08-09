@@ -153,7 +153,7 @@ public:
 
 	virtual bool action(Expr* program);
 
-private:
+protected:
 	typedef std::list< std::pair<Val, Val> > Pairs;
 
 	Pairs pairs;

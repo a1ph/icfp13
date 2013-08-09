@@ -218,23 +218,17 @@ private:
     void emit(Expr e, int opnds);
 	void built();
 
-	void push(Expr** pe);
-	Expr** pop();
-	void next_subtree();
-
     Expr* program;
 
+    bool scoped[50];
 	Expr arena[50];
 	int ptr;
 	int next_opnd;
 	int left;
-	int vars;
-
-	Expr** stack[50];
-	int stack_top;
 
 	int count;
 	bool done;
+	bool allow_fold;
 
 	Callback* callback_;
 };
@@ -247,8 +241,9 @@ void Generator::generate(int size, Callback* callback)
     callback_ = callback;
 	left = size - 1;
 	ptr = 0;
-	vars = 1;
 	next_opnd = 1;
+	scoped[0] = false;
+	allow_fold = true;
 	gen();
 }
 
@@ -259,8 +254,12 @@ void Generator::emit(Expr e, int opnds)
 
 	--left;
 	int save_next_opnd = next_opnd;
-	for (int i = 0; i < opnds; i++)
+	for (int i = 0; i < opnds; i++) {
+		scoped[next_opnd] = scoped[ptr];
 		e.opnd[i] = &arena[next_opnd++];
+	}
+	if (e.op == FOLD)
+		scoped[save_next_opnd + 2] = true;
 	arena[ptr++] = e;
 	gen();
 	next_opnd = save_next_opnd;
@@ -278,6 +277,7 @@ void Generator::gen()
 	if (left > 0) {
 		emit(Expr(C0), 0);
 		emit(Expr(C1), 0);
+		int vars = scoped[ptr] ? 3 : 1;
 		for (int i = 0; i < vars; ++i)
 		    emit(Expr(VAR, i), 0);
 	}
@@ -299,9 +299,11 @@ void Generator::gen()
 
 	if (left > 3) {
 		emit(Expr(IF0), 3);
-		vars += 2;
-		emit(Expr(FOLD), 3);
-		vars -= 2;
+		if (allow_fold) {
+			allow_fold = false;
+		    emit(Expr(FOLD), 3);
+		    allow_fold = true;
+	    }
 	}
 }
 
@@ -386,8 +388,8 @@ int main()
     printf("\nTesting Generator\n");
     Generator g;
     Printer p;
-    g.generate(6, &p);
-/*
+    g.generate(4, &p);
+
     printf("\nTesting Verifier\n");
     Verifier v;
     Val inp[] = { 0xB445FBB8CDDCF9F8, 0xEFE7EA693DD952DE, 0x6D326AEEB275CF14, 0xBB5F96D91F43B9F3, 0xF246BDD3CFDEE59E, 0x28E6839E4B1EEBC1, 0x9273A5C811B2217B, 0xA841129BBAB18B3E };
@@ -401,6 +403,6 @@ int main()
     v.add(0x0000000000000000, 0x0000000000000000);
     v.add(0x0000000000000018, 0x0000000000000001);
     g.generate(30, &v);
-*/
+
 	return 0;
 }

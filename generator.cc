@@ -1,3 +1,6 @@
+
+#include "generator.h"
+
 #include <assert.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -6,12 +9,6 @@
 #include <list>
 #include <utility>
 
-using std::string;
-
-#define ASSERT assert
-
-typedef uint64_t Val;
-
 string itos(int i) // convert int to string
 {
     std::stringstream s;
@@ -19,89 +16,9 @@ string itos(int i) // convert int to string
     return s.str();
 }
 
-enum Op {
-	ERROR_OP, // 0
-	FIRST_OP,
-	IF0 = FIRST_OP, // 1
-	FOLD,     // 2
-	NOT,
-	SHL1,     // 4
-	SHR1,
-	SHR4,     // 6
-	SHR16,
-	AND,      // 8
-	OR,
-	XOR,      // 10
-	PLUS,
-	C0,       // 12
-	C1,       // 13
-	VAR,      // 14
-	TFOLD,
-	MAX_OP
-};
-
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
-
-class OpSet
-{
-public:
-	OpSet() : set_(0) {}
-
-	void add(Op op) { set_ |= 1 << op; }
-	bool has(Op op) { return set_ & (1 << op); }
-	void del(Op op) { set_ &= ~(1 << op); }
-
-	int set_;
-};
-
-//////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////
-
-class Context
-{
-public:
-	Context(): count(0) {}
-
-	void push(Val val) { values[count++] = val; }
-	void pop() { ASSERT(count); --count; }
-
-	Val get(int id) { return values[id]; }
-
-    int count;
-    Val values[1000];
-};
-
-//////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////
-
-class Expr
-{
-public:
-    Expr();
-	Expr(Op op, Expr* e1 = NULL, Expr* e2 = NULL, Expr* e3 = NULL);
-	Expr(Op op, int var_id);
-    ~Expr();
-
-    Val run(Val input);
-	Val eval(Context* ctx);
-
-    string program();
-
-private:
-	friend class Generator;
-
-	string code();
-    Val do_fold(Context* ctx);
-
-    Op    op;
-    int   id; // for VAR
-	int   count;
-	Expr* opnd[3];
-};
 
 Expr::Expr()
 {
@@ -227,47 +144,6 @@ string Expr::code()
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-class Callback
-{
-public:
-	virtual ~Callback() {}
-	virtual bool action(Expr* e) = 0;
-};
-
-//////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////
-
-class Generator
-{
-public:
-    void generate(int size, Callback* callback = NULL);
-    void add_allowed_op(Op op) { allowed_ops_.add(op); }
-    void allow_all();
-
-private:
-	void gen();
-    void emit(Expr e, int opnds);
-	void built();
-
-    Expr* program;
-
-    bool scoped[50];
-	Expr arena[50];
-	int ptr;
-	int next_opnd;
-	int left;
-
-	int count;
-	bool done;
-	bool allow_fold;
-
-	OpSet allowed_ops_;
-	int used_ops_[MAX_OP];
-
-	Callback* callback_;
-};
-
 void Generator::allow_all()
 {
 	for (int op = FIRST_OP; op < MAX_OP; op++)
@@ -385,21 +261,6 @@ void Generator::built()
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-class Verifier: public Callback
-{
-public:
-	Verifier() : count(0) {}
-	void add(Val input, Val output);
-
-	virtual bool action(Expr* program);
-
-private:
-	typedef std::list< std::pair<Val, Val> > Pairs;
-
-	Pairs pairs;
-	int count;
-};
-
 void Verifier::add(Val input, Val output)
 {
 	pairs.push_back(std::pair<Val,Val>(input, output));
@@ -422,16 +283,6 @@ bool Verifier::action(Expr* program)
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
-
-class Printer: public Callback
-{
-public:
-	Printer() : count(0) {}
-    virtual bool action(Expr* e);
-
-private:
-	int count;
-};
 
 bool Printer::action(Expr* e)
 {

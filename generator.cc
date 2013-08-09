@@ -34,8 +34,31 @@ enum Op {
 	PLUS,
 	C0,       // 12
 	C1,       // 13
-	VAR       // 14
+	VAR,      // 14
+	TFOLD,
+	MAX_OP
 };
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+class OpSet
+{
+public:
+	OpSet() : set_(0) {}
+
+	void add(Op op) { set_ |= 1 << op; }
+	bool has(Op op) { return set_ & (1 << op); }
+	void del(Op op) { set_ &= ~(1 << op); }
+
+private:
+	int set_;
+};
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
 
 class Context
 {
@@ -50,6 +73,10 @@ public:
     int count;
     Val values[1000];
 };
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
 
 class Expr
 {
@@ -122,29 +149,32 @@ Val Expr::run(Val input)
 
 Val Expr::eval(Context* ctx)
 {
+	Val res = 0;
     switch (op) {
-    case C0:    return 0;
-    case C1:    return 1;
-    case VAR:   return ctx->get(id);
+    case C0:    res = 0; break;
+    case C1:    res = 1; break;
+    case VAR:   res = ctx->get(id); break;
 
-    case NOT:   return ~opnd[0]->eval(ctx);
-    case SHL1:  return opnd[0]->eval(ctx) << 1;
-    case SHR1:  return opnd[0]->eval(ctx) >> 1;
-    case SHR4:  return opnd[0]->eval(ctx) >> 4;
-    case SHR16: return opnd[0]->eval(ctx) >> 16;
+    case NOT:   res = ~opnd[0]->eval(ctx); break;
+    case SHL1:  res = opnd[0]->eval(ctx) << 1; break;
+    case SHR1:  res = opnd[0]->eval(ctx) >> 1; break;
+    case SHR4:  res = opnd[0]->eval(ctx) >> 4; break;
+    case SHR16: res = opnd[0]->eval(ctx) >> 16; break;
 
-    case PLUS: return opnd[0]->eval(ctx) + opnd[1]->eval(ctx);
-    case AND:  return opnd[0]->eval(ctx) & opnd[1]->eval(ctx);
-    case OR:   return opnd[0]->eval(ctx) | opnd[1]->eval(ctx);
-    case XOR:  return opnd[0]->eval(ctx) ^ opnd[1]->eval(ctx);
+    case PLUS: res = opnd[0]->eval(ctx) + opnd[1]->eval(ctx); break;
+    case AND:  res = opnd[0]->eval(ctx) & opnd[1]->eval(ctx); break;
+    case OR:   res = opnd[0]->eval(ctx) | opnd[1]->eval(ctx); break;
+    case XOR:  res = opnd[0]->eval(ctx) ^ opnd[1]->eval(ctx); break;
 
-    case IF0:  return opnd[0]->eval(ctx) == 0 ? opnd[1]->eval(ctx) : opnd[2]->eval(ctx);
-    case FOLD: return do_fold(ctx);
+    case IF0:  res = opnd[0]->eval(ctx) == 0 ? opnd[1]->eval(ctx) : opnd[2]->eval(ctx); break;
+    case FOLD: res = do_fold(ctx); break;
 
     default:
         fprintf(stderr, "Error: Unknown op %d\n", op);
         ASSERT(0); 
     }
+//    printf("eval: %d = 0x%016lx\n", op, res);
+    return res;
 }
 
 Val Expr::do_fold(Context* ctx)
@@ -153,8 +183,8 @@ Val Expr::do_fold(Context* ctx)
 	Val acc = opnd[1]->eval(ctx);
 	for (int i = 0; i < 8; i++) {
 		Val byte = data & 0xff;
-		ctx->push(acc);
 		ctx->push(byte);
+		ctx->push(acc);
 		acc = opnd[2]->eval(ctx);
 		ctx->pop();
 		ctx->pop();
@@ -230,6 +260,9 @@ private:
 	bool done;
 	bool allow_fold;
 
+	OpSet allowed_ops_;
+	int used_ops_[MAX_OP];
+
 	Callback* callback_;
 };
 
@@ -299,10 +332,10 @@ void Generator::gen()
 
 	if (left > 3) {
 		emit(Expr(IF0), 3);
-		if (allow_fold) {
-			allow_fold = false;
+		if (allowed_ops_.has(FOLD)) {
+			allowed_ops_.del(FOLD);
 		    emit(Expr(FOLD), 3);
-		    allow_fold = true;
+			allowed_ops_.add(FOLD);
 	    }
 	}
 }
@@ -385,11 +418,27 @@ int main()
     printf("0x%016lx\n", e->run(0x1122334455667788));
     delete e;
 
+#define E_ new Expr
+
+    // (lambda (x0) (shl1 (fold x0 0 (lambda (x1 x2) (plus x2 (shr1 (if0 x1 x2 0)))))))
+    e = E_(SHL1, E_(FOLD, E_(VAR, 0), E_(C0), E_(PLUS, E_(VAR, 2), E_(SHR1, E_(IF0, E_(VAR, 1), E_(VAR, 2), E_(C0))))));
+    printf("%s\n", e->program().c_str());
+    printf("0x%016lx\n", e->run(0x0400000000F88008));
+    delete e;
+
+    // (lambda (x0) (fold x0 0 (lambda (x y) (plus x (shl1 (shl1 (shl1 (shl1 y))))))))
+    e = E_(FOLD, E_(VAR, 0), E_(C0), E_(PLUS, E_(VAR, 1), E_(SHL1, E_(SHL1, E_(SHL1, E_(SHL1, E_(VAR, 2)))))));
+    printf("%s\n", e->program().c_str());
+    printf("0x%016lx\n", e->run(0x70605040302));
+    delete e;
+
+
     printf("\nTesting Generator\n");
     Generator g;
     Printer p;
-    g.generate(4, &p);
+    g.generate(3, &p);
 
+#if 1
     printf("\nTesting Verifier\n");
     Verifier v;
     Val inp[] = { 0xB445FBB8CDDCF9F8, 0xEFE7EA693DD952DE, 0x6D326AEEB275CF14, 0xBB5F96D91F43B9F3, 0xF246BDD3CFDEE59E, 0x28E6839E4B1EEBC1, 0x9273A5C811B2217B, 0xA841129BBAB18B3E };
@@ -399,6 +448,7 @@ int main()
     }
     v.add(0x0400000000F88008, 0x000000000000000C);
     g.generate(20, &v);
+#endif
 
 	return 0;
 }

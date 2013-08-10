@@ -1,0 +1,142 @@
+0451EUqILPkx1zWe7fD4BMiNzwHIjPGCkbKYFxI0
+
+12375
+
+
+test vector
+12, 3400, 560000, 78000000, 9a00000000, bc0000000000, de000000000000, f000000000000000
+0x284325CDFB9B9, 0x5B6B1B3D85BB2, 0xA5C4858381D1E, 0x52E3FC7D719EF, 0xE2C5F8FFF2E79, 0x5693F17BA5C81, 0x4BA656A78BEEE, 0x68CD898E624BD
+
+
+(lambda (x0) (not (not (not (not (not (not (shl1 (fold x0 0 (lambda (x1 x2) (plus x2 (shr1 (if0 x1 x2 0))))))))))))
+
+(lambda (x0) (shl1 (fold x0 0 (lambda (x1 x2) (plus x2 (shr1 (if0 x1 x2 0)))))))
+[0x0400000000F88008, 0x000000000000000C, 0x0000000000000000]
+(lambda (x0) (fold x0 0 (lambda (x y) (plus x (shl1 (shl1 (shl1 (shl1 y)))))))
+
+
+HKCmJl2MS6P8cg31BADANiTC
+
+Mq4l9ufaNLVtWQleVs0jequC
+
+failed: 4AviCXMbcQLsGJ49Zv1X9YqA
+
+
+{
+   "challenge" : "(lambda (x_32747) (fold (xor (shr16 (shr1 (not x_32747))) 1) x_32747 (lambda (x_32748 x_32749) (not (or (shr4 x_32749) x_32748)))))",
+   "id" : "rH17sgpmKJUvufnEjIAJGtTs",
+   "operators" : [ "fold", "not", "or", "shr1", "shr16", "shr4", "xor" ],
+   "size" : 15
+}
+
+Challenge ACCEPTED:
+id: rH17sgpmKJUvufnEjIAJGtTs
+size: 15
+operators: [ "fold", "not", "or", "shr1", "shr16", "shr4", "xor" ]
+req: {
+   "arguments" : [
+      "0xb445fbb8cddcf9f8",
+      "0xefe7ea693dd952de",
+      "0x6d326aeeb275cf14",
+      "0xbb5f96d91f43b9f3",
+      "0xf246bdd3cfdee59e",
+      "0x28e6839e4b1eebc1",
+      "0x9273a5c811b2217b",
+      "0xa841129bbab18b3e",
+      "0x0",
+      "0x1",
+      "0x2",
+      "0x3",
+      "0x4",
+      "0x5",
+      "0xaa5555aa5555aaaa",
+      "0xcc660330660f0cc0",
+      "0xff00000000000000",
+      "0xff000000000000",
+      "0xff0000000000",
+      "0xff00000000",
+      "0xff000000",
+      "0xff0000",
+      "0xff00",
+      "0xff",
+      "0x6",
+      "0x7",
+      "0x8",
+      "0x9",
+      "0xa",
+      "0xb",
+      "0xc",
+      "0xd",
+      "0xe",
+      "0xf",
+      "0x10",
+      "0x17",
+      "0x2f",
+      "0x30",
+      "0x35",
+      "0x3f",
+      "0x50",
+      "0x51",
+      "0x63",
+      "0x78",
+      "0xb7",
+      "0xf6"
+   ],
+   "id" : "rH17sgpmKJUvufnEjIAJGtTs"
+}
+
+res: {
+   "outputs" : [
+      "0xF0F0F0F0B445FBB8",
+      "0xF0F0F0F0EFE7EA69",
+      "0xF0F0F0F06D326AEE",
+      "0xF0F0F0F0BB5F96D9",
+      "0xF0F0F0F0F246BDD3",
+      "0xF0F0F0F028E6839E",
+      "0xF0F0F0F09273A5C8",
+      "0xF0F0F0F0A841129B",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F0AA5555AA",
+      "0xF0F0F0F0CC660330",
+      "0xF0F0F0F0FF000000",
+      "0xF0F0F0F000FF0000",
+      "0xF0F0F0F00000FF00",
+      "0xF0F0F0F0000000FF",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000",
+      "0xF0F0F0F000000000"
+   ],
+   "status" : "ok"
+}
+
+start generation at 1654 ms
+allowed ops=76ec
+

@@ -1,0 +1,1451 @@
+   0: 01JYinb2f5yzjojOpNPApp1E  14                    -1
+   1: 03jCIUGtnPATZNxJW96AVhR9  20                    -1
+   2: 077lZsASvr5BqMBpKl86oZtq  22                    -1
+   3: 08KtJY0RaALDCU7k7FSAyOLH  23                    -1
+   4: 09Xl8IKKsmhoWG4qK2Y1QI0q  30                    -1
+   5: 0A06G3aWulBaEs5BzRMw3Ws5  18                    -1
+   6: 0AOZBEYZl506n7UXt0FjM5Bj  13                    -1
+   7: 0BWCDNT3jQCD7yNHnrw2INcV  17                    -1
+   8: 0DKMrBfC7BXipZBdl1awkU3r  15                    -1
+   9: 0G9z9B1kHhKJyVA4zHVTaB4d  22                    -1
+  10: 0IdLPEOEDu154Ti5BgosuFSr  22                    -1
+  11: 0SANTBNQKDlEs0VrgHCs78H7  21                    -1
+  12: 0T1M89qM0DaNVy2bkZ7RANRh  30                    -1
+  13: 0aANjRSCuGHfRdrn8yGARrAC  15                    -1
+  14: 0bdvEZfCzWDkQnvhF8G1z25S  10                    -1
+  15: 0ibLoauqo2YlaRqB79FWgrpS  22                    -1
+  16: 0jPeFpiSRyQhGIprbhh7Mguh   9                    -1
+  17: 0kELa37AaEDKB0SXpTfk8TBb  13                    -1
+  18: 0mDNSBmnFydD5MZIL8BxxBQR  26                    -1
+  19: 0mTM2JQot1mOlcC4b70AlsLl  14                    -1
+  20: 0sBDDCAiqkf5qT6CpyUFiMaX  29                    -1
+  21: 0w5unAQClOCs3J8LhNCWYswO  12                    -1
+  22: 1Csl5jUUpCIQZi2nUO62TtQC  22                    -1
+  23: 1FBL3BtvkJPAQA50JONo6hNO  27                    -1
+  24: 1I5iLNJJBylSw6w5jNDjqAcr  17                    -1
+  25: 1IFFi6P181S8ibMBc9yvkHdb  11                    -1
+  26: 1ILbXbp9gk9YFidFY31ytGAc  27                    -1
+  27: 1KBqG5krNtK3Y6AOLXytlUpB   6                    -1
+  28: 1Li2sOoA0l9lnSgWSt3MVAS2  24                    -1
+  29: 1MLpb0gFpNd0BNhGLcWKEY5d  15                    -1
+  30: 1Mtahl3DBR9XYfNh9pnUhGN0   9                    -1
+  31: 1SGfIybDGFk2HAiMAyZz7rQw  14                    -1
+  32: 1VuFAAMACRHxwklhMMtRwmRe  22                    -1
+  33: 1aNRE4fmf5Q1031fR1xucHwN  19                    -1
+  34: 1eMRMIrjeAyewLbB7Fv4oirH  12                    -1
+  35: 1lRDYzGs3PGQpWyXFcFsmBjY  14                    -1
+  36: 1mM7XvloeTAi94ZzaEkY9ioS  11                    -1
+  37: 1rhpkz6Sy3z8WBbAf4AvIV2i  27                    -1
+  38: 1uGhLl7e8PQBPyK2BgYI7qUD  26                    -1
+  39: 1ysH08pBtIag54tbhWyTZU4j  17                    -1
+  40: 29U3pajjt44fdajDlZippE3r   8                    -1
+  41: 29nIiq2HbcEuAtjXfyIXx3wz  27                    -1
+  42: 2A3nLULQ9BPKZsSomB01JD6f  18                    -1
+  43: 2FObRvSIUlPnqDG6BtO8Z8sF  23                    -1
+  44: 2FgdB2nLB5vT0EBGZ9qGPe9R  21                    -1
+  45: 2JuoAh2dDixromI193TyCJ9H  12                    -1
+  46: 2LK2t3xtZfAwZgc4SxFAGPaH  19                    -1
+  47: 2LWUYESZhJUk4yXL9lNQtNvc  28                    -1
+  48: 2M8iuPR3LBtX8fhkKVGYjrlC  29                    -1
+  49: 2Md71n7WBGYpuYGdBckye7fQ  12                    -1
+  50: 2NOHPnaXpas0vM3yqGTKlQcw  17                    -1
+  51: 2SgNJoz4e8Fz8EBTelyvSEBX  19                    -1
+  52: 2TPBlPmfzhBQ41MuC5MXLA7a  28                    -1
+  53: 2TPl4NOI4MmID8fDvHqWGU2B  15                    -1
+  54: 2WgTr9BuoSLZE1XV5ec6AUqY  10                    -1
+  55: 2Z8CcaaF51LdaU4W6DUFqtJp  24                    -1
+  56: 2eC32rwl6rgDPW2XW11BOmLr   8                    -1
+  57: 2gZd6ydkYA2It41r5yLPbTJU  13                    -1
+  58: 2hYSD1MyshcLTBcAbeqa2xIg  24                    -1
+  59: 2ltk9h7nBbMm1uLPthEewMb4  18                    -1
+  60: 2qnxALvht7D45bEW0OJK5s3P  11                    -1
+  61: 2wGGP2kSDyxz77P7eBdomGXi   9                    -1
+  62: 2wy72Axz7saBe4mzYJT5bARX  18                    -1
+  63: 2yJ8WqF7cZIMt3B7muk2wXAM  27                    -1
+  64: 2yoojnXgCDNvelx2Q1Ez6a6B  19                    -1
+  65: 37s2Bu21W4k8CSLeCA2pfuPC  11                    -1
+  66: 3CJAsPZmoPgfPGS5E4PeCian  24                    -1
+  67: 3QEIFFbsnrXczJC2y3CGfeSt   8                    -1
+  68: 3UFn5vSibhA8UtClPCzjCh7a  29                    -1
+  69: 3X9qASuwHXtwv5LcEUArzyQr   7                    -1
+  70: 3XbfVpKB1qjPxmTXo2Yeuu22  14                    -1
+  71: 3aXzBQGdV7Q5ZfUMFqfUapPD  13                    -1
+  72: 3fpDnvjiBfy0SZV60PzxIcq3  18                    -1
+  73: 3jHtl2amH79BVdAK60glVdME   3     SOLVED          0
+  74: 3jaodntEvmIAEj4KnqdCCBUg   6                    -1
+  75: 3kVaZNDWdcZogcm5ym2qxMiP  20                    -1
+  76: 3oM7kUlKjhdkM8TTalrf23vb  16                    -1
+  77: 3oXRiYEJfg65LtT9wupdm2rr  15                    -1
+  78: 3pmagXFSM63FVgG7GY9a7JgD  24                    -1
+  79: 3qdO6MZdlWqZXm880w3YH4WB  16                    -1
+  80: 3qi6vlptrfT7jrD8ZuNwJBLm  18                    -1
+  81: 406NYbUAoziJOhTSzNCLVgBH  20                    -1
+  82: 45ZpvrIZ8iBTKCMRE1MAXZUI   4                    -1
+  83: 45snQnhUXVRuBgIYK1H6ncNo  18                    -1
+  84: 472wTrPpeVc29OVA33iUE5SP  19                    -1
+  85: 47E0gZBCrIm3VXLFCohIvT0c  11                    -1
+  86: 48YZ1Jln1ujUiasvUWxgZQZo  10                    -1
+  87: 4AviCXMbcQLsGJ49Zv1X9YqA  14                    -1
+  88: 4D0hy2JHZCuJrmowlm4mZ0gL  27                    -1
+  89: 4JIWLriAsK6vamlWkJDiAQ3d  26                    -1
+  90: 4LB6DIU5iiO3iSgT6BPGijkN  19                    -1
+  91: 4Nkbzy8IJAo5mD2DA439E4bv  11                    -1
+  92: 4OA4AytlWf9HCp1WYHiB72hB  22                    -1
+  93: 4PiAdq4uRDwJC2DAy7htwDVB  11                    -1
+  94: 4VW21CXBXpB8WyxTq3uJiJoo  14                    -1
+  95: 4lVMJ7Q1Yiup5BVBEnG1KiLn  27                    -1
+  96: 4mAp5jGxs2NDyTx3kT1tAger  29                    -1
+  97: 4r0MP61MydSNxmYlfd1EWTs2  13                    -1
+  98: 4r7sQRGI9Mx9qpslAqLRyG3K  16                    -1
+  99: 4ta9P8B98gP1yzzvVzaJCXbI  26                    -1
+ 100: 4vwH3WmzCI0ogyPy2y6zyOoR  21                    -1
+ 101: 51JZdd92V6i9G6UNjS7LWqf7  17                    -1
+ 102: 53fWDEBvzINganzLjOglPy6h  13                    -1
+ 103: 54BD2Vw6qDN1fBDTMU3bnjC3  14                    -1
+ 104: 54pqe22shscdpEnhRzN98bML  27                    -1
+ 105: 57DbwGWWAAHqlAHJJYzfPR1c  24                    -1
+ 106: 588TI0QcJyJMqDK2kPMDFXBv  18                    -1
+ 107: 590BQaqsY1PnApXi2pLydbjk   9                    -1
+ 108: 591N9BBxeYwmr2Su9rRh2TZu  28                    -1
+ 109: 5CGAJOcV5me01jgDEeAD1wgn  12                    -1
+ 110: 5CR3tjVPjjdvUTKbsPIBkJ14  13                    -1
+ 111: 5FPZBFfw0BBqkAE105GQiNU5  29                    -1
+ 112: 5Fa7TiRCLE4EFvF7UEA6uVgM  12                    -1
+ 113: 5GGzRChrDCB69t3ssmoFL8Jo   9                    -1
+ 114: 5GQ9Oa7HKKMXkalqFjA9P45b  10                    -1
+ 115: 5OUGtSHj5poamWqgOI4jKPHs  10                    -1
+ 116: 5QBMdJdc19ysuTCWF5iXuoDA  22                    -1
+ 117: 5QtU84PR5MZqe1grVg4Q6Cma  25                    -1
+ 118: 5TfQqEEop1brPIAoyTxs7kL3  27                    -1
+ 119: 5WLC1oRWrYXHh0qliN9YCocY  25                    -1
+ 120: 5Yi4u76EeQFdxad5F9DebQMC  26                    -1
+ 121: 5dELflHSsmLySmSwoc4CZf5X  19                    -1
+ 122: 5gQeojAPrTPZAXZlOUl1JHjm  12                    -1
+ 123: 5ioc8EonN0s1N99QEJYzwHvz  22                    -1
+ 124: 5jYAQIMJ9X0fvUegqeTNsHjg  21                    -1
+ 125: 5n1OhGPfeHCNtUllIuh7BGdF  24                    -1
+ 126: 5nkZm7QaNifMpJkzsAXz7B65  26                    -1
+ 127: 5uCvu9kxbBemeANr2XK3pQcS  13                    -1
+ 128: 5vJJt14ti9GnDHqaf4GN8tEC   3                    -1
+ 129: 5wZEUWTyEQAN6Abe4V3wpvKm  24                    -1
+ 130: 5zTpw0qntT5dkVvAQoJKRytx  14                    -1
+ 131: 609Z8abJi4vB0vS26RQFKEJw  16                    -1
+ 132: 6AAp1WfWFKjWaaYW94YQYFlm   5                    -1
+ 133: 6Jfl4rPDLvmWUccohENJQaC6  26                    -1
+ 134: 6L6q0AOWYaUYS2fxfKZm29zo  29                    -1
+ 135: 6LfPLMJT5CrD4DDAvxWJa5ss  28                    -1
+ 136: 6MlGPFwB8HmqyR18kGh5dYq7  18                    -1
+ 137: 6Ne2naFdWc3p3Fa4pHiRHHIg  27                    -1
+ 138: 6OsSktmE3nAj3AmFUjxqtEhB  19                    -1
+ 139: 6SbBe6tDL3a6NZoXq8otONEG  22                    -1
+ 140: 6Z038RBdLYDhGw6b7BcXvs9w  20                    -1
+ 141: 6a2Zj0ceCBsxOPFVp00FZIIn  28                    -1
+ 142: 6cKnsvjgwO6UcyMDBZxgBfSm   8                    -1
+ 143: 6f9jZpv3Ld3b5QBOTVLxRzsV  18                    -1
+ 144: 6ioUzQ4jzc7V6TcKUS6iVwH4  19                    -1
+ 145: 6kjIbIT8uZ5Ef59sfkAPdc2H  22                    -1
+ 146: 6vlUofwJYo2u1J5GATcUTZuE  25                    -1
+ 147: 6wGPaBvVDzlrCwoBuDio5Gam  15                    -1
+ 148: 6yFqM5g2GiTEIdRBP18pJ5Av  17                    -1
+ 149: 70X7WMC8EXLAnWzKlDRXO2ZM  19                    -1
+ 150: 71Ehs9bxmSDiSBfw6Ar4B01Q  19                    -1
+ 151: 74SHZjC8dGtSvxCc7B9Elycj  26                    -1
+ 152: 76YR4BJZIaW7BMCZQIYckQFh  18                    -1
+ 153: 7BUA1dSIWC6q4Cw5sjNmIlha  27                    -1
+ 154: 7JphplSaXBmUl2J4BeEcLRmA   9                    -1
+ 155: 7JrPGtB9lpyRRT8uO0Yc2M9E   5                    -1
+ 156: 7Nimu5kK3w9RCWlddgRM3HiG  26                    -1
+ 157: 7RK52KKYKOzfeIAsNSgPseeQ  15                    -1
+ 158: 7ZCr8GyScUDWyYkmRZ9cVpsd  22                    -1
+ 159: 7b9u3OH7HtXIhxxmCz2izLwd   6                    -1
+ 160: 7dUw6qCHD8yk1GJ9m05mRVZG  21                    -1
+ 161: 7dqSx1yKGRBBEyBDnVjmlElb  13                    -1
+ 162: 7kEKijiKpQ4WEABF15dLXIfQ   9                    -1
+ 163: 7lu1DsICTaXaLvAHl86lawAS  30                    -1
+ 164: 7oUlR50UA3clx79kKBGfjB2e   5                    -1
+ 165: 7qzgAyxmEXNKktZVXW8Rm7vp  29                    -1
+ 166: 7yFbzF1s5shttTgNaNMu4myf   7                    -1
+ 167: 7yhXjcqCH07xtTguTz9ypW37  15                    -1
+ 168: 7z8yhjTGsxqYO6nnVHFmuBct  28                    -1
+ 169: 80AXnR0PB58APUpDQhyBTsi0  29                    -1
+ 170: 82eEc92kVzOieEDPyhxEb5gc  15                    -1
+ 171: 82lc1LBdMF4pSxcREuQ5jSli  18                    -1
+ 172: 8BVlxJqvsLX8SWRVyeuZRVyN  25                    -1
+ 173: 8DIUHlrsXaaBYiiqP2PXwtUq   7                    -1
+ 174: 8NW2JrVZalzpfdX1aYe7ut1V  16                    -1
+ 175: 8SvXRgeY9u9n1Dw0TDBkBsfF   5                    -1
+ 176: 8Sw83uA3F9VDAhLtKxF6l9Cn  25                    -1
+ 177: 8atEzhUVoBbC2Z25na91NdFC   7                    -1
+ 178: 8bkRDel4eZm4f6IShzFx6h7N  21                    -1
+ 179: 8c9BfLJs2rhW7fcndnvLyxZ9  11                    -1
+ 180: 8cWOdvrhrC4JSE2KyLfN7Igb  19                    -1
+ 181: 8eJ0uHIp9J5hiT7DHCfhWRQ2  21                    -1
+ 182: 8fPNp57dESR5cYz6hI615Ij2  13                    -1
+ 183: 8i8qSbyUga9zXmL7e1XJD1A8  26                    -1
+ 184: 8j7hFXtqkxrdfAIu5fl4jb6a   9                    -1
+ 185: 8jrORNmaZgf7oknFcBWLyyRs  15                    -1
+ 186: 8l6A14o7dzKi0wXD3b9DMpPK  22                    -1
+ 187: 8m07CYcr1s35qG2G6ESrBEiZ  23                    -1
+ 188: 8mTMBkowO4BvYuFVKvfeUnY7  19                    -1
+ 189: 8nJOpfHSv4rmcoWPnwLJDxS2  19                    -1
+ 190: 8nu6tiCHJgQAS1asgjp6BYjO  30                    -1
+ 191: 8rYltAATGbBXUMoCyzUiB0hN  24                    -1
+ 192: 8xj19iel7hYnlAupkflDAwLy  13                    -1
+ 193: 8ykIiyTFIN2mNc888pcojIBD   9                    -1
+ 194: 8zdtb00tVdgaan9RmiGsA7u4  27                    -1
+ 195: 929cq8krUcZd0DpaArdMMWbX  21                    -1
+ 196: 92QhJPJVP8xA6NMVEatYc5i7  26                    -1
+ 197: 94HiaalCEqrY3Kcp0v2cZSl4  14                    -1
+ 198: 97XtRTtnVsYYqZbiOmc7Jtfp  30                    -1
+ 199: 9AvyDOgke4e9bdAwaK7o5Vvs  15                    -1
+ 200: 9Bsz2z3PGAvVmNS1ngx8n14o  12                    -1
+ 201: 9Go6QL5lVcBJN06RkqCDA8Gb  14                    -1
+ 202: 9HBBbG7tz7nGun9LImeP6v7T   8                    -1
+ 203: 9Hm2QSyno9KDBFqtvAVztr6s  30                    -1
+ 204: 9IwiKQRsw51oblzIxWnnAUlM  21                    -1
+ 205: 9KFOYnHYUStjFFndvZgxKjdA  15                    -1
+ 206: 9UEyZVQBHt6gWfBNnmXX25BI  18                    -1
+ 207: 9X197B8U9OXWo6bKLmBB3HT1  30                    -1
+ 208: 9XycQeXwNqHT6WIRa5HotAoZ  16                    -1
+ 209: 9Z1dQsM5uvstbAu5smcA1dkX  30                    -1
+ 210: 9gXw4U4sksBsUyVcg3qKqyYP  13                    -1
+ 211: 9glFfn8cOgnubfjagVukgOmq  14                    -1
+ 212: 9hVaLPmncF5zo7PzMu8ds1Vt  14                    -1
+ 213: 9lABJB9osTKIf7ILidaeJTl4  10                    -1
+ 214: 9ptu9AGqQVuExYo35dPP2oJZ   7                    -1
+ 215: 9rjyCARgdp3WrOwioFp8iBQl  28                    -1
+ 216: 9vrzMotKiMRluag4wV3vJ5sK   4                    -1
+ 217: A03WwA1P0AXQyXjAnIYA2G2Q   4                    -1
+ 218: A281cixOuKJBVAOFIO86Tf38  24                    -1
+ 219: A2QvXUvDffRU33ssqEXKwKuW  17                    -1
+ 220: A3DatBrN2l6d2jHCEWwVzJ9A  29                    -1
+ 221: A3M6wE5Os1Oi3pO946UQ8Gee  18                    -1
+ 222: A3oYA0exmRf3AFcxbBm1Q91g  25                    -1
+ 223: A4o332ATwFlwEwAc14wRlX8s  21                    -1
+ 224: A5yIhwltOtfJb4ae4zybnEQi   5                    -1
+ 225: A7XUqXzgeng90pvQerA3V2Yz  17                    -1
+ 226: A8YajDpwcyfQXjkVXeIMjiKo  14                    -1
+ 227: A8bsUKlyGEca7onUXTl1rW0C  16                    -1
+ 228: A8vaSiX2BG098lBRz4t7NfIV  25                    -1
+ 229: A9CDGLynWCO28voVfn9gJaNK  25                    -1
+ 230: AAM9kUszZ4nBljOH94yalxY5   6                    -1
+ 231: AB5QjHpwJ5AaiBfkcUNiAHAI  24                    -1
+ 232: AB9FkKPTWAEwJRKTEwhblkLw  22                    -1
+ 233: ABfVVIJc1fYv1ek9POJ2d94d  23                    -1
+ 234: ABuW0Qr95s9VloDsBVO17tAC  17                    -1
+ 235: ACOzAqtPuAzXu6KBETYIUYXT  11                    -1
+ 236: ACsxt5w90Kf4YIACF7VQOYQI  12                    -1
+ 237: ADcuJy8kmte1DrmpoTBBbpiA  20                    -1
+ 238: AJt8Cogenl9ftwd26u7JVAYf  25                    -1
+ 239: AKASfNEZZ6lK8j2CtcUOJbDh  18                    -1
+ 240: AKnVnUhNimH5rGdZNGvIrssu  17                    -1
+ 241: AMO7bAuKpGvnHXRcgrAASglp  19                    -1
+ 242: AMbNBmHqdYD6qOwhYY1iAf81  12                    -1
+ 243: AMsyPwX7Je6cV7TKy4gEApTt  20                    -1
+ 244: ANEzr6jGGpAn0dAQncJZxcdF   8                    -1
+ 245: ANsEH9LZQciOhWfE3IIjRvT6  12                    -1
+ 246: AO8ApoCBL5ml05gjPj1OIEM7  20                    -1
+ 247: AQHjpFjmLAPkXMPY3ddI6jhS  22                    -1
+ 248: AQocZBrGsG9VZGBF7CwUu8sX  22                    -1
+ 249: AR80gy1PPyAdMYhQjuGRr5pq  15                    -1
+ 250: AS7LMhCMT3JgcA3V0xEYphtS  10                    -1
+ 251: ASRkdJpSOlTHGVI93B8K7Khp  14                    -1
+ 252: AU0zKK00xOhbSgPWmYEvysyX   8                    -1
+ 253: AUyJXIcjE70dS3CNo3m9eB1B  16                    -1
+ 254: AVVyjUPCqd3XJA3vRbbhvL9u  12                    -1
+ 255: AWsaLk4V34SEnXmWlXNpbVum  26                    -1
+ 256: AatxCgYTpoJAFgAtN6TTkwX1  22                    -1
+ 257: Ac0oFolpavnaABiGiRN2hduA  29                    -1
+ 258: AdWz8185BBLz1cpcdDgAGRTq  26                    -1
+ 259: AdXSZiSpxb4xqrvD7ivGApGm  30                    -1
+ 260: AdYREXh7EYuUZavRhX93a4oa  12                    -1
+ 261: AfJ1sk5UTmc1oCe3vXJ3rfOB  15                    -1
+ 262: AgxAXaJI3TcIg0fsI60KrhBk  16                    -1
+ 263: AiAgbmHwKlFEIhR2wbBNAkRG  16                    -1
+ 264: AjyPAxAIQLw3Hu7DXOpmTzcY   3                    -1
+ 265: AlDHKyOzm1FkDnSPUanYAAwQ  16                    -1
+ 266: AlcakNXcN70LHUV4ZCRg6HWL  24                    -1
+ 267: Am5zooiSACBOQ6BZXi2hZXFU  14                    -1
+ 268: ApLA6QAtcw3jTl8EfsT0mS0J  10                    -1
+ 269: ApgvO0BXICscreRL1KQwxTS0  30                    -1
+ 270: Aqs0AxSO9sSwxFHJQXg57DjD  19                    -1
+ 271: Ar4DJH7X57GuRfhQ1y5dAeal  18                    -1
+ 272: Ar8G3tBdBGWu51AgXhrVh6ld  18                    -1
+ 273: AvHdn4CGzBACkPectUwiLSix  11                    -1
+ 274: Ax0L4OUXHetJOenlzj99jNlc  22                    -1
+ 275: AyFRJZtpaxPofAxQsKbpOUh2  20                    -1
+ 276: B0RAAndJLnyTcAqgGLXmssS6   7                    -1
+ 277: B2Oe4B0v3xHX3iJsfA5OeAIP  23                    -1
+ 278: B4fCmGpQVKyl9xE5BApWhtXS  26                    -1
+ 279: B5jzv1kj8bV3UKBjXm3arOTq  28                    -1
+ 280: B7gxoxxHbStCSIbDncDcQ0QJ   6                    -1
+ 281: B8eMohzls3g53V8y9cIK6yB6  11                    -1
+ 282: BAl33bDa8UEqGg44gcZM6i5C  19                    -1
+ 283: BApGgGfq4SyrcHVhfV2UV3iT  16                    -1
+ 284: BBAYXovjTSgBeQSH2rHchJOs  20                    -1
+ 285: BBuT2dGRbv8YSqnI69ch5DBi  11                    -1
+ 286: BC2LGQDXS5xsjjYUOLFdPMxP  24                    -1
+ 287: BCA8wWojOn6NYTDEpags3J4Z  26                    -1
+ 288: BFVngiEvYhtp0THtLGqz1s1l  15                    -1
+ 289: BIbBUrLkPYAm62CqnuCs0gqX  20                    -1
+ 290: BJ1XqL9Se9GrL9qrcVWzBetw  15                    -1
+ 291: BLt6AIsLnpQ4S7Rllt1WwW5B  13                    -1
+ 292: BM0EMNGbTqq3xkPfCraYpTtO  14                    -1
+ 293: BM9uMDF87CagAv86bXp5v6QZ  21                    -1
+ 294: BObfRTEb8h8AiE3TTkkHWabk  23                    -1
+ 295: BUAyTV3X8ImdrJSBsYhQPBEr  16                    -1
+ 296: BUOBt1Qxq6LAExJ4XbcZCF6q  18                    -1
+ 297: BUXKQT4oPkJ8iLzcimJCcxBY  11                    -1
+ 298: BWLobcMCwwfx2i6ZDnYk2Ams  14                    -1
+ 299: BWikXAghcTrXcLay788WEVEI  27                    -1
+ 300: BYlhLGN3L6bCgoF9vyPqUI2a   7                    -1
+ 301: BZ6AFBqlqbVfmzNKJyaG3L6P  17                    -1
+ 302: BalxKK8ltpxJel0aqGM2HOxK  30                    -1
+ 303: BarhIIoBl4zXfGpwdKVt2BeW   8                    -1
+ 304: BbRBEB40h44xle4cSO1il3Yb  17                    -1
+ 305: BcJinLVt4dEmr4CFFIATlJNA  19                    -1
+ 306: BcLp58YBhrAUqlsw1tAXBD7W  24                    -1
+ 307: Bf6BKInLDrAoJBzzQMB1RuK8  22                    -1
+ 308: BfZQzASH4AN8SNlv1xBQV6YH  13                    -1
+ 309: Bfvbys4cg1ZAC5D6tbjih2D5  30                    -1
+ 310: BgcAuwtFyT39BB81dopPAAHv  18                    -1
+ 311: Blbl78kqT77rJH638cYptjAA   9                    -1
+ 312: BmR07dXmomVXl9XnH8m51rCM  17                    -1
+ 313: BmUJC7M5P2aTAHC11zRhmY6c  29                    -1
+ 314: Brj6eq3pZml4hOoDBoCankwW  29                    -1
+ 315: BsJl7UC5mntTwnZAm3fK1ATS  28                    -1
+ 316: BswArqxBAzQsfrQSDsEDjYJ0   9                    -1
+ 317: BtNtVrWI5IanFBgoI6BEbqY2  17                    -1
+ 318: BttxLjLfYF7KsHJutjJcANkS  21                    -1
+ 319: BuAlDfNIZe9W4JgMoRjNbc0x  25                    -1
+ 320: Burhc5C8BNlpgmDpffz1TYHY  22                    -1
+ 321: Bvp4EaESooAb31NudrNTALuc  30                    -1
+ 322: BwVoxhK3STkTHtm55NXDXUNr   9                    -1
+ 323: BxVNP8YFxnu4tOXQRoBE4eNk  14                    -1
+ 324: ByTqJqOSIlqoBPzJCa4On2cT   9                    -1
+ 325: ByqnqA0vvjlB5GGba70vnvZb  26                    -1
+ 326: BzUr7Ge1hFLBwK5101F9vWzV  26                    -1
+ 327: C0zUBRCoiXAlnXRu67pjpo9m  10                    -1
+ 328: C2f4HCzJAFAlitpWlUhVmQmh  20                    -1
+ 329: C5KIqJKBhFcE4wnYNEgpcZ5z  14                    -1
+ 330: C9hwBxtiqTUIaGmncLGnlGqZ  11                    -1
+ 331: CBjMv6O6AJmVdvrwu3p3WFxf  24                    -1
+ 332: CM849jfCjpvVpVq53zgrwDRZ  15                    -1
+ 333: CNrKaThWkfUBQlis3tvW2urO  18                    -1
+ 334: CRpupPoKD2ziu5elGSFFh7lZ  30                    -1
+ 335: CUM3aCrnyd4Ginladl9AAOxM  13                    -1
+ 336: CW0vxBkadQ7xnh0a2wJXrDcn  27                    -1
+ 337: CXV55l7UqqfQX6NHzScqKQbp  22                    -1
+ 338: CbxAjf5rcOr4WgAaEsUY8Vcy   8                    -1
+ 339: ChDNgB2dmCPawcNFyid7rfQF  27                    -1
+ 340: CkJuGIUcW1Ej8xh77VR0ONMi  14                    -1
+ 341: CmQ72ZbsiXlWpradxti0OWR6  22                    -1
+ 342: CoaQpC190tzTx9O6MRVuyGmS  23                    -1
+ 343: D0jhnxWMffu7kFK6txPnVrLg  19                    -1
+ 344: D3s2ATiwc5AYbn5JwiNCNBkl  28                    -1
+ 345: D56SWfp57F8MJOysqTxsF6mC  10                    -1
+ 346: D7a7A03K8TrnpCgikcBK7tPY  25                    -1
+ 347: D7ylJBVQaWpd5b2NROGX4sQj  13                    -1
+ 348: DA1JgP1u9Bt8n8b45VOakBSv  18                    -1
+ 349: DAY3BqheuxDsGGc6KtxMMTcq  15                    -1
+ 350: DBQ6IxLnJGi8OoTLzOZnqRpx   4                    -1
+ 351: DBSr6Cpj55PwAzaY1JT8Tm18  12                    -1
+ 352: DBTQ8PyCRkz1OBGLA9KqfwZR  17                    -1
+ 353: DDFDIjura6DArEKB0oSGIxHI  20                    -1
+ 354: DFsANL3b1jQago4DloABmUoG  19                    -1
+ 355: DIj3Km1NlSIXQ2E13OIXf8a5  26                    -1
+ 356: DInvp7gAzgZS05BPQKCaA1Ej  28                    -1
+ 357: DNYEuU14HYEXmhiVcIqaCsAX   9                    -1
+ 358: DR2oDrLnEOm4tAIked0658Qe  26                    -1
+ 359: Dac5S70zpF5o90wd4bIXwymR  30                    -1
+ 360: DdQRxzytymtzpbAJBZcr7yYB  11                    -1
+ 361: Ddl7xps8kcDIxd6NDCFBKXi2  27                    -1
+ 362: DfuMAb9s10uh6pjSOpB7mrOo  28                    -1
+ 363: DgPH01WQgKL107gR0Gqco1w8  20                    -1
+ 364: DhkgYcqEBfn3vQ2AC4JsBBZn  24                    -1
+ 365: DjDc2xSeLRd5EzbBsSMWsMYo  19                    -1
+ 366: DkTgOU2utBsU8Jaw5Kf4Asim  30                    -1
+ 367: DqEgdpWPfKf1Y7Bh6yX2JhPT  20                    -1
+ 368: Dqx7eRAJMAUnmNtS9b5drWZp  23                    -1
+ 369: DrRBmnwJQVhw8MGLbLf0qvI0  17                    -1
+ 370: DyWtaw9UGuBVwKuRHOD8Vzr8  21                    -1
+ 371: DzXOZRgU9e3Hj9zcRYQNUr7U   7                    -1
+ 372: DznDoP7ignzNG7l5BGSQmvSS  16                    -1
+ 373: E5eFpOjoDjXJv5zvQT2trYYw  16                    -1
+ 374: E9ymCOkELzIjYrDCnjmzJCkf  21                    -1
+ 375: ED440TGTvbqhMMpRML6Hu7qq  16                    -1
+ 376: EDxPem6nmcZErBoht5nkOD4t  13                    -1
+ 377: EFAiga8T13cwUBxmb53Sqtd2  10                    -1
+ 378: EGVEbA6Gyt4u3fGz0DFYQ6PD   5                    -1
+ 379: EGqtosFlHFTBbp9l8KBLGINb  21                    -1
+ 380: EKpxMmDhuUBDI0m6Aj4s8PoT  21                    -1
+ 381: EL93lw2i6AMPffeAHOONyeyQ  23                    -1
+ 382: EMRDVHqEn6QgdCsXwxONMhFI  29                    -1
+ 383: EO0iPcnl4TKBRFozY8VQPb0v  23                    -1
+ 384: ESI15KUnyEpRIpVUSBLoE7Ej  25                    -1
+ 385: EUmioakXqB6tgNyVmQS2NAJ4  27                    -1
+ 386: EVCc1sx9yFZqyupYTgDBBVW4  15                    -1
+ 387: EYG6z0cD42oqZCQtEyV5UmYd  13                    -1
+ 388: EZbVwHsfvWQBBFZkIpDAx6SH  14                    -1
+ 389: EdQoW2OlvZhwekAcZVR63YtA  17                    -1
+ 390: EghL7n1ybcQ1jmc3Qlcy2xKJ  30                    -1
+ 391: EkqP2Lq7SEdjWyPrYcTTvEiP  10                    -1
+ 392: EuL0RN1GKjoYYyL37ABuGHeQ  16                    -1
+ 393: ExNUBElcwBfzuRA5iGevpAOm  30                    -1
+ 394: F0Wzz54ZNMjJ74vM5Erwick4  19                    -1
+ 395: F0dk8DmXRIz9vkNl3kXVsBeb  18                    -1
+ 396: F41YEPs4AxtJLJPlnLfNwbQL  16                    -1
+ 397: F5dz2mhZxK6GfbhYbesNAgdy  29                    -1
+ 398: FAuMAgsjuR4NsTtt3Sh0ik95  17                    -1
+ 399: FBdMHQLR89UhBAsM6Ur1Y8Ae  29                    -1
+ 400: FBjZVkbA3pgb0L2A67daqgxa  20                    -1
+ 401: FHfZqAkVakISRnPnR1Ad4Fq1  25                    -1
+ 402: FHzyIJyZKhxyKVkqBGAzdkK9   9                    -1
+ 403: FM3QAce83IkvKsYRjTpgky6G  18                    -1
+ 404: FR3BnCxZWtzEHcf4qP3Yr34Z  11                    -1
+ 405: FjBqmGiS7DQoByst52frHp4c  10                    -1
+ 406: FjKDLURZTYmeU1aX8MkGZ7SB  28                    -1
+ 407: FyzBjXT6MuYZ1V3h8ql156Jd  11                    -1
+ 408: FzfMIXqJyjSqcLRgEcUJI60k  11                    -1
+ 409: G6vKTBaNeB9QjVL9TrA3CUcZ  28                    -1
+ 410: G6w8gI6jlpFl6z5hv90TiPnw  15                    -1
+ 411: G7FCtBMfjBzfE7jDIeIELYoi  11                    -1
+ 412: G7atvASs9op6rCia76JINmSf  12                    -1
+ 413: GAxGOZjzluIy7OaFaTjH6yo6   8                    -1
+ 414: GCtEHP9uplT9cQ5bigaxB36U  30                    -1
+ 415: GDjdTvoNdtRK6enHtK2AZuDJ   3     SOLVED          0
+ 416: GIJ0SoVbEBcdZU1HO9ABCinm  23                    -1
+ 417: GIPsybqYn7sZD4Og1Du1nm7y  11                    -1
+ 418: GNBltp22WfC0cEPtv5aKoC1A  11                    -1
+ 419: GRrIoUBVPYzH27G8tWwNcne8  24                    -1
+ 420: GShTBk73ZnsEOvUA6J0QyjCe  13                    -1
+ 421: GVGtfqNM9LqykQYJfq6N1eMQ   8                    -1
+ 422: GaJvu4XzBLbh9rZZNEJK31ZO  21                    -1
+ 423: GcISfLRHcioe2JuGIruH6GGC  18                    -1
+ 424: GfrUuXK0CIWk1FcgIxiVpdAt  13                    -1
+ 425: Gmr55i6IBvlrA131yalk0MKQ   8                    -1
+ 426: GrpBFQ2fY1FauM14apTFTUAP  10                    -1
+ 427: GyrGFsxS0QQMo5UJwyWjYKcl  13                    -1
+ 428: Gzk9C6tXUovTXOf9mdJJOJJA  11                    -1
+ 429: H1ELyDeMc4tHytm5hG2ZvH6z  13                    -1
+ 430: H1RNis7qmi0mdsHpXGv2zHYi  22                    -1
+ 431: H2nRGsGg9Y9aDG0wJEHex4jt  16                    -1
+ 432: H77yoKE3MUYC4vcBFYr4HW1G  16                    -1
+ 433: H9NB2YBI88KqsuBoLw8tJiIz   7                    -1
+ 434: H9csIbEyBefYkQZZSLtunLt9  26                    -1
+ 435: HB8T1erBFOSFMLkH0WUOMsiH  15                    -1
+ 436: HBfgrAbTjGclirk0a0zgLAM4  25                    -1
+ 437: HD582GqHgeMFdd74ZoD1ybao  30                    -1
+ 438: HE2gLNw4NBibu53VLhcGtmyE   8                    -1
+ 439: HKCmJl2MS6P8cg31BADANiTC   3                    -1
+ 440: HO3At5D2JPRy3vpXbhHpY7by  24                    -1
+ 441: HRIvf5wXHBzq179A0eVP0zOF  21                    -1
+ 442: HSj7e330qyk4NgBHdDwRiyLt  18                    -1
+ 443: HTFLrJBDCT5Tp4gNSUhj98AL  21                    -1
+ 444: HVPq5ZCHRFQ8gQ6YrjcB4lS4  27                    -1
+ 445: HWiBbnLkKzIXmJtN93BAtmQ6  21                    -1
+ 446: HXN0npHgVhAqNaZDJtmbktAB  27                    -1
+ 447: HXmNf7ZR4U2f4fiDfXqgzfXs  16                    -1
+ 448: HYGJANl2usGrDf9MUV7OB0Tb  12                    -1
+ 449: HYuAlixdyejqOeOBWj2u0UlS  19                    -1
+ 450: HbuVZ4tXbExgiSkmnPjBmUhn  27                    -1
+ 451: Hf5xEuA0QO5yi0JVZXXA3pGk  16                    -1
+ 452: Hg3JfLIwWxrXOceYXkHrrGu2  15                    -1
+ 453: HhN0sBBvHS4ts1yEALhD2ZAx   8                    -1
+ 454: HhVY91nMLSl3H3Io6UgzAaVW  30                    -1
+ 455: HhgYQaL0GHEE8V2k3dLfZiqa  23                    -1
+ 456: HmKQiZsZAbWdtWToWfUO6h8M  30                    -1
+ 457: HtZBed7SMTeaGDSeG6qBTpqB  23                    -1
+ 458: HvTj0nfDmth2B6dnH6aUemZJ  19                    -1
+ 459: I2vGFPN8kN0rVkvA3Of1qsqK  26                    -1
+ 460: I6ZLOV4rXHbjQYswRn9JgJVn  27                    -1
+ 461: I8sxAcKEf8YkuZBmpyp7ZUDl  27                    -1
+ 462: I8vTWpYgAT4kRtQW9Z9lYxI2  13                    -1
+ 463: ID9KR5c5lofrYlEUBof8kAUX  18                    -1
+ 464: IDNul2ZoXm9MYlgsEtArqn32  21                    -1
+ 465: IFwzM5KpQH1D4OujXyMZiVnU  12                    -1
+ 466: IP5d67dQ5AejYLdgac0eBNAF  11                    -1
+ 467: IPNyrPwsPix2hg7FWpScrkNa  23                    -1
+ 468: IPvf8TwArIC3IYjAIA0JQ8Wo  21                    -1
+ 469: ITthSVj3H9SldvTEuPAZ4pBp  23                    -1
+ 470: IUL9SAzTWahl0l4lO3BDZwQW  18                    -1
+ 471: IcLdgCduWICYAyDjPVWjQQt1  16                    -1
+ 472: IgAtMoPWy5kzJKDAY60aFXMB  12                    -1
+ 473: IoLbomKODeoH8RjWcrFAMLRz   6                    -1
+ 474: IqVt38hp9agfTqolewP2NLZv  11                    -1
+ 475: Iqi1xH2SfWWYI3rpzn17iMnF  19                    -1
+ 476: IqmQYDZfqfvhzUTF7q8cscjA  25                    -1
+ 477: IucFb26a2gWL67A4xSIGSJvX  26                    -1
+ 478: Iw9WSdS9A2yEJNgBCb4hz6n2  19                    -1
+ 479: Ixu9JCW98UHSxyBOrWr5gRoB  25                    -1
+ 480: J120IWSzMXQgrYxtw5epjnh3   8                    -1
+ 481: J5xZmxPdScSiNtB7wShmNu3r  27                    -1
+ 482: J9QRL6lPRcnhBhDhUuUP8yl4  24                    -1
+ 483: JANWFngM7gsFHX02rZtkHD4d  24                    -1
+ 484: JAvirXdJI9mkUajcgHzpBRI1  30                    -1
+ 485: JBeTzaUPQDMDPq8JAzCkdiZl  12                    -1
+ 486: JGmSi3FVD7TdxWRRKXxBnV6z  27                    -1
+ 487: JKprLzKs238wBOoO1YS6mQRV  14                    -1
+ 488: JMRVTBK1AYOcINdm31XgKwMx  27                    -1
+ 489: JQYn6h4JvdUrHvoxLzdazhVq  16                    -1
+ 490: JRnQEw725kZ78uocmvUdUMhQ   6                    -1
+ 491: JTm54BPDWUYpLPQ9x10Mul1t  10                    -1
+ 492: JZBkZ5xBHbNxOeeqYOIACAL5  15                    -1
+ 493: JZoJlhFrvYA4wB9MEwGCW8nb  11                    -1
+ 494: JgWF1HKAs8aErN4H9DHy89xz  11                    -1
+ 495: JiFudIDxJmWXP0qKDARgUyn0  29                    -1
+ 496: Jjkzaa87oNU1lSJmgTKmmZ2Z  21                    -1
+ 497: JqT7rnyfWB2ocdAo2wbZYJBl  30                    -1
+ 498: JspLvWKqKVK89CBGRuljtDxp  16                    -1
+ 499: JxrEql0ZWv6Aa5imCu2wwh9i  21                    -1
+ 500: JyPQWIwCAPcS0RptzbUoXKjE  26                    -1
+ 501: K1skHyFppwHrKScVCdwBpGTi  22                    -1
+ 502: K2WAvR5ghegLlaFnNBxSYRY1  24                    -1
+ 503: K2hmUoQzOpAab31XmznB0tNA  23                    -1
+ 504: K5uMedxBIcg7qICPeAnQvZyg   5                    -1
+ 505: KA9rSPtOIQ8jBQ7X264A1Wo0  14                    -1
+ 506: KAHB0UMro9xV7IdgdKww85LH  25                    -1
+ 507: KAfdtlAWV4ZNFwZCdTw4u20H  12                    -1
+ 508: KAkhGLKcmVA4qlctkAXS6Oqq  24                    -1
+ 509: KBpIUqkwr5sIUizVeG8ORVq3  29                    -1
+ 510: KBxAohWNwaRYPI0bVq9ooPK0  26                    -1
+ 511: KFxSVJOHaixJsZToshbCI3ew  19                    -1
+ 512: KHPL9AmMECzZDLJZcM9GKFZ4  24                    -1
+ 513: KHn8ntoAUwWeV2UBGcxzCYE7  30                    -1
+ 514: KKdbrfaH4hDD08xa3fCBgOhD  20                    -1
+ 515: KL2yHpPTUcIuxYOuYf37uN2O  13                    -1
+ 516: KSu7YSGp1ktdrJCZldwBtnaj   8                    -1
+ 517: KUZsZ5tkVTdFCNRk2KKNjlSu  26                    -1
+ 518: KXm2dLjsbSHtSnZvBnr27arC  25                    -1
+ 519: KYGtvmSOiB3r322UbxlsLGky  23                    -1
+ 520: KaqFkKKBozBRLYaNY3ld4AAe  20                    -1
+ 521: Kn57vtvlRByuMDaYtW2UsYvk  21                    -1
+ 522: KqQreJiSdn5MFLAJOqwhhe1A   8                    -1
+ 523: KxI2OQCJFbRVGn7WDbs5xr8F  26                    -1
+ 524: KxuHo7idVoLbIcRYFb5lBDB3  22                    -1
+ 525: KyciQf4kmeUPuYOCQj5EicID  19                    -1
+ 526: L09qa6zAWFhALCAE2hujBcoi  16                    -1
+ 527: L3pIRBDs6TdNDWwnAN35KDxL  14                    -1
+ 528: LA6nGn8EfjAA34EPiO1qAAWy  13                    -1
+ 529: LBFLbqA2lrhThThYRt1A63i4  29                    -1
+ 530: LBYVk8Z5SeR4eyNTIZsqTYAc  13                    -1
+ 531: LDPpjFRzNEZykwBf4T7BeyUN   6                    -1
+ 532: LF5R734aNfuv9054z04hIrfj  23                    -1
+ 533: LJTKgtv3lf3WpWCSH4TUbFsz  28                    -1
+ 534: LJX9oDV8UMBH7AWt77X2iabe  10                    -1
+ 535: LNJsVpJfN6BQ8oUwV9tEB8zz  18                    -1
+ 536: LP5Je0XdrQOUTgYTN0xIdjVR  18                    -1
+ 537: LPCaZVnT9p1ESsYGdeQ7QqWj   3                    -1
+ 538: LPfdYYhpJYpLaOkccBHZwg8V  16                    -1
+ 539: LSRfyFMBLrSDeYYrV1aFdAKJ   3                    -1
+ 540: LTCAdUF5DCgcI0zs9nvlLRhz  25                    -1
+ 541: LUtio6GW1bTTN7I7Y2khsFJj  27                    -1
+ 542: LWP5YF4mrURitW6oyzGyF4bP   9                    -1
+ 543: LcHj3ViBPBdMstInTX2HsET0  12                    -1
+ 544: LgGyp8gTrFz55UwrqTP2o3BE  27                    -1
+ 545: LiFbmNWl6tNHCxI9FET7SWXH  17                    -1
+ 546: LiY9ryJHghW5dF2AkraQGXf2   5                    -1
+ 547: LkW8mTBwB7LAeo4A5cctPxlO  25                    -1
+ 548: LlOpAf37A7oWE04foBjaYZA6  14                    -1
+ 549: Loxy1h7a5AnZhPE4640NQwxU   7                    -1
+ 550: Lt2M59OfGtdulEIjwLVAWUUD   3                    -1
+ 551: LvPJjhAdQnQVJckR6EmKfiyQ  30                    -1
+ 552: LvbixgBwL2AbOINWYNZn3YDt  16                    -1
+ 553: Lw83hg4dscpeIB7V8Axo3uSt   9                    -1
+ 554: LyqQVm3cfhcPbDBivVPwhXuK  11                    -1
+ 555: M0O3gbJk9LAtpzbh4smwAt6z  10                    -1
+ 556: M5HjYAXjdkE2MMdCuugRN4by  21                    -1
+ 557: M8p5upM4DLPIgzHuW7KuHSnO  16                    -1
+ 558: MGdsSqKnBHmQ7MaBqBmgdsBF  30                    -1
+ 559: MMolBk3T5NZQqf2YUA2FbmXh  25                    -1
+ 560: MOUx7P8AFjdom7KFdfwTq0SY  26                    -1
+ 561: MP2WAfymZU2xbezZ5qIuDrWG  15                    -1
+ 562: MRIAl90me1JAFPHQqx5mxV1W  28                    -1
+ 563: MWjAnkaIdgrn8YTJBUPRYQ9e  20                    -1
+ 564: MYc74jpIAiMCnVyBdAqoCtfA  16                    -1
+ 565: MZ95AuImahgaluLudh0Uvykn  16                    -1
+ 566: Md6p5PExLyHiCLmddjCm5Oe6  20                    -1
+ 567: MerwBUyrFeh3Bg6lIl4AQOWp  23                    -1
+ 568: MfKfTMvTBA5dm12xuCxL2772  20                    -1
+ 569: MlptVbwiE47SPcXtAFeTrKlT  21                    -1
+ 570: Mq4l9ufaNLVtWQleVs0jequC   3                    -1
+ 571: MtI4Ee8DQPFIGswlqKBwu6kr  16                    -1
+ 572: MtkojRp6vzMRyt5Z3yrGk6ri  18                    -1
+ 573: MxIWBXVf1aQAU1V9zeDBXC0F  26                    -1
+ 574: MzuJ4u8dAHkoAZxaz6h5ftZ2   8                    -1
+ 575: N4VQRzEMPKNRAYcriVA19tbI  14                    -1
+ 576: N4iu2dRxZXAuo69fvQxWkyAJ   9                    -1
+ 577: N53eLqXKrbwr5kEI8PtPHU6w  13                    -1
+ 578: NHDlwEaQAktJfSNtyPz5MDKd  25                    -1
+ 579: NIk9hlDBhXEJLBOW9PxF3gob  30                    -1
+ 580: NOGFUAw2BlFudLecoPlBBfzy  30                    -1
+ 581: NPDFzjVxlCZsE1x0OSLWFavP  23                    -1
+ 582: NPeAYXCKs0Aqd0wxYcVA3KES  23                    -1
+ 583: NSmAscfq74Tkm3TNo6FBKPIC  14                    -1
+ 584: NbB5kRf9q6rFQvQiuYP6dmkq  15                    -1
+ 585: NcSOeUXYAuOSJbn6mlMxO2MF  27                    -1
+ 586: NdQyW6Nkl6XYFlvXp2AynIS4  19                    -1
+ 587: Ngsz6AU60H7XIZKsvdklAYQb  17                    -1
+ 588: NjRfaB3BDAuzamBK9HxATwqy  26                    -1
+ 589: Nky1SN4wPdfqR6y0RhBpmMEK  26                    -1
+ 590: NlXeQjzA6OIUNtl5FRzbi3C4  23                    -1
+ 591: NmDIpl17V8YA77CbPAmQVM0x  20                    -1
+ 592: NmctSc5JxCAejPbJTsdmcuiw  17                    -1
+ 593: Nnng1ALEy30AiU0m8TPwd31I  20                    -1
+ 594: NrRiJBKV2De6CTBEUWPaoHSR  17                    -1
+ 595: NrXDPYUSscjBheJXvvYiyhOt  28                    -1
+ 596: O3SAkQQWHSDcqsF4ZGHgBXHT  20                    -1
+ 597: OARotJUslHKNGp9rBvtAEcIR  10                    -1
+ 598: OBQq4LglYk6Ha21gejNtv1nO  17                    -1
+ 599: OBjxqYLzKxPfqw87dATQBHxB  18                    -1
+ 600: OFF8K5RAq2ZRn8cLlEVjN3dR  20                    -1
+ 601: OPEaO8LsAEwwkJABG0TSipQd  16                    -1
+ 602: OPRc6afJ8A8U5GmHM3VriAvh  30                    -1
+ 603: OQ3JFp2xj4T775l8xyXnrXuL  17                    -1
+ 604: OXM28yWKIUwQfl0u8jAWPILL  28                    -1
+ 605: Od8A6o3RDkgFrVA4hUGDesaF  19                    -1
+ 606: Oh0mrCo4lmsl99twv9NUf4fv  15                    -1
+ 607: Ohm9Nq3ZFtiQWv3sArBkBKXP  20                    -1
+ 608: OjfRu6diF1Dd5FFnB0Jsrgbu  24                    -1
+ 609: OjpNy3b1JK3vgRzsiNxQCIXb  21                    -1
+ 610: OpAZwctDmBf1e8lBtlT2iH4X  22                    -1
+ 611: Oq6hl4xYUrSTMb4AmJ67LHB9   5                    -1
+ 612: OqnGsk7mtEKuYs4EM4WPBFlg  23                    -1
+ 613: Otx6HBIXA56yPJNjpxIwbBTh  14                    -1
+ 614: OwIbecTBXu0pDZ9EdSCKVvTn  17                    -1
+ 615: OxxYfzo1aMYJXrvXw8vyFcMJ  28                    -1
+ 616: OyVjj55xnACKAW1DYnkVbJf7  16                    -1
+ 617: OzNIw9t5rZrjZa0CJZTQdJX2  11                    -1
+ 618: OzfQUv0UoCFYrztczbkHwyMd  18                    -1
+ 619: P1iP2oXC1BsaGzNUrXsbpBRX   3     SOLVED          0
+ 620: P6G7uz970bABgYrHtvAjTTid  22                    -1
+ 621: P6OHbY5ixxICUMh12ndkEy8B  16                    -1
+ 622: P9VTzCpUZ54pjtYHN2kDxihc  10                    -1
+ 623: PAY0iuZldbAWAao6JPeKsKGZ  11                    -1
+ 624: PBz63MwE6HHYBlJmIB2BqkNo  28                    -1
+ 625: PIXrJeWvRJTxkAhj6V6bWLF6  29                    -1
+ 626: PTD2H3rB3Zi8al21F8uOW9OT  28                    -1
+ 627: PTWJmGfLlKkUBi9OSps2nV0I  17                    -1
+ 628: PW1Kvt26QIynrxmiPf4oRDZw  30                    -1
+ 629: Pbi8sskoWFtxu2JbRE4lAmGl   5                    -1
+ 630: PdjkApLDO0BVBCHnVY23v2bG  29                    -1
+ 631: PkktsAl1RRRjHnbdaXbg9ARa  24                    -1
+ 632: PsbSQUS9gKIxOM4F7lyzn3In  28                    -1
+ 633: Pt4KPwhvpgbcF3C4nIxT7aqx  23                    -1
+ 634: Q0TtVUgYKjnLbgZgtiAmOVvj  11                    -1
+ 635: Q4n3KpxfttbvA1NzA7NLgAg4  19                    -1
+ 636: Q6Fv7QBnEwwGP49MwX7OAFFi  17                    -1
+ 637: QAsrKJ9447IVeExychDgJHfz  26                    -1
+ 638: QAvnuwzFWdLvTyrgjtBqRBOf   4                    -1
+ 639: QBYI5hvWAgkvkyAH8I1BPYWt  17                    -1
+ 640: QEwz6JinpieQqfClL9nNEPCK   7                    -1
+ 641: QLBqQkuX2PmVdZhSKljhvNzg  22                    -1
+ 642: QOcLg5qtHpvRAx0BPDKliZub   7                    -1
+ 643: QYJqzJUdMAeLMLrqt5xcSflI  24                    -1
+ 644: QcFlZ40zqCecHxC6gAgxAnVG  27                    -1
+ 645: QdLgaSkxnSk4BkH1thqBmuLu  28                    -1
+ 646: QgDWVfD54nyRJQ0hiRmj2QRA  14                    -1
+ 647: QkFf8zXEhwey77TAqLry3dbM  29                    -1
+ 648: Qp1fDyrOWg7ByIxOo1R2KwOi  28                    -1
+ 649: Qse3SXZlwtdo3rrwYEcPB4TO  27                    -1
+ 650: Qu0owEkpt5dNAeBxTAIXxZYA  29                    -1
+ 651: QwD0GhejKNX7MjYqeadyKypQ  20                    -1
+ 652: QyDVxJ8UTvHG4ucCJMas5JzP  20                    -1
+ 653: R5JKzQwcEH257O3RBgEsZp3g  14                    -1
+ 654: R5uEYyrKRQNxpn21Ab2W2QRB  25                    -1
+ 655: RArcF8h8Ep31H21QzzqWYzCu  11                    -1
+ 656: RCVJmZL5EVgLJYTj2wlDhK0R  27                    -1
+ 657: RDdibT4G439ALZSHiXp5Uhse  10                    -1
+ 658: RIotQdMAU8BrOB9aM9yBgdsE  12                    -1
+ 659: RJE5BCtBaYyJemKqqWG5GMcs  20                    -1
+ 660: RNhY0DrYwdmWKOJW3NBrUHq9   8                    -1
+ 661: RNp5hAr29hsQ4Z8FGWn4AZ7N  18                    -1
+ 662: RNwrJX4jKsOE9wO8wprNgqBY  12                    -1
+ 663: RTuh6g4GkPkIlP2KAP9xaUJ9  28                    -1
+ 664: RXAsUAVQ5ZCcOPjaynMyf8aB  19                    -1
+ 665: RgBUcYBhfdyaobiZztvSeHU8   8                    -1
+ 666: RgQ6tmj4VgsEeqH1d9sSPcm8  27                    -1
+ 667: Rjyp8zQwLUkX8d7UEpZEkxaL  12                    -1
+ 668: Rk8S2DSynCdnwYKrR0NBu7HB  30                    -1
+ 669: RodkPkLgCh3SM33MkTmqNu6s  22                    -1
+ 670: S22BEdkraEwVbGAue7R8XhzE   5                    -1
+ 671: S7hnNKzlOVOizQOQgANgVHM4  12                    -1
+ 672: S9leTwywLSsBrhE9mmIAR22r  24                    -1
+ 673: SCsfg9RU8sY5EWMuWiXFGjDw  13                    -1
+ 674: SQKX5w5IQ7FxP7QD344RkWTY  13                    -1
+ 675: SSpY9o27YpSiijv2AFezc5WW  18                    -1
+ 676: SZ1aP7HiLNA68VPhWTzgVkcZ  25                    -1
+ 677: Sd2YaQF1z6oxkFEdAzfKum9K  25                    -1
+ 678: SgBIvDnXB2GWiXPSukD3TitQ   8                    -1
+ 679: ShUOnR3yTZdhBUPmmjJOJnJN   6                    -1
+ 680: SkQBMwyo52oAklCmofUFQVpV  23                    -1
+ 681: SklD0Sb0gSVi33vLph10lpRp   5                    -1
+ 682: SnDWqDW4xsg4GcJMKaJTbjBv  23                    -1
+ 683: So5UW9M8QLIyRsLbxBOtskuo  26                    -1
+ 684: SoL8kiWEESzQxmQQ6Fzxc4Qa  24                    -1
+ 685: SpyWAsRzilgb3oDIitTnHquw  23                    -1
+ 686: Sqau5cAynxwKlsFAVMd6NBNG   9                    -1
+ 687: SxFvp6FrW3zg6dOaVfnAwGTz  29                    -1
+ 688: T029v6BsaIIHpneJEaxLAOAA   4                    -1
+ 689: T0TkeZfhEF6hUelPQSFtgEtW  28                    -1
+ 690: T1dcip6iESouUXyV75u8nA32  11                    -1
+ 691: T6jVaJO0Beyx5zpBgRCcjoaI  15                    -1
+ 692: T8HAixF56D276rLDbXgksN1B  11                    -1
+ 693: TBXBx1LequWMtnQwzJJQeWID  27                    -1
+ 694: TENZEFt8BKQbyXNS4VkKypBH  20                    -1
+ 695: TFcGISK0hy2wUBiT5tfNvsJo  29                    -1
+ 696: TGOmUAVOYCOOgNurOjVZYUMg  24                    -1
+ 697: THvyL8MynNhu3E4eoD3eAKrx  29                    -1
+ 698: TLANU7sPLfnudpH9SdM2I1pD  13                    -1
+ 699: TMZ4Lj4IXGBUrZGAAE5tMCXw  26                    -1
+ 700: TNJuP4WboYlV3N6739AqR7B0  12                    -1
+ 701: TQOBTrYBijAjrg1QIN745ZTB  15                    -1
+ 702: TTABkn0wIyHT96vjXj8IAhuq  25                    -1
+ 703: TUbEBp8fwjJqfJBjinjBOt5k  19                    -1
+ 704: TbUfnjmmtNwBl8j3uWteJfWW  25                    -1
+ 705: TgOI0M88qu8TMROZCNL1F5Gq  23                    -1
+ 706: Tk5NzPyhYQtjv2AIALI7HSkg  13                    -1
+ 707: TkfDckn5mBw7AGs0VsAoAPtX  28                    -1
+ 708: TlQN4yag0gA4HH97TAFyLA3H  23                    -1
+ 709: ToSYC55naoZzvPi9eZiBwCXf  27                    -1
+ 710: TuuY3DVUMJAWi29ekZuzxAQf  23                    -1
+ 711: U3f3Se5xKyRBaULNiB4CFliI  22                    -1
+ 712: UBZvbAPJq6o0LtSLd8j5n7ZY  18                    -1
+ 713: UEsmi6c4BZAv37ZlfTxB8bDh  12                    -1
+ 714: UG3U6QQkl7qxbwkEJSSBU1en   7                    -1
+ 715: UHg9HHTYTkvFo9qo6bF4stMH  14                    -1
+ 716: UIAwHdPiQaBCinQBc5Hjjb9L  26                    -1
+ 717: UQA2HHEaponcYEVAu0NRt9La  25                    -1
+ 718: URea9MAkrjkWqsO0fBNUfHep  11                    -1
+ 719: US3CDF1rMcIYvZ6ZouXdGjgY   7                    -1
+ 720: UU1SPRK9TXTlf0AAs3R6JqEx  30                    -1
+ 721: UUSf8hlB8w6kG5j645kr76ac  21                    -1
+ 722: UX0SsQaPMOjdUCoLHyak3PTj  22                    -1
+ 723: UXKGAR0pGUB2cSemSwmULm2y  26                    -1
+ 724: UZBgnJyjxFNjQysvVdYVdOEe  14                    -1
+ 725: UeBnqaZL7sNt78btfrHNkSJD  26                    -1
+ 726: UlLHEOZ4PhM0OZ7TlP2taWyU  11                    -1
+ 727: UnmBAp7LJj2YtrgFuPPtEE3E  19                    -1
+ 728: UqVOFupnDYpRbOmB8TTBaSAV  10                    -1
+ 729: UwkHLfuB5BcoBFNwJDMEjyRr  30                    -1
+ 730: UxaOEPKlmsDC3NCIYMNHP5WB  10                    -1
+ 731: V1zwuGJshx34CcFoXgASiWSO  12                    -1
+ 732: V5LMnWs0abAUegjhPARyyiAK  22                    -1
+ 733: V5zgcsUBBhKRZ4sbFhoU6WcA  28                    -1
+ 734: V6Ac643holwEi1l2QMIkDh0k  21                    -1
+ 735: V6jYFg0gIUpBnUjqDYggEImW  20                    -1
+ 736: VBXREB34lEeqXtZv13zfTc2d  16                    -1
+ 737: VEJ2Cwy1eBypsacAPBIBg9wI  26                    -1
+ 738: VFo0JJHYe0gEUG4oRIIYZ9wv  12                    -1
+ 739: VGccuBIiF9uQuyWhjWAsUIJs  29                    -1
+ 740: VK9hvOeCPJT4EzCEfzB7M8Wd  24                    -1
+ 741: VOvkLV6AMzPp3iPaQ22Z5xsB  12                    -1
+ 742: VPzQnyy9kBzmVTjMzpHu8W06  30                    -1
+ 743: VSvQx3B5C7NmamzKV8B4rKql  14                    -1
+ 744: VWJRNWmXnn26pt47MajAfivE  10                    -1
+ 745: VXxXh6fQ8LtIoZVTUBVGQNxB  17                    -1
+ 746: VZ6CvvkoBelGpifFDWNuj8XC  24                    -1
+ 747: VZq7tYfoRThUNiz4gTtA8K7X  10                    -1
+ 748: Vc5YUqD58q4N7JY8GFTO2voE  29                    -1
+ 749: VecAhuLHMoNWTZ0wzNVkDRBf  10                    -1
+ 750: VfMS4RZoUnyvNQqgjBe4BeXi  27                    -1
+ 751: VjHXYUPYanxHIs10PcOakLyo   9                    -1
+ 752: VmMS75VjDSP77Kra5q4ZAKte  11                    -1
+ 753: VoFz4CBQTu82axxHUjKOWVvS  19                    -1
+ 754: VrHrPx8qNFrB4bQ3Kyi2qn7r  24                    -1
+ 755: VtYMewJbNUCCnibZA9aeqDB8  29                    -1
+ 756: VyJtUnxtxP27AzkqG8oeSBjC  24                    -1
+ 757: Vz1gJZQiPZi9UtghYgMR8XqB  18                    -1
+ 758: VzFgIBt3QZYjYKhJSiAW67Dk   5                    -1
+ 759: W0k23rTqb9xfRP7j7aWRWM3i  20                    -1
+ 760: W1V3hCUgmjCEvPJz0bYQodHM  16                    -1
+ 761: W4mkjNBBJYm8KySMXXEb0WJR  23                    -1
+ 762: W7V4J1z0yJm19Er7BlCzJCAv  12                    -1
+ 763: WBwUwDUSmpIlH9Ihqdki324D  30                    -1
+ 764: WCp1t9dDVcSykw0KkBj4kpnM  11                    -1
+ 765: WD8Xg8dNVXAjMcehJhd7FQ0u  18                    -1
+ 766: WEhuJM8VxJa6df6cA5sfx0vC  20                    -1
+ 767: WFGeIarmB5EIJyjx3aTtB3Vd  13                    -1
+ 768: WINddANpyzbI8ERQbqQyv2IZ   8                    -1
+ 769: WMFirGtFFAx7DxxPsvWyCuHt   6                    -1
+ 770: WMUPWsbaW5LfizRjZYzDr4Di  18                    -1
+ 771: WPX4N7iaYS5hwFrBZwRLqA92  21                    -1
+ 772: WQASHrIANvXrrbDRDG71to5H  29                    -1
+ 773: WTgGBNvZ9lWZi4cN6D2zVTym   3                    -1
+ 774: WX6a2b2Gl4RfesqGMjLn4OcH  24                    -1
+ 775: WZ61CJG6o74MxOBrxaokZkxz   8                    -1
+ 776: Wc7hT7IiJACpAPEB2BR2kkqs  27                    -1
+ 777: WsxA9IGy7mGD2Sn3tNPhZ9op  15                    -1
+ 778: WvGGpWKzAIiidd5vIR7B8Ja6  15                    -1
+ 779: WwWxbyGksc3Z624zmmRx3MZ8  11                    -1
+ 780: WxHMknaDYRxP0OJberTPlSUc  11                    -1
+ 781: WxqsaIVaTBv1I07nyAsEV9gi  24                    -1
+ 782: X4U9RI3rWANB8jHXd83nUfdJ  23                    -1
+ 783: X6hIICPGAuMS5p8GSGz7mHv7  10                    -1
+ 784: X9wsCLtpRJAYsg9nH3lc24P1  29                    -1
+ 785: XCZ3BefRg8kGltVLe6wi1d2m  27                    -1
+ 786: XCeixLl0ZU0TPk559rFHdmMb  29                    -1
+ 787: XGW5acTzGvpEAg3PjMiyA3MH  24                    -1
+ 788: XHCCBEtIuCJhhmoysXeP5ooN  30                    -1
+ 789: XKjKGFxcipwnN8a03Hf3FxBE  26                    -1
+ 790: XNe6Azg9vU6dw2d7oS6nHEr4  13                    -1
+ 791: XRF7OMfye9QQT1Ypb5yjeIwQ  16                    -1
+ 792: XSG6kj1XRB6LFoeyF4gkAdKT  23                    -1
+ 793: XWFBEYAtWHnNFuSDWh4V4S0n  13                    -1
+ 794: XaTfTirFDLPMuE7R8Zr4dvRp   3                    -1
+ 795: XgiiNnhjvedMc02pSM1LAjfi  21                    -1
+ 796: Xk2M2FWJBhTyfwD2WqkLjba6  12                    -1
+ 797: XlGI7l0KLa8AXRbGXiDBSiNt  27                    -1
+ 798: XllSydi7iC6BdsrXb0pVDFJK  29                    -1
+ 799: XmOAwaNdn1PRbyztPijJOYMu  28                    -1
+ 800: XzfqZUo0mvPdnpalaEAWG6NG  17                    -1
+ 801: Y4E8lQc1jYPEGfN33iSNbFpE   9                    -1
+ 802: Y4sKASOfjOxAhzSwZBgnErTG  11                    -1
+ 803: YRlSBv84WPnhCG2QXnN1ivpg  12                    -1
+ 804: YZv91BfNAV67BrBBGSvMTn1m  16                    -1
+ 805: YaA1XtthrdVDo6DSZ5VsNVMp  11                    -1
+ 806: YizavXgqVxZaGFYMm3tcmlnJ  25                    -1
+ 807: YjHZIkkeMVG38tEfXAgaoM3p  26                    -1
+ 808: YkOBrNdzLr4Guj9ZRBo565ES  23                    -1
+ 809: YmeE8AmtT4RXiaKAOWldYsMB  30                    -1
+ 810: YmsrI5nCVKnRUFpeKJDTBAZ2   9                    -1
+ 811: YnooDnX9RT083rGmZ4rLO7N1  25                    -1
+ 812: Yr7IcHw2AuHrHBkDZuJNx17U  27                    -1
+ 813: YsafS0ao6pHftewgjPyAcCmj  30                    -1
+ 814: Z5cmUYk4YVKhwZz3hPVVR6y4  28                    -1
+ 815: Z6LRNLCBPrfmYql1CYLZ9Fvq  16                    -1
+ 816: Z7o5z0oYnhgY8vP39Z0FXrNJ  14                    -1
+ 817: Z8c3ILdhBQ0U7NnvQQkdHFJv  15                    -1
+ 818: Z9AeWVdwjmCpqnQrvNqFKmt7  28                    -1
+ 819: ZAGEEpczixRq1LnExrCKOVyn   3                    -1
+ 820: ZCvyInx0l04TfKhgrvEvUbL3  19                    -1
+ 821: ZFBgvhWclRU2v7M1Jyg2FKq9  22                    -1
+ 822: ZMCoQfZ8cl5CW5azD03cku9R  22                    -1
+ 823: ZN19nwHyG1T6AFuIXbx4BD9I  16                    -1
+ 824: ZOBUWNGuIdNEi3XIYbhBYeCe  25                    -1
+ 825: ZStREWRVj33381rWTxbJzV0F  28                    -1
+ 826: ZWSC7HcCTHe2NdSnlcyjEGJV  24                    -1
+ 827: ZXwTHda3oDeS5HMwmRDmMdtS  26                    -1
+ 828: ZbZEYBL5PyirucGRGwWUHPWQ  16                    -1
+ 829: ZbtmYCHjcoe7XtgBBNaYApsS  26                    -1
+ 830: ZdhhzgDTTcZM7wmQzSWT2HLB  28                    -1
+ 831: ZeBJ7BH7TISAguqQmRzPsqvi  24                    -1
+ 832: ZgbacEkxGkxBBXgZf8Nz6iJN   9                    -1
+ 833: ZmCfbK2jDR2nloRdBF8nuXT9  19                    -1
+ 834: ZoBS1pHVCAKqyAA1BrYAhRF5  13                    -1
+ 835: ZonQCQIO5Mr8UiY8qQikBGoQ  20                    -1
+ 836: ZvI4o2pyKmOiLvXeT1QBxArN  21                    -1
+ 837: ZxANuqBQzqstwW1EJDhWHxqB  11                    -1
+ 838: Zy91y6DAdcB7bqtleQAeSmvl  22                    -1
+ 839: a1kyA0kvhZmxdcQG1d7K6R1v  14                    -1
+ 840: a9laSPycvuF5EtLGIBXLvLZP  29                    -1
+ 841: aASRTMJLm2F7ufdBVUKugPzi  12                    -1
+ 842: aCvHBOcsgVc8SDrEi9fAoS5J  14                    -1
+ 843: aFCADUKdIAOArbLt5UyGK8F6  18                    -1
+ 844: aFF3RL5jgTp9NNG6UHCUhpad  19                    -1
+ 845: aHCyWL16poHjhSGnpbWZCsY0  18                    -1
+ 846: aHrZ6YnNyCEEtcWVa6iPvYmp  12                    -1
+ 847: aIAH4kLYMSJXRRDSODhplKZe  15                    -1
+ 848: aKnsmB5nTQ4Jbd2Db5ufzMGu  10                    -1
+ 849: aL3tjqDp2c3mM1sVdahuXjAk  14                    -1
+ 850: aPVLhtt5jiQS9yJtpQvBEk0S  18                    -1
+ 851: aQDS30d3kL2cmiQwhk1x0OqH  21                    -1
+ 852: aSaIqa10ctj7t2MHbXhBQbDi   3                    -1
+ 853: aX0jmAOneiGJrHwIByaqaT4g  18                    -1
+ 854: aXiAKaZ9B55Km4ZQoqs4wvhm  30                    -1
+ 855: acnMVlujEUXOXKZRJ8LUzeBD  29                    -1
+ 856: adrtPiAh7fh6IJbHQWXer1jj  25                    -1
+ 857: afePpt3MbbKgnnVPHXSAn5yY  23                    -1
+ 858: aiEO4pDhvUdzcjRrcfuiScMx  16                    -1
+ 859: asFqiJrOOX7EK7fNp2c9N0Se  19                    -1
+ 860: axhytmgxYIgrbkFIJyIIiBK4  29                    -1
+ 861: ayaqQ1Lg9TEzQMHG48kx9WDC  19                    -1
+ 862: aynV4sr4vBEVt825bgY0z4Xv  26                    -1
+ 863: azhARemZxczORYit4nQNcBq2   9                    -1
+ 864: b5BA8Ugs8aa0OiYkITDWIxjR  30                    -1
+ 865: b7usWzf86rB29IG7kosAsUy3  12                    -1
+ 866: bFcFIewbG4KADnfUPUHYHHVX  27                    -1
+ 867: bHOyyVYvUIg2m2TaeTWMbuZ0  15                    -1
+ 868: bHm54YGaejD1JDObSUOJk3Al  25                    -1
+ 869: bI7O40w9tpcRBdvGWScsHBve  25                    -1
+ 870: bLTAC6CGaFv1sR43Kw5CMVQ3  15                    -1
+ 871: bLeP7tbdPwxqYFTpL7A7ojnO  18                    -1
+ 872: bRBRCBJMFDfKz6vwAFX9xnoj  11                    -1
+ 873: bSOc6oaG6KTIylsg0BRAijAx   6                    -1
+ 874: bSaj61kgIaE8CKwzwiTSFYid  23                    -1
+ 875: bTfxuN79726TLZRZRH0dkqfo  28                    -1
+ 876: bUVPK0rdJARWtPDf8foQLYta  30                    -1
+ 877: bUi2XgK3F68RqCFUJ9uur4VM  18                    -1
+ 878: bZ3ki5AlQfolkVWT6ryA41VF  15                    -1
+ 879: bb9Mi9eSh0fnqApTTVK7eHyO  23                    -1
+ 880: binZ8Nx9y3iuobAg2CPsQAU9  11                    -1
+ 881: brmRNGQXGOn6ma8ZnLDA0SZu  17                    -1
+ 882: bzJCAe74gQre1A1ndtkP7ft8  29                    -1
+ 883: c43p9ZN2xHvCcZNbfPGYUccK  24                    -1
+ 884: c4ty16DLyAOW5HeqEnjhCD8h  21                    -1
+ 885: c8U9VTJyyj7sAhi3zacFWQkG  24                    -1
+ 886: c9SKAfARhLZuBM68ioVar5Qr  12                    -1
+ 887: cBjNYB4Xy2gcL1L4opZK4RfJ  28                    -1
+ 888: cDkc0jdSegKVQhwGWJTpW1db  26                    -1
+ 889: cGGhamQdFWdldlsmXvA2FRHP  10                    -1
+ 890: cH58L9EQdgUAhi7BFrOnwZ3K  15                    -1
+ 891: cJgy9NCGa849B1ixYSbprvwH  22                    -1
+ 892: cLA10nhBGJAimkE6SAYcDUhQ  13                    -1
+ 893: cM9FpaBGAYWBLH5zdGxTCj1Z  19                    -1
+ 894: cMoyrDydACNZkwp6b4Gmqyag  26                    -1
+ 895: cQXAvG6s6616lLRTMBVw9Sll  29                    -1
+ 896: cRbz9BtqKqUfbG4BYEpgxWBN  10                    -1
+ 897: cT1lOcRPqTnxkAgd50KfY2XH  21                    -1
+ 898: cY79aVecQLRGbMZVjydIfqAd   5                    -1
+ 899: cZsJDxaiLQbqa4U54AJg1ljR  12                    -1
+ 900: cZuau22MZ4oxfWRBhZb1CDqh  20                    -1
+ 901: cd9bBhF4w1QXKIuD4f2saalD  20                    -1
+ 902: cmVoUjwXDZPB1mZoDzCvUTwF   6                    -1
+ 903: cnG1MFeBA97Knw6is9x3CTRQ  13                    -1
+ 904: cnoF7C1hoXYhkF0Wz21wqPpB  21                    -1
+ 905: crrb1AxIp0KdzwNz9BNYISwj  21                    -1
+ 906: ctYfGps2viSxldRHtZYO0zPv  30                    -1
+ 907: cwAo66lKcGBa1bBA0ADrxO5y  16                    -1
+ 908: cxchTkSHnGgpDkMwBz52kZte  24                    -1
+ 909: czIyfPSFOUf3r3G5MFReG474  15                    -1
+ 910: d0vaMbDssdlQPAzL7s8VAWCE  25                    -1
+ 911: d29cH9HWoyq3JXcHCnh5oUbL  28                    -1
+ 912: d60CoTmCrbqJyxYuNYOnIpEv  19                    -1
+ 913: d9NURVrW2gC9J9aLcskUJaQL   4                    -1
+ 914: dAgqgliSth4oQzWx2OFgq1WR  20                    -1
+ 915: dEDbS2HDoBsBXcBRnEG3DJFH  24                    -1
+ 916: dJWZAN3LlNRwxpQzsp5hPE9s  11                    -1
+ 917: dJuB0H1Nso9QRJoEesp8aMCo  21                    -1
+ 918: dWHxJZMNBYPaIUDkDNA54ETw  22                    -1
+ 919: dYL90fj91bqZAyBUJNhoCWI2   5                    -1
+ 920: dbTXnXyeMK7yTuUJmmTODFKv  25                    -1
+ 921: dcRFPQRF7VXXwQD820cUbI7G   7                    -1
+ 922: deghd9hCmEpDim0vwA6ABnO1  12                    -1
+ 923: dh1sCQorEiJJLMlIJWJhTxDg   9                    -1
+ 924: drh2eJu5MQRzBW66AJBNCLTe  24                    -1
+ 925: dsKC68hAB0ldTPHqfZBCgIFt  28                    -1
+ 926: dsfCF9k9LkKMbBWfZdRBzNpk  24                    -1
+ 927: dumbKXphYpHqM009YNxHzl2A  18                    -1
+ 928: dvVdcbc2zkmXJVvWcmXSjIlC  26                    -1
+ 929: dwMtgyI1hlfbBAizYJyDq9Le  18                    -1
+ 930: e81QAiriEC7NqhCgeSf4mFIM  17                    -1
+ 931: eAkP0LQbT9Q0QwIMSsI0dhKp  24                    -1
+ 932: eFWGmCtQuB2nkKgEWP6DAZGc  25                    -1
+ 933: eH4zQfUwkf0NkPqlbsfQPwCj  10                    -1
+ 934: eIxaHL14cVLGFP1SA4VEjf76  16                    -1
+ 935: eJ1J9Jbr1MHljnaJy2IlU4Z9  30                    -1
+ 936: eJAPLX2iOFyBjBmo3SqASAhK  15                    -1
+ 937: eL8JzHAaXKHfRGIK94Q8DaS7  28                    -1
+ 938: eLho7ZXGFcOSbYFxKBY87oTf  25                    -1
+ 939: eMJbaurOBu3sAfrV8pIeikwF  16                    -1
+ 940: eP8rb0FXkghSnnxCqBAggQYF  26                    -1
+ 941: eR7ulFVnVH9rrdZjVkSSNt1N  29                    -1
+ 942: eU2KZnBdJFjkDNzBPhPQBYS1  16                    -1
+ 943: eWgABw98uevgMBTIOKhkrcjp  14                    -1
+ 944: eaIwkkow67l1de0KT470QWZ7  30                    -1
+ 945: ebz8tABKl2fOPHPTdLWRFkhH  17                    -1
+ 946: efXtYKAS8VLuYJDktrjJkeCY  12                    -1
+ 947: egypKHJVU0bIC4maE3vYVrRO  17                    -1
+ 948: ekiYv5YRTWnBeI3LzAs0mbOp  19                    -1
+ 949: em0fXNYCeL7BP4KasA4sYUAd  22                    -1
+ 950: eoLXHXtl1bhogk9caePKVAC5  12                    -1
+ 951: epZBWSGlFGQRM5cOUnyZncEF  21                    -1
+ 952: erGW96iXX1AOAMTdRioPSM8p   5                    -1
+ 953: eyRK4rAAxBRtksVc4AmAMs5A  28                    -1
+ 954: f15cyEBmnocBBfDjJlvbZug4  18                    -1
+ 955: f4PDh1hSCPO3A3CBAopr0uXM  23                    -1
+ 956: fCDhF8UBH4zT0wVmdaAulCFL  10                    -1
+ 957: fCvML1f0061nRxKJJj8cq0yj   4                    -1
+ 958: fHHF7a8zGfQ3yawTiY6WrDes  17                    -1
+ 959: fHz0A6kzBJk64re5P78vft7R  29                    -1
+ 960: fKu1HOunPYU8co88OSBfClKF  28                    -1
+ 961: fLg4LrB0nd32xsZPcr0bn16x  29                    -1
+ 962: fNpZD00fqBa2Akt9LWCXELMk  16                    -1
+ 963: fNwNr742rLfTLcrGkDiUGAne  24                    -1
+ 964: fV0BnwpssBId48Jr665zXKUo  23                    -1
+ 965: fVd0asuJjhBNyEzDKot6aZmV  13                    -1
+ 966: farP8al1vL2nOEMqgVcLSPHO  26                    -1
+ 967: fasTab1Be5DiMhBt71LBPzT9  14                    -1
+ 968: fbug8jP0u9NRKPEkibmWMFXb  22                    -1
+ 969: fgKfbtAXqs6F0FJNxqJZikWE  16                    -1
+ 970: fgSNfMKLGibWbM3JAhLJ7UcS  26                    -1
+ 971: fiJNvC94DV8k2IQ16gCkv94T   8                    -1
+ 972: fnfeH7JAqGUdVGog5qQoKfTZ  29                    -1
+ 973: fnxTcgDPEIl5oeXB6150F217  14                    -1
+ 974: foJXihxZVJJObhWKxWmcny0r  26                    -1
+ 975: fxsYndZtdtMsroFqLqKBCBcH  15                    -1
+ 976: fz5tpWAKNP6VYKWqxPjWmPtB   3                    -1
+ 977: g08B6z5ZdK1smcsdG7sNszGa  14                    -1
+ 978: g1jijAX7gRRZKVI6eRYVJxpe  13                    -1
+ 979: g1lkgupfEueyWmYYrK1jgnRZ  17                    -1
+ 980: g2uFYjoHexs3YA2AMjxADkSH  26                    -1
+ 981: gA0G7Sjk4zKssyPgpsBmyRMB  26                    -1
+ 982: gAnZcAzwd6xJhBevvTyfxRgD  20                    -1
+ 983: gCZsIa5qqQkfBsbGbWIVSSNJ  27                    -1
+ 984: gEc68yJNCYgOBMfOz6Z47lt3   5                    -1
+ 985: gHdeIDWVrjSAyg2laKbnG0T6  20                    -1
+ 986: gHsB7YSWmZ9Wc6Npb4wNTzKu  25                    -1
+ 987: gOBy3uXcSzZfsnI8Alx6oLh9  25                    -1
+ 988: gSOTumr6QpTBIm1wTfq7jvVD  27                    -1
+ 989: gTH1LZrSRixt7AvPD75TgsKE  24                    -1
+ 990: gWhfbsFRT3J26ef9vCKoDmEc  22                    -1
+ 991: gZBKFUeBu5tmufJe22m3rQgA  18                    -1
+ 992: gZPGIL2zFgbqG3VkKKYk7XmZ  22                    -1
+ 993: ggrjE9is2V4wiozX2SPXrcxz  12                    -1
+ 994: gjMdokpZkzeu4NxoG3ewTgFw  24                    -1
+ 995: gjgdbLKPKOmv68wfQfOBmXPS  22                    -1
+ 996: gkyrOMJ77yMbVaboBoftGmvL  27                    -1
+ 997: gmHGbtdmUKHHFJECWjplc49O  19                    -1
+ 998: gpNLmZXjAXQKLfi3OJQkApdL   3                    -1
+ 999: gqmE6e76RjFoUZzea5PrRNdl  17                    -1
+1000: gsyr88VTBwbwkZTRMaEPmAq5  25                    -1
+1001: gvZkUGF1F6Kd40fi4u74Wj97  30                    -1
+1002: h19ymTuLlwBkMadXxBHjFoAs  21                    -1
+1003: h64YtNrYzSUDB3BXdaBcbD3b  30                    -1
+1004: hAtlUs8LZE2yjx9ZZrhfZskm  12                    -1
+1005: hLDQMX5urJsD6UmSsn265MB5  11                    -1
+1006: hNPF5heAB0KjR7jL6OonHUXd  22                    -1
+1007: hO6GvtNp5LmQBb8cY7j26GCr  12                    -1
+1008: hQ8aO7iUiKfm2f2iuLIh7jJj  19                    -1
+1009: hSbcrv4zwMivPI1IRpQ4ZeOc  16                    -1
+1010: hSljg6fhTAjITZfrZO1Oo5SR  19                    -1
+1011: hWG2dBJYSrc5nlK4pIujg3Ah  17                    -1
+1012: hWeRaJYt9FZxnQbAWhI2svzL  20                    -1
+1013: hXI7V2NKhDPZctvpW8wIQD9k  15                    -1
+1014: hhEt2JwkN5keXSUdpQ4WEBbA  18                    -1
+1015: hjcev8JZEvU6tyZrAKbUGUMX  18                    -1
+1016: hnpWxdtvOBDe6Bui7rjpwnlT  27                    -1
+1017: ho05WPlcCpZTtABOb3TyFioL  17                    -1
+1018: hokiFEfg2AA1AAcQkZq6RzN6  25                    -1
+1019: hw1asUBpgUb4AsyA9OxHJb0K  14                    -1
+1020: hyXLqZw6bhf9VxkmhDCnzd0n  23                    -1
+1021: i262bijJrqiAJOk5Dsf2YhFt  11                    -1
+1022: i8TNxLRPe30hfB05Aw0QlOOl  20                    -1
+1023: i9pe0cO8J3Shj02WirPDWzHT   9                    -1
+1024: iCriN8tE7MCMdPHpXr82dVA3  16                    -1
+1025: iGbUKIW1DFAkpneQGsIhdPSL   4                    -1
+1026: iIRV3ADR4KA0e8sHKc4VxQVA  17                    -1
+1027: iJ9EZNH9DNyhIpsymRUGQeaD  27                    -1
+1028: iQT5alhiM95ApbBznL8R2mIB  28                    -1
+1029: iU2QVpgX7LdRsrNLPmI0bksk   3                    -1
+1030: iX9fMON3mdquKzL3r7dtt1ez  17                    -1
+1031: iXCQJQmNDUicf12AK2Gyk0fb  11                    -1
+1032: ifrxOHMxHzPQM8zj1UpPrroZ  18                    -1
+1033: igLtrm34xJ9hHVCbvYRRkAAE  16                    -1
+1034: ighpl22lbmGPGi9UasBiotMU   6                    -1
+1035: iglGK5iJ6KJNPAvSS8Aw0Apn  15                    -1
+1036: ik4UXes3UxLKItH51ByPr5yu  16                    -1
+1037: itct63URJBzgFmmhLzwzvStl  21                    -1
+1038: j3iPK72FHMlHY07fhFxde4mt   6                    -1
+1039: jAhlfGr2ArGIMY4uyDrlw4s5  15                    -1
+1040: jB786iA8pB7AHCm1UCzadBK9  22                    -1
+1041: jBmhAJEL9lPesRfdvpi05Ycm  21                    -1
+1042: jCFnyN4FrNfBpIuBtezae9gH   6                    -1
+1043: jOhy3kj8vV78HfPsGBDEis7C  24                    -1
+1044: jPtfWZ767TFpOJlDufsBqq7K  23                    -1
+1045: jQX6qm1QZcAClSFuWGA8SFN2  10                    -1
+1046: jaAtart9eOHUCaRM7P41iRCe  30                    -1
+1047: jdr3wI2zfrGxXvt9PkfArv2v  20                    -1
+1048: jfKFsphosfC0VEpPVYxCjhE4  17                    -1
+1049: jnCCQkiAcI5utk3BBzrNMIBm  11                    -1
+1050: jtsVF9YRmebmjvGSrnXNeNFX  30                    -1
+1051: juGF0fMt4V7fBr4BzBnQspAc  19                    -1
+1052: jxz3mNtcwC7gSua6Ts3FoSmX   3                    -1
+1053: jz2H9YMRxyGyVBH9g6U39kym  20                    -1
+1054: k5civIrGPdWoqL7B1e1J7L1D  25                    -1
+1055: kBmuqNayFJewbeiaw8qNBByo  12                    -1
+1056: kCPhUfzYc4yZlpvoDmBl7ePB  13                    -1
+1057: kKAcBlMhNx8nUkfppEhsuQyd   9                    -1
+1058: kVViw3NzwaVddH5DVZsH2rSN  11                    -1
+1059: kXefprIZhnTfc106jzrX6EPC  11                    -1
+1060: kaBbNyJFz3KSBeYeJN5Q2w92  29                    -1
+1061: kbBK0Ow7akJBjLiuNuJ0fRBm  30                    -1
+1062: kcPNCB4Gw9PMC3mvXpHAhifY  27                    -1
+1063: kfognETBYfs87FhAZFIVY32F  12                    -1
+1064: kgzSmU0l0tZGC7bvPU6bp66L  14                    -1
+1065: kjy1ptYFaPkvxOF8e8b8FS2v  23                    -1
+1066: klx74DZSPUHUV9EcrNyjTGwL  24                    -1
+1067: kmeBgx5iuD7LaXlp7UbKR99q  21                    -1
+1068: krN3NunIrAUUAzTLNAOK1BSM  20                    -1
+1069: l0AWfUVunjBFRyc1zEI2fbrK  22                    -1
+1070: l20bNymuOumIizqnZv9QIAfE  29                    -1
+1071: l2p0Lk06drroAONaErB7ECeB  27                    -1
+1072: l7B9GEEFDzXoDGOMx0zSEpTa  30                    -1
+1073: lALDAScK2dBQC5SEaC26zkYa  23                    -1
+1074: lBqYuxBLQTcMEmGrSHFVwUvl  15                    -1
+1075: lEToBA74mAfcese4zFaMUN07  29                    -1
+1076: lI1jTEnhN5KnEMn4nCK9EEKy  13                    -1
+1077: lMvgAMhAEjzvTnASBp8sviel  23                    -1
+1078: lNUmhUVLFmNrqotsr59QGCYd  17                    -1
+1079: lPeNGy009Dmlv4HxX2teHPBf  22                    -1
+1080: lT4s30miQDRb26zLUUEQR46W  17                    -1
+1081: lWr2iAZDQCzUypwPSAmuFRXR  22                    -1
+1082: lZ701ZvA3rFYqWRXVA1BYXEs  10                    -1
+1083: lZxKiYxTtASYJaaFmKndlrRY   9                    -1
+1084: lbJGBRyFhPkU7nZvhcR82pRz   9                    -1
+1085: lo91fQl7Ji4A93wbj0HwTnrq  26                    -1
+1086: lovBWTrE2p0E8FDag78owlS6  22                    -1
+1087: lqBTfRAe1r8JOPJB18Z43We4   4                    -1
+1088: lsPh0dEMne7NR3BoBzWwKm5F  17                    -1
+1089: ltrFkBXrCYGJEtOwCZGkKNLj   8                    -1
+1090: m6HVofG72kN7373v2bgRhV59  22                    -1
+1091: mAYWF8FChWWhO9VH0K2WI4to  17                    -1
+1092: mB3xtn1lKBOyi8l4i9o0O0nl  25                    -1
+1093: mByBafREwAjvxQNLFJeXIyWq  27                    -1
+1094: mCPYonTQYm4INfAnPCXyG3Be  13                    -1
+1095: mDDPFIzAPS8y1jemXByE9fKc  13                    -1
+1096: mE7mOv4xmnnuiAnNT46WS3LB  22                    -1
+1097: mH3IAEwEiIAXW8JGBGMTWb41  12                    -1
+1098: mH9c11ePJATX3BvMcmCr5Kj9   8                    -1
+1099: mMbiMmBrN9KzzNsmKl8kPvgB   3                    -1
+1100: mNAf8FpShhMQ2BVulU5i5SKA   6                    -1
+1101: mQdB1s6xqCZgtBAaCSCqhgew  23                    -1
+1102: mZ0P3ng5taAyUgTMB3GwIEnv  21                    -1
+1103: mfnoXzBUvvqLlmgJfPKkufBQ  21                    -1
+1104: mgdVkgLH009FJbRd4J7B9c6b  11                    -1
+1105: mlPL77Rf7RFQJ5BplBBGONL3  23                    -1
+1106: mmusa26bLG5k8JOys174zEAS  11                    -1
+1107: mw1yMsTMZSYepEVC5FIWzmSm  24                    -1
+1108: mwcjnwsioGZyAOqJXjgM2AqD  11                    -1
+1109: mxm7pJeDRRw5cMMtxSYBShnB  23                    -1
+1110: mykmfAvJq2KV2tFwFo6yb50N   4                    -1
+1111: n0dtNZqWrYBAYaS2yj8ZqZok   4                    -1
+1112: n9b7rDtRcrvvH1uACg3VPR8H  25                    -1
+1113: nA0FNWwu90JwqopAQV0QsEZL   4                    -1
+1114: nBNAG5nWKhaDp2sYzdvvvYfl  16                    -1
+1115: nBlBQ3WnqOC4ZqWvyqSbzGia  23                    -1
+1116: nDaMAc79bmc0kyjb1zeM1Xgb  12                    -1
+1117: nIFEjvIHMqpfHR4JdKeUB3cu   8                    -1
+1118: nJfiqwjx8sfEcyf7kPNRWB4O  29                    -1
+1119: nM8PRuAAk1yR4yeXNXzFGlfx  11                    -1
+1120: nQ5fa0VmwfGpTOCNNLEBbuXy  18                    -1
+1121: nQTdQblU9YOWTSebG0Fo6cHE  12                    -1
+1122: nVByqe3MMB3odQLnEsrNAv9I  22                    -1
+1123: nVobBbhTvD6cA58l4THpSea0   9                    -1
+1124: nXBKYEhauPcb8WpRqECqQBov  16                    -1
+1125: nXF2BMZdwlNBFkRTWfYWXgpA  23                    -1
+1126: nY8g2AnceHyKe528gcNjEvoE  19                    -1
+1127: navIrhBgjnfazQ9s03k6w7Cg  27                    -1
+1128: ni6xxQvyP1jHdtYVTYthMeAz  13                    -1
+1129: nibZiAh286pBxyuAgtEcUTEk  22                    -1
+1130: nmh4Yk4X3FvGGLqyZksAs5ty  30                    -1
+1131: noAW58NSDVmIRCBYBvfvUxNJ  15                    -1
+1132: npss05Ocl3xiupuGWeAD8qiR  21                    -1
+1133: o1tP9sUr3mA6IB38EVNiLvBO   5                    -1
+1134: o5TMK3D2fg0Hapx9nXsCmzAs  19                    -1
+1135: o7332NbwOIDMfAd3CdPX7smC   4                    -1
+1136: o8dAqYBq6m25NjtNTPP0HGxv  19                    -1
+1137: oBFULeWAJFFiOphqYEN6eSMI  22                    -1
+1138: oE2dmGNGsdlItd1mnwtcybl6  25                    -1
+1139: oEzzcrx53ptheYuDS6N3KUEo   9                    -1
+1140: oGcwydEp2ajBLMgvgdRnibRB  30                    -1
+1141: oH9LiROrAjxJ5D7pAgFMCurR  13                    -1
+1142: oI6kQb7ljIyArvjlh0nWUwKG   9                    -1
+1143: oJAIpMyGDcBu7G91NiAan9kq  13                    -1
+1144: oJwh5ZDXMnCsYgE8HEHrWmGn  12                    -1
+1145: oKp4GqhpFfDBld3C56TDQ0JO  18                    -1
+1146: oQhVLHoDMPaX7slMHpAYut7a  15                    -1
+1147: oR1UvV4BrA5UqrWyg3afrnHN  18                    -1
+1148: oTFHVH8shQDIy6J1Q6NnnwWL   9                    -1
+1149: obrsVG2YaBNfh702yJ0a3PgA  24                    -1
+1150: oc1flmPYAYWGtnWq2gcq0BNz  29                    -1
+1151: ogc5BKa8AXDYEXN01cOLZBYk   7                    -1
+1152: oj2ChctKW4N7IOLGBUtZWX90   9                    -1
+1153: okWvIw5Z10By8Yi8QDXWSmUP  10                    -1
+1154: okaHo8jFWnNH4SOEfsxnDZuN  14                    -1
+1155: olmWMd14iMCFADq93gjn7xHa  23                    -1
+1156: omgNEobJNLSwAPtgV1li5AMC   9                    -1
+1157: omm3udf99uyHrhFVzXv5VSjt  13                    -1
+1158: opCk7hnT9Z51plk9KWzJrySO  18                    -1
+1159: ov8c2Sy795Ex2nbCqT9b0Y7z  21                    -1
+1160: oygfuqoKi7DvD2liG9r2P8FY   8                    -1
+1161: p06AqOXa1YyRxKvvH7GhIVHa  20                    -1
+1162: p4GhSft1j5oumYFpIeogUPMb  21                    -1
+1163: pAjPhARfehIa3KKkXAuUA2Pt  26                    -1
+1164: pBp6uQerhgDMDVXBORwlN4gc   8                    -1
+1165: pEKe6S8dk1wQ8kYRSPeo0DfN   6                    -1
+1166: pO1zb4WW2uUCSrwB6WH4WhHF  23                    -1
+1167: pPRysSC4Bta6A6N29vjXZKBV  26                    -1
+1168: pQSZXxUkYb073rHF0kP9M9rH  12                    -1
+1169: pTUoE2mttyhvCMBiULmWjiBO  19                    -1
+1170: pUPJorAy3WUQBsh1pvwJJr5X  15                    -1
+1171: pUUqb4qiAcVAUS74rNQmBlrW  12                    -1
+1172: pcDZHWhIYYeY7wLomlftAbFV  25                    -1
+1173: pgfaYexnM6SXoAuxK61ZRkMz  29                    -1
+1174: phLbe5A2MOj8LRy14h9jyEhg  10                    -1
+1175: pjg7b098OKUYsOXaP4atGqsR  18                    -1
+1176: pkr8mA78aLCVd4AtUWMsADrO  27                    -1
+1177: ptXp2VQngvnPaw6OOIkaqrP7  28                    -1
+1178: q0pXX7P9sBz8umZ5qclatyco  25                    -1
+1179: q4VK06VcBiKVuePavAljkk3s  27                    -1
+1180: qAoHaPaJPYGPz7B5DZIO5OQt  11                    -1
+1181: qBgSiTs7f5q5HCIbfrJW5Myt  20                    -1
+1182: qDP8AOgEXBBougB9iTJWURBK  12                    -1
+1183: qHWJmXxoHsyayBjLNA7KzGt3   8                    -1
+1184: qIDAeqm76ps0Bxr2BwYLLXul  25                    -1
+1185: qYNE7t53p79FalEvWfgtyBBB  13                    -1
+1186: qZT7RUwNV4cPzXXU5i6q3eJd  21                    -1
+1187: qdKSfEkWw3BkhYzxrI94gibR  23                    -1
+1188: qiz747P6mZj1XtVgsyztwFAo  24                    -1
+1189: qjo6ocNeehoC18BuJLeg51dt  20                    -1
+1190: qkf9mKBv4AyGZA2Dsi1RN7As  20                    -1
+1191: qlLwVaLtv0qj0v9VBi9KNfAH   7                    -1
+1192: qlZQTiqtWmJagRaTo6mcQNKG  20                    -1
+1193: qlbjf4Nha3boA1BWab0TJtWS  21                    -1
+1194: qlnsCeoAogAgnHSxA176iJs6  17                    -1
+1195: qloDdTWwsvAvcgBhL7hhpHZG  12                    -1
+1196: qobV8h4pzS9AhuoHb7LDiaZU  28                    -1
+1197: qoxxwu3sVPK2ZNsQSZ6WufeR  30                    -1
+1198: qsuLCWkonQTwnUzezwl4EZXh  12                    -1
+1199: qvlSN73fJlaxburNfBdoaql6   8                    -1
+1200: qw0YfjOyQzZGbosOCI8Z719o  25                    -1
+1201: qzvQ3iGYyT9qOZM97UtRPSb0  30                    -1
+1202: r7EIj930jRAEKx81sl4ByHjr   9                    -1
+1203: r7LUXmzVrDWaBkQpBFK0xIEO  13                    -1
+1204: r92THeBiSqr65Wd0ZhXNZCbB  11                    -1
+1205: rCHHOKa3pXGM6uG3fDwiwazk  23                    -1
+1206: rDQZBGe5gd6lFKbRrqlGXJjw  22                    -1
+1207: rENfEdUALzTba9xdPcl9BaZk  23                    -1
+1208: rGrAiXvbnkXYcJPFfAlGrP0B  29                    -1
+1209: rH2zS6uQgTIbvcSAIK14AqTI  20                    -1
+1210: rIRYozMAwojR0UtYtWhS4xV8  18                    -1
+1211: rKFLxFZES14CCBLSLIlIil0h  23                    -1
+1212: rN8tJaOO0ZdDCHhfXfrNk0E2  21                    -1
+1213: rSUv1fcBm45izCquiO2uJIYW  29                    -1
+1214: rTQVdrDy5Pml7HAgRCc80KAR  29                    -1
+1215: rTdsNCBe8x11j0EUpLOwGCZH  13                    -1
+1216: rX8MAkltR3tDK3h7XeFrO1EX  17                    -1
+1217: rXER9WNNYNtn4tdGnVAqwR3B  25                    -1
+1218: rYumApy3LQUMsVnbrrxK2DfM  13                    -1
+1219: rZISnMQYRrm7aDR50QexPocs  20                    -1
+1220: rb840heTrke8gKeaPYG2aqQP  24                    -1
+1221: rdW9XpLAXHiePkrnwYQ5LLAB  12                    -1
+1222: rexCmA3XA3gvA6AOFnJTDAeY  22                    -1
+1223: rhmtgCmdOCoqs04Q2gyFNvzA  14                    -1
+1224: rkW1mj5v75zL2khfQR9nmd8U  22                    -1
+1225: rnp85n6xAT8Wr7GY1dSR4eAv  20                    -1
+1226: rwcjME69yT2AjyVnK6h5I4T2  14                    -1
+1227: rwg16kG0yr5fqjtirm5gZCC5   4                    -1
+1228: rxKhAr1xnfU5FqzcrPocthAZ  17                    -1
+1229: s1iRomVvi3TVxFTZDBnEZaOV  15                    -1
+1230: s4AyRNQ6hRC2WeV0j5bpPG2C  13                    -1
+1231: sBS06TjgG7qQCCSigq4Q47Ib   8                    -1
+1232: sDlRRAQRGinZIYhrxOz0dOSA  21                    -1
+1233: sFLQWv86ANrNvppA85aJotfT  17                    -1
+1234: sHQHvIUhlR3r8u3xEgIvThBw  29                    -1
+1235: sTeAIfPa8g4H9H2B7QBq4auT  14                    -1
+1236: sY2kb3nBWDqu3WaDbdNrvWou  13                    -1
+1237: sZ3AULG6ZQksDL7bjivCjDHA  22                    -1
+1238: sZNO4pOCBvTRsW9VQ32Uu5ia   8                    -1
+1239: sahnArbs3KMksR7BxjhE9yhJ   6                    -1
+1240: sdVfReOJt9G9nhjfFAUPBjze   7                    -1
+1241: seUYZOr0Lm69QAJerGzNp5PZ   8                    -1
+1242: shkUhi44tj3HWtLqAjhZxxF2  20                    -1
+1243: sjiwXTICky8kfCA8JYtGXSNz   6                    -1
+1244: so85jvOFfzL7astrwEQVgOgR  13                    -1
+1245: soZP4DrXt165iz7eHwhRj2ez   6                    -1
+1246: sq1YhJdS7AFzALaHcIhuzl1a  25                    -1
+1247: stB8cyQau9mC6IgM5WUtet7x  29                    -1
+1248: sv1vaKJ0kdPFtKigBGsU5xUA  13                    -1
+1249: svtpnoJazOcKK0KY6CTWP3Gm  29                    -1
+1250: t01AzqhcyrQBEz8uMQlFLPHP  19                    -1
+1251: t4EFov2pXEzWpLkWNuJEzbIu  23                    -1
+1252: t4Ix78EMl4NADs2jLhyXeYA6   9                    -1
+1253: t55B2xFD7aASswsoMnwTfApG  21                    -1
+1254: t6vzxuLAKFqnjZfQA0lf4j8c  28                    -1
+1255: tB5TbBArwohuxK9yHz4AuXKI  14                    -1
+1256: tBfrc6VkqDW587EvfgVCeyzz   8                    -1
+1257: tDw7Fa7qkMV4iXEZUAWoEzXy  15                    -1
+1258: tKLxv62BZaRGKXH37fegOqVB  30                    -1
+1259: tMgFKHxTVL8iB37B4PG0drFs   8                    -1
+1260: tO2NuitRJf0suBznnBiazBVk   4                    -1
+1261: tOxDuMArcbx7hxhcQzlc5QWh  14                    -1
+1262: tPgd09xTgX2EkGmQCeG6V86f  15                    -1
+1263: tPmQYjd8qgQj5qFUcZmgCBQ1  18                    -1
+1264: tUfy4QQmToQB9B5nCL1mlhLQ  29                    -1
+1265: tX1VCdmpNHzvBECc1W1cqZNS  18                    -1
+1266: tXJLz3d3gxK3bLAUnVwlotqp  24                    -1
+1267: tYJzyGp06kt1mBUhNABInAHM  19                    -1
+1268: tcwpVrShNTUKvwXp8LkOLpB5  14                    -1
+1269: tkPAKcB1B1HYpPm6lz7zBmZY  17                    -1
+1270: tn8OLWCLPMwTDpHvhS4sfkpa  24                    -1
+1271: tnq3yPKiGTavW4YMHj6iqRDi  24                    -1
+1272: tqq4URkxRlO2gWH2vHqUhKGx  11                    -1
+1273: twflLSpFB9jXeDGIufTzbb9Z  17                    -1
+1274: u0b1ERrJ46B8ajHWe7Fmv33j  14                    -1
+1275: u0z5pYAmPjYxAZrRbsDSZfJk  19                    -1
+1276: u2ZmEqJ2Ti6U9vwBBJ0ta4ma  20                    -1
+1277: u7DaBzkauBsdsAJVObojUfW6  25                    -1
+1278: uAGp3aZmH7FW7KGbHwKHXv8Y  25                    -1
+1279: uBFUELkprAXMxTQCaiswLnMs  22                    -1
+1280: uBY0RnUUFYAGUWj1BLImmNkL  28                    -1
+1281: uNj3CGiCCJrCOtPevAclMKCo   9                    -1
+1282: uSQUlWnVCNJ9SAeZwDvBlBc8  13                    -1
+1283: uSoB9CzirVEm4CxUryMwQdEi  20                    -1
+1284: uUVWzBzXKZCaq6IaPkIrvGn8  16                    -1
+1285: uVItivCmVL9cFlR0BUYBeGvK  26                    -1
+1286: ucZJZhB5CKNyO0YAQEULHJpr  28                    -1
+1287: ug6lEm1I2OPoXlrkgYbHgQUY  27                    -1
+1288: uiDsHtSAisGEJjyg573vlxg1  17                    -1
+1289: ulYprswWOLeCrVRW8W7OF59H  20                    -1
+1290: uoocKhRWQkTAGlBwe2NFyxi6  16                    -1
+1291: uphHnTdc0AFYfU9hn2eN6u3M  28                    -1
+1292: uqLAj4X3f2ZT47KCa5d0Ruyc   4                    -1
+1293: uslLjANGBJlnJIZIzxfVaeCi  10                    -1
+1294: uuyhyEUv5UPjozkSvv9SZs8C   8                    -1
+1295: v3mZ4n5CEqnNlYjf4I3Cf41d  27                    -1
+1296: v3unKVumcccKWuDU45kmNkKg  27                    -1
+1297: v4wzBbi3PB5HCGFtKB2JjK2n  15                    -1
+1298: v5PDaIDHuIq4aqJ4bANg2IgI  14                    -1
+1299: v8Ke4MBaePToYbVK7dIneBPG  15                    -1
+1300: vGdgUSXuktmzTHwimk5Ie3Bc  15                    -1
+1301: vK7ZUEXBydCley3O5Vkv412d  26                    -1
+1302: vPviEbBksyjC5MxhE2NrZo90  29                    -1
+1303: vWfPhlOpF5ytqLR4Y7stxJ7P  14                    -1
+1304: vbCV2DsAZfB6AngzFXe0EY3z  17                    -1
+1305: vchooST9i9zDaObozDJ2Ocdk  16                    -1
+1306: ve7XU4uemioXpGQPsPwFg4Yw  27                    -1
+1307: vfzjBGnskrQkPTXHemcmhZFJ  28                    -1
+1308: vpVtHJKD9uOf26NMAwJcnroQ  23                    -1
+1309: vpYbz02Q8EHK5rxBkxvk5W3w  21                    -1
+1310: vrxVZjLbO0VwxR32vPs3PRIq  28                    -1
+1311: vsKgBQLepPyppSAGPj44QEM7  28                    -1
+1312: vuWb2ioWr0CKwNow7IArKIQP  15                    -1
+1313: vvcPxYg38QG7RzkIhJbqbzBz  24                    -1
+1314: w0TMowhtComj6R8lq5hLoXnD  15                    -1
+1315: w0mQSP6Lckvuvf0B4GBjXQrM  21                    -1
+1316: w4SYGxSIBMSI7rk4RtOuz1Bm  15                    -1
+1317: w5tUT0WUmADdDcLgmZBwi2Jx  14                    -1
+1318: w7AASO2OyXf1HmVacBIV70Nk  17                    -1
+1319: wA5StQOqW6P90SsPiLTOVOA7  19                    -1
+1320: wBXVPkKiAJ9fYUzxVt9I1Fl6  30                    -1
+1321: wCRXBhr6dadAAehvWbuifIkQ  24                    -1
+1322: wDHte7Ixpni7P6meSRkBRCHL  21                    -1
+1323: wDRqeYhxfhHSe832ByQGozUN  10                    -1
+1324: wDWjbZH0iGxwJedAN4UnRtY4   8                    -1
+1325: wGZn5y4KoSTEv8mqYrN9NgbR  17                    -1
+1326: wKTBQVgxZdukAEP91mg8Qdpl  23                    -1
+1327: wP13i9d3YoecMztAMc79i84u  14                    -1
+1328: wQyUAXH9ZswY8PNaAV8feAkZ  27                    -1
+1329: wRTNrRyE246mFBU4DmY3Z88F  13                    -1
+1330: wRtkDalMaUDVE6lPcCHeR36p  12                    -1
+1331: wSCi99aK0TJYUMnqshDNy9gw  23                    -1
+1332: wSCs4uv5LBpUNhjwczGwwdHa   5                    -1
+1333: wT1nmK4jZvictRjSDjE8MwSp  12                    -1
+1334: wTs2oAghOF908FS9UQWqtA35  26                    -1
+1335: wh13j3zXtvdoBGacgdg1AgjS   3                    -1
+1336: wipCH4UXc5dFdLv94dB2QdXd  19                    -1
+1337: wlvYpUBAFcrirNR5dgJWBwNO  14                    -1
+1338: wmBcoweSRq3c8al18BoEwCoe  15                    -1
+1339: wmzMZNbMxQoAG3ya7ABznixJ  10                    -1
+1340: wnWf7xUmpIUME3unA9oK00Q4  20                    -1
+1341: wp9cqsBBqzOMf5Lq8NrNIDGT  30                    -1
+1342: wqeALcDBFBLMgK8byU9yL3Zo   4                    -1
+1343: wtlUETSU46AzE1eFkPA1mYYN  28                    -1
+1344: wwX46bGhlQPOLBeh7Pty7BYs   9                    -1
+1345: wxc6AZBw7aniDpBzNMIk5z8w  12                    -1
+1346: wyE31rg0vlzCrc3TXqvS2Smd  25                    -1
+1347: wyRkigWQT1sw6CE8iUKgGI0D  12                    -1
+1348: x1FbLsuucIVPOL6EBd10Q1hL  27                    -1
+1349: x374CKJ6Swg2pPlSrb7a5y5r  27                    -1
+1350: x55SMuLpvK2OVjLEwAzBJ20P   5                    -1
+1351: x5spUbOl3H27SbLJfBzVXRPW   8                    -1
+1352: xA2jYr4jrPpSQpvdgAseakJX  28                    -1
+1353: xG5KJzOlJXAICqUItV2qwNEs  30                    -1
+1354: xGGhRWbXADvz9jR3Je7AwnHj  16                    -1
+1355: xHLlCAilx9p9KBWaVRWq3DzE  21                    -1
+1356: xNrCTsYk2BWVThBfHNxtrrua  15                    -1
+1357: xOSAMQYeSqjWwBL2RQhY3oiY  20                    -1
+1358: xTzarqOTmE9I5E7JElfsHQPZ  29                    -1
+1359: xTzkdWj9PCtUrsYpj1kwH5jU  27                    -1
+1360: xaBxAjzMjedaNhI8T5tCBoXz  10                    -1
+1361: xbvvfmI9OtmTq5lnJoMeKf6S  30                    -1
+1362: xeb80OCEtF2indWQEtZXcaNY  29                    -1
+1363: xf1ifqoJb0FxSglhN7Y7i4mH  20                    -1
+1364: xgG9FRCxbGnOePIJFS4pUgJ0  17                    -1
+1365: xjWLaVTYNDu4NdsigGstqsIU  22                    -1
+1366: xlkaFjzC67KOPrM7RRnBzBSO   4                    -1
+1367: xqH9fNo9gqxBa4LMiBUMQYEB  25                    -1
+1368: xqV6Ne9M1EhpNyHaw7SLamTL  26                    -1
+1369: xswhSPhiXfY2bBWAVYM7cdBt  29                    -1
+1370: xu2MgTVaiEXtJAPfFA0F4AIH  16                    -1
+1371: xv4FiVG36efxTFbBbgSSZN9f  25                    -1
+1372: y0lavm8WANCdEqcjnbB7AKtg  19                    -1
+1373: y3x2ryLloGBdSBhCIEfNzn2R  21                    -1
+1374: y57WPUvrSzmFirQ1vQKhAjTg  13                    -1
+1375: y5ENMX4GBQlAMIKCRhWMrOIx  14                    -1
+1376: y5PYhbFrFV65v7qJaC5DELq7  24                    -1
+1377: y5eo2wTEAwUbVVnntDxq9apn  15                    -1
+1378: y8HF8PsCgDEDx9QYcT0j3V88   7                    -1
+1379: y9E5UValRrfo38dytQHVww9N   9                    -1
+1380: y9wkhwgWea3eOgz9BBkMQXL8  20                    -1
+1381: yALcc8JPg4bkFJpt5zAvCY9o  23                    -1
+1382: yASBb12LDICUNty6KsoOVBnl  17                    -1
+1383: yApnCwu95uhUAopogTyixAcE  18                    -1
+1384: yEKOGL9nZtELyiLPA1JiiBd0  28                    -1
+1385: yNvP0hHjB49q8Yt3WEHklJ0B  25                    -1
+1386: yOms7tMGBXkK7R5EgX7Tnr3k  28                    -1
+1387: yS5dbtuXUijGAmltiJcOLZBh  28                    -1
+1388: yTWkNfFN6FXMB4j4AZUwzLqN  17                    -1
+1389: yV4p82b7Uo5taWcpfgCrHOnx   8                    -1
+1390: yYbX3Z6OW1ykyJqgRcOG4DRy  25                    -1
+1391: yaXtd3YnoqC9qNJmJBE1Rl9B  28                    -1
+1392: yb5wDwGuAa1uSkZYlhZOJbGZ  22                    -1
+1393: ycbb9rqunPScajsHGwPIurQE  20                    -1
+1394: ydhftCsJxi4lDldmAWJJB9vO  25                    -1
+1395: ydj7IuL2ZZCqAJsBBtZ5BANY  28                    -1
+1396: ygLwVEdmebiBgBcreEsLzrDf  28                    -1
+1397: yhtwlpzrwNBZNWaK8P2NeNbk  10                    -1
+1398: ykEWKANuY95tpfBKlozePsu5  15                    -1
+1399: ypsJLaqC8FO6Z96mSg3txo3s  29                    -1
+1400: yulQCOjsn5ABvA7LIvCEPk9D  13                    -1
+1401: ywMAgTJyDmVQrwAJhhFAcFcy  26                    -1
+1402: ywkPZSTGBJh8Q3jVdr5644zy  13                    -1
+1403: yycVEAvqE4pf1fJExOcAz8db  28                    -1
+1404: z0xrVGx1JwnWABjzHEcACXz9  27                    -1
+1405: zDzURzDoZUoUA472kbakHDVC  17                    -1
+1406: zGYjkjc1kdtpRrGJ1CHQ52yd  11                    -1
+1407: zJ6JfkIbsHjqSxfssO6BGLRh  21                    -1
+1408: zKB2h3Qbad1blQJEn2yYXBtr  28                    -1
+1409: zPv3sAeXekYRELmOsGmGB1C5  14                    -1
+1410: zRCTdFx2nO1C70znWHXk883g  19                    -1
+1411: zTN74ZVMUAeaXA2QeADch3n4   7                    -1
+1412: zbwp2y3FImBXC8UUHQhJ9qTc   4                    -1
+1413: zgPPVuVeYjCWfTeMY1o5ytyD  29                    -1
+1414: zm4kBvjYNV9om2oMipsQGa8h  26                    -1
+1415: znxfEyn9BUZ0AMkAwPxArSXY  11                    -1
+1416: zqtB9WhsDc9TXDPklAjYNLbF  19                    -1
+1417: zt0fkQ6HSzPyfTyapU73K6Sz  15                    -1
+1418: zvU7ExkwvPmDZd5sqAHiEjSz  14                    -1
+1419: zxHC60T0PysvUABOhBbsvPZB  19                    -1
+size  0:   0 items
+size  1:   0 items
+size  2:   0 items
+size  3:  20 items
+size  4:  20 items
+size  5:  20 items
+size  6:  20 items
+size  7:  20 items
+size  8:  40 items
+size  9:  40 items
+size 10:  40 items
+size 11:  60 items
+size 12:  60 items
+size 13:  60 items
+size 14:  60 items
+size 15:  60 items
+size 16:  60 items
+size 17:  60 items
+size 18:  60 items
+size 19:  60 items
+size 20:  60 items
+size 21:  60 items
+size 22:  60 items
+size 23:  60 items
+size 24:  60 items
+size 25:  60 items
+size 26:  60 items
+size 27:  60 items
+size 28:  60 items
+size 29:  60 items
+size 30:  60 items

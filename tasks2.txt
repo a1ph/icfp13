@@ -1,0 +1,1651 @@
+   0: 01JYinb2f5yzjojOpNPApp1E  14     SOLVED          0  [ 5]: and if0 plus shl1 shr16
+   1: 03jCIUGtnPATZNxJW96AVhR9  20                        [ 6]: and if0 or plus shl1 shr16
+   2: 06m3esjqBV5CVPJJuYA2m1Z7  25                        [ 8]: bonus and if0 not plus shl1 shr16 shr4
+   3: 077lZsASvr5BqMBpKl86oZtq  22                        [ 6]: fold if0 or shl1 shr1 shr16
+   4: 08KtJY0RaALDCU7k7FSAyOLH  23                        [ 8]: and if0 not or plus shr16 tfold xor
+   5: 09Xl8IKKsmhoWG4qK2Y1QI0q  30                        [ 8]: if0 not or plus shl1 shr1 shr16 xor
+   6: 0A06G3aWulBaEs5BzRMw3Ws5  18                        [ 7]: if0 not or plus shl1 shr1 shr16
+   7: 0AOZBEYZl506n7UXt0FjM5Bj  13     SOLVED          0  [ 4]: and if0 tfold xor
+   8: 0BWCDNT3jQCD7yNHnrw2INcV  17                        [ 8]: if0 not or plus shr1 shr16 shr4 xor
+   9: 0DKMrBfC7BXipZBdl1awkU3r  15                        [ 5]: fold if0 not or xor
+  10: 0G9z9B1kHhKJyVA4zHVTaB4d  22                        [ 8]: and if0 not or plus shr1 shr16 xor
+  11: 0GghW9NaJ3aoeAJIC3c23vAv  23                        [ 9]: bonus and if0 not or plus shl1 shr1 shr16
+  12: 0IdLPEOEDu154Ti5BgosuFSr  22                        [ 6]: and if0 or shr16 tfold xor
+  13: 0SANTBNQKDlEs0VrgHCs78H7  21                        [ 7]: and fold if0 not shr1 shr4 xor
+  14: 0T1M89qM0DaNVy2bkZ7RANRh  30                        [10]: if0 not or plus shl1 shr1 shr16 shr4 tfold xor
+  15: 0Y36RSxiouNWzC7wHRVlLa4v  24                        [ 8]: bonus and if0 not shl1 shr1 shr16 xor
+  16: 0aANjRSCuGHfRdrn8yGARrAC  15     SOLVED          0  [ 6]: if0 not or plus shr1 tfold
+  17: 0bdvEZfCzWDkQnvhF8G1z25S  10     SOLVED          0  [ 3]: if0 shr4 tfold
+  18: 0ibLoauqo2YlaRqB79FWgrpS  22                        [ 7]: and if0 not plus shl1 shr16 shr4
+  19: 0jPeFpiSRyQhGIprbhh7Mguh   9     SOLVED          0  [ 3]: plus shr4 tfold
+  20: 0kELa37AaEDKB0SXpTfk8TBb  13     SOLVED          0  [ 4]: fold or plus shl1
+  21: 0mDNSBmnFydD5MZIL8BxxBQR  26                        [ 9]: and fold if0 not or plus shl1 shr16 shr4
+  22: 0mTM2JQot1mOlcC4b70AlsLl  14     SOLVED          0  [ 5]: and if0 shr4 tfold xor
+  23: 0sBDDCAiqkf5qT6CpyUFiMaX  29                        [10]: and fold if0 not plus shl1 shr1 shr16 shr4 xor
+  24: 0w5unAQClOCs3J8LhNCWYswO  12     SOLVED          0  [ 5]: fold plus shl1 shr16 shr4
+  25: 13XMR5MjNzym2zZsmhaUP3cj  19                        [ 8]: bonus and if0 not plus shl1 shr1 xor
+  26: 1Csl5jUUpCIQZi2nUO62TtQC  22                        [ 6]: and if0 not or shr1 xor
+  27: 1FBL3BtvkJPAQA50JONo6hNO  27                        [ 9]: and if0 not or plus shl1 shr1 shr16 xor
+  28: 1I5iLNJJBylSw6w5jNDjqAcr  17                        [ 6]: if0 or plus shl1 shr1 tfold
+  29: 1IFFi6P181S8ibMBc9yvkHdb  11     SOLVED          0  [ 3]: if0 tfold xor
+  30: 1ILbXbp9gk9YFidFY31ytGAc  27                        [ 9]: and if0 not or plus shl1 shr1 shr16 shr4
+  31: 1KBqG5krNtK3Y6AOLXytlUpB   6     SOLVED          0  [ 1]: or
+  32: 1Li2sOoA0l9lnSgWSt3MVAS2  24                        [ 7]: and if0 or plus shr16 shr4 tfold
+  33: 1MLpb0gFpNd0BNhGLcWKEY5d  15                        [ 6]: and if0 plus shr1 shr4 xor
+  34: 1Mtahl3DBR9XYfNh9pnUhGN0   9     SOLVED          0  [ 3]: and if0 xor
+  35: 1SGfIybDGFk2HAiMAyZz7rQw  14                        [ 7]: and if0 not shl1 shr16 shr4 xor
+  36: 1VuFAAMACRHxwklhMMtRwmRe  22                        [ 8]: fold if0 not or plus shl1 shr16 xor
+  37: 1Zr01hqCHfnsSYRQPF9tziGv  21                        [ 9]: bonus and if0 or plus shr1 shr16 shr4 xor
+  38: 1aNRE4fmf5Q1031fR1xucHwN  19                        [ 7]: and if0 or shl1 shr1 tfold xor
+  39: 1eMRMIrjeAyewLbB7Fv4oirH  12     SOLVED          0  [ 5]: not or plus shr16 tfold
+  40: 1lRDYzGs3PGQpWyXFcFsmBjY  14     SOLVED          0  [ 5]: and if0 shl1 shr4 tfold
+  41: 1mM7XvloeTAi94ZzaEkY9ioS  11     SOLVED          0  [ 4]: and if0 not shr1
+  42: 1nBsYfNTrSrrxIAGpGe6JHmr  23                        [ 8]: bonus and if0 not or plus shr16 xor
+  43: 1rhpkz6Sy3z8WBbAf4AvIV2i  27                        [ 9]: and fold if0 not or plus shl1 shr16 shr4
+  44: 1uGhLl7e8PQBPyK2BgYI7qUD  26                        [ 9]: if0 not or plus shl1 shr1 shr16 shr4 xor
+  45: 1ysH08pBtIag54tbhWyTZU4j  17                        [ 5]: if0 not or plus xor
+  46: 23CxGhPUDIYU6oO5rFU4SWiy  19                        [ 7]: bonus and if0 not or plus shr4
+  47: 27UV6tAQ186o6IlyARn3GcA2  23                        [ 8]: bonus and if0 not or plus shl1 shr16
+  48: 29U3pajjt44fdajDlZippE3r   8     SOLVED          0  [ 4]: not plus shr4 xor
+  49: 29nIiq2HbcEuAtjXfyIXx3wz  27                        [ 9]: if0 not or plus shl1 shr1 shr16 tfold xor
+  50: 2A3nLULQ9BPKZsSomB01JD6f  18                        [ 7]: and if0 not or shl1 shr4 xor
+  51: 2FObRvSIUlPnqDG6BtO8Z8sF  23                        [ 7]: fold if0 not or shr1 shr16 xor
+  52: 2FgdB2nLB5vT0EBGZ9qGPe9R  21                        [ 8]: and if0 or plus shl1 shr16 tfold xor
+  53: 2JuoAh2dDixromI193TyCJ9H  12     SOLVED          0  [ 6]: if0 plus shl1 shr1 shr16 shr4
+  54: 2LK2t3xtZfAwZgc4SxFAGPaH  19                        [ 7]: and if0 not plus shr1 shr4 xor
+  55: 2LWUYESZhJUk4yXL9lNQtNvc  28                        [ 8]: and fold if0 not or plus shl1 shr4
+  56: 2M8iuPR3LBtX8fhkKVGYjrlC  29                        [ 9]: and if0 or plus shl1 shr1 shr4 tfold xor
+  57: 2Md71n7WBGYpuYGdBckye7fQ  12     SOLVED          0  [ 6]: and if0 shl1 shr1 shr4 xor
+  58: 2NOHPnaXpas0vM3yqGTKlQcw  17                        [ 6]: fold if0 or shr16 shr4 xor
+  59: 2SgNJoz4e8Fz8EBTelyvSEBX  19                        [ 7]: if0 not or plus shl1 shr4 tfold
+  60: 2TPBlPmfzhBQ41MuC5MXLA7a  28                        [ 9]: fold if0 not or shl1 shr1 shr16 shr4 xor
+  61: 2TPl4NOI4MmID8fDvHqWGU2B  15                        [ 6]: and if0 not shr1 shr4 xor
+  62: 2WgTr9BuoSLZE1XV5ec6AUqY  10     SOLVED          0  [ 3]: and not tfold
+  63: 2Z8CcaaF51LdaU4W6DUFqtJp  24                        [ 9]: fold if0 not plus shl1 shr1 shr16 shr4 xor
+  64: 2eC32rwl6rgDPW2XW11BOmLr   8     SOLVED          0  [ 2]: plus tfold
+  65: 2gZd6ydkYA2It41r5yLPbTJU  13     SOLVED          0  [ 5]: fold shl1 shr16 shr4 xor
+  66: 2hYSD1MyshcLTBcAbeqa2xIg  24                        [ 9]: and if0 or plus shl1 shr1 shr16 shr4 tfold
+  67: 2ltk9h7nBbMm1uLPthEewMb4  18                        [ 8]: and if0 not or plus shl1 shr1 shr4
+  68: 2qnxALvht7D45bEW0OJK5s3P  11     SOLVED          0  [ 3]: fold or shl1
+  69: 2vBT3eyreZdqmTYjft8Rgbey  21                        [ 7]: bonus and if0 not plus shl1 shr4
+  70: 2wGGP2kSDyxz77P7eBdomGXi   9     SOLVED          0  [ 3]: or shr16 tfold
+  71: 2wy72Axz7saBe4mzYJT5bARX  18                        [ 5]: if0 plus shl1 shr16 xor
+  72: 2yJ8WqF7cZIMt3B7muk2wXAM  27                        [ 7]: and if0 not or plus tfold xor
+  73: 2yoojnXgCDNvelx2Q1Ez6a6B  19                        [ 7]: and fold if0 or shr1 shr16 xor
+  74: 37s2Bu21W4k8CSLeCA2pfuPC  11     SOLVED          0  [ 5]: and if0 or shr1 shr4
+  75: 3CJAsPZmoPgfPGS5E4PeCian  24                        [ 8]: fold if0 not or plus shl1 shr1 xor
+  76: 3QEIFFbsnrXczJC2y3CGfeSt   8     SOLVED          0  [ 2]: or tfold
+  77: 3UFn5vSibhA8UtClPCzjCh7a  29                        [10]: and fold if0 not or shl1 shr1 shr16 shr4 xor
+  78: 3X9qASuwHXtwv5LcEUArzyQr   7     SOLVED          0  [ 2]: and shr1
+  79: 3XbfVpKB1qjPxmTXo2Yeuu22  14     SOLVED          0  [ 5]: if0 not or shl1 tfold
+  80: 3aXzBQGdV7Q5ZfUMFqfUapPD  13     SOLVED          0  [ 6]: fold or plus shl1 shr16 shr4
+  81: 3b3eWfst6MLfmwmKcpojEBrP  19                        [ 8]: bonus and if0 not plus shl1 shr16 shr4
+  82: 3fpDnvjiBfy0SZV60PzxIcq3  18                        [ 7]: if0 not plus shl1 shr4 tfold xor
+  83: 3jHtl2amH79BVdAK60glVdME   3     SOLVED          0  [ 1]: not
+  84: 3jaodntEvmIAEj4KnqdCCBUg   6     SOLVED          0  [ 3]: not shl1 xor
+  85: 3kVaZNDWdcZogcm5ym2qxMiP  20                        [ 7]: if0 plus shl1 shr1 shr4 tfold xor
+  86: 3oM7kUlKjhdkM8TTalrf23vb  16                        [ 5]: fold if0 or shl1 shr4
+  87: 3oXRiYEJfg65LtT9wupdm2rr  15     SOLVED          0  [ 6]: and if0 not or shr1 tfold
+  88: 3pmagXFSM63FVgG7GY9a7JgD  24                        [ 8]: and if0 not or plus shl1 shr16 xor
+  89: 3qdO6MZdlWqZXm880w3YH4WB  16                        [ 6]: and fold if0 or shr1 xor
+  90: 3qi6vlptrfT7jrD8ZuNwJBLm  18                        [ 9]: if0 not plus shl1 shr1 shr16 shr4 tfold xor
+  91: 3u1Rk7Hm4vtCvF7cKenA2Hcw  23                        [ 7]: bonus and if0 plus shr16 shr4 xor
+  92: 406NYbUAoziJOhTSzNCLVgBH  20                        [ 8]: and fold if0 not or shl1 shr1 shr16
+  93: 45ZpvrIZ8iBTKCMRE1MAXZUI   4     SOLVED          0  [ 2]: not shl1
+  94: 45jHXGg20Tu99LebUQy4BcCz  19                        [ 7]: bonus and if0 not or plus shr1
+  95: 45snQnhUXVRuBgIYK1H6ncNo  18                        [ 7]: fold if0 not or plus shl1 shr4
+  96: 472wTrPpeVc29OVA33iUE5SP  19                        [ 5]: and if0 or shr1 shr16
+  97: 47E0gZBCrIm3VXLFCohIvT0c  11     SOLVED          0  [ 3]: and if0 tfold
+  98: 48YZ1Jln1ujUiasvUWxgZQZo  10     SOLVED          0  [ 4]: plus shl1 shr4 tfold
+  99: 4AviCXMbcQLsGJ49Zv1X9YqA  14                     0  [ 5]: and fold if0 plus shr4
+ 100: 4D0hy2JHZCuJrmowlm4mZ0gL  27                        [ 8]: and if0 not or plus shl1 shr1 shr4
+ 101: 4JIWLriAsK6vamlWkJDiAQ3d  26                        [10]: and if0 not or plus shr1 shr16 shr4 tfold xor
+ 102: 4LB6DIU5iiO3iSgT6BPGijkN  19                        [ 4]: fold if0 shr4 xor
+ 103: 4NWyJb87YEkn7EixD4QRxrlr  21                        [10]: bonus and if0 not or plus shl1 shr1 shr16 shr4
+ 104: 4Nkbzy8IJAo5mD2DA439E4bv  11     SOLVED          0  [ 4]: fold or plus shl1
+ 105: 4OA4AytlWf9HCp1WYHiB72hB  22                        [ 7]: if0 not or plus shl1 shr1 shr4
+ 106: 4PiAdq4uRDwJC2DAy7htwDVB  11     SOLVED          0  [ 4]: or plus shr4 tfold
+ 107: 4VW21CXBXpB8WyxTq3uJiJoo  14                     0  [ 6]: and fold or shl1 shr4 xor
+ 108: 4lVMJ7Q1Yiup5BVBEnG1KiLn  27                        [ 6]: and fold if0 plus shr1 xor
+ 109: 4mAp5jGxs2NDyTx3kT1tAger  29                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 110: 4r0MP61MydSNxmYlfd1EWTs2  13     SOLVED          0  [ 5]: and if0 not shl1 shr4
+ 111: 4r7sQRGI9Mx9qpslAqLRyG3K  16                        [ 6]: and if0 not shr1 shr4 xor
+ 112: 4ta9P8B98gP1yzzvVzaJCXbI  26                        [ 8]: and fold if0 not or plus shr1 shr16
+ 113: 4vwH3WmzCI0ogyPy2y6zyOoR  21                        [ 7]: and fold if0 not or shr1 shr16
+ 114: 51JZdd92V6i9G6UNjS7LWqf7  17                        [ 7]: and fold if0 or plus shr1 shr4
+ 115: 53fWDEBvzINganzLjOglPy6h  13     SOLVED          0  [ 4]: fold or plus shr4
+ 116: 54BD2Vw6qDN1fBDTMU3bnjC3  14     SOLVED          0  [ 5]: if0 plus shr16 shr4 xor
+ 117: 54pqe22shscdpEnhRzN98bML  27                        [ 9]: and if0 not or shl1 shr1 shr4 tfold xor
+ 118: 57DbwGWWAAHqlAHJJYzfPR1c  24                        [ 8]: if0 not or plus shr16 shr4 tfold xor
+ 119: 588TI0QcJyJMqDK2kPMDFXBv  18                        [ 7]: if0 or plus shr1 shr16 tfold xor
+ 120: 58fWnctsVI5cDVXeWL7Alzup  23                        [10]: bonus and if0 or plus shl1 shr1 shr16 shr4 xor
+ 121: 590BQaqsY1PnApXi2pLydbjk   9     SOLVED          0  [ 3]: and if0 plus
+ 122: 591N9BBxeYwmr2Su9rRh2TZu  28                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 123: 5CGAJOcV5me01jgDEeAD1wgn  12     SOLVED          0  [ 3]: or tfold xor
+ 124: 5CR3tjVPjjdvUTKbsPIBkJ14  13     SOLVED          0  [ 6]: and if0 plus shr1 shr16 shr4
+ 125: 5FPZBFfw0BBqkAE105GQiNU5  29                        [10]: and fold if0 not or plus shr1 shr16 shr4 xor
+ 126: 5Fa7TiRCLE4EFvF7UEA6uVgM  12     SOLVED          0  [ 4]: and if0 or shr4
+ 127: 5GGzRChrDCB69t3ssmoFL8Jo   9     SOLVED          0  [ 3]: or shr16 tfold
+ 128: 5GQ9Oa7HKKMXkalqFjA9P45b  10     SOLVED          0  [ 4]: and if0 or shr1
+ 129: 5OUGtSHj5poamWqgOI4jKPHs  10     SOLVED          0  [ 3]: and tfold xor
+ 130: 5QBMdJdc19ysuTCWF5iXuoDA  22                        [ 6]: if0 or plus shl1 tfold xor
+ 131: 5QtU84PR5MZqe1grVg4Q6Cma  25                        [ 7]: and fold if0 plus shl1 shr16 xor
+ 132: 5TfQqEEop1brPIAoyTxs7kL3  27                        [ 8]: and if0 or plus shl1 shr16 tfold xor
+ 133: 5WLC1oRWrYXHh0qliN9YCocY  25                        [ 8]: if0 not or plus shl1 shr16 shr4 xor
+ 134: 5Yi4u76EeQFdxad5F9DebQMC  26                        [ 7]: and if0 not or plus shr4 xor
+ 135: 5dELflHSsmLySmSwoc4CZf5X  19                        [ 7]: and fold if0 or plus shr1 shr4
+ 136: 5gQeojAPrTPZAXZlOUl1JHjm  12     SOLVED          0  [ 5]: if0 not plus shl1 shr16
+ 137: 5ioc8EonN0s1N99QEJYzwHvz  22                        [ 8]: and if0 not or plus shl1 shr1 xor
+ 138: 5jYAQIMJ9X0fvUegqeTNsHjg  21                        [ 6]: and fold if0 or plus shr4
+ 139: 5n1OhGPfeHCNtUllIuh7BGdF  24                        [ 9]: and if0 not plus shl1 shr1 shr16 shr4 xor
+ 140: 5nkZm7QaNifMpJkzsAXz7B65  26                        [10]: if0 not or plus shl1 shr1 shr16 shr4 tfold xor
+ 141: 5uCvu9kxbBemeANr2XK3pQcS  13     SOLVED          0  [ 6]: and if0 not plus shr4 xor
+ 142: 5vJJt14ti9GnDHqaf4GN8tEC   3     SOLVED          0  [ 1]: shr1
+ 143: 5wZEUWTyEQAN6Abe4V3wpvKm  24                        [ 8]: and fold if0 plus shl1 shr16 shr4 xor
+ 144: 5ymINyi8vI2T9N3UGsxqipbG  23                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 shr4
+ 145: 5zTpw0qntT5dkVvAQoJKRytx  14     SOLVED          0  [ 5]: and if0 shl1 tfold xor
+ 146: 609Z8abJi4vB0vS26RQFKEJw  16                        [ 6]: if0 not or plus shl1 shr4
+ 147: 64mMKnvOz5epsEb7Jqr6JMAA  21                        [ 8]: bonus and if0 plus shl1 shr1 shr16 xor
+ 148: 6AAp1WfWFKjWaaYW94YQYFlm   5     SOLVED          0  [ 2]: or shl1
+ 149: 6Jfl4rPDLvmWUccohENJQaC6  26                        [ 9]: and if0 not or plus shl1 shr16 shr4 xor
+ 150: 6L6q0AOWYaUYS2fxfKZm29zo  29                        [ 9]: and if0 not or shl1 shr1 shr16 shr4 xor
+ 151: 6LfPLMJT5CrD4DDAvxWJa5ss  28                        [ 9]: and if0 not or plus shl1 shr1 shr4 xor
+ 152: 6MlGPFwB8HmqyR18kGh5dYq7  18                        [ 5]: fold if0 not plus xor
+ 153: 6Ne2naFdWc3p3Fa4pHiRHHIg  27                        [ 9]: and fold if0 plus shl1 shr1 shr16 shr4 xor
+ 154: 6OsSktmE3nAj3AmFUjxqtEhB  19                        [ 6]: and if0 not or shr4 tfold
+ 155: 6SA4qAN9aw5B3G9oVogxSuv4  23                        [ 8]: bonus and if0 not or plus shr16 shr4
+ 156: 6SbBe6tDL3a6NZoXq8otONEG  22                        [ 7]: and fold if0 not plus shr16 xor
+ 157: 6Z038RBdLYDhGw6b7BcXvs9w  20                        [ 8]: and if0 not or plus shr1 shr16 shr4
+ 158: 6a2Zj0ceCBsxOPFVp00FZIIn  28                        [ 8]: and if0 not or shl1 shr16 shr4 xor
+ 159: 6cKnsvjgwO6UcyMDBZxgBfSm   8     SOLVED          0  [ 3]: plus shl1 shr4
+ 160: 6f9jZpv3Ld3b5QBOTVLxRzsV  18                        [ 6]: if0 or plus shr1 shr4 tfold
+ 161: 6ioUzQ4jzc7V6TcKUS6iVwH4  19                        [ 6]: fold if0 or shl1 shr1 shr4
+ 162: 6kjIbIT8uZ5Ef59sfkAPdc2H  22                        [ 6]: and if0 or shr1 shr4 tfold
+ 163: 6vlUofwJYo2u1J5GATcUTZuE  25                        [ 9]: and if0 not or plus shl1 shr1 shr16 shr4
+ 164: 6wGPaBvVDzlrCwoBuDio5Gam  15                        [ 6]: and if0 not shr1 shr4 xor
+ 165: 6yFqM5g2GiTEIdRBP18pJ5Av  17                        [ 6]: if0 not or plus shr16 tfold
+ 166: 70X7WMC8EXLAnWzKlDRXO2ZM  19                        [ 8]: and if0 not or shl1 shr4 tfold xor
+ 167: 71Ehs9bxmSDiSBfw6Ar4B01Q  19                        [ 6]: fold if0 not or shl1 xor
+ 168: 74SHZjC8dGtSvxCc7B9Elycj  26                        [10]: and fold if0 not plus shl1 shr1 shr16 shr4 xor
+ 169: 76YR4BJZIaW7BMCZQIYckQFh  18                        [ 5]: and if0 or shr4 xor
+ 170: 7BUA1dSIWC6q4Cw5sjNmIlha  27                        [ 9]: and if0 not or plus shr1 shr16 shr4 tfold
+ 171: 7JphplSaXBmUl2J4BeEcLRmA   9     SOLVED          0  [ 3]: not or tfold
+ 172: 7JrPGtB9lpyRRT8uO0Yc2M9E   5     SOLVED          0  [ 2]: not plus
+ 173: 7Nimu5kK3w9RCWlddgRM3HiG  26                        [ 9]: and fold if0 not or shl1 shr1 shr4 xor
+ 174: 7RK52KKYKOzfeIAsNSgPseeQ  15     SOLVED          0  [ 5]: if0 or shl1 shr4 tfold
+ 175: 7UVVgOwD96ZAORj9BE1axry9  23                        [ 8]: bonus and if0 or plus shl1 shr4 xor
+ 176: 7ZCr8GyScUDWyYkmRZ9cVpsd  22                        [10]: and fold if0 not plus shl1 shr1 shr16 shr4 xor
+ 177: 7b9u3OH7HtXIhxxmCz2izLwd   6     SOLVED          0  [ 2]: plus shl1
+ 178: 7dUw6qCHD8yk1GJ9m05mRVZG  21                        [ 7]: and fold if0 not or shl1 shr1
+ 179: 7dqSx1yKGRBBEyBDnVjmlElb  13     SOLVED          0  [ 5]: and if0 not shr1 tfold
+ 180: 7kEKijiKpQ4WEABF15dLXIfQ   9     SOLVED          0  [ 3]: not shl1 tfold
+ 181: 7lu1DsICTaXaLvAHl86lawAS  30                        [ 8]: and if0 not plus shl1 shr16 shr4 tfold
+ 182: 7oUlR50UA3clx79kKBGfjB2e   5     SOLVED          0  [ 2]: not or
+ 183: 7qzgAyxmEXNKktZVXW8Rm7vp  29                        [ 8]: and if0 not or shl1 shr1 shr16 xor
+ 184: 7yFbzF1s5shttTgNaNMu4myf   7     SOLVED          0  [ 3]: or shl1 xor
+ 185: 7yhXjcqCH07xtTguTz9ypW37  15     SOLVED          0  [ 6]: and if0 not plus shl1 tfold
+ 186: 7z8yhjTGsxqYO6nnVHFmuBct  28                        [ 8]: and if0 or plus shl1 shr1 shr16 xor
+ 187: 80AXnR0PB58APUpDQhyBTsi0  29                        [ 8]: and if0 not or plus shl1 shr1 tfold
+ 188: 82eEc92kVzOieEDPyhxEb5gc  15                        [ 6]: fold if0 not or plus shr16
+ 189: 82lc1LBdMF4pSxcREuQ5jSli  18                        [ 5]: and if0 plus shr4 xor
+ 190: 8BVlxJqvsLX8SWRVyeuZRVyN  25                        [ 6]: and fold if0 shr1 shr4 xor
+ 191: 8DIUHlrsXaaBYiiqP2PXwtUq   7     SOLVED          0  [ 3]: and plus shr4
+ 192: 8NW2JrVZalzpfdX1aYe7ut1V  16                        [ 6]: if0 shr1 shr16 shr4 tfold xor
+ 193: 8SvXRgeY9u9n1Dw0TDBkBsfF   5     SOLVED          0  [ 3]: not shr1 shr4
+ 194: 8Sw83uA3F9VDAhLtKxF6l9Cn  25                        [10]: and fold if0 not or plus shl1 shr1 shr16 xor
+ 195: 8atEzhUVoBbC2Z25na91NdFC   7     SOLVED          0  [ 2]: not plus
+ 196: 8bkRDel4eZm4f6IShzFx6h7N  21                        [ 8]: and if0 not plus shl1 shr1 shr4 xor
+ 197: 8c9BfLJs2rhW7fcndnvLyxZ9  11     SOLVED          0  [ 4]: and if0 shl1 shr4
+ 198: 8cWOdvrhrC4JSE2KyLfN7Igb  19                        [ 8]: and if0 not or plus shl1 shr16 xor
+ 199: 8eJ0uHIp9J5hiT7DHCfhWRQ2  21                        [ 7]: and fold if0 plus shl1 shr1 xor
+ 200: 8fPNp57dESR5cYz6hI615Ij2  13     SOLVED          0  [ 5]: if0 not shr1 tfold xor
+ 201: 8i8qSbyUga9zXmL7e1XJD1A8  26                        [ 5]: and fold if0 or xor
+ 202: 8j7hFXtqkxrdfAIu5fl4jb6a   9     SOLVED          0  [ 2]: and if0
+ 203: 8jrORNmaZgf7oknFcBWLyyRs  15                        [ 5]: and fold not shr1 xor
+ 204: 8l6A14o7dzKi0wXD3b9DMpPK  22                        [ 8]: and fold if0 not or plus shl1 shr1
+ 205: 8m07CYcr1s35qG2G6ESrBEiZ  23                        [ 7]: and if0 not or plus shl1 shr4
+ 206: 8mTMBkowO4BvYuFVKvfeUnY7  19                        [ 7]: if0 not or plus shr16 shr4 xor
+ 207: 8nICHJoEj7dYM5BctB2RhcOa  23                        [ 8]: bonus and if0 not plus shl1 shr16 shr4
+ 208: 8nJOpfHSv4rmcoWPnwLJDxS2  19                        [ 7]: and if0 not or shr1 shr4 tfold
+ 209: 8nu6tiCHJgQAS1asgjp6BYjO  30                        [ 6]: if0 not plus shl1 shr16 xor
+ 210: 8rYltAATGbBXUMoCyzUiB0hN  24                        [ 9]: and if0 not plus shl1 shr16 shr4 tfold xor
+ 211: 8xj19iel7hYnlAupkflDAwLy  13     SOLVED          0  [ 5]: fold not plus shl1 xor
+ 212: 8ykIiyTFIN2mNc888pcojIBD   9     SOLVED          0  [ 2]: if0 tfold
+ 213: 8zdtb00tVdgaan9RmiGsA7u4  27                        [ 8]: and if0 not or plus shl1 shr1 shr4
+ 214: 929cq8krUcZd0DpaArdMMWbX  21                        [ 6]: if0 not plus shr16 shr4 xor
+ 215: 92QhJPJVP8xA6NMVEatYc5i7  26                        [ 8]: and if0 not plus shl1 shr1 shr4 xor
+ 216: 94HiaalCEqrY3Kcp0v2cZSl4  14                        [ 6]: fold not or plus shr1 shr4
+ 217: 97XtRTtnVsYYqZbiOmc7Jtfp  30                        [ 9]: and fold if0 not plus shl1 shr1 shr4 xor
+ 218: 9AvyDOgke4e9bdAwaK7o5Vvs  15     SOLVED          0  [ 6]: if0 or shl1 shr4 tfold xor
+ 219: 9Bsz2z3PGAvVmNS1ngx8n14o  12     SOLVED          0  [ 5]: not plus shr4 tfold xor
+ 220: 9Go6QL5lVcBJN06RkqCDA8Gb  14                        [ 3]: fold if0 plus
+ 221: 9HBBbG7tz7nGun9LImeP6v7T   8     SOLVED          0  [ 3]: shl1 shr4 tfold
+ 222: 9Hm2QSyno9KDBFqtvAVztr6s  30                        [ 9]: fold if0 not or plus shl1 shr1 shr16 shr4
+ 223: 9IwiKQRsw51oblzIxWnnAUlM  21                        [ 8]: if0 or plus shl1 shr16 shr4 tfold xor
+ 224: 9KFOYnHYUStjFFndvZgxKjdA  15     SOLVED          0  [ 4]: and if0 not tfold
+ 225: 9UEyZVQBHt6gWfBNnmXX25BI  18                        [ 8]: and if0 not or plus shr1 shr4 tfold
+ 226: 9X197B8U9OXWo6bKLmBB3HT1  30                        [ 9]: fold if0 not or plus shl1 shr16 shr4 xor
+ 227: 9XycQeXwNqHT6WIRa5HotAoZ  16                        [ 6]: fold if0 not plus shl1 shr16
+ 228: 9Z1dQsM5uvstbAu5smcA1dkX  30                        [11]: and fold if0 not or plus shl1 shr1 shr16 shr4 xor
+ 229: 9gXw4U4sksBsUyVcg3qKqyYP  13     SOLVED          0  [ 6]: if0 not or plus shr4 xor
+ 230: 9glFfn8cOgnubfjagVukgOmq  14     SOLVED          0  [ 5]: and if0 plus shl1 shr1
+ 231: 9hVaLPmncF5zo7PzMu8ds1Vt  14     SOLVED          0  [ 5]: if0 not plus shr4 xor
+ 232: 9lABJB9osTKIf7ILidaeJTl4  10     SOLVED          0  [ 3]: and plus tfold
+ 233: 9ptu9AGqQVuExYo35dPP2oJZ   7     SOLVED          0  [ 3]: plus shr16 xor
+ 234: 9rjyCARgdp3WrOwioFp8iBQl  28                        [ 8]: if0 not plus shl1 shr1 shr16 shr4 tfold
+ 235: 9vrzMotKiMRluag4wV3vJ5sK   4     SOLVED          0  [ 2]: not shl1
+ 236: A03WwA1P0AXQyXjAnIYA2G2Q   4     SOLVED          0  [ 2]: not shr16
+ 237: A1OpqsHxvMJWiP4ZqcIBkfrm  21                        [10]: bonus and if0 not or plus shl1 shr1 shr4 xor
+ 238: A281cixOuKJBVAOFIO86Tf38  24                        [ 6]: and if0 or shl1 tfold xor
+ 239: A2QvXUvDffRU33ssqEXKwKuW  17                        [ 5]: if0 not plus shl1 xor
+ 240: A3DatBrN2l6d2jHCEWwVzJ9A  29                        [ 8]: if0 not or plus shr1 shr4 tfold xor
+ 241: A3M6wE5Os1Oi3pO946UQ8Gee  18                        [ 6]: fold if0 not plus shl1 xor
+ 242: A3oYA0exmRf3AFcxbBm1Q91g  25                        [ 7]: if0 not or plus shl1 shr1 shr16
+ 243: A4o332ATwFlwEwAc14wRlX8s  21                        [ 9]: and if0 not or plus shl1 shr4 tfold xor
+ 244: A5yIhwltOtfJb4ae4zybnEQi   5     SOLVED          0  [ 2]: and not
+ 245: A7XUqXzgeng90pvQerA3V2Yz  17                        [ 6]: and if0 shl1 shr4 tfold xor
+ 246: A8YajDpwcyfQXjkVXeIMjiKo  14                        [ 5]: fold if0 plus shl1 xor
+ 247: A8bsUKlyGEca7onUXTl1rW0C  16                        [ 6]: and fold if0 plus shl1 shr4
+ 248: A8vaSiX2BG098lBRz4t7NfIV  25                        [ 8]: fold if0 not plus shl1 shr1 shr4 xor
+ 249: A9CDGLynWCO28voVfn9gJaNK  25                        [ 8]: and if0 not or plus shr16 shr4 xor
+ 250: AAM9kUszZ4nBljOH94yalxY5   6     SOLVED          0  [ 2]: not plus
+ 251: AB5QjHpwJ5AaiBfkcUNiAHAI  24                        [ 9]: and fold if0 or shl1 shr1 shr16 shr4 xor
+ 252: AB9FkKPTWAEwJRKTEwhblkLw  22                        [10]: if0 not or plus shl1 shr1 shr16 shr4 tfold xor
+ 253: ABfVVIJc1fYv1ek9POJ2d94d  23                        [ 7]: fold if0 not plus shl1 shr1 xor
+ 254: ABuW0Qr95s9VloDsBVO17tAC  17                        [ 7]: fold if0 not plus shr1 shr16 shr4
+ 255: ACOzAqtPuAzXu6KBETYIUYXT  11     SOLVED          0  [ 4]: plus shr4 tfold xor
+ 256: ACsxt5w90Kf4YIACF7VQOYQI  12     SOLVED          0  [ 5]: or shl1 shr1 shr4 tfold
+ 257: ADcuJy8kmte1DrmpoTBBbpiA  20                        [ 8]: and fold if0 or shl1 shr16 shr4 xor
+ 258: AIclfz9fAfA9fIGMpzlgArrH  22                        [ 9]: bonus and if0 not or plus shl1 shr4 xor
+ 259: AJt8Cogenl9ftwd26u7JVAYf  25                        [ 9]: and if0 not or plus shr16 shr4 tfold xor
+ 260: AKASfNEZZ6lK8j2CtcUOJbDh  18                        [ 5]: fold if0 not or shr16
+ 261: AKnVnUhNimH5rGdZNGvIrssu  17                        [ 7]: and fold if0 not shl1 shr4 xor
+ 262: AMO7bAuKpGvnHXRcgrAASglp  19                        [ 7]: and if0 not plus shr1 shr16 xor
+ 263: AMbNBmHqdYD6qOwhYY1iAf81  12     SOLVED          0  [ 5]: or plus shr16 shr4 tfold
+ 264: AMsyPwX7Je6cV7TKy4gEApTt  20                        [ 6]: if0 or shl1 shr16 tfold xor
+ 265: ANEzr6jGGpAn0dAQncJZxcdF   8     SOLVED          0  [ 3]: shl1 shr4 xor
+ 266: ANsEH9LZQciOhWfE3IIjRvT6  12     SOLVED          0  [ 4]: and if0 shr1 tfold
+ 267: AO8ApoCBL5ml05gjPj1OIEM7  20                        [ 7]: and if0 not or shr1 shr4 tfold
+ 268: AQHjpFjmLAPkXMPY3ddI6jhS  22                        [ 8]: if0 not or plus shl1 shr4 tfold xor
+ 269: AQocZBrGsG9VZGBF7CwUu8sX  22                        [ 8]: if0 not or plus shl1 shr1 shr16 xor
+ 270: AR80gy1PPyAdMYhQjuGRr5pq  15                        [ 3]: if0 or xor
+ 271: AS7LMhCMT3JgcA3V0xEYphtS  10     SOLVED          0  [ 4]: and if0 plus shr1
+ 272: ASRkdJpSOlTHGVI93B8K7Khp  14                        [ 5]: fold or plus shl1 xor
+ 273: AU0zKK00xOhbSgPWmYEvysyX   8     SOLVED          0  [ 2]: and tfold
+ 274: AUyJXIcjE70dS3CNo3m9eB1B  16                        [ 7]: and fold if0 not plus shl1 shr16
+ 275: AVVyjUPCqd3XJA3vRbbhvL9u  12     SOLVED          0  [ 5]: and fold not shr16 shr4
+ 276: AWsaLk4V34SEnXmWlXNpbVum  26                        [ 9]: fold if0 not or plus shr1 shr16 shr4 xor
+ 277: AatxCgYTpoJAFgAtN6TTkwX1  22                        [ 6]: and fold if0 not plus shl1
+ 278: Ac0oFolpavnaABiGiRN2hduA  29                        [ 8]: and if0 not or shl1 shr4 tfold xor
+ 279: AdWz8185BBLz1cpcdDgAGRTq  26                        [ 8]: and if0 not or plus shl1 shr16 xor
+ 280: AdXSZiSpxb4xqrvD7ivGApGm  30                        [ 8]: and if0 or plus shl1 shr1 tfold xor
+ 281: AdYREXh7EYuUZavRhX93a4oa  12     SOLVED          0  [ 5]: and not shr4 tfold xor
+ 282: Adrw7pUiw9R1l9T9JgIJqcIi  21                        [ 8]: bonus and if0 not plus shl1 shr1 shr16
+ 283: AfJ1sk5UTmc1oCe3vXJ3rfOB  15     SOLVED          0  [ 6]: if0 not or plus shl1 tfold
+ 284: AgxAXaJI3TcIg0fsI60KrhBk  16                        [ 6]: if0 not or shr4 tfold xor
+ 285: AiAgbmHwKlFEIhR2wbBNAkRG  16                        [ 6]: if0 not or plus shr1 shr16
+ 286: AjyPAxAIQLw3Hu7DXOpmTzcY   3     SOLVED          0  [ 1]: not
+ 287: AlDHKyOzm1FkDnSPUanYAAwQ  16                        [ 6]: and fold if0 shr1 shr4 xor
+ 288: AlcakNXcN70LHUV4ZCRg6HWL  24                        [ 8]: and fold if0 not or plus shr1 shr4
+ 289: Am5zooiSACBOQ6BZXi2hZXFU  14     SOLVED          0  [ 5]: if0 not plus shr4 xor
+ 290: ApLA6QAtcw3jTl8EfsT0mS0J  10     SOLVED          0  [ 4]: and if0 shr16 xor
+ 291: ApgvO0BXICscreRL1KQwxTS0  30                        [ 8]: and if0 not plus shr1 shr4 tfold xor
+ 292: Aqs0AxSO9sSwxFHJQXg57DjD  19                        [ 7]: and if0 or plus shl1 tfold xor
+ 293: Ar4DJH7X57GuRfhQ1y5dAeal  18                        [ 8]: fold if0 not or plus shl1 shr1 shr16
+ 294: Ar8G3tBdBGWu51AgXhrVh6ld  18                        [ 5]: if0 or shl1 tfold xor
+ 295: AvHdn4CGzBACkPectUwiLSix  11     SOLVED          0  [ 4]: fold or plus shl1
+ 296: Ax0L4OUXHetJOenlzj99jNlc  22                        [ 7]: and if0 not or shl1 shr16 tfold
+ 297: AyFRJZtpaxPofAxQsKbpOUh2  20                        [ 7]: and fold if0 not shl1 shr1 xor
+ 298: AzBA0foNxREn3UlQ5M7S0Djj  23                        [10]: bonus and if0 not or plus shl1 shr1 shr16 shr4
+ 299: B0RAAndJLnyTcAqgGLXmssS6   7     SOLVED          0  [ 2]: plus shl1
+ 300: B2Oe4B0v3xHX3iJsfA5OeAIP  23                        [ 6]: fold if0 or shl1 shr16 xor
+ 301: B4fCmGpQVKyl9xE5BApWhtXS  26                        [10]: and if0 not or plus shl1 shr1 shr4 tfold xor
+ 302: B5jzv1kj8bV3UKBjXm3arOTq  28                        [ 9]: fold if0 not or plus shl1 shr1 shr16 xor
+ 303: B7gxoxxHbStCSIbDncDcQ0QJ   6     SOLVED          0  [ 2]: plus xor
+ 304: B8eMohzls3g53V8y9cIK6yB6  11     SOLVED          0  [ 5]: if0 not plus shr1 xor
+ 305: BAl33bDa8UEqGg44gcZM6i5C  19                        [ 7]: if0 or shl1 shr16 shr4 tfold xor
+ 306: BApGgGfq4SyrcHVhfV2UV3iT  16                        [ 4]: and fold if0 not
+ 307: BBAYXovjTSgBeQSH2rHchJOs  20                        [ 7]: and fold if0 not or shr16 xor
+ 308: BBuT2dGRbv8YSqnI69ch5DBi  11     SOLVED          0  [ 5]: and if0 not plus shl1
+ 309: BC2LGQDXS5xsjjYUOLFdPMxP  24                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 310: BC650YnRzHsNv8aRJGMqFRTE  25                        [ 7]: bonus and if0 not or plus shr1
+ 311: BCA8wWojOn6NYTDEpags3J4Z  26                        [ 7]: and if0 or plus shr16 shr4 xor
+ 312: BErNIVaQONuWX8zmQmib5f5q  24                        [ 9]: bonus and if0 not or plus shr1 shr16 shr4
+ 313: BFVngiEvYhtp0THtLGqz1s1l  15                        [ 6]: and if0 plus shl1 shr1 xor
+ 314: BFfFtsrfFZ7hrayDSHCrbqps  23                        [ 7]: bonus and if0 not plus shl1 shr1
+ 315: BIbBUrLkPYAm62CqnuCs0gqX  20                        [ 7]: and if0 plus shl1 shr1 shr4 xor
+ 316: BJ1XqL9Se9GrL9qrcVWzBetw  15                        [ 6]: and if0 not or shl1 shr1
+ 317: BLt6AIsLnpQ4S7Rllt1WwW5B  13     SOLVED          0  [ 5]: and if0 or shr16 shr4
+ 318: BM0EMNGbTqq3xkPfCraYpTtO  14     SOLVED          0  [ 5]: and if0 or shr16 tfold
+ 319: BM9uMDF87CagAv86bXp5v6QZ  21                        [ 8]: if0 or plus shl1 shr1 shr4 tfold xor
+ 320: BObfRTEb8h8AiE3TTkkHWabk  23                        [ 8]: and if0 or plus shl1 shr1 tfold xor
+ 321: BUAyTV3X8ImdrJSBsYhQPBEr  16                        [ 7]: if0 not or plus shr1 shr16 shr4
+ 322: BUOBt1Qxq6LAExJ4XbcZCF6q  18                        [ 8]: and if0 not or plus shl1 shr1 xor
+ 323: BUXKQT4oPkJ8iLzcimJCcxBY  11     SOLVED          0  [ 3]: plus shl1 tfold
+ 324: BWLobcMCwwfx2i6ZDnYk2Ams  14                        [ 5]: and fold plus shr1 shr16
+ 325: BWikXAghcTrXcLay788WEVEI  27                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 326: BYlhLGN3L6bCgoF9vyPqUI2a   7     SOLVED          0  [ 3]: and or shr4
+ 327: BZ6AFBqlqbVfmzNKJyaG3L6P  17                        [ 5]: fold if0 or shr4 xor
+ 328: BalxKK8ltpxJel0aqGM2HOxK  30                        [ 8]: if0 not or plus shl1 shr1 shr16 shr4
+ 329: BarhIIoBl4zXfGpwdKVt2BeW   8     SOLVED          0  [ 2]: plus tfold
+ 330: BbRBEB40h44xle4cSO1il3Yb  17                        [ 4]: if0 plus shr16 xor
+ 331: BcJinLVt4dEmr4CFFIATlJNA  19                        [ 5]: fold if0 or plus shl1
+ 332: BcLp58YBhrAUqlsw1tAXBD7W  24                        [ 8]: and fold if0 not or shl1 shr1 shr16
+ 333: Bf6BKInLDrAoJBzzQMB1RuK8  22                        [ 9]: and fold if0 not or plus shl1 shr1 shr4
+ 334: BfZQzASH4AN8SNlv1xBQV6YH  13     SOLVED          0  [ 4]: fold not shr1 xor
+ 335: Bfvbys4cg1ZAC5D6tbjih2D5  30                        [ 9]: fold if0 not or plus shl1 shr1 shr4 xor
+ 336: BgcAuwtFyT39BB81dopPAAHv  18                        [ 6]: and fold if0 plus shl1 shr16
+ 337: BggcBM8Y1l7DBHR9dPohlCOM  23                        [ 8]: bonus and if0 not or plus shr1 shr16
+ 338: Blbl78kqT77rJH638cYptjAA   9     SOLVED          0  [ 3]: or shr4 tfold
+ 339: Blhd2Gq2EkrEHNqDl2x61Sri  23                        [ 7]: bonus and if0 plus shr1 shr16 xor
+ 340: BmR07dXmomVXl9XnH8m51rCM  17                        [ 6]: and if0 or plus shl1 shr4
+ 341: BmUJC7M5P2aTAHC11zRhmY6c  29                        [10]: and fold if0 not or plus shr1 shr16 shr4 xor
+ 342: Brj6eq3pZml4hOoDBoCankwW  29                        [ 8]: if0 not plus shl1 shr1 shr16 tfold xor
+ 343: BsJl7UC5mntTwnZAm3fK1ATS  28                        [ 9]: and if0 not plus shr1 shr16 shr4 tfold xor
+ 344: BswArqxBAzQsfrQSDsEDjYJ0   9     SOLVED          0  [ 3]: shl1 tfold xor
+ 345: BszinEVVkuECA74b3QqMWLxJ  21                        [ 9]: bonus and if0 not or plus shr1 shr16 shr4
+ 346: BtNtVrWI5IanFBgoI6BEbqY2  17                        [ 6]: fold if0 or shr1 shr16 xor
+ 347: BttxLjLfYF7KsHJutjJcANkS  21                        [ 5]: and fold if0 shr4 xor
+ 348: BuAlDfNIZe9W4JgMoRjNbc0x  25                        [ 7]: and if0 not plus shl1 shr1 shr4
+ 349: Burhc5C8BNlpgmDpffz1TYHY  22                        [ 8]: if0 not plus shl1 shr1 shr16 shr4 tfold
+ 350: Bvp4EaESooAb31NudrNTALuc  30                        [10]: and fold if0 not or plus shl1 shr1 shr16 xor
+ 351: BwVoxhK3STkTHtm55NXDXUNr   9     SOLVED          0  [ 3]: plus shr4 tfold
+ 352: BxVNP8YFxnu4tOXQRoBE4eNk  14     SOLVED          0  [ 5]: if0 shl1 shr1 tfold xor
+ 353: ByTqJqOSIlqoBPzJCa4On2cT   9     SOLVED          0  [ 4]: if0 shl1 shr16 shr4
+ 354: ByqnqA0vvjlB5GGba70vnvZb  26                        [ 9]: and if0 not plus shl1 shr1 shr16 shr4 xor
+ 355: BzUr7Ge1hFLBwK5101F9vWzV  26                        [11]: and if0 not or plus shl1 shr1 shr16 shr4 tfold xor
+ 356: C0zUBRCoiXAlnXRu67pjpo9m  10     SOLVED          0  [ 4]: and if0 not xor
+ 357: C2f4HCzJAFAlitpWlUhVmQmh  20                        [ 7]: fold if0 plus shl1 shr1 shr4 xor
+ 358: C5KIqJKBhFcE4wnYNEgpcZ5z  14     SOLVED          0  [ 6]: and if0 shl1 shr1 shr4 tfold
+ 359: C6b05wwDBsZqq4RkBaT1CYwV  23                        [ 8]: bonus and if0 not plus shl1 shr16 shr4
+ 360: C9hwBxtiqTUIaGmncLGnlGqZ  11     SOLVED          0  [ 3]: fold plus shr4
+ 361: CBjMv6O6AJmVdvrwu3p3WFxf  24                        [ 8]: if0 not or plus shl1 shr1 shr16 tfold
+ 362: CM849jfCjpvVpVq53zgrwDRZ  15                        [ 7]: and if0 not or shr1 shr4 xor
+ 363: CNrKaThWkfUBQlis3tvW2urO  18                        [ 7]: and if0 plus shl1 shr16 shr4 xor
+ 364: CRpupPoKD2ziu5elGSFFh7lZ  30                        [ 9]: and fold if0 not or shl1 shr1 shr4 xor
+ 365: CUM3aCrnyd4Ginladl9AAOxM  13     SOLVED          0  [ 4]: fold if0 plus xor
+ 366: CW0vxBkadQ7xnh0a2wJXrDcn  27                        [ 7]: if0 not or plus shl1 shr16 xor
+ 367: CXV55l7UqqfQX6NHzScqKQbp  22                        [ 9]: and if0 not or shl1 shr1 shr16 shr4 xor
+ 368: CbxAjf5rcOr4WgAaEsUY8Vcy   8     SOLVED          0  [ 2]: or tfold
+ 369: CgE2l6eVXg7aQEUsCVaLlsvM  19                        [10]: bonus and if0 not or plus shl1 shr1 shr16 shr4
+ 370: ChDNgB2dmCPawcNFyid7rfQF  27                        [ 8]: and if0 not or shr1 shr4 tfold xor
+ 371: CkJuGIUcW1Ej8xh77VR0ONMi  14                        [ 6]: and fold or plus shr1 shr16
+ 372: CmQ72ZbsiXlWpradxti0OWR6  22                        [ 7]: fold if0 or plus shr1 shr16 shr4
+ 373: CoaQpC190tzTx9O6MRVuyGmS  23                        [ 7]: if0 plus shl1 shr16 shr4 tfold xor
+ 374: D0e5A0wYO3mw6O3uy1bOddWU  21                        [ 7]: bonus and if0 or plus shr4 xor
+ 375: D0jhnxWMffu7kFK6txPnVrLg  19                        [ 8]: fold if0 not plus shl1 shr1 shr4 xor
+ 376: D3s2ATiwc5AYbn5JwiNCNBkl  28                        [ 9]: and if0 or plus shl1 shr1 shr4 tfold xor
+ 377: D56SWfp57F8MJOysqTxsF6mC  10     SOLVED          0  [ 4]: or shl1 shr4 tfold
+ 378: D7a7A03K8TrnpCgikcBK7tPY  25                        [ 7]: and if0 or plus shr1 shr16 xor
+ 379: D7ylJBVQaWpd5b2NROGX4sQj  13     SOLVED          0  [ 5]: if0 plus shl1 shr16 shr4
+ 380: DA1JgP1u9Bt8n8b45VOakBSv  18                        [ 8]: if0 not plus shr1 shr16 shr4 tfold xor
+ 381: DAY3BqheuxDsGGc6KtxMMTcq  15                        [ 7]: fold not or plus shl1 shr1 xor
+ 382: DBQ6IxLnJGi8OoTLzOZnqRpx   4     SOLVED          0  [ 1]: plus
+ 383: DBSr6Cpj55PwAzaY1JT8Tm18  12     SOLVED          0  [ 5]: fold plus shl1 shr16 xor
+ 384: DBTQ8PyCRkz1OBGLA9KqfwZR  17                        [ 7]: and if0 not or shl1 shr16 tfold
+ 385: DCI0mtMleCtLYMFCJuzPcJPY  22                        [10]: bonus and if0 not or plus shl1 shr1 shr16 shr4
+ 386: DDFDIjura6DArEKB0oSGIxHI  20                        [ 7]: if0 not or plus shl1 shr1 xor
+ 387: DFsANL3b1jQago4DloABmUoG  19                        [ 6]: if0 or plus shr1 shr16 xor
+ 388: DIj3Km1NlSIXQ2E13OIXf8a5  26                        [ 9]: and if0 not or plus shl1 shr1 tfold xor
+ 389: DInvp7gAzgZS05BPQKCaA1Ej  28                        [ 9]: and if0 not or plus shl1 shr1 tfold xor
+ 390: DNYEuU14HYEXmhiVcIqaCsAX   9     SOLVED          0  [ 4]: if0 shr1 shr4 xor
+ 391: DR1642w74jBsJSYsC5QcZDp6  23                        [ 9]: bonus and if0 not or plus shl1 shr1 xor
+ 392: DR2oDrLnEOm4tAIked0658Qe  26                        [ 8]: and if0 not or plus shr1 shr4 tfold
+ 393: DS62BquB7v3XPFoWXo828KF3  20                        [ 6]: bonus and if0 plus shr16 shr4
+ 394: DU2m4O2GYCBVs7AABEzhvBqA  21                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 shr4
+ 395: Dac5S70zpF5o90wd4bIXwymR  30                        [ 9]: and fold if0 not or shr1 shr16 shr4 xor
+ 396: DdQRxzytymtzpbAJBZcr7yYB  11     SOLVED          0  [ 5]: and if0 shl1 shr4 xor
+ 397: Ddl7xps8kcDIxd6NDCFBKXi2  27                        [ 8]: and fold if0 or plus shl1 shr1 xor
+ 398: DfuMAb9s10uh6pjSOpB7mrOo  28                        [ 9]: and if0 not or shl1 shr1 shr4 tfold xor
+ 399: DgPH01WQgKL107gR0Gqco1w8  20                        [ 8]: and if0 not or shr16 shr4 tfold xor
+ 400: DhkgYcqEBfn3vQ2AC4JsBBZn  24                        [ 7]: if0 not or plus shr1 shr4 xor
+ 401: DjDc2xSeLRd5EzbBsSMWsMYo  19                        [ 8]: fold if0 not or plus shl1 shr1 shr16
+ 402: DkTgOU2utBsU8Jaw5Kf4Asim  30                        [ 9]: fold if0 not or plus shr1 shr16 shr4 xor
+ 403: DmiB5TOnmfMwBybEvFT0Hfid  23                        [11]: bonus and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 404: DqEgdpWPfKf1Y7Bh6yX2JhPT  20                        [ 7]: fold if0 not or plus shl1 shr4
+ 405: Dqx7eRAJMAUnmNtS9b5drWZp  23                        [ 6]: and if0 or plus shr16 shr4
+ 406: DrRBmnwJQVhw8MGLbLf0qvI0  17                        [ 4]: fold if0 or shr1
+ 407: DyWtaw9UGuBVwKuRHOD8Vzr8  21                        [ 6]: and fold if0 not or shl1
+ 408: DzXOZRgU9e3Hj9zcRYQNUr7U   7     SOLVED          0  [ 3]: and plus shr1
+ 409: DznDoP7ignzNG7l5BGSQmvSS  16                        [ 6]: and if0 not shr16 shr4 tfold
+ 410: E5eFpOjoDjXJv5zvQT2trYYw  16                        [ 6]: fold if0 or shr1 shr4 xor
+ 411: E9ymCOkELzIjYrDCnjmzJCkf  21                        [ 7]: and fold if0 not or shl1 shr1
+ 412: ED440TGTvbqhMMpRML6Hu7qq  16                        [ 5]: fold if0 or shr1 shr4
+ 413: EDxPem6nmcZErBoht5nkOD4t  13     SOLVED          0  [ 4]: if0 or shr4 tfold
+ 414: EFAiga8T13cwUBxmb53Sqtd2  10     SOLVED          0  [ 3]: or plus tfold
+ 415: EGVEbA6Gyt4u3fGz0DFYQ6PD   5     SOLVED          0  [ 2]: and shr4
+ 416: EGqtosFlHFTBbp9l8KBLGINb  21                        [ 9]: and if0 not or plus shl1 shr1 shr4 tfold
+ 417: EKpxMmDhuUBDI0m6Aj4s8PoT  21                        [ 8]: and if0 not or shl1 shr1 shr4 xor
+ 418: EL93lw2i6AMPffeAHOONyeyQ  23                        [ 6]: and if0 plus shl1 shr1 shr4
+ 419: EMRDVHqEn6QgdCsXwxONMhFI  29                        [ 7]: and if0 or plus shl1 tfold xor
+ 420: EO0iPcnl4TKBRFozY8VQPb0v  23                        [ 9]: and fold if0 or plus shl1 shr1 shr16 xor
+ 421: EOq7BB77fR0WUsWLx6ReRmuX  21                        [ 8]: bonus and if0 not or plus shr4 xor
+ 422: ESI15KUnyEpRIpVUSBLoE7Ej  25                        [ 9]: fold if0 not or shl1 shr1 shr16 shr4 xor
+ 423: EUmioakXqB6tgNyVmQS2NAJ4  27                        [ 8]: if0 not or plus shl1 shr1 shr4 tfold
+ 424: EVCc1sx9yFZqyupYTgDBBVW4  15                        [ 4]: fold if0 shr4 xor
+ 425: EYG6z0cD42oqZCQtEyV5UmYd  13     SOLVED          0  [ 6]: and if0 or plus shr1 shr16
+ 426: EZbVwHsfvWQBBFZkIpDAx6SH  14                        [ 6]: fold plus shl1 shr1 shr16 xor
+ 427: Eco2AqVxjyMqXqkbmJrXcBzG  21                        [10]: bonus and if0 not or plus shl1 shr1 shr16 xor
+ 428: EdQoW2OlvZhwekAcZVR63YtA  17                        [ 6]: if0 or shr1 shr4 tfold xor
+ 429: EghL7n1ybcQ1jmc3Qlcy2xKJ  30                        [ 9]: if0 not or plus shl1 shr1 shr16 tfold xor
+ 430: EkEzKuPRDlB4CB8g52HxIocc  23                        [ 7]: bonus and if0 or plus shr4 xor
+ 431: EkqP2Lq7SEdjWyPrYcTTvEiP  10     SOLVED          0  [ 4]: shl1 shr4 tfold xor
+ 432: EuL0RN1GKjoYYyL37ABuGHeQ  16                        [ 7]: and fold if0 not plus shl1 shr1
+ 433: EwxOjIRmYKpRRAAfoqAAPt0R  21                        [ 7]: bonus and if0 shl1 shr1 shr16 xor
+ 434: ExNUBElcwBfzuRA5iGevpAOm  30                        [ 9]: and if0 not or plus shr16 shr4 tfold xor
+ 435: F0Wzz54ZNMjJ74vM5Erwick4  19                        [ 7]: and if0 plus shl1 shr4 tfold xor
+ 436: F0dk8DmXRIz9vkNl3kXVsBeb  18                        [ 8]: and if0 not or plus shr1 shr16 xor
+ 437: F41YEPs4AxtJLJPlnLfNwbQL  16                        [ 7]: and if0 not or shl1 shr1 shr16
+ 438: F5dz2mhZxK6GfbhYbesNAgdy  29                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 439: FAuMAgsjuR4NsTtt3Sh0ik95  17                        [ 6]: and if0 not or shr4 tfold
+ 440: FBdMHQLR89UhBAsM6Ur1Y8Ae  29                        [ 8]: and if0 or shl1 shr1 shr4 tfold xor
+ 441: FBjZVkbA3pgb0L2A67daqgxa  20                        [ 7]: if0 not or plus shr4 tfold xor
+ 442: FHfZqAkVakISRnPnR1Ad4Fq1  25                        [ 8]: and if0 not or shl1 shr1 shr16 xor
+ 443: FHzyIJyZKhxyKVkqBGAzdkK9   9     SOLVED          0  [ 3]: if0 shl1 shr4
+ 444: FM3QAce83IkvKsYRjTpgky6G  18                        [ 6]: and fold if0 not plus xor
+ 445: FR3BnCxZWtzEHcf4qP3Yr34Z  11     SOLVED          0  [ 3]: fold or shr4
+ 446: FU2IlHVNu7FB5HMbeitNCLKW  21                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 xor
+ 447: FVD8eBULigYwyK3x7CoP4xgb  23                        [ 9]: bonus and if0 not or plus shr1 shr16 shr4
+ 448: FWemiB2nmN4B0YVUQFUmBmq2  24                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 xor
+ 449: FcJq4gdp9NAjPqBxZU0YwT4S  23                        [ 9]: bonus and if0 not or plus shl1 shr16 shr4
+ 450: FjBqmGiS7DQoByst52frHp4c  10     SOLVED          0  [ 3]: or plus tfold
+ 451: FjKDLURZTYmeU1aX8MkGZ7SB  28                        [10]: if0 not or plus shl1 shr1 shr16 shr4 tfold xor
+ 452: FteYA9UnrvvyAVhFPbXStRql  21                        [ 8]: bonus and if0 not or shl1 shr4 xor
+ 453: FyzBjXT6MuYZ1V3h8ql156Jd  11     SOLVED          0  [ 5]: if0 not shl1 shr1 xor
+ 454: FzfMIXqJyjSqcLRgEcUJI60k  11     SOLVED          0  [ 5]: if0 plus shr1 shr16 xor
+ 455: G6rBVAAHssyR2d2Cp4j75DKp  25                        [10]: bonus and if0 not or plus shr1 shr16 shr4 xor
+ 456: G6vKTBaNeB9QjVL9TrA3CUcZ  28                        [ 8]: and if0 or plus shl1 shr16 shr4 xor
+ 457: G6w8gI6jlpFl6z5hv90TiPnw  15                        [ 6]: fold if0 or shl1 shr16 xor
+ 458: G7FCtBMfjBzfE7jDIeIELYoi  11     SOLVED          0  [ 3]: if0 plus tfold
+ 459: G7atvASs9op6rCia76JINmSf  12     SOLVED          0  [ 6]: if0 not plus shr1 shr16 shr4
+ 460: GAxGOZjzluIy7OaFaTjH6yo6   8     SOLVED          0  [ 2]: plus tfold
+ 461: GCtEHP9uplT9cQ5bigaxB36U  30                        [ 9]: and fold if0 not or plus shl1 shr1 xor
+ 462: GDjdTvoNdtRK6enHtK2AZuDJ   3     SOLVED          0  [ 1]: shl1
+ 463: GF2U6hZEWeeQUYHdnHzQn8NQ  25                        [10]: bonus and if0 not or plus shl1 shr1 shr16 xor
+ 464: GIJ0SoVbEBcdZU1HO9ABCinm  23                        [ 9]: fold if0 not or shl1 shr1 shr16 shr4 xor
+ 465: GIPsybqYn7sZD4Og1Du1nm7y  11     SOLVED          0  [ 4]: if0 not plus shr4
+ 466: GNBltp22WfC0cEPtv5aKoC1A  11     SOLVED          0  [ 5]: and if0 plus shl1 shr4
+ 467: GRrIoUBVPYzH27G8tWwNcne8  24                        [ 8]: and fold if0 plus shl1 shr1 shr4 xor
+ 468: GShTBk73ZnsEOvUA6J0QyjCe  13     SOLVED          0  [ 6]: fold not shl1 shr1 shr4 xor
+ 469: GVGtfqNM9LqykQYJfq6N1eMQ   8     SOLVED          0  [ 4]: and not plus shr16
+ 470: GaJvu4XzBLbh9rZZNEJK31ZO  21                        [ 7]: if0 not plus shl1 shr1 tfold xor
+ 471: GcISfLRHcioe2JuGIruH6GGC  18                        [ 6]: and fold if0 plus shl1 shr16
+ 472: GfrUuXK0CIWk1FcgIxiVpdAt  13     SOLVED          0  [ 5]: if0 or shr16 shr4 tfold
+ 473: Gmr55i6IBvlrA131yalk0MKQ   8     SOLVED          0  [ 5]: not or shl1 shr1 shr4
+ 474: GrpBFQ2fY1FauM14apTFTUAP  10     SOLVED          0  [ 5]: and if0 not shr16 shr4
+ 475: GyrGFsxS0QQMo5UJwyWjYKcl  13     SOLVED          0  [ 6]: fold not plus shl1 shr1 xor
+ 476: Gzk9C6tXUovTXOf9mdJJOJJA  11     SOLVED          0  [ 5]: and if0 plus shl1 shr1
+ 477: H1ELyDeMc4tHytm5hG2ZvH6z  13     SOLVED          0  [ 4]: and if0 not tfold
+ 478: H1RNis7qmi0mdsHpXGv2zHYi  22                        [ 8]: and if0 not or plus shl1 shr16 xor
+ 479: H2nRGsGg9Y9aDG0wJEHex4jt  16     SOLVED          0  [ 5]: if0 plus shl1 tfold xor
+ 480: H77yoKE3MUYC4vcBFYr4HW1G  16                        [ 5]: fold if0 not or xor
+ 481: H9NB2YBI88KqsuBoLw8tJiIz   7     SOLVED          0  [ 3]: not or plus
+ 482: H9csIbEyBefYkQZZSLtunLt9  26                        [ 8]: if0 not or shl1 shr1 shr16 shr4 xor
+ 483: HB8T1erBFOSFMLkH0WUOMsiH  15                        [ 5]: and if0 or plus xor
+ 484: HBfgrAbTjGclirk0a0zgLAM4  25                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 485: HD582GqHgeMFdd74ZoD1ybao  30                        [ 9]: and fold if0 not or plus shr1 shr4 xor
+ 486: HE2gLNw4NBibu53VLhcGtmyE   8     SOLVED          0  [ 3]: and shr16 shr4
+ 487: HJ7vOXB1Q8Qc4jnt1loWVPBh  21                        [10]: bonus and if0 not or shl1 shr1 shr16 shr4 xor
+ 488: HKCmJl2MS6P8cg31BADANiTC   3     SOLVED          0  [ 1]: shr16
+ 489: HO3At5D2JPRy3vpXbhHpY7by  24                        [ 9]: and if0 not or plus shl1 shr1 shr4 tfold
+ 490: HRIvf5wXHBzq179A0eVP0zOF  21                        [ 7]: if0 not or plus shl1 shr16 shr4
+ 491: HSj7e330qyk4NgBHdDwRiyLt  18                        [ 5]: and if0 not shl1 xor
+ 492: HTFLrJBDCT5Tp4gNSUhj98AL  21                        [ 7]: and if0 or shl1 shr1 shr16 xor
+ 493: HVPq5ZCHRFQ8gQ6YrjcB4lS4  27                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 494: HWiBbnLkKzIXmJtN93BAtmQ6  21                        [ 9]: and if0 not or shr1 shr16 shr4 tfold xor
+ 495: HXN0npHgVhAqNaZDJtmbktAB  27                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 496: HXmNf7ZR4U2f4fiDfXqgzfXs  16     SOLVED          0  [ 5]: and if0 not shr4 tfold
+ 497: HYGJANl2usGrDf9MUV7OB0Tb  12     SOLVED          0  [ 5]: if0 or plus shr4 xor
+ 498: HYuAlixdyejqOeOBWj2u0UlS  19                        [ 7]: if0 or plus shr1 shr16 tfold xor
+ 499: HbuVZ4tXbExgiSkmnPjBmUhn  27                        [10]: fold if0 not or plus shl1 shr1 shr16 shr4 xor
+ 500: Hf5xEuA0QO5yi0JVZXXA3pGk  16                        [ 5]: if0 or shl1 shr1 xor
+ 501: Hg3JfLIwWxrXOceYXkHrrGu2  15     SOLVED          0  [ 5]: and if0 or tfold xor
+ 502: HhN0sBBvHS4ts1yEALhD2ZAx   8     SOLVED          0  [ 4]: and not plus shr16
+ 503: HhVY91nMLSl3H3Io6UgzAaVW  30                        [ 9]: and if0 not or plus shl1 shr1 shr16 shr4
+ 504: HhgYQaL0GHEE8V2k3dLfZiqa  23                        [ 8]: and fold if0 not or plus shr16 shr4
+ 505: HmKQiZsZAbWdtWToWfUO6h8M  30                        [10]: and if0 not or plus shl1 shr16 shr4 tfold xor
+ 506: HtZBed7SMTeaGDSeG6qBTpqB  23                        [10]: and if0 not or plus shr1 shr16 shr4 tfold xor
+ 507: HvTj0nfDmth2B6dnH6aUemZJ  19                        [ 5]: if0 or plus shl1 tfold
+ 508: Hx8RYySN6VQgWiJ8boV1rbxw  25                        [ 9]: bonus and if0 or plus shl1 shr1 shr4 xor
+ 509: HxVG84ytetXMyZ1SM2qKANHQ  21                        [ 8]: bonus and if0 plus shl1 shr1 shr16 shr4
+ 510: I2vGFPN8kN0rVkvA3Of1qsqK  26                        [ 7]: and if0 not or plus shr4 tfold
+ 511: I6ZLOV4rXHbjQYswRn9JgJVn  27                        [ 8]: and fold if0 not plus shr1 shr4 xor
+ 512: I8gd5vyD5mxbktST0jdnKik2  23                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 xor
+ 513: I8sxAcKEf8YkuZBmpyp7ZUDl  27                        [10]: and if0 not or plus shl1 shr1 shr16 tfold xor
+ 514: I8vTWpYgAT4kRtQW9Z9lYxI2  13     SOLVED          0  [ 4]: and if0 not tfold
+ 515: IBae9m7biKLAciAv3XQwtizK  23                        [11]: bonus and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 516: ID9KR5c5lofrYlEUBof8kAUX  18                        [ 6]: and if0 or shl1 tfold xor
+ 517: IDNul2ZoXm9MYlgsEtArqn32  21                        [ 7]: and if0 not or shr1 shr16 xor
+ 518: IFLsdNk89nRUQeSuBI5C3bEV  23                        [ 9]: bonus and if0 or plus shl1 shr16 shr4 xor
+ 519: IFwzM5KpQH1D4OujXyMZiVnU  12     SOLVED          0  [ 4]: not plus shr4 tfold
+ 520: IP5d67dQ5AejYLdgac0eBNAF  11     SOLVED          0  [ 5]: if0 or shl1 shr4 xor
+ 521: IPNyrPwsPix2hg7FWpScrkNa  23                        [10]: and if0 or plus shl1 shr1 shr16 shr4 tfold xor
+ 522: IPvf8TwArIC3IYjAIA0JQ8Wo  21                        [ 7]: and if0 not or shr1 shr4 xor
+ 523: ITthSVj3H9SldvTEuPAZ4pBp  23                        [ 7]: and if0 or plus shr16 shr4 xor
+ 524: IUL9SAzTWahl0l4lO3BDZwQW  18                        [ 6]: and if0 not plus shr4 tfold
+ 525: IcLdgCduWICYAyDjPVWjQQt1  16                        [ 7]: and if0 or shl1 shr1 shr16 shr4
+ 526: IgAtMoPWy5kzJKDAY60aFXMB  12     SOLVED          0  [ 4]: if0 or shr4 tfold
+ 527: IoLbomKODeoH8RjWcrFAMLRz   6     SOLVED          0  [ 3]: not shr1 shr4
+ 528: IqVt38hp9agfTqolewP2NLZv  11     SOLVED          0  [ 4]: plus shr1 tfold xor
+ 529: Iqi1xH2SfWWYI3rpzn17iMnF  19                        [ 8]: and fold if0 not plus shl1 shr1 xor
+ 530: IqmQYDZfqfvhzUTF7q8cscjA  25                        [ 8]: and if0 not plus shr1 shr16 shr4 xor
+ 531: IucFb26a2gWL67A4xSIGSJvX  26                        [ 9]: and if0 or shl1 shr1 shr16 shr4 tfold xor
+ 532: Iw9WSdS9A2yEJNgBCb4hz6n2  19                        [ 6]: if0 not plus shl1 shr16 shr4
+ 533: Ixu9JCW98UHSxyBOrWr5gRoB  25                        [ 9]: and if0 not or plus shl1 shr1 tfold xor
+ 534: J120IWSzMXQgrYxtw5epjnh3   8     SOLVED          0  [ 2]: tfold xor
+ 535: J5xZmxPdScSiNtB7wShmNu3r  27                        [10]: and fold if0 not or plus shl1 shr1 shr4 xor
+ 536: J9QRL6lPRcnhBhDhUuUP8yl4  24                        [11]: and if0 not or plus shl1 shr1 shr16 shr4 tfold xor
+ 537: JANWFngM7gsFHX02rZtkHD4d  24                        [ 9]: if0 not or plus shl1 shr1 shr4 tfold xor
+ 538: JAvirXdJI9mkUajcgHzpBRI1  30                        [10]: and if0 or plus shl1 shr1 shr16 shr4 tfold xor
+ 539: JBeTzaUPQDMDPq8JAzCkdiZl  12     SOLVED          0  [ 4]: and if0 plus shr16
+ 540: JGmSi3FVD7TdxWRRKXxBnV6z  27                        [10]: and fold if0 or plus shl1 shr1 shr16 shr4 xor
+ 541: JKprLzKs238wBOoO1YS6mQRV  14     SOLVED          0  [ 5]: and if0 plus shr16 xor
+ 542: JMR5BYpr1sZLZPa9EtGR9VGZ  21                        [11]: bonus and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 543: JMRVTBK1AYOcINdm31XgKwMx  27                        [10]: and if0 or plus shl1 shr1 shr16 shr4 tfold xor
+ 544: JQYn6h4JvdUrHvoxLzdazhVq  16                        [ 6]: if0 or plus shr1 shr4 xor
+ 545: JRnQEw725kZ78uocmvUdUMhQ   6     SOLVED          0  [ 2]: shr4 xor
+ 546: JTm54BPDWUYpLPQ9x10Mul1t  10     SOLVED          0  [ 3]: or tfold xor
+ 547: JZBkZ5xBHbNxOeeqYOIACAL5  15                        [ 7]: if0 not or plus shl1 shr4 xor
+ 548: JZoJlhFrvYA4wB9MEwGCW8nb  11     SOLVED          0  [ 3]: or shr4 tfold
+ 549: JgWF1HKAs8aErN4H9DHy89xz  11     SOLVED          0  [ 4]: fold or shl1 shr16
+ 550: JiFudIDxJmWXP0qKDARgUyn0  29                        [10]: if0 not or plus shl1 shr1 shr16 shr4 tfold xor
+ 551: Jjkzaa87oNU1lSJmgTKmmZ2Z  21                        [ 7]: if0 not or shl1 shr4 tfold xor
+ 552: JmiXNyBGas2DUuOmP6IJyVhu  20                        [ 6]: bonus and if0 not plus shr1
+ 553: JqT7rnyfWB2ocdAo2wbZYJBl  30                        [ 9]: and fold if0 not plus shl1 shr1 shr16 xor
+ 554: JspLvWKqKVK89CBGRuljtDxp  16                        [ 6]: fold if0 not or shr1 shr16
+ 555: JwsGXs2ngITz0q8mFRaPciBI  23                        [ 7]: bonus and if0 not plus shl1 shr4
+ 556: JxrEql0ZWv6Aa5imCu2wwh9i  21                        [ 8]: and if0 not plus shl1 shr1 shr4 xor
+ 557: JyJLBMumS7JJTTWEVLINgHU1  23                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 shr4
+ 558: JyPQWIwCAPcS0RptzbUoXKjE  26                        [ 8]: if0 not or plus shr1 shr16 tfold xor
+ 559: K1skHyFppwHrKScVCdwBpGTi  22                        [ 8]: and if0 not or plus shl1 shr16 xor
+ 560: K2WAvR5ghegLlaFnNBxSYRY1  24                        [ 8]: and fold if0 not or plus shl1 shr16
+ 561: K2hmUoQzOpAab31XmznB0tNA  23                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 562: K5uMedxBIcg7qICPeAnQvZyg   5     SOLVED          0  [ 3]: shl1 shr1 shr16
+ 563: K6ARNcM1RlPB5cdDgOkgDgaC  23                        [ 9]: bonus and if0 not plus shr1 shr16 shr4 xor
+ 564: KA9rSPtOIQ8jBQ7X264A1Wo0  14                        [ 5]: fold or plus shr1 shr4
+ 565: KAHB0UMro9xV7IdgdKww85LH  25                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 tfold
+ 566: KAfdtlAWV4ZNFwZCdTw4u20H  12     SOLVED          0  [ 4]: fold or shl1 shr1
+ 567: KAkhGLKcmVA4qlctkAXS6Oqq  24                        [ 7]: and if0 not shr1 shr16 shr4 xor
+ 568: KBpIUqkwr5sIUizVeG8ORVq3  29                        [ 7]: and if0 or plus shr1 tfold xor
+ 569: KBxAohWNwaRYPI0bVq9ooPK0  26                        [ 9]: and if0 or plus shr1 shr16 shr4 tfold xor
+ 570: KFxSVJOHaixJsZToshbCI3ew  19                        [ 7]: and if0 or shl1 shr4 tfold xor
+ 571: KHPL9AmMECzZDLJZcM9GKFZ4  24                        [ 9]: and if0 not or shl1 shr1 shr16 shr4 tfold
+ 572: KHn8ntoAUwWeV2UBGcxzCYE7  30                        [ 8]: if0 not or plus shr1 shr16 tfold xor
+ 573: KKdbrfaH4hDD08xa3fCBgOhD  20                        [ 8]: and if0 not or plus shl1 shr4 tfold
+ 574: KL2yHpPTUcIuxYOuYf37uN2O  13     SOLVED          0  [ 4]: and if0 or tfold
+ 575: KSu7YSGp1ktdrJCZldwBtnaj   8     SOLVED          0  [ 2]: tfold xor
+ 576: KTKjmShq08m3mfDt0iJdZsyA  23                        [ 8]: bonus and if0 not plus shl1 shr1 shr16
+ 577: KUZsZ5tkVTdFCNRk2KKNjlSu  26                        [ 8]: fold if0 not or plus shl1 shr1 shr4
+ 578: KWp2M1379aS2T6RZ5nGPkeQv  25                        [11]: bonus and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 579: KXm2dLjsbSHtSnZvBnr27arC  25                        [ 7]: if0 not plus shl1 shr4 tfold xor
+ 580: KYGtvmSOiB3r322UbxlsLGky  23                        [ 9]: if0 not or plus shl1 shr16 shr4 tfold xor
+ 581: KaqFkKKBozBRLYaNY3ld4AAe  20                        [ 6]: if0 or shr1 shr16 shr4 xor
+ 582: Kn57vtvlRByuMDaYtW2UsYvk  21                        [ 7]: and if0 not or plus shr4 tfold
+ 583: Kq43fljZcvIkoi8BZi70fnsJ  21                        [ 8]: bonus and if0 not plus shl1 shr1 shr4
+ 584: KqQreJiSdn5MFLAJOqwhhe1A   8     SOLVED          0  [ 2]: and tfold
+ 585: KuPjdAL1GgBu9VfXEAawCKUv  21                        [ 7]: bonus and if0 or plus shr4 xor
+ 586: KxI2OQCJFbRVGn7WDbs5xr8F  26                        [ 7]: and fold if0 not or shl1 shr1
+ 587: KxQ0yQQptX5IYzpQ97JmN5mL  23                        [ 8]: bonus and if0 or plus shl1 shr1 xor
+ 588: KxuHo7idVoLbIcRYFb5lBDB3  22                        [ 8]: and if0 not or plus shr1 shr4 xor
+ 589: KyciQf4kmeUPuYOCQj5EicID  19                        [ 5]: and if0 or plus xor
+ 590: L09qa6zAWFhALCAE2hujBcoi  16                        [ 7]: and if0 not plus shr16 shr4 xor
+ 591: L3pIRBDs6TdNDWwnAN35KDxL  14                        [ 5]: if0 or shl1 shr16 shr4
+ 592: L8D9IJIpijCnSTgeWTFttITF  23                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 shr4
+ 593: LA6nGn8EfjAA34EPiO1qAAWy  13     SOLVED          0  [ 4]: fold plus shl1 xor
+ 594: LBFLbqA2lrhThThYRt1A63i4  29                        [ 8]: and fold if0 plus shl1 shr1 shr4 xor
+ 595: LBYVk8Z5SeR4eyNTIZsqTYAc  13     SOLVED          0  [ 5]: and if0 shl1 shr1 tfold
+ 596: LDPpjFRzNEZykwBf4T7BeyUN   6     SOLVED          0  [ 3]: not plus shr16
+ 597: LF5R734aNfuv9054z04hIrfj  23                        [ 8]: and if0 not plus shl1 shr1 shr4 xor
+ 598: LJTKgtv3lf3WpWCSH4TUbFsz  28                        [ 8]: and if0 not plus shl1 shr4 tfold xor
+ 599: LJX9oDV8UMBH7AWt77X2iabe  10     SOLVED          0  [ 4]: and if0 shl1 xor
+ 600: LNJsVpJfN6BQ8oUwV9tEB8zz  18                        [ 6]: if0 not or shr1 tfold xor
+ 601: LP5Je0XdrQOUTgYTN0xIdjVR  18                        [ 6]: if0 or plus shr4 tfold xor
+ 602: LPCaZVnT9p1ESsYGdeQ7QqWj   3     SOLVED          0  [ 1]: shr16
+ 603: LPfdYYhpJYpLaOkccBHZwg8V  16                        [ 6]: and fold if0 or shr1 xor
+ 604: LSRfyFMBLrSDeYYrV1aFdAKJ   3     SOLVED          0  [ 1]: shr1
+ 605: LTCAdUF5DCgcI0zs9nvlLRhz  25                        [10]: and fold if0 not or plus shr1 shr16 shr4 xor
+ 606: LUtio6GW1bTTN7I7Y2khsFJj  27                        [ 9]: and if0 not or plus shr1 shr16 shr4 xor
+ 607: LVMKkJCAglRNg3dMBhLxZZfN  21                        [ 9]: bonus and if0 not or plus shr1 shr16 shr4
+ 608: LWP5YF4mrURitW6oyzGyF4bP   9     SOLVED          0  [ 3]: plus shl1 tfold
+ 609: LcHj3ViBPBdMstInTX2HsET0  12     SOLVED          0  [ 4]: not shl1 tfold xor
+ 610: LgGyp8gTrFz55UwrqTP2o3BE  27                        [10]: and fold if0 or plus shl1 shr1 shr16 shr4 xor
+ 611: LiFbmNWl6tNHCxI9FET7SWXH  17                        [ 7]: and if0 not shl1 shr16 shr4 tfold
+ 612: LiY9ryJHghW5dF2AkraQGXf2   5     SOLVED          0  [ 2]: or shr4
+ 613: LkW8mTBwB7LAeo4A5cctPxlO  25                        [ 8]: and fold if0 not or shl1 shr4 xor
+ 614: LlOpAf37A7oWE04foBjaYZA6  14                        [ 5]: fold plus shl1 shr1 xor
+ 615: Loxy1h7a5AnZhPE4640NQwxU   7     SOLVED          0  [ 3]: or plus shl1
+ 616: Lt2M59OfGtdulEIjwLVAWUUD   3     SOLVED          0  [ 1]: not
+ 617: LvPJjhAdQnQVJckR6EmKfiyQ  30                        [10]: and if0 not plus shl1 shr1 shr16 shr4 tfold xor
+ 618: LvbixgBwL2AbOINWYNZn3YDt  16     SOLVED          0  [ 5]: if0 or shr4 tfold xor
+ 619: Lw83hg4dscpeIB7V8Axo3uSt   9     SOLVED          0  [ 3]: not shl1 tfold
+ 620: LyqQVm3cfhcPbDBivVPwhXuK  11     SOLVED          0  [ 4]: if0 plus shl1 shr1
+ 621: M0O3gbJk9LAtpzbh4smwAt6z  10     SOLVED          0  [ 4]: and if0 shl1 shr4
+ 622: M5HjYAXjdkE2MMdCuugRN4by  21                        [ 8]: and if0 not or shr1 shr16 tfold xor
+ 623: M8p5upM4DLPIgzHuW7KuHSnO  16                        [ 6]: and fold if0 or shr1 shr4
+ 624: MGdsSqKnBHmQ7MaBqBmgdsBF  30                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 625: MMolBk3T5NZQqf2YUA2FbmXh  25                        [ 9]: and if0 not or plus shr1 shr16 shr4 xor
+ 626: MOUx7P8AFjdom7KFdfwTq0SY  26                        [ 7]: if0 not plus shl1 shr1 tfold xor
+ 627: MP2WAfymZU2xbezZ5qIuDrWG  15                        [ 5]: fold if0 or shr16 shr4
+ 628: MRIAl90me1JAFPHQqx5mxV1W  28                        [ 8]: and if0 plus shl1 shr1 shr16 shr4 xor
+ 629: MWjAnkaIdgrn8YTJBUPRYQ9e  20                        [ 8]: and if0 not or plus shl1 shr16 xor
+ 630: MYc74jpIAiMCnVyBdAqoCtfA  16                        [ 6]: if0 not or plus shr4 tfold
+ 631: MZ95AuImahgaluLudh0Uvykn  16                        [ 6]: if0 or plus shr1 shr16 tfold
+ 632: Mcor3qZP8ZrMYQyb3Yd5fqYn  21                        [ 8]: bonus and if0 not plus shr16 shr4 xor
+ 633: Md1Mp8o9YI0oboom0kAW3ZBw  23                        [ 7]: bonus and if0 plus shr1 shr16 xor
+ 634: Md6p5PExLyHiCLmddjCm5Oe6  20                        [ 5]: and if0 not or tfold
+ 635: MerwBUyrFeh3Bg6lIl4AQOWp  23                        [ 8]: and fold if0 or plus shr1 shr16 shr4
+ 636: MfKfTMvTBA5dm12xuCxL2772  20                        [ 8]: and if0 not or shr1 shr4 tfold xor
+ 637: MlptVbwiE47SPcXtAFeTrKlT  21                        [ 9]: if0 not or plus shl1 shr1 shr4 tfold xor
+ 638: Mq4l9ufaNLVtWQleVs0jequC   3     SOLVED          0  [ 1]: shr4
+ 639: MtI4Ee8DQPFIGswlqKBwu6kr  16     SOLVED          0  [ 5]: if0 plus shr1 shr4 tfold
+ 640: MtkojRp6vzMRyt5Z3yrGk6ri  18                        [ 7]: and if0 or plus shr1 shr4 tfold
+ 641: MxIWBXVf1aQAU1V9zeDBXC0F  26                        [ 9]: and if0 or plus shr1 shr16 shr4 tfold xor
+ 642: MzuJ4u8dAHkoAZxaz6h5ftZ2   8     SOLVED          0  [ 5]: and not shl1 shr16 shr4
+ 643: N2hzozLHDbokPccSuMNuXlVJ  23                        [ 9]: bonus and if0 not or shl1 shr1 shr16 shr4
+ 644: N4VQRzEMPKNRAYcriVA19tbI  14     SOLVED          0  [ 5]: if0 or plus shr1 tfold
+ 645: N4iu2dRxZXAuo69fvQxWkyAJ   9     SOLVED          0  [ 4]: and if0 not shl1
+ 646: N53eLqXKrbwr5kEI8PtPHU6w  13     SOLVED          0  [ 5]: if0 not shr16 tfold xor
+ 647: N5oKLDniKijUoFkTNI7H0yBd  19                        [ 7]: bonus and if0 plus shr1 shr16 shr4
+ 648: NC6o8rRUclo3bMLfwNagpBRl  23                        [ 8]: bonus and if0 not or shl1 shr16 shr4
+ 649: NHDlwEaQAktJfSNtyPz5MDKd  25                        [10]: and fold if0 not or plus shr1 shr16 shr4 xor
+ 650: NIXNMaj1ADb3XPU0GjiGwWrQ  21                        [ 8]: bonus and if0 not or shl1 shr1 xor
+ 651: NIk9hlDBhXEJLBOW9PxF3gob  30                        [10]: and fold if0 not plus shl1 shr1 shr16 shr4 xor
+ 652: NOGFUAw2BlFudLecoPlBBfzy  30                        [11]: and fold if0 not or plus shl1 shr1 shr16 shr4 xor
+ 653: NPDFzjVxlCZsE1x0OSLWFavP  23                        [10]: and fold if0 or plus shl1 shr1 shr16 shr4 xor
+ 654: NPNdVJi69xamRAnqmpFAuReO  21                        [ 8]: bonus and if0 or shl1 shr1 shr16 xor
+ 655: NPeAYXCKs0Aqd0wxYcVA3KES  23                        [ 7]: and if0 or plus shl1 shr1 shr4
+ 656: NReJGhZapOgBtQZOILQSjf7o  21                        [ 6]: bonus and if0 plus shl1 xor
+ 657: NSmAscfq74Tkm3TNo6FBKPIC  14     SOLVED          0  [ 5]: and if0 shl1 shr4 tfold
+ 658: NbB5kRf9q6rFQvQiuYP6dmkq  15                        [ 6]: and if0 not shr1 shr4 xor
+ 659: NcSOeUXYAuOSJbn6mlMxO2MF  27                        [ 8]: and if0 not or plus shr16 tfold xor
+ 660: NdQyW6Nkl6XYFlvXp2AynIS4  19                        [ 7]: if0 or shr1 shr16 shr4 tfold xor
+ 661: NdeSlgaP9yQBBQnt2szhSRps  21                        [10]: bonus and if0 or plus shl1 shr1 shr16 shr4 xor
+ 662: Ngsz6AU60H7XIZKsvdklAYQb  17                        [ 7]: if0 or plus shl1 shr1 shr4 tfold
+ 663: NjRfaB3BDAuzamBK9HxATwqy  26                        [10]: and fold if0 not or plus shl1 shr1 shr4 xor
+ 664: Nky1SN4wPdfqR6y0RhBpmMEK  26                        [10]: and if0 not or plus shl1 shr1 shr16 tfold xor
+ 665: NlXeQjzA6OIUNtl5FRzbi3C4  23                        [ 9]: and fold if0 not or shl1 shr1 shr16 xor
+ 666: NmDIpl17V8YA77CbPAmQVM0x  20                        [ 7]: and fold if0 or plus shr1 shr16
+ 667: NmctSc5JxCAejPbJTsdmcuiw  17                        [ 6]: fold if0 not or shl1 shr1
+ 668: Nnng1ALEy30AiU0m8TPwd31I  20                        [ 6]: and if0 not or plus shl1
+ 669: Npm8mQeAYX3D09IMQBfPfBpA  23                        [ 8]: bonus and if0 not or plus shr16 shr4
+ 670: NrRiJBKV2De6CTBEUWPaoHSR  17                        [ 7]: if0 not plus shl1 shr1 tfold xor
+ 671: NrXDPYUSscjBheJXvvYiyhOt  28                        [ 8]: and if0 or plus shl1 shr4 tfold xor
+ 672: NtXs37JChlsJsP1T7xllgnOb  25                        [ 8]: bonus and if0 not or plus shl1 shr16
+ 673: O3SAkQQWHSDcqsF4ZGHgBXHT  20                        [ 7]: if0 or shr1 shr16 shr4 tfold xor
+ 674: OARotJUslHKNGp9rBvtAEcIR  10     SOLVED          0  [ 4]: if0 not plus xor
+ 675: OBMeqkJHvoFnVcVwa3IfXwEY  23                        [ 9]: bonus and if0 not or shl1 shr1 shr4 xor
+ 676: OBQq4LglYk6Ha21gejNtv1nO  17                        [ 6]: if0 or plus shr1 shr16 shr4
+ 677: OBjxqYLzKxPfqw87dATQBHxB  18                        [ 5]: and if0 or shl1 shr16
+ 678: OFF8K5RAq2ZRn8cLlEVjN3dR  20                        [ 7]: and fold if0 not or shl1 shr4
+ 679: OPEaO8LsAEwwkJABG0TSipQd  16                        [ 6]: fold if0 not shl1 shr1 xor
+ 680: OPRc6afJ8A8U5GmHM3VriAvh  30                        [ 9]: and if0 not or plus shl1 shr16 shr4 xor
+ 681: OQ3JFp2xj4T775l8xyXnrXuL  17                        [ 7]: and if0 not or plus shl1 tfold
+ 682: OXM28yWKIUwQfl0u8jAWPILL  28                        [ 9]: and fold if0 or plus shr1 shr16 shr4 xor
+ 683: Od8A6o3RDkgFrVA4hUGDesaF  19                        [ 8]: fold if0 or plus shl1 shr1 shr4 xor
+ 684: Oh0mrCo4lmsl99twv9NUf4fv  15     SOLVED          0  [ 6]: if0 not or shl1 shr1 tfold
+ 685: Ohm9Nq3ZFtiQWv3sArBkBKXP  20                        [ 8]: and if0 not or shl1 shr1 shr4 xor
+ 686: OjfRu6diF1Dd5FFnB0Jsrgbu  24                        [ 8]: and fold if0 not plus shl1 shr4 xor
+ 687: OjpNy3b1JK3vgRzsiNxQCIXb  21                        [ 9]: fold if0 not or plus shl1 shr1 shr4 xor
+ 688: OpAZwctDmBf1e8lBtlT2iH4X  22                        [ 7]: if0 not or plus shl1 shr16 xor
+ 689: Oq6hl4xYUrSTMb4AmJ67LHB9   5     SOLVED          0  [ 2]: or shr1
+ 690: OqnGsk7mtEKuYs4EM4WPBFlg  23                        [ 8]: fold if0 not plus shr1 shr16 shr4 xor
+ 691: Otx6HBIXA56yPJNjpxIwbBTh  14                        [ 6]: if0 not or plus shl1 shr4
+ 692: OwIbecTBXu0pDZ9EdSCKVvTn  17                        [ 6]: if0 not or shl1 shr1 xor
+ 693: OxxYfzo1aMYJXrvXw8vyFcMJ  28                        [ 9]: and fold if0 not or plus shr1 shr16 shr4
+ 694: OyVjj55xnACKAW1DYnkVbJf7  16                        [ 6]: if0 or plus shr4 tfold xor
+ 695: OzNIw9t5rZrjZa0CJZTQdJX2  11     SOLVED          0  [ 4]: fold shl1 shr4 xor
+ 696: OzfQUv0UoCFYrztczbkHwyMd  18                        [ 8]: fold if0 not plus shl1 shr1 shr16 xor
+ 697: Ozs4GzCRf1YORUNF6qAhxV6g  25                        [ 6]: bonus and if0 plus shr1 xor
+ 698: P1iP2oXC1BsaGzNUrXsbpBRX   3     SOLVED          0  [ 1]: shl1
+ 699: P6G7uz970bABgYrHtvAjTTid  22                        [ 8]: fold if0 not plus shl1 shr1 shr16 xor
+ 700: P6OHbY5ixxICUMh12ndkEy8B  16     SOLVED          0  [ 5]: and if0 shr1 tfold xor
+ 701: P9VTzCpUZ54pjtYHN2kDxihc  10     SOLVED          0  [ 4]: and if0 shr1 xor
+ 702: PAY0iuZldbAWAao6JPeKsKGZ  11     SOLVED          0  [ 4]: and if0 not or
+ 703: PBz63MwE6HHYBlJmIB2BqkNo  28                        [10]: and fold if0 not or plus shl1 shr1 shr16 shr4
+ 704: PIXrJeWvRJTxkAhj6V6bWLF6  29                        [ 9]: and if0 not plus shl1 shr1 shr16 shr4 xor
+ 705: PTD2H3rB3Zi8al21F8uOW9OT  28                        [ 7]: fold if0 or shl1 shr16 shr4 xor
+ 706: PTWJmGfLlKkUBi9OSps2nV0I  17                        [ 6]: and if0 plus shl1 shr4 tfold
+ 707: PW1Kvt26QIynrxmiPf4oRDZw  30                        [ 8]: and if0 or shl1 shr1 shr16 shr4 xor
+ 708: Pbi8sskoWFtxu2JbRE4lAmGl   5     SOLVED          0  [ 2]: not plus
+ 709: PdjkApLDO0BVBCHnVY23v2bG  29                        [ 8]: if0 not or plus shr1 shr16 shr4 xor
+ 710: PeAYkt7OFVGB0VA1ABAP2f0s  25                        [ 8]: bonus and if0 plus shr1 shr16 shr4 xor
+ 711: PjtS4SknnBIMqAqmpBHdGUP5  21                        [ 8]: bonus and if0 not plus shr1 shr16 shr4
+ 712: PkktsAl1RRRjHnbdaXbg9ARa  24                        [ 9]: and if0 not or plus shl1 shr16 shr4 tfold
+ 713: PqP1z0HE5lVVmBAewfW9Hukj  22                        [10]: bonus and if0 not or plus shl1 shr16 shr4 xor
+ 714: PsbSQUS9gKIxOM4F7lyzn3In  28                        [ 9]: fold if0 not or plus shl1 shr1 shr16 shr4
+ 715: Pt4KPwhvpgbcF3C4nIxT7aqx  23                        [ 9]: fold if0 not or plus shl1 shr1 shr16 shr4
+ 716: Q0TtVUgYKjnLbgZgtiAmOVvj  11     SOLVED          0  [ 5]: and fold not shr1 shr4
+ 717: Q4n3KpxfttbvA1NzA7NLgAg4  19                        [ 8]: and if0 plus shr1 shr16 shr4 tfold xor
+ 718: Q6Fv7QBnEwwGP49MwX7OAFFi  17                        [ 4]: if0 or shr16 xor
+ 719: QAsrKJ9447IVeExychDgJHfz  26                        [ 8]: if0 or plus shl1 shr1 shr16 shr4 xor
+ 720: QAvnuwzFWdLvTyrgjtBqRBOf   4     SOLVED          0  [ 2]: shl1 shr4
+ 721: QBYI5hvWAgkvkyAH8I1BPYWt  17                        [ 5]: if0 plus shr1 tfold xor
+ 722: QBoiRRta5SZCq3BkRigg5qYk  21                        [ 9]: bonus and if0 not plus shl1 shr1 shr16 shr4
+ 723: QBtBCTajAJlNi7sBZBTrEQqN  23                        [ 7]: bonus and if0 or plus shr4 xor
+ 724: QEwz6JinpieQqfClL9nNEPCK   7     SOLVED          0  [ 3]: or shl1 xor
+ 725: QJpAPFIN72naTdkQCjznzcYA  23                        [ 8]: bonus and if0 not plus shr1 shr16 xor
+ 726: QLBqQkuX2PmVdZhSKljhvNzg  22                        [ 8]: and fold if0 or plus shl1 shr4 xor
+ 727: QOcLg5qtHpvRAx0BPDKliZub   7     SOLVED          0  [ 3]: not plus shl1
+ 728: QYJqzJUdMAeLMLrqt5xcSflI  24                        [ 8]: and if0 not or plus shr16 shr4 xor
+ 729: QcFlZ40zqCecHxC6gAgxAnVG  27                        [ 8]: and if0 not or plus shl1 tfold xor
+ 730: QdLgaSkxnSk4BkH1thqBmuLu  28                        [ 9]: and fold if0 not plus shl1 shr16 shr4 xor
+ 731: QgDWVfD54nyRJQ0hiRmj2QRA  14     SOLVED          0  [ 4]: if0 not plus tfold
+ 732: QkFf8zXEhwey77TAqLry3dbM  29                        [11]: and if0 not or plus shl1 shr1 shr16 shr4 tfold xor
+ 733: Qp1fDyrOWg7ByIxOo1R2KwOi  28                        [ 9]: and if0 not or shl1 shr1 shr16 shr4 xor
+ 734: Qse3SXZlwtdo3rrwYEcPB4TO  27                        [ 8]: and if0 or plus shl1 shr1 shr16 xor
+ 735: Qu0owEkpt5dNAeBxTAIXxZYA  29                        [ 9]: and fold if0 not or plus shr1 shr16 xor
+ 736: QwD0GhejKNX7MjYqeadyKypQ  20                        [ 6]: and fold if0 shl1 shr4 xor
+ 737: QyDVxJ8UTvHG4ucCJMas5JzP  20                        [ 8]: and if0 or plus shl1 shr1 shr4 tfold
+ 738: R5JKzQwcEH257O3RBgEsZp3g  14                        [ 5]: if0 not plus shr4 xor
+ 739: R5uEYyrKRQNxpn21Ab2W2QRB  25                        [ 9]: and if0 not or plus shl1 shr1 shr4 xor
+ 740: RArcF8h8Ep31H21QzzqWYzCu  11     SOLVED          0  [ 3]: fold if0 plus
+ 741: RBYyKf3VGafkQEtdqUBn5J7k  23                        [ 9]: bonus and if0 not or plus shr1 shr4 xor
+ 742: RCVJmZL5EVgLJYTj2wlDhK0R  27                        [ 9]: if0 not or plus shl1 shr1 shr16 tfold xor
+ 743: RDdibT4G439ALZSHiXp5Uhse  10     SOLVED          0  [ 4]: and if0 shr4 xor
+ 744: RIotQdMAU8BrOB9aM9yBgdsE  12     SOLVED          0  [ 5]: if0 not plus shr16 shr4
+ 745: RJE5BCtBaYyJemKqqWG5GMcs  20                        [ 7]: and fold if0 not or shr1 shr4
+ 746: RNhY0DrYwdmWKOJW3NBrUHq9   8     SOLVED          0  [ 2]: and tfold
+ 747: RNp5hAr29hsQ4Z8FGWn4AZ7N  18                        [ 6]: and if0 not or shl1 xor
+ 748: RNwrJX4jKsOE9wO8wprNgqBY  12     SOLVED          0  [ 6]: and if0 plus shl1 shr1 shr16
+ 749: RTuh6g4GkPkIlP2KAP9xaUJ9  28                        [ 9]: and if0 not or plus shr1 shr16 shr4 xor
+ 750: RXAsUAVQ5ZCcOPjaynMyf8aB  19                        [ 8]: fold if0 or plus shl1 shr1 shr16 xor
+ 751: RgBUcYBhfdyaobiZztvSeHU8   8     SOLVED          0  [ 2]: tfold xor
+ 752: RgQ6tmj4VgsEeqH1d9sSPcm8  27                        [ 8]: and if0 not or plus shr16 tfold xor
+ 753: Rh2UAUScmnINBn419VVjATZ1  23                        [10]: bonus and if0 not or plus shr1 shr16 shr4 xor
+ 754: Rjyp8zQwLUkX8d7UEpZEkxaL  12     SOLVED          0  [ 5]: fold not plus shr4 xor
+ 755: Rk8S2DSynCdnwYKrR0NBu7HB  30                        [10]: and if0 not or shl1 shr1 shr16 shr4 tfold xor
+ 756: RodkPkLgCh3SM33MkTmqNu6s  22                        [ 7]: and if0 or plus shl1 shr1 tfold
+ 757: Rt0S1et00JYNLAkulLfg6AQF  23                        [ 9]: bonus and if0 not or plus shr1 shr4 xor
+ 758: S22BEdkraEwVbGAue7R8XhzE   5     SOLVED          0  [ 2]: and shr16
+ 759: S3ByZwdWtNFfyDFsb9lKhXwr  25                        [ 9]: bonus and if0 not or plus shl1 shr1 shr4
+ 760: S7hnNKzlOVOizQOQgANgVHM4  12     SOLVED          0  [ 4]: and fold shr4 xor
+ 761: S9leTwywLSsBrhE9mmIAR22r  24                        [ 7]: if0 not or plus shr1 shr4 xor
+ 762: SBBH7Ax5L6yOnDnzJW7yTZLP  21                        [ 8]: bonus and if0 or plus shr1 shr16 xor
+ 763: SCsfg9RU8sY5EWMuWiXFGjDw  13     SOLVED          0  [ 4]: if0 or tfold xor
+ 764: SQKX5w5IQ7FxP7QD344RkWTY  13     SOLVED          0  [ 5]: if0 or plus shr1 shr4
+ 765: SSpY9o27YpSiijv2AFezc5WW  18                        [ 7]: and fold if0 not or shr4 xor
+ 766: SZ1aP7HiLNA68VPhWTzgVkcZ  25                        [10]: and if0 not or plus shl1 shr16 shr4 tfold xor
+ 767: Sd2YaQF1z6oxkFEdAzfKum9K  25                        [10]: and fold if0 not or plus shl1 shr1 shr4 xor
+ 768: Sdv4cRLTboXMURrKepW0V3lM  22                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 shr4
+ 769: SgBIvDnXB2GWiXPSukD3TitQ   8     SOLVED          0  [ 4]: or shr1 shr16 xor
+ 770: SgyfRibQJ4NfcydJ3fahADwP  22                        [ 8]: bonus and if0 or plus shr16 shr4 xor
+ 771: ShUOnR3yTZdhBUPmmjJOJnJN   6     SOLVED          0  [ 2]: plus shr16
+ 772: SkQBMwyo52oAklCmofUFQVpV  23                        [ 8]: and if0 not or plus shl1 shr16 xor
+ 773: SklD0Sb0gSVi33vLph10lpRp   5     SOLVED          0  [ 2]: or shl1
+ 774: SmjovA43IlUml894COCblI0A  23                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 xor
+ 775: SnDWqDW4xsg4GcJMKaJTbjBv  23                        [ 8]: and fold if0 or shl1 shr1 shr16 xor
+ 776: So5UW9M8QLIyRsLbxBOtskuo  26                        [ 9]: if0 not or plus shl1 shr1 shr16 shr4 xor
+ 777: SoL8kiWEESzQxmQQ6Fzxc4Qa  24                        [ 9]: and fold if0 not or plus shr16 shr4 xor
+ 778: SpyWAsRzilgb3oDIitTnHquw  23                        [ 7]: if0 not or plus shl1 shr1 tfold
+ 779: Sqau5cAynxwKlsFAVMd6NBNG   9     SOLVED          0  [ 3]: and if0 plus
+ 780: SxFvp6FrW3zg6dOaVfnAwGTz  29                        [ 7]: and if0 not or shr1 tfold xor
+ 781: T029v6BsaIIHpneJEaxLAOAA   4     SOLVED          0  [ 1]: xor
+ 782: T0TkeZfhEF6hUelPQSFtgEtW  28                        [ 8]: and if0 not or shl1 shr1 shr4 tfold
+ 783: T1dcip6iESouUXyV75u8nA32  11     SOLVED          0  [ 4]: or shr4 tfold xor
+ 784: T6jVaJO0Beyx5zpBgRCcjoaI  15                        [ 6]: and fold if0 not shr1 shr4
+ 785: T8HAixF56D276rLDbXgksN1B  11     SOLVED          0  [ 4]: and if0 or shr4
+ 786: TBXBx1LequWMtnQwzJJQeWID  27                        [ 9]: and if0 not or plus shl1 shr16 shr4 xor
+ 787: TENZEFt8BKQbyXNS4VkKypBH  20                        [ 9]: and fold if0 not or shl1 shr1 shr16 xor
+ 788: TFcGISK0hy2wUBiT5tfNvsJo  29                        [11]: and fold if0 not or plus shl1 shr1 shr16 shr4 xor
+ 789: TGOmUAVOYCOOgNurOjVZYUMg  24                        [ 8]: if0 not or plus shl1 shr1 tfold xor
+ 790: THvyL8MynNhu3E4eoD3eAKrx  29                        [ 9]: and fold if0 not or shl1 shr16 shr4 xor
+ 791: TLANU7sPLfnudpH9SdM2I1pD  13     SOLVED          0  [ 4]: fold or shl1 shr4
+ 792: TMZ4Lj4IXGBUrZGAAE5tMCXw  26                        [ 8]: and fold if0 plus shl1 shr16 shr4 xor
+ 793: TNJuP4WboYlV3N6739AqR7B0  12     SOLVED          0  [ 6]: and if0 not plus shl1 shr4
+ 794: TQOBTrYBijAjrg1QIN745ZTB  15                        [ 6]: fold plus shl1 shr16 shr4 xor
+ 795: TTABkn0wIyHT96vjXj8IAhuq  25                        [ 9]: and if0 not or shl1 shr1 shr4 tfold xor
+ 796: TUbEBp8fwjJqfJBjinjBOt5k  19                        [ 6]: and if0 plus shr1 shr16 xor
+ 797: TbUfnjmmtNwBl8j3uWteJfWW  25                        [ 8]: and fold if0 not shl1 shr16 shr4 xor
+ 798: TgOI0M88qu8TMROZCNL1F5Gq  23                        [ 8]: and fold if0 or plus shl1 shr16 xor
+ 799: Tk5NzPyhYQtjv2AIALI7HSkg  13     SOLVED          0  [ 4]: if0 plus shr1 shr4
+ 800: TkfDckn5mBw7AGs0VsAoAPtX  28                        [10]: and if0 not or plus shl1 shr1 shr4 tfold xor
+ 801: TlQN4yag0gA4HH97TAFyLA3H  23                        [ 7]: if0 plus shl1 shr16 shr4 tfold xor
+ 802: ToSYC55naoZzvPi9eZiBwCXf  27                        [10]: if0 not or plus shl1 shr1 shr16 shr4 tfold xor
+ 803: ToTckRdXKXbH7AedHeiaFin6  22                        [ 9]: bonus and if0 not or shl1 shr1 shr16 shr4
+ 804: TqELbEXfny89XCgPBs5rBvwl  21                        [ 8]: bonus and if0 not plus shr1 shr16 xor
+ 805: TuuY3DVUMJAWi29ekZuzxAQf  23                        [ 7]: and if0 plus shl1 shr4 tfold xor
+ 806: U0IDDCwmVW0ZBRYPN82kRfWU  21                        [10]: bonus and if0 not or plus shr1 shr16 shr4 xor
+ 807: U3f3Se5xKyRBaULNiB4CFliI  22                        [ 8]: and if0 not or shr1 shr16 shr4 tfold
+ 808: UBZvbAPJq6o0LtSLd8j5n7ZY  18                        [ 6]: and if0 not plus shr1 xor
+ 809: UEsmi6c4BZAv37ZlfTxB8bDh  12     SOLVED          0  [ 3]: fold shl1 xor
+ 810: UG3U6QQkl7qxbwkEJSSBU1en   7     SOLVED          0  [ 4]: not plus shl1 shr4
+ 811: UHg9HHTYTkvFo9qo6bF4stMH  14                        [ 7]: and if0 not plus shl1 shr1 shr16
+ 812: UIAwHdPiQaBCinQBc5Hjjb9L  26                        [ 9]: and if0 not or shl1 shr1 shr16 tfold xor
+ 813: UQA2HHEaponcYEVAu0NRt9La  25                        [10]: and fold if0 not or plus shl1 shr1 shr4 xor
+ 814: URea9MAkrjkWqsO0fBNUfHep  11     SOLVED          0  [ 4]: and if0 or shr4
+ 815: US3CDF1rMcIYvZ6ZouXdGjgY   7     SOLVED          0  [ 3]: or shl1 shr16
+ 816: UU1SPRK9TXTlf0AAs3R6JqEx  30                        [ 9]: and fold if0 or plus shl1 shr16 shr4 xor
+ 817: UUSf8hlB8w6kG5j645kr76ac  21                        [ 8]: if0 not or plus shl1 shr16 shr4 xor
+ 818: UX0SsQaPMOjdUCoLHyak3PTj  22                        [ 9]: if0 not or plus shl1 shr1 shr16 shr4 xor
+ 819: UXKGAR0pGUB2cSemSwmULm2y  26                        [ 9]: and if0 not or plus shl1 shr1 shr16 xor
+ 820: UZBgnJyjxFNjQysvVdYVdOEe  14     SOLVED          0  [ 5]: and if0 not plus tfold
+ 821: UeBnqaZL7sNt78btfrHNkSJD  26                        [ 8]: and fold if0 or shl1 shr1 shr4 xor
+ 822: UlLHEOZ4PhM0OZ7TlP2taWyU  11     SOLVED          0  [ 3]: if0 plus tfold
+ 823: UnmBAp7LJj2YtrgFuPPtEE3E  19                        [ 8]: and fold if0 or shl1 shr1 shr4 xor
+ 824: UoVQCDKXBMOWx8AaOyOrYMwE  21                        [ 9]: bonus and if0 not or plus shl1 shr1 shr16
+ 825: UpcLZVV8yjZvxOLkKDm4hJQC  25                        [10]: bonus and if0 not or plus shl1 shr1 shr4 xor
+ 826: UqVOFupnDYpRbOmB8TTBaSAV  10     SOLVED          0  [ 4]: and if0 or shr4
+ 827: UwkHLfuB5BcoBFNwJDMEjyRr  30                        [ 9]: and if0 not or plus shr16 shr4 tfold xor
+ 828: Ux0Qw9miVErsMpz4eb1Rls97  19                        [ 8]: bonus and if0 not plus shl1 shr16 shr4
+ 829: UxaOEPKlmsDC3NCIYMNHP5WB  10     SOLVED          0  [ 4]: plus shl1 shr16 tfold
+ 830: V1zwuGJshx34CcFoXgASiWSO  12     SOLVED          0  [ 4]: fold not or shr4
+ 831: V4t07ys7WyBBD35p6FJ8pHXg  23                        [ 9]: bonus and if0 not plus shl1 shr16 shr4 xor
+ 832: V5LMnWs0abAUegjhPARyyiAK  22                        [ 8]: if0 not or shl1 shr1 shr16 shr4 xor
+ 833: V5zgcsUBBhKRZ4sbFhoU6WcA  28                        [ 9]: and fold if0 not or shl1 shr16 shr4 xor
+ 834: V6Ac643holwEi1l2QMIkDh0k  21                        [ 8]: and if0 or plus shl1 shr1 shr4 xor
+ 835: V6jYFg0gIUpBnUjqDYggEImW  20                        [ 8]: and if0 or plus shl1 shr1 shr16 tfold
+ 836: VBXREB34lEeqXtZv13zfTc2d  16                        [ 6]: if0 plus shr1 shr16 shr4 tfold
+ 837: VEJ2Cwy1eBypsacAPBIBg9wI  26                        [ 9]: and if0 not or plus shr1 shr16 shr4 xor
+ 838: VFo0JJHYe0gEUG4oRIIYZ9wv  12     SOLVED          0  [ 5]: not or plus shr1 tfold
+ 839: VGccuBIiF9uQuyWhjWAsUIJs  29                        [ 8]: and if0 not or plus shr16 tfold xor
+ 840: VK9hvOeCPJT4EzCEfzB7M8Wd  24                        [ 8]: if0 not or plus shl1 shr4 tfold xor
+ 841: VOvkLV6AMzPp3iPaQ22Z5xsB  12     SOLVED          0  [ 5]: and if0 shl1 shr16 shr4
+ 842: VPzQnyy9kBzmVTjMzpHu8W06  30                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 843: VSvQx3B5C7NmamzKV8B4rKql  14     SOLVED          0  [ 4]: if0 not tfold xor
+ 844: VWJRNWmXnn26pt47MajAfivE  10     SOLVED          0  [ 4]: and not shr1 tfold
+ 845: VXxXh6fQ8LtIoZVTUBVGQNxB  17                        [ 5]: fold if0 shl1 shr16 xor
+ 846: VZ6CvvkoBelGpifFDWNuj8XC  24                        [ 9]: and fold if0 not plus shr1 shr16 shr4 xor
+ 847: VZq7tYfoRThUNiz4gTtA8K7X  10     SOLVED          0  [ 4]: and if0 or shr16
+ 848: Vc5YUqD58q4N7JY8GFTO2voE  29                        [ 9]: and if0 or plus shr1 shr16 shr4 tfold xor
+ 849: VcSTXVdGKBxyoYLgrfy9iUcv  25                        [ 9]: bonus and if0 not or shl1 shr1 shr4 xor
+ 850: VecAhuLHMoNWTZ0wzNVkDRBf  10     SOLVED          0  [ 5]: and if0 not shl1 shr16
+ 851: VfMS4RZoUnyvNQqgjBe4BeXi  27                        [ 8]: if0 not or shl1 shr1 shr16 shr4 xor
+ 852: VjHXYUPYanxHIs10PcOakLyo   9     SOLVED          0  [ 3]: shr4 tfold xor
+ 853: VmMS75VjDSP77Kra5q4ZAKte  11     SOLVED          0  [ 5]: if0 not plus shr16 xor
+ 854: VoFz4CBQTu82axxHUjKOWVvS  19                        [ 6]: and if0 not or shl1 shr4
+ 855: VrHrPx8qNFrB4bQ3Kyi2qn7r  24                        [ 9]: and fold if0 not or plus shl1 shr4 xor
+ 856: VtYMewJbNUCCnibZA9aeqDB8  29                        [ 9]: and fold if0 not or plus shl1 shr1 xor
+ 857: VyJtUnxtxP27AzkqG8oeSBjC  24                        [ 8]: and if0 not plus shl1 shr16 shr4 xor
+ 858: Vz1gJZQiPZi9UtghYgMR8XqB  18                        [ 6]: and fold if0 or shr1 shr4
+ 859: VzFgIBt3QZYjYKhJSiAW67Dk   5     SOLVED          0  [ 2]: shr4 xor
+ 860: W0k23rTqb9xfRP7j7aWRWM3i  20                        [ 5]: and fold if0 not or
+ 861: W1V3hCUgmjCEvPJz0bYQodHM  16                        [ 6]: and fold if0 or shr1 shr4
+ 862: W4mkjNBBJYm8KySMXXEb0WJR  23                        [ 8]: and if0 not shr1 shr16 shr4 tfold xor
+ 863: W7V4J1z0yJm19Er7BlCzJCAv  12     SOLVED          0  [ 4]: if0 shr4 tfold xor
+ 864: WBwUwDUSmpIlH9Ihqdki324D  30                        [ 9]: and fold if0 not or plus shl1 shr1 shr4
+ 865: WCp1t9dDVcSykw0KkBj4kpnM  11     SOLVED          0  [ 3]: fold plus shr1
+ 866: WD8Xg8dNVXAjMcehJhd7FQ0u  18                        [ 5]: if0 not plus tfold xor
+ 867: WEhuJM8VxJa6df6cA5sfx0vC  20                        [ 8]: and fold if0 plus shl1 shr1 shr16 shr4
+ 868: WFGeIarmB5EIJyjx3aTtB3Vd  13     SOLVED          0  [ 5]: if0 plus shr1 shr16 tfold
+ 869: WINddANpyzbI8ERQbqQyv2IZ   8     SOLVED          0  [ 4]: plus shl1 shr1 xor
+ 870: WMFirGtFFAx7DxxPsvWyCuHt   6     SOLVED          0  [ 3]: not plus shr4
+ 871: WMUPWsbaW5LfizRjZYzDr4Di  18                        [ 9]: and if0 not or plus shr1 shr16 shr4 xor
+ 872: WPX4N7iaYS5hwFrBZwRLqA92  21                        [ 8]: and if0 or plus shl1 shr16 tfold xor
+ 873: WQASHrIANvXrrbDRDG71to5H  29                        [ 9]: and if0 not or shl1 shr1 shr16 shr4 xor
+ 874: WRCUpU7WSH94d2ZkY8QB1zgQ  24                        [ 7]: bonus and if0 or plus shl1 shr1
+ 875: WTgGBNvZ9lWZi4cN6D2zVTym   3     SOLVED          0  [ 1]: not
+ 876: WX6a2b2Gl4RfesqGMjLn4OcH  24                        [ 8]: fold if0 or plus shr1 shr16 shr4 xor
+ 877: WZ61CJG6o74MxOBrxaokZkxz   8     SOLVED          0  [ 4]: or shl1 shr1 xor
+ 878: Wc7hT7IiJACpAPEB2BR2kkqs  27                        [ 9]: and fold if0 or plus shl1 shr1 shr16 xor
+ 879: WrAbXIiDRLZUrqA9h4HtuxQM  23                        [ 9]: bonus and if0 not plus shl1 shr16 shr4 xor
+ 880: WsxA9IGy7mGD2Sn3tNPhZ9op  15     SOLVED          0  [ 6]: and if0 shl1 shr1 tfold xor
+ 881: WvGGpWKzAIiidd5vIR7B8Ja6  15                        [ 6]: fold if0 or plus shl1 shr4
+ 882: WwWxbyGksc3Z624zmmRx3MZ8  11     SOLVED          0  [ 4]: fold or plus shr1
+ 883: WxHMknaDYRxP0OJberTPlSUc  11     SOLVED          0  [ 4]: fold or shr16 xor
+ 884: WxqsaIVaTBv1I07nyAsEV9gi  24                        [ 8]: and if0 not or plus shl1 shr1 xor
+ 885: X4U9RI3rWANB8jHXd83nUfdJ  23                        [ 8]: if0 not or plus shr1 shr16 shr4 xor
+ 886: X57aERmMh1X12z8Wr9v81YIF  21                        [ 9]: bonus and if0 not plus shr1 shr16 shr4 xor
+ 887: X5AbbKcCHsDHiHj8zvAKfwcc  23                        [10]: bonus and if0 not or plus shl1 shr16 shr4 xor
+ 888: X6hIICPGAuMS5p8GSGz7mHv7  10     SOLVED          0  [ 4]: and if0 or shl1
+ 889: X8Amq56DuZwc8yR1E2AiB68P  23                        [ 9]: bonus and if0 not or plus shr16 shr4 xor
+ 890: X8srGByuRkgnMBBWfAJBJX6e  21                        [ 9]: bonus and if0 not or plus shl1 shr1 xor
+ 891: X9wsCLtpRJAYsg9nH3lc24P1  29                        [ 7]: if0 or plus shl1 shr1 shr16 xor
+ 892: XCZ3BefRg8kGltVLe6wi1d2m  27                        [ 9]: and if0 or plus shl1 shr1 shr16 tfold xor
+ 893: XCeixLl0ZU0TPk559rFHdmMb  29                        [ 9]: and if0 not or plus shl1 shr1 shr4 xor
+ 894: XGW5acTzGvpEAg3PjMiyA3MH  24                        [ 7]: and if0 not plus shr1 shr4 xor
+ 895: XHCCBEtIuCJhhmoysXeP5ooN  30                        [ 8]: and if0 not or plus shr16 shr4 xor
+ 896: XKjKGFxcipwnN8a03Hf3FxBE  26                        [ 9]: and if0 or plus shl1 shr1 shr16 shr4 xor
+ 897: XNe6Azg9vU6dw2d7oS6nHEr4  13     SOLVED          0  [ 5]: if0 not shl1 tfold xor
+ 898: XRF7OMfye9QQT1Ypb5yjeIwQ  16     SOLVED          0  [ 5]: and if0 not plus tfold
+ 899: XRzABZoHidYuwzzJ2lrXqYzF  21                        [10]: bonus and if0 not or plus shl1 shr1 shr16 xor
+ 900: XSG6kj1XRB6LFoeyF4gkAdKT  23                        [ 7]: and fold if0 or plus shl1 xor
+ 901: XWFBEYAtWHnNFuSDWh4V4S0n  13     SOLVED          0  [ 4]: and fold or shr1
+ 902: XaTfTirFDLPMuE7R8Zr4dvRp   3     SOLVED          0  [ 1]: not
+ 903: XcNMTfx0U3MCx7NImXWdqSHS  19                        [ 9]: bonus and if0 not or plus shl1 shr1 shr16
+ 904: Xf657xBSxFerlMHEqr4RIysG  21                        [ 9]: bonus and if0 not or plus shl1 shr16 xor
+ 905: XgiiNnhjvedMc02pSM1LAjfi  21                        [ 7]: fold if0 or plus shl1 shr1 shr16
+ 906: XjwEz9j4tQYQnMmp8gaQbnCA  23                        [11]: bonus and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 907: Xk2M2FWJBhTyfwD2WqkLjba6  12     SOLVED          0  [ 5]: and if0 not plus shr16
+ 908: XlGI7l0KLa8AXRbGXiDBSiNt  27                        [ 8]: and if0 not or shl1 shr1 shr16 xor
+ 909: XllSydi7iC6BdsrXb0pVDFJK  29                        [ 9]: if0 or plus shl1 shr1 shr16 shr4 tfold xor
+ 910: XmOAwaNdn1PRbyztPijJOYMu  28                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 911: Xy7mHr84YmcSDS1GFJvAAC3T  21                        [ 9]: bonus and if0 not or shl1 shr1 shr4 xor
+ 912: XzfqZUo0mvPdnpalaEAWG6NG  17                        [ 7]: if0 or plus shl1 shr1 shr16 shr4
+ 913: Y2PdCsiSKFQHAkt5sOmpVqxm  20                        [ 9]: bonus and if0 not plus shr1 shr16 shr4 xor
+ 914: Y4E8lQc1jYPEGfN33iSNbFpE   9     SOLVED          0  [ 3]: and if0 or
+ 915: Y4sKASOfjOxAhzSwZBgnErTG  11     SOLVED          0  [ 4]: fold or shr1 shr16
+ 916: Y6j2nex9K4r2ZQTpAh5QdFeK  25                        [10]: bonus and if0 not or plus shl1 shr1 shr16 shr4
+ 917: YRlSBv84WPnhCG2QXnN1ivpg  12     SOLVED          0  [ 3]: and tfold xor
+ 918: YZv91BfNAV67BrBBGSvMTn1m  16                        [ 8]: and if0 not or shl1 shr1 shr4 xor
+ 919: YaA1XtthrdVDo6DSZ5VsNVMp  11     SOLVED          0  [ 5]: fold shl1 shr16 shr4 xor
+ 920: YgMvxyR05saFkcHlHBzDPycY  23                        [10]: bonus and if0 not or plus shl1 shr16 shr4 xor
+ 921: YizavXgqVxZaGFYMm3tcmlnJ  25                        [ 9]: if0 not or plus shl1 shr1 shr16 shr4 xor
+ 922: YjHZIkkeMVG38tEfXAgaoM3p  26                        [ 8]: fold if0 not plus shl1 shr1 shr4 xor
+ 923: YkOBrNdzLr4Guj9ZRBo565ES  23                        [ 6]: if0 or shl1 shr1 tfold xor
+ 924: YmeE8AmtT4RXiaKAOWldYsMB  30                        [ 9]: and if0 or plus shl1 shr1 shr16 tfold xor
+ 925: YmsrI5nCVKnRUFpeKJDTBAZ2   9     SOLVED          0  [ 3]: plus shr4 tfold
+ 926: YnooDnX9RT083rGmZ4rLO7N1  25                        [10]: and if0 not or plus shl1 shr1 shr4 tfold xor
+ 927: Yr7IcHw2AuHrHBkDZuJNx17U  27                        [ 8]: if0 not or plus shl1 shr1 shr16 xor
+ 928: YsafS0ao6pHftewgjPyAcCmj  30                        [11]: and fold if0 not or plus shl1 shr1 shr16 shr4 xor
+ 929: YwtXCc6R94fPfqNK195QbJ1c  23                        [ 9]: bonus and if0 not or plus shl1 shr1 shr16
+ 930: YxE7agq83UKXPj4eOg3i8kK5  20                        [10]: bonus and if0 not or plus shl1 shr1 shr16 shr4
+ 931: Z5cmUYk4YVKhwZz3hPVVR6y4  28                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 932: Z69kpTsFqvBGytHfAPNACNOx  23                        [ 9]: bonus and if0 plus shl1 shr1 shr16 shr4 xor
+ 933: Z6LRNLCBPrfmYql1CYLZ9Fvq  16                        [ 6]: and if0 plus shl1 shr1 tfold
+ 934: Z7o5z0oYnhgY8vP39Z0FXrNJ  14     SOLVED          0  [ 6]: if0 plus shl1 shr1 shr4 tfold
+ 935: Z8c3ILdhBQ0U7NnvQQkdHFJv  15                        [ 6]: and if0 plus shl1 shr16 shr4
+ 936: Z9AeWVdwjmCpqnQrvNqFKmt7  28                        [ 9]: and if0 not plus shl1 shr1 shr4 tfold xor
+ 937: ZAGEEpczixRq1LnExrCKOVyn   3     SOLVED          0  [ 1]: shr16
+ 938: ZCvyInx0l04TfKhgrvEvUbL3  19                        [ 9]: and fold if0 plus shl1 shr1 shr16 shr4 xor
+ 939: ZFBgvhWclRU2v7M1Jyg2FKq9  22                        [ 7]: and fold if0 or plus shr1 xor
+ 940: ZMCoQfZ8cl5CW5azD03cku9R  22                        [ 7]: if0 or plus shr1 shr16 shr4 tfold
+ 941: ZN19nwHyG1T6AFuIXbx4BD9I  16                        [ 6]: and if0 not or shr1 xor
+ 942: ZOBUWNGuIdNEi3XIYbhBYeCe  25                        [ 8]: and if0 or plus shl1 shr1 tfold xor
+ 943: ZStREWRVj33381rWTxbJzV0F  28                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 944: ZWSC7HcCTHe2NdSnlcyjEGJV  24                        [ 9]: if0 not or plus shl1 shr1 shr16 shr4 xor
+ 945: ZXwTHda3oDeS5HMwmRDmMdtS  26                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 946: ZbZEYBL5PyirucGRGwWUHPWQ  16                        [ 6]: and if0 or plus shr4 tfold
+ 947: ZbtmYCHjcoe7XtgBBNaYApsS  26                        [ 8]: if0 not or plus shl1 shr1 shr4 xor
+ 948: ZdhhzgDTTcZM7wmQzSWT2HLB  28                        [ 9]: if0 not or plus shl1 shr1 shr16 tfold xor
+ 949: ZeBJ7BH7TISAguqQmRzPsqvi  24                        [ 7]: and fold if0 not or shr4 xor
+ 950: ZgbacEkxGkxBBXgZf8Nz6iJN   9     SOLVED          0  [ 3]: and if0 plus
+ 951: ZmCfbK2jDR2nloRdBF8nuXT9  19                        [ 5]: and if0 or shr4 xor
+ 952: ZoBS1pHVCAKqyAA1BrYAhRF5  13     SOLVED          0  [ 5]: fold not plus shr1 xor
+ 953: ZonQCQIO5Mr8UiY8qQikBGoQ  20                        [ 5]: if0 not or shr4 tfold
+ 954: ZvI4o2pyKmOiLvXeT1QBxArN  21                        [ 8]: if0 not or plus shl1 shr16 tfold xor
+ 955: ZxANuqBQzqstwW1EJDhWHxqB  11     SOLVED          0  [ 5]: and if0 not shr16 xor
+ 956: Zy91y6DAdcB7bqtleQAeSmvl  22                        [ 7]: if0 not or shr1 shr16 shr4 xor
+ 957: a1kyA0kvhZmxdcQG1d7K6R1v  14                        [ 4]: fold if0 not xor
+ 958: a9laSPycvuF5EtLGIBXLvLZP  29                        [ 8]: and if0 or plus shl1 shr1 shr16 xor
+ 959: aASRTMJLm2F7ufdBVUKugPzi  12     SOLVED          0  [ 3]: fold plus shr1
+ 960: aCvHBOcsgVc8SDrEi9fAoS5J  14     SOLVED          0  [ 4]: if0 plus shl1 tfold
+ 961: aFCADUKdIAOArbLt5UyGK8F6  18                        [ 8]: and fold if0 not plus shl1 shr16 shr4
+ 962: aFF3RL5jgTp9NNG6UHCUhpad  19                        [ 7]: fold if0 or plus shr1 shr16 xor
+ 963: aHCyWL16poHjhSGnpbWZCsY0  18                        [ 6]: and fold if0 not plus shl1
+ 964: aHrZ6YnNyCEEtcWVa6iPvYmp  12     SOLVED          0  [ 4]: if0 plus shr1 xor
+ 965: aIAH4kLYMSJXRRDSODhplKZe  15                        [ 5]: fold not plus shr1 shr4
+ 966: aKnsmB5nTQ4Jbd2Db5ufzMGu  10     SOLVED          0  [ 3]: or tfold xor
+ 967: aL3tjqDp2c3mM1sVdahuXjAk  14                        [ 8]: if0 not or plus shl1 shr1 shr16 shr4
+ 968: aN4NbMAIoNbddqMW9YTbR77S  23                        [ 9]: bonus and if0 not or plus shl1 shr16 shr4
+ 969: aPVLhtt5jiQS9yJtpQvBEk0S  18                        [ 6]: and if0 or plus shr1 tfold
+ 970: aQDS30d3kL2cmiQwhk1x0OqH  21                        [ 8]: fold if0 not plus shl1 shr16 shr4 xor
+ 971: aSaIqa10ctj7t2MHbXhBQbDi   3     SOLVED          0  [ 1]: shr1
+ 972: aX0jmAOneiGJrHwIByaqaT4g  18                        [ 7]: fold if0 not or plus shr1 shr16
+ 973: aXiAKaZ9B55Km4ZQoqs4wvhm  30                        [ 9]: and if0 not or plus shr1 shr16 shr4 xor
+ 974: acnMVlujEUXOXKZRJ8LUzeBD  29                        [10]: and if0 not or plus shl1 shr1 shr16 tfold xor
+ 975: adrtPiAh7fh6IJbHQWXer1jj  25                        [ 8]: and if0 not or plus shr16 tfold xor
+ 976: afePpt3MbbKgnnVPHXSAn5yY  23                        [ 8]: and fold if0 not or plus shl1 shr4
+ 977: aiEO4pDhvUdzcjRrcfuiScMx  16                        [ 5]: and fold if0 not shl1
+ 978: alWG7AKsgRFMYB1jyl9o0Pu5  21                        [ 7]: bonus and if0 or plus shr4 xor
+ 979: asFqiJrOOX7EK7fNp2c9N0Se  19                        [ 5]: and if0 or plus xor
+ 980: axhytmgxYIgrbkFIJyIIiBK4  29                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+ 981: ayaqQ1Lg9TEzQMHG48kx9WDC  19                        [ 5]: if0 or plus tfold xor
+ 982: aynV4sr4vBEVt825bgY0z4Xv  26                        [ 9]: and if0 or plus shr1 shr16 shr4 tfold xor
+ 983: azhARemZxczORYit4nQNcBq2   9     SOLVED          0  [ 3]: and if0 or
+ 984: b3AFn5eVVk4qwip1lxXO9lMB  23                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 shr4
+ 985: b5BA8Ugs8aa0OiYkITDWIxjR  30                        [ 9]: if0 not or plus shl1 shr1 shr16 shr4 xor
+ 986: b7usWzf86rB29IG7kosAsUy3  12     SOLVED          0  [ 4]: if0 or shl1 tfold
+ 987: bCxCAJIcB0BBPlnIrkNBTm0b  19                        [ 7]: bonus and if0 plus shr1 shr4 xor
+ 988: bFcFIewbG4KADnfUPUHYHHVX  27                        [ 8]: fold if0 not or plus shl1 shr1 xor
+ 989: bHOyyVYvUIg2m2TaeTWMbuZ0  15     SOLVED          0  [ 3]: if0 plus tfold
+ 990: bHm54YGaejD1JDObSUOJk3Al  25                        [ 7]: fold if0 or plus shr1 shr16 shr4
+ 991: bI7O40w9tpcRBdvGWScsHBve  25                        [ 8]: fold if0 not or shl1 shr1 shr16 xor
+ 992: bLTAC6CGaFv1sR43Kw5CMVQ3  15     SOLVED          0  [ 6]: and if0 not shr1 tfold xor
+ 993: bLeP7tbdPwxqYFTpL7A7ojnO  18                        [ 7]: if0 or plus shl1 shr4 tfold xor
+ 994: bRBRCBJMFDfKz6vwAFX9xnoj  11     SOLVED          0  [ 3]: if0 or tfold
+ 995: bSOc6oaG6KTIylsg0BRAijAx   6     SOLVED          0  [ 3]: or shr1 shr16
+ 996: bSaj61kgIaE8CKwzwiTSFYid  23                        [ 8]: fold if0 or plus shr1 shr16 shr4 xor
+ 997: bTfxuN79726TLZRZRH0dkqfo  28                        [10]: if0 not or plus shl1 shr1 shr16 shr4 tfold xor
+ 998: bUVPK0rdJARWtPDf8foQLYta  30                        [ 8]: and if0 not plus shl1 shr1 shr16 xor
+ 999: bUi2XgK3F68RqCFUJ9uur4VM  18                        [ 7]: if0 not or plus shl1 shr1 tfold
+1000: bZ3ki5AlQfolkVWT6ryA41VF  15                        [ 6]: and fold if0 not shl1 xor
+1001: bb9Mi9eSh0fnqApTTVK7eHyO  23                        [ 8]: and if0 not plus shr1 shr16 shr4 xor
+1002: binZ8Nx9y3iuobAg2CPsQAU9  11     SOLVED          0  [ 4]: or plus shr4 tfold
+1003: brmRNGQXGOn6ma8ZnLDA0SZu  17                        [ 6]: fold if0 not or plus shr4
+1004: bzJCAe74gQre1A1ndtkP7ft8  29                        [ 9]: and if0 not or plus shl1 shr1 shr16 xor
+1005: c43p9ZN2xHvCcZNbfPGYUccK  24                        [ 7]: and fold if0 or plus shr1 shr16
+1006: c4ty16DLyAOW5HeqEnjhCD8h  21                        [ 8]: and fold if0 or plus shr16 shr4 xor
+1007: c7ZP0vh4AzXyMqiWdcHgjJZA  23                        [ 9]: bonus and if0 not or plus shl1 shr4 xor
+1008: c8U9VTJyyj7sAhi3zacFWQkG  24                        [ 7]: if0 plus shl1 shr1 shr4 tfold xor
+1009: c9SKAfARhLZuBM68ioVar5Qr  12     SOLVED          0  [ 3]: fold or shr1
+1010: cBjNYB4Xy2gcL1L4opZK4RfJ  28                        [ 9]: and fold if0 not or shl1 shr16 shr4 xor
+1011: cDkc0jdSegKVQhwGWJTpW1db  26                        [ 9]: and if0 not or plus shl1 shr1 shr16 xor
+1012: cEKP8F8SsZVrGaWFx4gJnOkw  19                        [ 8]: bonus and if0 or plus shr1 shr16 xor
+1013: cGGhamQdFWdldlsmXvA2FRHP  10     SOLVED          0  [ 4]: and not shr1 tfold
+1014: cH58L9EQdgUAhi7BFrOnwZ3K  15                        [ 6]: fold if0 or plus shl1 shr1
+1015: cJgy9NCGa849B1ixYSbprvwH  22                        [ 8]: and if0 not or plus shl1 shr1 shr4
+1016: cLA10nhBGJAimkE6SAYcDUhQ  13     SOLVED          0  [ 6]: if0 not or plus shl1 shr1
+1017: cM9FpaBGAYWBLH5zdGxTCj1Z  19                        [ 7]: and if0 or plus shr1 shr16 xor
+1018: cMoyrDydACNZkwp6b4Gmqyag  26                        [ 8]: if0 not or shl1 shr1 shr4 tfold xor
+1019: cQXAvG6s6616lLRTMBVw9Sll  29                        [10]: and if0 or plus shl1 shr1 shr16 shr4 tfold xor
+1020: cRbz9BtqKqUfbG4BYEpgxWBN  10     SOLVED          0  [ 4]: and if0 or shl1
+1021: cT1lOcRPqTnxkAgd50KfY2XH  21                        [ 7]: if0 or plus shr1 shr16 shr4 xor
+1022: cY79aVecQLRGbMZVjydIfqAd   5     SOLVED          0  [ 2]: shr1 xor
+1023: cZsJDxaiLQbqa4U54AJg1ljR  12     SOLVED          0  [ 5]: fold not shl1 shr1 xor
+1024: cZuau22MZ4oxfWRBhZb1CDqh  20                        [ 6]: and fold if0 plus shr16 xor
+1025: cd9bBhF4w1QXKIuD4f2saalD  20                        [ 7]: and if0 or plus shl1 shr1 tfold
+1026: cmVoUjwXDZPB1mZoDzCvUTwF   6     SOLVED          0  [ 3]: or shl1 shr4
+1027: cnG1MFeBA97Knw6is9x3CTRQ  13     SOLVED          0  [ 5]: fold if0 not plus shr1
+1028: cnoF7C1hoXYhkF0Wz21wqPpB  21                        [ 8]: and fold if0 plus shl1 shr1 shr4 xor
+1029: crrb1AxIp0KdzwNz9BNYISwj  21                        [ 8]: and if0 not or plus shr1 shr16 xor
+1030: ctYfGps2viSxldRHtZYO0zPv  30                        [ 7]: if0 or shr1 shr16 shr4 tfold xor
+1031: cwAo66lKcGBa1bBA0ADrxO5y  16                        [ 6]: if0 not plus shl1 shr16 xor
+1032: cxchTkSHnGgpDkMwBz52kZte  24                        [ 8]: and if0 not or plus shr16 tfold xor
+1033: czIyfPSFOUf3r3G5MFReG474  15     SOLVED          0  [ 6]: if0 not shr1 shr4 tfold xor
+1034: d0vaMbDssdlQPAzL7s8VAWCE  25                        [ 8]: and if0 not or plus shr1 shr16 xor
+1035: d29cH9HWoyq3JXcHCnh5oUbL  28                        [ 8]: and fold if0 or shr1 shr16 shr4 xor
+1036: d60CoTmCrbqJyxYuNYOnIpEv  19                        [ 8]: and fold if0 plus shr1 shr16 shr4 xor
+1037: d9NURVrW2gC9J9aLcskUJaQL   4     SOLVED          0  [ 1]: shr1
+1038: dAgqgliSth4oQzWx2OFgq1WR  20                        [ 8]: and fold if0 not plus shl1 shr4 xor
+1039: dEDbS2HDoBsBXcBRnEG3DJFH  24                        [ 8]: and if0 or plus shl1 shr16 shr4 xor
+1040: dJWZAN3LlNRwxpQzsp5hPE9s  11     SOLVED          0  [ 5]: and if0 not shl1 xor
+1041: dJuB0H1Nso9QRJoEesp8aMCo  21                        [ 8]: and if0 not or plus shl1 shr1 shr16
+1042: dWHxJZMNBYPaIUDkDNA54ETw  22                        [ 8]: and if0 or plus shr1 shr16 shr4 xor
+1043: dYL90fj91bqZAyBUJNhoCWI2   5     SOLVED          0  [ 2]: not shr4
+1044: dbTXnXyeMK7yTuUJmmTODFKv  25                        [ 9]: and fold if0 not or plus shl1 shr16 xor
+1045: dcRFPQRF7VXXwQD820cUbI7G   7     SOLVED          0  [ 3]: plus shr16 xor
+1046: deghd9hCmEpDim0vwA6ABnO1  12     SOLVED          0  [ 4]: if0 or shl1 tfold
+1047: dh1sCQorEiJJLMlIJWJhTxDg   9     SOLVED          0  [ 3]: and if0 plus
+1048: drh2eJu5MQRzBW66AJBNCLTe  24                        [ 9]: and fold if0 or plus shl1 shr1 shr4 xor
+1049: dsKC68hAB0ldTPHqfZBCgIFt  28                        [ 8]: and fold if0 or shr1 shr16 shr4 xor
+1050: dsfCF9k9LkKMbBWfZdRBzNpk  24                        [ 8]: and fold if0 not or plus shr4 xor
+1051: dumbKXphYpHqM009YNxHzl2A  18                        [ 8]: and fold if0 not plus shl1 shr16 xor
+1052: dvVdcbc2zkmXJVvWcmXSjIlC  26                        [ 9]: and if0 not or plus shl1 shr1 shr4 xor
+1053: dwMtgyI1hlfbBAizYJyDq9Le  18                        [ 5]: if0 not or shr16 shr4
+1054: e4oRyBsHqyS08lJzs81ZzHB6  19                        [ 8]: bonus and if0 plus shl1 shr1 shr16 shr4
+1055: e81QAiriEC7NqhCgeSf4mFIM  17                        [ 7]: and if0 or shr1 shr4 tfold xor
+1056: eAkP0LQbT9Q0QwIMSsI0dhKp  24                        [ 9]: and if0 not plus shl1 shr1 shr16 shr4 xor
+1057: eBWkj9lSoswI7VQPRnUC97Ai  21                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 shr4
+1058: eFWGmCtQuB2nkKgEWP6DAZGc  25                        [ 8]: and if0 or plus shl1 shr16 tfold xor
+1059: eH4zQfUwkf0NkPqlbsfQPwCj  10     SOLVED          0  [ 4]: not shr1 shr4 tfold
+1060: eIxaHL14cVLGFP1SA4VEjf76  16                        [ 7]: and if0 plus shl1 shr1 shr16 xor
+1061: eJ1J9Jbr1MHljnaJy2IlU4Z9  30                        [ 9]: and if0 not or plus shl1 shr1 shr16 xor
+1062: eJAPLX2iOFyBjBmo3SqASAhK  15                        [ 5]: and if0 or plus xor
+1063: eL8JzHAaXKHfRGIK94Q8DaS7  28                        [ 9]: and fold if0 not or plus shr1 shr4 xor
+1064: eLho7ZXGFcOSbYFxKBY87oTf  25                        [ 8]: and fold if0 not or shl1 shr1 xor
+1065: eLobddbs92NMHj29otqnDKXL  23                        [ 7]: bonus and if0 or plus shr1 xor
+1066: eMJbaurOBu3sAfrV8pIeikwF  16                     0  [ 5]: if0 shl1 shr1 shr4 tfold
+1067: eP8rb0FXkghSnnxCqBAggQYF  26                        [ 9]: and if0 or plus shl1 shr16 shr4 tfold xor
+1068: eR7ulFVnVH9rrdZjVkSSNt1N  29                        [ 9]: and fold if0 not plus shl1 shr1 shr4 xor
+1069: eU2KZnBdJFjkDNzBPhPQBYS1  16                        [ 7]: and if0 or shl1 shr1 shr4 xor
+1070: eWgABw98uevgMBTIOKhkrcjp  14     SOLVED          0  [ 4]: and if0 not tfold
+1071: eaIwkkow67l1de0KT470QWZ7  30                        [ 9]: and if0 not or plus shl1 shr1 shr16 shr4
+1072: ebz8tABKl2fOPHPTdLWRFkhH  17                        [ 7]: if0 not plus shr1 shr4 tfold xor
+1073: eetepWEIboPdpBOuW5UL8vRH  21                        [ 8]: bonus and if0 plus shl1 shr1 shr16 xor
+1074: efXtYKAS8VLuYJDktrjJkeCY  12     SOLVED          0  [ 4]: fold if0 plus shr4
+1075: egypKHJVU0bIC4maE3vYVrRO  17                        [ 7]: and if0 not or plus shr1 shr16
+1076: ekiYv5YRTWnBeI3LzAs0mbOp  19                        [ 7]: if0 or shl1 shr1 shr4 tfold xor
+1077: em0fXNYCeL7BP4KasA4sYUAd  22                        [ 7]: and if0 plus shl1 shr1 shr16 xor
+1078: eoLXHXtl1bhogk9caePKVAC5  12     SOLVED          0  [ 4]: or shr16 tfold xor
+1079: epZBWSGlFGQRM5cOUnyZncEF  21                        [ 8]: if0 plus shl1 shr1 shr16 shr4 tfold xor
+1080: erGW96iXX1AOAMTdRioPSM8p   5     SOLVED          0  [ 3]: shr1 shr16 shr4
+1081: eyRK4rAAxBRtksVc4AmAMs5A  28                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+1082: f15cyEBmnocBBfDjJlvbZug4  18                        [ 6]: and if0 plus shl1 shr4 xor
+1083: f4PDh1hSCPO3A3CBAopr0uXM  23                        [ 9]: if0 not or plus shl1 shr1 shr16 shr4 xor
+1084: fCDhF8UBH4zT0wVmdaAulCFL  10     SOLVED          0  [ 3]: and if0 not
+1085: fCvML1f0061nRxKJJj8cq0yj   4     SOLVED          0  [ 1]: and
+1086: fDR1GrtB3vrHJfXJ0oyec1CR  21                        [ 9]: bonus and if0 or plus shl1 shr1 shr4 xor
+1087: fHHF7a8zGfQ3yawTiY6WrDes  17                        [ 6]: if0 not plus shl1 shr1 xor
+1088: fHz0A6kzBJk64re5P78vft7R  29                        [ 7]: and if0 not shl1 shr4 tfold xor
+1089: fKu1HOunPYU8co88OSBfClKF  28                        [ 8]: and if0 not or plus shl1 shr1 shr16
+1090: fLg4LrB0nd32xsZPcr0bn16x  29                        [10]: and if0 not or plus shl1 shr1 shr16 tfold xor
+1091: fNpZD00fqBa2Akt9LWCXELMk  16                        [ 7]: and if0 not or plus shl1 shr16
+1092: fNwNr742rLfTLcrGkDiUGAne  24                        [ 7]: and if0 not or shl1 tfold xor
+1093: fV0BnwpssBId48Jr665zXKUo  23                        [ 7]: if0 not or shl1 shr16 shr4 xor
+1094: fVd0asuJjhBNyEzDKot6aZmV  13     SOLVED          0  [ 6]: and if0 not or plus shr16
+1095: farP8al1vL2nOEMqgVcLSPHO  26                        [ 9]: and if0 or plus shl1 shr1 shr16 tfold xor
+1096: fasTab1Be5DiMhBt71LBPzT9  14                        [ 5]: if0 not shl1 shr4 xor
+1097: fbug8jP0u9NRKPEkibmWMFXb  22                        [ 8]: and fold if0 not or shr1 shr4 xor
+1098: fgGiOsBU7cJfb7ly2QHGMStK  21                        [ 9]: bonus and if0 not or plus shl1 shr1 shr16
+1099: fgKfbtAXqs6F0FJNxqJZikWE  16                        [ 6]: if0 not or plus shl1 xor
+1100: fgSNfMKLGibWbM3JAhLJ7UcS  26                        [ 9]: and if0 not or plus shr1 shr16 shr4 xor
+1101: fiJNvC94DV8k2IQ16gCkv94T   8     SOLVED          0  [ 2]: or tfold
+1102: fnfeH7JAqGUdVGog5qQoKfTZ  29                        [ 8]: and if0 or plus shl1 shr1 shr16 shr4
+1103: fnxTcgDPEIl5oeXB6150F217  14                        [ 6]: if0 not or plus shr1 shr4
+1104: foJXihxZVJJObhWKxWmcny0r  26                        [ 8]: and fold if0 or plus shl1 shr16 xor
+1105: fr0W0Ji0j2xqZJOGS2t3RPYz  20                        [ 9]: bonus and if0 not or plus shr1 shr16 xor
+1106: fxsYndZtdtMsroFqLqKBCBcH  15                        [ 7]: if0 not or plus shl1 shr1 shr4
+1107: fz5tpWAKNP6VYKWqxPjWmPtB   3     SOLVED          0  [ 1]: shr1
+1108: g08B6z5ZdK1smcsdG7sNszGa  14                        [ 6]: and fold not or plus shr1
+1109: g1jijAX7gRRZKVI6eRYVJxpe  13     SOLVED          0  [ 4]: if0 or shr4 tfold
+1110: g1lkgupfEueyWmYYrK1jgnRZ  17                        [ 6]: fold if0 or shr1 shr4 xor
+1111: g2uFYjoHexs3YA2AMjxADkSH  26                        [ 8]: and fold if0 or plus shl1 shr16 shr4
+1112: gA0G7Sjk4zKssyPgpsBmyRMB  26                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+1113: gAnZcAzwd6xJhBevvTyfxRgD  20                        [ 7]: and if0 not or plus shl1 shr4
+1114: gCZsIa5qqQkfBsbGbWIVSSNJ  27                        [ 9]: and fold if0 plus shl1 shr1 shr16 shr4 xor
+1115: gEc68yJNCYgOBMfOz6Z47lt3   5     SOLVED          0  [ 3]: shl1 shr16 shr4
+1116: gHdeIDWVrjSAyg2laKbnG0T6  20                        [ 5]: if0 or shr4 tfold xor
+1117: gHsB7YSWmZ9Wc6Npb4wNTzKu  25                        [ 9]: and if0 not or plus shl1 shr1 shr4 tfold
+1118: gOBy3uXcSzZfsnI8Alx6oLh9  25                        [ 8]: if0 not or plus shl1 shr1 shr4 tfold
+1119: gSOTumr6QpTBIm1wTfq7jvVD  27                        [ 8]: and if0 or plus shl1 shr1 tfold xor
+1120: gTH1LZrSRixt7AvPD75TgsKE  24                        [10]: if0 not or plus shl1 shr1 shr16 shr4 tfold xor
+1121: gWhfbsFRT3J26ef9vCKoDmEc  22                        [10]: and fold if0 not plus shl1 shr1 shr16 shr4 xor
+1122: gZBKFUeBu5tmufJe22m3rQgA  18                        [ 6]: fold if0 not shl1 shr1 xor
+1123: gZPGIL2zFgbqG3VkKKYk7XmZ  22                        [ 7]: fold if0 plus shl1 shr1 shr4 xor
+1124: ggrjE9is2V4wiozX2SPXrcxz  12     SOLVED          0  [ 5]: or plus shr16 shr4 tfold
+1125: gjMdokpZkzeu4NxoG3ewTgFw  24                        [ 8]: if0 not or plus shl1 shr16 shr4 xor
+1126: gjgdbLKPKOmv68wfQfOBmXPS  22                        [ 7]: fold if0 or plus shr1 shr4 xor
+1127: gkyrOMJ77yMbVaboBoftGmvL  27                        [10]: and fold if0 not or plus shl1 shr16 shr4 xor
+1128: gmHGbtdmUKHHFJECWjplc49O  19                        [ 7]: fold if0 or plus shl1 shr4 xor
+1129: gnhAQMfWWAmLidtUAgokcNFR  21                        [10]: bonus and if0 not or plus shl1 shr1 shr16 xor
+1130: gpNLmZXjAXQKLfi3OJQkApdL   3     SOLVED          0  [ 1]: not
+1131: gqmE6e76RjFoUZzea5PrRNdl  17                        [ 6]: fold if0 or shl1 shr1 xor
+1132: gsyr88VTBwbwkZTRMaEPmAq5  25                        [10]: and fold if0 not or plus shl1 shr1 shr16 xor
+1133: gvZkUGF1F6Kd40fi4u74Wj97  30                        [ 9]: and if0 not or plus shr1 shr16 shr4 xor
+1134: h19ymTuLlwBkMadXxBHjFoAs  21                        [ 9]: if0 not or plus shl1 shr1 shr16 shr4 xor
+1135: h64YtNrYzSUDB3BXdaBcbD3b  30                        [ 8]: and if0 or shl1 shr1 shr16 tfold xor
+1136: hAtlUs8LZE2yjx9ZZrhfZskm  12     SOLVED          0  [ 5]: and fold not shr4 xor
+1137: hLDQMX5urJsD6UmSsn265MB5  11     SOLVED          0  [ 4]: fold if0 not shr4
+1138: hLmrFfwDEXfh5CfNkyIbcuG7  23                        [ 8]: bonus and if0 not or plus shr16 xor
+1139: hNPF5heAB0KjR7jL6OonHUXd  22                        [ 9]: and if0 not or plus shl1 shr4 tfold xor
+1140: hO6GvtNp5LmQBb8cY7j26GCr  12     SOLVED          0  [ 6]: fold not plus shl1 shr16 shr4
+1141: hQ8aO7iUiKfm2f2iuLIh7jJj  19                        [ 6]: and if0 not or shr1 shr4
+1142: hSbcrv4zwMivPI1IRpQ4ZeOc  16                        [ 9]: and if0 not or plus shl1 shr1 shr16 shr4
+1143: hSljg6fhTAjITZfrZO1Oo5SR  19                        [ 7]: fold if0 not or shl1 shr4 xor
+1144: hWG2dBJYSrc5nlK4pIujg3Ah  17                        [ 8]: if0 not or plus shl1 shr1 shr16 xor
+1145: hWeRaJYt9FZxnQbAWhI2svzL  20                        [ 7]: fold if0 not or plus shr1 shr4
+1146: hXI7V2NKhDPZctvpW8wIQD9k  15                        [ 5]: fold not or plus shl1
+1147: hb2A5dljM2LcM6aTTszLlhOr  23                        [ 8]: bonus and if0 plus shl1 shr1 shr16 xor
+1148: hhEt2JwkN5keXSUdpQ4WEBbA  18                        [ 6]: fold if0 not or shl1 shr1
+1149: hjcev8JZEvU6tyZrAKbUGUMX  18                        [ 6]: and if0 not plus shr16 xor
+1150: hlWD3VuMqiNhXaGBOH0Kcy3r  20                        [ 9]: bonus and if0 plus shl1 shr1 shr16 shr4 xor
+1151: hnpWxdtvOBDe6Bui7rjpwnlT  27                        [ 7]: and if0 not or plus shr4 tfold
+1152: ho05WPlcCpZTtABOb3TyFioL  17                        [ 6]: if0 or shl1 shr16 shr4 xor
+1153: hokiFEfg2AA1AAcQkZq6RzN6  25                        [ 8]: if0 not or plus shl1 shr4 tfold xor
+1154: hw1asUBpgUb4AsyA9OxHJb0K  14                        [ 4]: and fold or shl1
+1155: hyXLqZw6bhf9VxkmhDCnzd0n  23                        [ 8]: if0 not or plus shr1 shr16 shr4 xor
+1156: i262bijJrqiAJOk5Dsf2YhFt  11     SOLVED          0  [ 4]: or shr4 tfold xor
+1157: i8TNxLRPe30hfB05Aw0QlOOl  20                        [ 6]: if0 not plus shr16 tfold xor
+1158: i9pe0cO8J3Shj02WirPDWzHT   9     SOLVED          0  [ 4]: not shl1 shr1 tfold
+1159: iCriN8tE7MCMdPHpXr82dVA3  16                        [ 6]: and if0 or plus shr16 xor
+1160: iG9tBUm79eD5P8Sjlf1WYsqF  21                        [ 9]: bonus and if0 or plus shl1 shr16 shr4 xor
+1161: iGbUKIW1DFAkpneQGsIhdPSL   4     SOLVED          0  [ 2]: shr1 shr4
+1162: iIRV3ADR4KA0e8sHKc4VxQVA  17                        [ 6]: fold if0 or plus shl1 shr1
+1163: iJ9EZNH9DNyhIpsymRUGQeaD  27                        [ 7]: and if0 not plus shr4 tfold xor
+1164: iQT5alhiM95ApbBznL8R2mIB  28                        [ 9]: and if0 not or plus shl1 shr16 shr4 xor
+1165: iU2QVpgX7LdRsrNLPmI0bksk   3     SOLVED          0  [ 1]: shr4
+1166: iUKLjWkEqqTlLAIqrK0axGQB  20                        [ 7]: bonus and if0 plus shl1 shr1 shr4
+1167: iX9fMON3mdquKzL3r7dtt1ez  17                        [ 6]: if0 not plus shr4 tfold xor
+1168: iXCQJQmNDUicf12AK2Gyk0fb  11     SOLVED          0  [ 3]: fold plus shr16
+1169: ibV3EIfxtwkAIulwoxCuITWt  21                        [ 6]: bonus and if0 plus shl1 shr1
+1170: ifrxOHMxHzPQM8zj1UpPrroZ  18                        [ 7]: fold if0 not or plus shl1 shr1
+1171: igLtrm34xJ9hHVCbvYRRkAAE  16                        [ 5]: fold if0 plus shr1 shr16
+1172: ighpl22lbmGPGi9UasBiotMU   6     SOLVED          0  [ 3]: or shr1 shr4
+1173: iglGK5iJ6KJNPAvSS8Aw0Apn  15     SOLVED          0  [ 5]: if0 not shr4 tfold xor
+1174: ik4UXes3UxLKItH51ByPr5yu  16                        [ 5]: if0 not or shr16 xor
+1175: itct63URJBzgFmmhLzwzvStl  21                        [ 6]: and fold if0 plus shr1 xor
+1176: j3iPK72FHMlHY07fhFxde4mt   6     SOLVED          0  [ 3]: not shl1 shr1
+1177: jAhlfGr2ArGIMY4uyDrlw4s5  15                        [ 6]: fold or plus shl1 shr1 shr16
+1178: jB786iA8pB7AHCm1UCzadBK9  22                        [ 8]: and if0 not plus shr1 shr4 tfold xor
+1179: jBmhAJEL9lPesRfdvpi05Ycm  21                        [ 7]: and if0 or plus shl1 shr4 xor
+1180: jCFnyN4FrNfBpIuBtezae9gH   6     SOLVED          0  [ 3]: shr16 shr4 xor
+1181: jE4BwcNMjzckqMX4GAD3fkNp  25                        [ 9]: bonus and if0 not or plus shr16 shr4 xor
+1182: jOhy3kj8vV78HfPsGBDEis7C  24                        [ 8]: fold if0 or plus shr1 shr16 shr4 xor
+1183: jPtfWZ767TFpOJlDufsBqq7K  23                        [ 7]: and if0 not plus shr16 tfold xor
+1184: jQX6qm1QZcAClSFuWGA8SFN2  10     SOLVED          0  [ 5]: and if0 not shr16 shr4
+1185: jWW7oi93M0uCNSjzhSrJrSzQ  23                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 shr4
+1186: jXnwepZwvrld5EYHRFktvDY7  25                        [ 9]: bonus and if0 not or plus shl1 shr16 shr4
+1187: jaAtart9eOHUCaRM7P41iRCe  30                        [ 7]: if0 not or plus shr1 shr16 xor
+1188: jdr3wI2zfrGxXvt9PkfArv2v  20                        [ 7]: and if0 not shl1 shr4 tfold xor
+1189: jfKFsphosfC0VEpPVYxCjhE4  17                        [ 4]: and if0 or plus
+1190: jixKYAmB5r8gSDb2dowmOSXt  19                        [ 9]: bonus and if0 not or plus shl1 shr4 xor
+1191: jnCCQkiAcI5utk3BBzrNMIBm  11     SOLVED          0  [ 4]: not or shr4 tfold
+1192: jtsVF9YRmebmjvGSrnXNeNFX  30                        [ 8]: and if0 or shl1 shr1 shr4 tfold xor
+1193: juGF0fMt4V7fBr4BzBnQspAc  19                        [ 7]: if0 not or plus shr16 tfold xor
+1194: jxz3mNtcwC7gSua6Ts3FoSmX   3     SOLVED          0  [ 1]: shr1
+1195: jz2H9YMRxyGyVBH9g6U39kym  20                        [ 7]: and if0 not shl1 shr1 shr16 xor
+1196: jzdTQBuqrelILxAeLOA44DMn  19                        [ 7]: bonus and if0 not or plus shr4
+1197: k5civIrGPdWoqL7B1e1J7L1D  25                        [ 7]: fold if0 or plus shl1 shr1 shr4
+1198: kBmuqNayFJewbeiaw8qNBByo  12     SOLVED          0  [ 5]: and if0 or shr16 xor
+1199: kC6R0lRgc8YAFz8n9AEVBXjO  19                        [ 7]: bonus and if0 or plus shl1 shr16
+1200: kCPhUfzYc4yZlpvoDmBl7ePB  13     SOLVED          0  [ 5]: if0 not or shr1 xor
+1201: kHoFXS5W9UpAzHefcyZ0W7tb  21                        [ 7]: bonus and if0 plus shl1 shr4 xor
+1202: kKAcBlMhNx8nUkfppEhsuQyd   9     SOLVED          0  [ 2]: if0 tfold
+1203: kVViw3NzwaVddH5DVZsH2rSN  11     SOLVED          0  [ 4]: fold or shr1 shr16
+1204: kXefprIZhnTfc106jzrX6EPC  11     SOLVED          0  [ 5]: not shr16 shr4 tfold xor
+1205: kZkYIMfXk46LolFhpYG4EJAz  23                        [ 8]: bonus and if0 not plus shr1 shr4 xor
+1206: kaBbNyJFz3KSBeYeJN5Q2w92  29                        [ 9]: and fold if0 not plus shl1 shr16 shr4 xor
+1207: kbBK0Ow7akJBjLiuNuJ0fRBm  30                        [ 9]: and if0 not or plus shl1 shr1 shr16 xor
+1208: kcPNCB4Gw9PMC3mvXpHAhifY  27                        [ 8]: if0 not or plus shr1 shr16 shr4 xor
+1209: kfognETBYfs87FhAZFIVY32F  12     SOLVED          0  [ 5]: fold or plus shl1 shr4
+1210: kgzSmU0l0tZGC7bvPU6bp66L  14                        [ 5]: fold if0 plus shl1 xor
+1211: kjy1ptYFaPkvxOF8e8b8FS2v  23                        [ 7]: and fold if0 not plus shr16 shr4
+1212: klx74DZSPUHUV9EcrNyjTGwL  24                        [ 9]: and fold if0 not plus shl1 shr1 shr16 shr4
+1213: kmeBgx5iuD7LaXlp7UbKR99q  21                        [ 7]: and if0 not plus shl1 shr1 shr16
+1214: krN3NunIrAUUAzTLNAOK1BSM  20                        [ 5]: if0 or shr1 shr16 xor
+1215: kwAXA3muAIE5kX5QNoxATNRz  23                        [ 8]: bonus and if0 not or shl1 shr16 shr4
+1216: l08rTix1vBrfj6zRyDdxPonZ  21                        [10]: bonus and if0 not plus shl1 shr1 shr16 shr4 xor
+1217: l0AWfUVunjBFRyc1zEI2fbrK  22                        [ 8]: and if0 not shl1 shr1 shr16 shr4 xor
+1218: l20bNymuOumIizqnZv9QIAfE  29                        [10]: and fold if0 not or plus shl1 shr1 shr16 xor
+1219: l2p0Lk06drroAONaErB7ECeB  27                        [ 7]: and fold if0 shl1 shr1 shr16 shr4
+1220: l4XcB5b18xZaWmNlAfpac0n1  23                        [ 8]: bonus and if0 or plus shr1 shr16 shr4
+1221: l6tNANTyhRalyVZEQrd6Yrv2  19                        [ 7]: bonus and if0 or plus shr1 shr4
+1222: l7B9GEEFDzXoDGOMx0zSEpTa  30                        [10]: and if0 not or plus shr1 shr16 shr4 tfold xor
+1223: lALDAScK2dBQC5SEaC26zkYa  23                        [ 8]: and fold if0 or shr1 shr16 shr4 xor
+1224: lBqYuxBLQTcMEmGrSHFVwUvl  15                        [ 5]: fold if0 or shr1 xor
+1225: lEToBA74mAfcese4zFaMUN07  29                        [ 9]: and fold if0 or shl1 shr1 shr16 shr4 xor
+1226: lI1jTEnhN5KnEMn4nCK9EEKy  13     SOLVED          0  [ 4]: if0 or plus tfold
+1227: lIepZrAErBXCX9PZ0C0G2McO  22                        [10]: bonus and if0 not plus shl1 shr1 shr16 shr4 xor
+1228: lMvgAMhAEjzvTnASBp8sviel  23                        [ 7]: and if0 not or plus tfold xor
+1229: lNUmhUVLFmNrqotsr59QGCYd  17                        [ 6]: and if0 not or shl1 shr16
+1230: lPeNGy009Dmlv4HxX2teHPBf  22                        [ 9]: and if0 not plus shl1 shr1 shr16 shr4 tfold
+1231: lT4s30miQDRb26zLUUEQR46W  17                        [ 7]: and if0 or shl1 shr4 tfold xor
+1232: lWr2iAZDQCzUypwPSAmuFRXR  22                        [ 5]: if0 or plus shr16 tfold
+1233: lZ701ZvA3rFYqWRXVA1BYXEs  10     SOLVED          0  [ 4]: and if0 or shr16
+1234: lZxKiYxTtASYJaaFmKndlrRY   9     SOLVED          0  [ 3]: and if0 xor
+1235: lbJGBRyFhPkU7nZvhcR82pRz   9     SOLVED          0  [ 4]: and if0 not shr16
+1236: lgBmWdzwlAzNnR3pHhVAIrIn  23                        [ 8]: bonus and if0 or plus shl1 shr16 shr4
+1237: lo91fQl7Ji4A93wbj0HwTnrq  26                        [ 9]: and fold if0 not or plus shr16 shr4 xor
+1238: lovBWTrE2p0E8FDag78owlS6  22                        [ 7]: and if0 not shr1 shr4 tfold xor
+1239: lqBTfRAe1r8JOPJB18Z43We4   4     SOLVED          0  [ 1]: plus
+1240: lsPh0dEMne7NR3BoBzWwKm5F  17                        [ 6]: if0 not plus shl1 tfold xor
+1241: ltrFkBXrCYGJEtOwCZGkKNLj   8     SOLVED          0  [ 2]: plus tfold
+1242: m6HVofG72kN7373v2bgRhV59  22                        [ 7]: fold if0 not or shr1 shr16 xor
+1243: mAYWF8FChWWhO9VH0K2WI4to  17                        [ 7]: and fold if0 not or shr16 xor
+1244: mB3xtn1lKBOyi8l4i9o0O0nl  25                        [ 8]: and if0 not or plus shl1 shr1 xor
+1245: mByBafREwAjvxQNLFJeXIyWq  27                        [10]: and fold if0 not or plus shl1 shr1 shr16 xor
+1246: mCPYonTQYm4INfAnPCXyG3Be  13     SOLVED          0  [ 4]: and if0 or shl1
+1247: mDDPFIzAPS8y1jemXByE9fKc  13     SOLVED          0  [ 4]: fold shr16 shr4 xor
+1248: mE7mOv4xmnnuiAnNT46WS3LB  22                        [ 8]: fold if0 or shl1 shr1 shr16 shr4 xor
+1249: mH3IAEwEiIAXW8JGBGMTWb41  12     SOLVED          0  [ 4]: and if0 shr16 tfold
+1250: mH9c11ePJATX3BvMcmCr5Kj9   8     SOLVED          0  [ 5]: and not shl1 shr1 shr4
+1251: mHA81ffWuq2oEzx1CELSkBM6  23                        [ 7]: bonus and if0 or plus shr4 xor
+1252: mMbiMmBrN9KzzNsmKl8kPvgB   3     SOLVED          0  [ 1]: not
+1253: mNAf8FpShhMQ2BVulU5i5SKA   6     SOLVED          0  [ 3]: not shr1 xor
+1254: mNQ834DJdCIm2pbBJWxlRW3O  23                        [10]: bonus and if0 not or plus shl1 shr16 shr4 xor
+1255: mQdB1s6xqCZgtBAaCSCqhgew  23                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+1256: mZ0P3ng5taAyUgTMB3GwIEnv  21                        [ 8]: if0 or plus shl1 shr1 shr16 shr4 xor
+1257: mfnoXzBUvvqLlmgJfPKkufBQ  21                        [ 7]: if0 or plus shr1 shr4 tfold xor
+1258: mgdVkgLH009FJbRd4J7B9c6b  11     SOLVED          0  [ 4]: and fold plus shl1
+1259: mlPL77Rf7RFQJ5BplBBGONL3  23                        [ 9]: and if0 not plus shl1 shr1 shr16 shr4 xor
+1260: mmusa26bLG5k8JOys174zEAS  11     SOLVED          0  [ 4]: or shr1 tfold xor
+1261: mrxMxxJ4wMdMYGAnYDOw7eQA  23                        [10]: bonus and if0 not plus shl1 shr1 shr16 shr4 xor
+1262: mv6A4O60iSkqUXijo9LVOO6a  21                        [ 9]: bonus and if0 not plus shr1 shr16 shr4 xor
+1263: mw1yMsTMZSYepEVC5FIWzmSm  24                        [ 9]: and if0 not or plus shr1 shr16 shr4 xor
+1264: mwcjnwsioGZyAOqJXjgM2AqD  11     SOLVED          0  [ 3]: or shl1 tfold
+1265: mxm7pJeDRRw5cMMtxSYBShnB  23                        [ 7]: if0 or plus shl1 shr1 tfold xor
+1266: mykmfAvJq2KV2tFwFo6yb50N   4     SOLVED          0  [ 2]: shl1 shr16
+1267: n0dtNZqWrYBAYaS2yj8ZqZok   4     SOLVED          0  [ 1]: plus
+1268: n9b7rDtRcrvvH1uACg3VPR8H  25                        [ 9]: if0 not or plus shl1 shr1 shr16 shr4 xor
+1269: nA0FNWwu90JwqopAQV0QsEZL   4     SOLVED          0  [ 1]: or
+1270: nBNAG5nWKhaDp2sYzdvvvYfl  16                        [ 5]: if0 not shl1 tfold xor
+1271: nBlBQ3WnqOC4ZqWvyqSbzGia  23                        [10]: if0 not or plus shl1 shr1 shr16 shr4 tfold xor
+1272: nDaMAc79bmc0kyjb1zeM1Xgb  12     SOLVED          0  [ 4]: fold not or xor
+1273: nHzlie9VWmZFhW1omHymRX6j  23                        [ 9]: bonus and if0 plus shl1 shr1 shr16 shr4 xor
+1274: nIFEjvIHMqpfHR4JdKeUB3cu   8     SOLVED          0  [ 4]: and plus shl1 shr16
+1275: nJfiqwjx8sfEcyf7kPNRWB4O  29                        [ 9]: and fold if0 not plus shr1 shr16 shr4 xor
+1276: nLZResbUgFThK09BSDsrwaIT  20                        [ 9]: bonus and if0 plus shl1 shr1 shr16 shr4 xor
+1277: nM8PRuAAk1yR4yeXNXzFGlfx  11     SOLVED          0  [ 3]: if0 tfold xor
+1278: nNvGkVaZSs3hvPgPRhYVvzaq  21                        [10]: bonus and if0 not or plus shl1 shr1 shr16 xor
+1279: nQ5fa0VmwfGpTOCNNLEBbuXy  18                        [ 7]: fold if0 or plus shr1 shr16 shr4
+1280: nQTdQblU9YOWTSebG0Fo6cHE  12     SOLVED          0  [ 4]: and if0 plus shr16
+1281: nVByqe3MMB3odQLnEsrNAv9I  22                        [ 7]: if0 or plus shl1 shr4 tfold xor
+1282: nVobBbhTvD6cA58l4THpSea0   9     SOLVED          0  [ 4]: and if0 not shr1
+1283: nWkbVPqj2dUBmnHBAbHdHuwD  23                        [ 7]: bonus and if0 or plus shr1 shr16
+1284: nXBKYEhauPcb8WpRqECqQBov  16                        [ 6]: if0 or plus shr4 tfold xor
+1285: nXF2BMZdwlNBFkRTWfYWXgpA  23                        [ 9]: and if0 not plus shl1 shr1 shr16 tfold xor
+1286: nY8g2AnceHyKe528gcNjEvoE  19                        [ 9]: and if0 not or plus shl1 shr1 shr16 tfold
+1287: navIrhBgjnfazQ9s03k6w7Cg  27                        [ 8]: and if0 not or shl1 shr1 shr16 xor
+1288: ni6xxQvyP1jHdtYVTYthMeAz  13     SOLVED          0  [ 6]: and if0 plus shr1 shr16 xor
+1289: nibZiAh286pBxyuAgtEcUTEk  22                        [ 6]: fold if0 or plus shr16 xor
+1290: nmh4Yk4X3FvGGLqyZksAs5ty  30                        [ 9]: and if0 not or plus shl1 shr16 shr4 xor
+1291: noAW58NSDVmIRCBYBvfvUxNJ  15                        [ 6]: and if0 plus shl1 shr1 xor
+1292: nooBO0OJnBU9qBPLlvOJFsxd  19                        [ 8]: bonus and if0 not or shr1 shr16 shr4
+1293: npss05Ocl3xiupuGWeAD8qiR  21                        [ 6]: if0 or plus shr4 tfold xor
+1294: nxYygBmOAvW9ptwoAnUbCey6  21                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 shr4
+1295: o1tP9sUr3mA6IB38EVNiLvBO   5     SOLVED          0  [ 2]: shr4 xor
+1296: o5TMK3D2fg0Hapx9nXsCmzAs  19                        [ 7]: and if0 or plus shl1 shr1 shr16
+1297: o7332NbwOIDMfAd3CdPX7smC   4     SOLVED          0  [ 2]: not shr4
+1298: o8dAqYBq6m25NjtNTPP0HGxv  19                        [ 8]: and fold if0 not plus shl1 shr1 xor
+1299: oBFULeWAJFFiOphqYEN6eSMI  22                        [ 8]: fold if0 not plus shl1 shr16 shr4 xor
+1300: oE2dmGNGsdlItd1mnwtcybl6  25                        [ 9]: and if0 not or shl1 shr1 shr16 shr4 tfold
+1301: oEzzcrx53ptheYuDS6N3KUEo   9     SOLVED          0  [ 3]: plus shl1 tfold
+1302: oGcwydEp2ajBLMgvgdRnibRB  30                        [ 9]: and fold if0 not or plus shl1 shr1 shr16
+1303: oH9LiROrAjxJ5D7pAgFMCurR  13     SOLVED          0  [ 5]: and if0 or plus shr1
+1304: oI6kQb7ljIyArvjlh0nWUwKG   9     SOLVED          0  [ 3]: and if0 plus
+1305: oJAIpMyGDcBu7G91NiAan9kq  13     SOLVED          0  [ 4]: if0 plus shr1 tfold
+1306: oJwh5ZDXMnCsYgE8HEHrWmGn  12     SOLVED          0  [ 5]: fold if0 shl1 shr1 shr4
+1307: oKbvJks9KY3qzLiAmf9zlcsj  21                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 shr4
+1308: oKp4GqhpFfDBld3C56TDQ0JO  18                        [ 6]: if0 not or shl1 tfold xor
+1309: oQhVLHoDMPaX7slMHpAYut7a  15                        [ 6]: fold not plus shl1 shr16 shr4
+1310: oR1UvV4BrA5UqrWyg3afrnHN  18                        [ 5]: and if0 shr1 tfold xor
+1311: oTFHVH8shQDIy6J1Q6NnnwWL   9     SOLVED          0  [ 4]: and if0 shl1 shr16
+1312: obaM9fVG6aOBDrybjOHSHN4w  25                        [ 9]: bonus and if0 plus shl1 shr1 shr16 shr4 xor
+1313: obrsVG2YaBNfh702yJ0a3PgA  24                        [ 8]: and if0 not or plus shl1 shr16 shr4
+1314: oc1flmPYAYWGtnWq2gcq0BNz  29                        [ 9]: and if0 or plus shl1 shr1 shr16 shr4 xor
+1315: ofUSZ3C4wA6yervRkYitjLPS  21                        [ 8]: bonus and if0 or plus shl1 shr16 shr4
+1316: ogc5BKa8AXDYEXN01cOLZBYk   7     SOLVED          0  [ 2]: and shr16
+1317: oj2ChctKW4N7IOLGBUtZWX90   9     SOLVED          0  [ 5]: if0 not shr1 shr16 shr4
+1318: okWvIw5Z10By8Yi8QDXWSmUP  10     SOLVED          0  [ 4]: or shl1 shr16 tfold
+1319: okaHo8jFWnNH4SOEfsxnDZuN  14                        [ 5]: fold not plus shr1 shr4
+1320: olmWMd14iMCFADq93gjn7xHa  23                        [ 9]: fold if0 not or shl1 shr1 shr16 shr4 xor
+1321: omgNEobJNLSwAPtgV1li5AMC   9     SOLVED          0  [ 3]: or shl1 tfold
+1322: omm3udf99uyHrhFVzXv5VSjt  13     SOLVED          0  [ 6]: and if0 not shr1 shr16 xor
+1323: opCk7hnT9Z51plk9KWzJrySO  18                        [ 8]: and if0 not or plus shr1 shr16 tfold
+1324: ouA1iWL2G65W9Y1KanKhVPYT  23                        [ 9]: bonus and if0 or plus shl1 shr1 shr16 shr4
+1325: ov8c2Sy795Ex2nbCqT9b0Y7z  21                        [ 6]: and if0 plus shr16 shr4 xor
+1326: oygfuqoKi7DvD2liG9r2P8FY   8     SOLVED          0  [ 4]: or shr1 shr4 xor
+1327: p06AqOXa1YyRxKvvH7GhIVHa  20                        [ 8]: and fold if0 plus shl1 shr1 shr16 shr4
+1328: p4GhSft1j5oumYFpIeogUPMb  21                        [ 6]: and fold if0 not plus xor
+1329: pAjPhARfehIa3KKkXAuUA2Pt  26                        [ 9]: and fold if0 or shl1 shr1 shr16 shr4 xor
+1330: pBp6uQerhgDMDVXBORwlN4gc   8     SOLVED          0  [ 3]: not shr1 xor
+1331: pEKe6S8dk1wQ8kYRSPeo0DfN   6     SOLVED          0  [ 3]: plus shl1 shr1
+1332: pO1zb4WW2uUCSrwB6WH4WhHF  23                        [ 7]: if0 or plus shl1 shr1 shr16 xor
+1333: pPRysSC4Bta6A6N29vjXZKBV  26                        [ 9]: fold if0 not or shl1 shr1 shr16 shr4 xor
+1334: pQSZXxUkYb073rHF0kP9M9rH  12     SOLVED          0  [ 4]: and fold shr4 xor
+1335: pTUoE2mttyhvCMBiULmWjiBO  19                        [ 7]: if0 or plus shl1 shr16 tfold xor
+1336: pUPJorAy3WUQBsh1pvwJJr5X  15                        [ 7]: and if0 not plus shr1 shr4 xor
+1337: pUUqb4qiAcVAUS74rNQmBlrW  12     SOLVED          0  [ 4]: and or plus tfold
+1338: pauglsGM20gqMXeBXtwSEtts  23                        [ 9]: bonus and if0 not or plus shr1 shr16 shr4
+1339: pcDZHWhIYYeY7wLomlftAbFV  25                        [ 7]: if0 plus shl1 shr16 shr4 tfold xor
+1340: pgfaYexnM6SXoAuxK61ZRkMz  29                        [ 8]: and fold if0 not plus shl1 shr1 shr16
+1341: phLbe5A2MOj8LRy14h9jyEhg  10     SOLVED          0  [ 3]: and if0 shr16
+1342: pjg7b098OKUYsOXaP4atGqsR  18                        [ 6]: fold if0 not plus shl1 xor
+1343: pkr8mA78aLCVd4AtUWMsADrO  27                        [ 9]: and if0 plus shl1 shr1 shr16 shr4 tfold xor
+1344: ptXp2VQngvnPaw6OOIkaqrP7  28                        [10]: and if0 not or plus shl1 shr1 shr4 tfold xor
+1345: q0pXX7P9sBz8umZ5qclatyco  25                        [ 7]: if0 or plus shl1 shr1 tfold xor
+1346: q4VK06VcBiKVuePavAljkk3s  27                        [10]: and fold if0 not or plus shr1 shr16 shr4 xor
+1347: qAoHaPaJPYGPz7B5DZIO5OQt  11     SOLVED          0  [ 3]: if0 shr1 tfold
+1348: qBgSiTs7f5q5HCIbfrJW5Myt  20                        [ 6]: and if0 not or plus shr16
+1349: qDP8AOgEXBBougB9iTJWURBK  12     SOLVED          0  [ 4]: if0 not plus xor
+1350: qHWJmXxoHsyayBjLNA7KzGt3   8     SOLVED          0  [ 2]: or tfold
+1351: qHx9HwPFPZoPusaJRUpXecr4  23                        [ 9]: bonus and if0 plus shl1 shr1 shr16 shr4 xor
+1352: qIDAeqm76ps0Bxr2BwYLLXul  25                        [ 8]: and if0 or plus shl1 shr16 shr4 xor
+1353: qYNE7t53p79FalEvWfgtyBBB  13     SOLVED          0  [ 4]: fold if0 or shr4
+1354: qZT7RUwNV4cPzXXU5i6q3eJd  21                        [ 6]: if0 or plus shr4 tfold xor
+1355: qdKSfEkWw3BkhYzxrI94gibR  23                        [ 8]: and if0 not plus shl1 shr1 shr16 xor
+1356: qiz747P6mZj1XtVgsyztwFAo  24                        [ 8]: and if0 not or shl1 shr1 shr16 xor
+1357: qjo6ocNeehoC18BuJLeg51dt  20                        [ 7]: and if0 plus shl1 shr1 shr16 tfold
+1358: qkPE7novnJCQA3BeKECU0n87  21                        [11]: bonus and if0 not or plus shl1 shr1 shr16 shr4 xor
+1359: qkf9mKBv4AyGZA2Dsi1RN7As  20                        [ 6]: if0 not or plus tfold xor
+1360: qlLwVaLtv0qj0v9VBi9KNfAH   7     SOLVED          0  [ 2]: and if0
+1361: qlZQTiqtWmJagRaTo6mcQNKG  20                        [ 7]: fold if0 not or plus shr1 shr16
+1362: qlbjf4Nha3boA1BWab0TJtWS  21                        [ 8]: and if0 or plus shr1 shr4 tfold xor
+1363: qlnsCeoAogAgnHSxA176iJs6  17                        [ 6]: and if0 not plus shl1 tfold
+1364: qloDdTWwsvAvcgBhL7hhpHZG  12     SOLVED          0  [ 3]: if0 not xor
+1365: qobV8h4pzS9AhuoHb7LDiaZU  28                        [ 9]: and if0 not or shl1 shr1 shr4 tfold xor
+1366: qoxxwu3sVPK2ZNsQSZ6WufeR  30                        [ 8]: and fold if0 not or plus shl1 shr1
+1367: qsuLCWkonQTwnUzezwl4EZXh  12     SOLVED          0  [ 4]: fold if0 plus shr4
+1368: qvlSN73fJlaxburNfBdoaql6   8     SOLVED          0  [ 2]: and tfold
+1369: qw0YfjOyQzZGbosOCI8Z719o  25                        [ 8]: and if0 not shl1 shr1 shr16 shr4 xor
+1370: qzvQ3iGYyT9qOZM97UtRPSb0  30                        [ 8]: and if0 or plus shl1 shr1 shr4 xor
+1371: r2lmka3usYvUZDCAe2UbhvNU  24                        [ 8]: bonus and if0 not or plus shl1 shr16
+1372: r7EIj930jRAEKx81sl4ByHjr   9     SOLVED          0  [ 3]: and if0 plus
+1373: r7LUXmzVrDWaBkQpBFK0xIEO  13     SOLVED          0  [ 4]: and if0 shl1 tfold
+1374: r92THeBiSqr65Wd0ZhXNZCbB  11     SOLVED          0  [ 3]: if0 plus xor
+1375: rCHHOKa3pXGM6uG3fDwiwazk  23                        [ 9]: and if0 not or plus shl1 shr1 shr4 xor
+1376: rDQZBGe5gd6lFKbRrqlGXJjw  22                        [ 7]: and if0 not plus shr16 tfold xor
+1377: rENfEdUALzTba9xdPcl9BaZk  23                        [ 7]: and if0 not plus shr1 shr4 tfold
+1378: rGrAiXvbnkXYcJPFfAlGrP0B  29                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+1379: rH2zS6uQgTIbvcSAIK14AqTI  20                        [ 8]: if0 not or plus shl1 shr1 shr16 xor
+1380: rIRYozMAwojR0UtYtWhS4xV8  18                        [ 7]: and if0 or shl1 shr1 shr16 xor
+1381: rKFLxFZES14CCBLSLIlIil0h  23                        [ 9]: and if0 not or shl1 shr1 shr16 shr4 xor
+1382: rMjeNEDBVzkTL047dFOXIthB  20                        [ 9]: bonus and if0 not or plus shr1 shr4 xor
+1383: rN8tJaOO0ZdDCHhfXfrNk0E2  21                        [ 7]: fold if0 or plus shr1 shr16 shr4
+1384: rQAuxPPtByDvAnzBFBbpCPiV  19                        [ 9]: bonus and if0 not or plus shl1 shr1 xor
+1385: rSUv1fcBm45izCquiO2uJIYW  29                        [ 8]: and if0 not plus shl1 shr16 shr4 xor
+1386: rTQVdrDy5Pml7HAgRCc80KAR  29                        [ 6]: and if0 not or plus tfold
+1387: rTdsNCBe8x11j0EUpLOwGCZH  13     SOLVED          0  [ 6]: if0 shl1 shr1 shr16 shr4 tfold
+1388: rX8MAkltR3tDK3h7XeFrO1EX  17                        [ 6]: fold if0 not or plus shr1
+1389: rXER9WNNYNtn4tdGnVAqwR3B  25                        [ 8]: and if0 not or plus shr4 tfold xor
+1390: rYumApy3LQUMsVnbrrxK2DfM  13     SOLVED          0  [ 5]: if0 not plus shr4 xor
+1391: rZISnMQYRrm7aDR50QexPocs  20                        [ 5]: if0 not shl1 shr16 xor
+1392: rb840heTrke8gKeaPYG2aqQP  24                        [ 9]: and if0 not or plus shl1 shr1 shr4 tfold
+1393: rdW9XpLAXHiePkrnwYQ5LLAB  12     SOLVED          0  [ 5]: and if0 or plus shl1
+1394: rexCmA3XA3gvA6AOFnJTDAeY  22                        [ 7]: if0 or plus shl1 shr1 shr16 tfold
+1395: rhDF9O13GlD8eyteGLFjh0oS  21                        [10]: bonus and if0 not or plus shr1 shr16 shr4 xor
+1396: rhmtgCmdOCoqs04Q2gyFNvzA  14     SOLVED          0  [ 5]: and if0 plus shr4 tfold
+1397: riExjebJHwPFVYIBsdfKiOj2  23                        [10]: bonus and if0 not or plus shl1 shr1 shr4 xor
+1398: rjd4KLv0sApJVXF4WxoX2Xw0  19                        [ 8]: bonus and if0 plus shr1 shr16 shr4 xor
+1399: rkW1mj5v75zL2khfQR9nmd8U  22                        [ 6]: if0 not or shl1 shr4 xor
+1400: rnp85n6xAT8Wr7GY1dSR4eAv  20                        [ 7]: and if0 not plus shl1 shr4 xor
+1401: rwcjME69yT2AjyVnK6h5I4T2  14                        [ 5]: and if0 or plus shr1
+1402: rwg16kG0yr5fqjtirm5gZCC5   4     SOLVED          0  [ 1]: plus
+1403: rxKhAr1xnfU5FqzcrPocthAZ  17                        [ 7]: and fold if0 not plus shr4 xor
+1404: s1iRomVvi3TVxFTZDBnEZaOV  15     SOLVED          0  [ 6]: if0 not plus shr1 shr16 tfold
+1405: s4AyRNQ6hRC2WeV0j5bpPG2C  13     SOLVED          0  [ 5]: fold or shr1 shr16 xor
+1406: sAeoaRmdulrYsuZCsAJb9OGp  25                        [ 9]: bonus and if0 not or shr1 shr16 shr4 xor
+1407: sBJbMOMMxmqV8sCkWhhOvAwm  21                        [ 8]: bonus and if0 not or plus shr1 shr4
+1408: sBS06TjgG7qQCCSigq4Q47Ib   8     SOLVED          0  [ 3]: or shr1 shr4
+1409: sDlRRAQRGinZIYhrxOz0dOSA  21                        [ 7]: fold if0 or plus shl1 shr16 xor
+1410: sFLQWv86ANrNvppA85aJotfT  17                        [ 6]: fold if0 plus shl1 shr16 xor
+1411: sHQHvIUhlR3r8u3xEgIvThBw  29                        [ 7]: fold if0 not or plus shl1 shr1
+1412: sTeAIfPa8g4H9H2B7QBq4auT  14                        [ 5]: fold plus shl1 shr1 xor
+1413: sWq563Zdibt3ERMSmf3tPJki  23                        [ 8]: bonus and if0 not or plus shr16 shr4
+1414: sY2kb3nBWDqu3WaDbdNrvWou  13     SOLVED          0  [ 5]: and if0 shr1 shr16 tfold
+1415: sZ3AULG6ZQksDL7bjivCjDHA  22                        [ 7]: and if0 plus shl1 shr1 shr16 xor
+1416: sZNO4pOCBvTRsW9VQ32Uu5ia   8     SOLVED          0  [ 2]: tfold xor
+1417: sZNdkoHoxUyA6zbuhOvfnaVx  23                        [ 9]: bonus and if0 plus shl1 shr1 shr16 shr4 xor
+1418: sahnArbs3KMksR7BxjhE9yhJ   6     SOLVED          0  [ 3]: and shr16 shr4
+1419: sdVfReOJt9G9nhjfFAUPBjze   7     SOLVED          0  [ 4]: and shl1 shr16 shr4
+1420: seUYZOr0Lm69QAJerGzNp5PZ   8     SOLVED          0  [ 2]: and tfold
+1421: shkUhi44tj3HWtLqAjhZxxF2  20                        [ 8]: and if0 or shl1 shr16 shr4 tfold xor
+1422: sjiwXTICky8kfCA8JYtGXSNz   6     SOLVED          0  [ 2]: plus xor
+1423: so85jvOFfzL7astrwEQVgOgR  13     SOLVED          0  [ 4]: fold not or plus
+1424: soZP4DrXt165iz7eHwhRj2ez   6     SOLVED          0  [ 2]: or xor
+1425: sq1YhJdS7AFzALaHcIhuzl1a  25                        [ 9]: and if0 not plus shl1 shr1 shr16 shr4 xor
+1426: stB8cyQau9mC6IgM5WUtet7x  29                        [ 9]: and if0 not plus shl1 shr1 shr16 shr4 xor
+1427: sv1vaKJ0kdPFtKigBGsU5xUA  13     SOLVED          0  [ 6]: and if0 or shl1 shr4 xor
+1428: svtpnoJazOcKK0KY6CTWP3Gm  29                        [ 8]: and if0 not or plus shl1 tfold xor
+1429: t01AzqhcyrQBEz8uMQlFLPHP  19                        [ 7]: and if0 not plus shr1 tfold xor
+1430: t4EFov2pXEzWpLkWNuJEzbIu  23                        [ 6]: if0 or shl1 shr1 tfold xor
+1431: t4Ix78EMl4NADs2jLhyXeYA6   9     SOLVED          0  [ 3]: plus shl1 tfold
+1432: t55B2xFD7aASswsoMnwTfApG  21                        [ 6]: and if0 not or shr4 xor
+1433: t6vzxuLAKFqnjZfQA0lf4j8c  28                        [ 8]: and if0 not or plus shl1 shr16 tfold
+1434: tB5TbBArwohuxK9yHz4AuXKI  14     SOLVED          0  [ 5]: if0 plus shr16 tfold xor
+1435: tBfrc6VkqDW587EvfgVCeyzz   8     SOLVED          0  [ 3]: not shr1 xor
+1436: tDw7Fa7qkMV4iXEZUAWoEzXy  15                        [ 7]: if0 not plus shl1 shr1 shr16 shr4
+1437: tF1aMToPdB0fArTD4oZViYhf  23                        [10]: bonus and if0 not plus shl1 shr1 shr16 shr4 xor
+1438: tKLxv62BZaRGKXH37fegOqVB  30                        [ 8]: and if0 or plus shl1 shr1 tfold xor
+1439: tMgFKHxTVL8iB37B4PG0drFs   8     SOLVED          0  [ 2]: plus shr16
+1440: tO2NuitRJf0suBznnBiazBVk   4     SOLVED          0  [ 1]: shl1
+1441: tOxDuMArcbx7hxhcQzlc5QWh  14     SOLVED          0  [ 5]: if0 plus shr1 tfold xor
+1442: tPgd09xTgX2EkGmQCeG6V86f  15     SOLVED          0  [ 5]: and if0 or plus tfold
+1443: tPmQYjd8qgQj5qFUcZmgCBQ1  18                        [ 5]: and if0 not shl1 xor
+1444: tUfy4QQmToQB9B5nCL1mlhLQ  29                        [ 8]: and fold if0 not or shl1 shr4 xor
+1445: tVkOe6SQtMARbkXiBB5sF34B  23                        [ 7]: bonus and if0 plus shl1 shr1 shr16
+1446: tX1VCdmpNHzvBECc1W1cqZNS  18                        [ 5]: and if0 plus shl1 xor
+1447: tXJLz3d3gxK3bLAUnVwlotqp  24                        [ 9]: and if0 not or plus shl1 shr1 shr4 xor
+1448: tXVpdigOAz7h7dfMvATtRA42  23                        [ 8]: bonus and if0 or plus shr1 shr16 shr4
+1449: tYJzyGp06kt1mBUhNABInAHM  19                        [ 7]: and if0 not or shl1 shr1 xor
+1450: tcwpVrShNTUKvwXp8LkOLpB5  14                        [ 5]: and fold if0 or shr1
+1451: tkPAKcB1B1HYpPm6lz7zBmZY  17                        [ 6]: if0 not plus shl1 shr4 xor
+1452: tn8OLWCLPMwTDpHvhS4sfkpa  24                        [ 6]: and if0 not or shr1 shr4
+1453: tnq3yPKiGTavW4YMHj6iqRDi  24                        [ 7]: and fold if0 or shl1 shr16 shr4
+1454: tqq4URkxRlO2gWH2vHqUhKGx  11     SOLVED          0  [ 3]: fold if0 or
+1455: twflLSpFB9jXeDGIufTzbb9Z  17                        [ 6]: fold if0 plus shr1 shr16 shr4
+1456: u0b1ERrJ46B8ajHWe7Fmv33j  14     SOLVED          0  [ 5]: and if0 plus shr1 tfold
+1457: u0z5pYAmPjYxAZrRbsDSZfJk  19                        [ 8]: and if0 not or shl1 shr1 shr16 shr4
+1458: u2ZmEqJ2Ti6U9vwBBJ0ta4ma  20                        [ 6]: and if0 not plus shr1 xor
+1459: u7DaBzkauBsdsAJVObojUfW6  25                        [ 9]: if0 not or plus shl1 shr16 shr4 tfold xor
+1460: uAGp3aZmH7FW7KGbHwKHXv8Y  25                        [ 9]: fold if0 not or plus shl1 shr16 shr4 xor
+1461: uBFUELkprAXMxTQCaiswLnMs  22                        [ 7]: and if0 or plus shr16 tfold xor
+1462: uBY0RnUUFYAGUWj1BLImmNkL  28                        [ 9]: and fold if0 not or shl1 shr1 shr4 xor
+1463: uKkwFxBPXPBWJC2tQ70EPoJR  21                        [ 8]: bonus and if0 or plus shl1 shr16 shr4
+1464: uNj3CGiCCJrCOtPevAclMKCo   9     SOLVED          0  [ 2]: if0 tfold
+1465: uSQUlWnVCNJ9SAeZwDvBlBc8  13     SOLVED          0  [ 4]: and if0 plus shr4
+1466: uSoB9CzirVEm4CxUryMwQdEi  20                        [ 6]: and fold if0 not or xor
+1467: uUVWzBzXKZCaq6IaPkIrvGn8  16                        [ 5]: if0 plus shl1 tfold xor
+1468: uVItivCmVL9cFlR0BUYBeGvK  26                        [ 7]: and if0 not or shl1 shr16 xor
+1469: ucZJZhB5CKNyO0YAQEULHJpr  28                        [ 9]: and fold if0 or plus shl1 shr16 shr4 xor
+1470: ug6lEm1I2OPoXlrkgYbHgQUY  27                        [ 8]: and if0 or plus shr1 shr16 shr4 tfold
+1471: uiDsHtSAisGEJjyg573vlxg1  17                        [ 6]: and if0 not or shr4 xor
+1472: ulYprswWOLeCrVRW8W7OF59H  20                        [ 9]: and if0 not or plus shr1 shr16 shr4 tfold
+1473: uoocKhRWQkTAGlBwe2NFyxi6  16                        [ 4]: and fold if0 plus
+1474: uoz8eaBoRTxzxDnppNea7GBn  21                        [ 9]: bonus and if0 not plus shl1 shr1 shr4 xor
+1475: uphHnTdc0AFYfU9hn2eN6u3M  28                        [ 8]: and if0 not or plus shl1 shr16 xor
+1476: uqLAj4X3f2ZT47KCa5d0Ruyc   4     SOLVED          0  [ 2]: shr1 shr16
+1477: uslLjANGBJlnJIZIzxfVaeCi  10     SOLVED          0  [ 4]: plus shl1 shr16 tfold
+1478: uupwTcSEAjY6VYNONa7oaTh8  22                        [ 9]: bonus and if0 not or plus shl1 shr1 shr4
+1479: uuyhyEUv5UPjozkSvv9SZs8C   8     SOLVED          0  [ 3]: if0 not or
+1480: uzZaH1RsFRiJW3AwHPZT1yf8  23                        [ 8]: bonus and if0 not or shl1 shr4 xor
+1481: v3mZ4n5CEqnNlYjf4I3Cf41d  27                        [ 7]: if0 or plus shl1 shr1 shr16 xor
+1482: v3unKVumcccKWuDU45kmNkKg  27                        [ 7]: and fold if0 not plus shr1 xor
+1483: v4wgfpBH9uoPPOnBhkO02WxB  25                        [ 8]: bonus and if0 plus shl1 shr1 shr16 shr4
+1484: v4wzBbi3PB5HCGFtKB2JjK2n  15                        [ 6]: fold or shr1 shr16 shr4 xor
+1485: v5PDaIDHuIq4aqJ4bANg2IgI  14     SOLVED          0  [ 5]: and if0 or shr4 tfold
+1486: v8Ke4MBaePToYbVK7dIneBPG  15     SOLVED          0  [ 6]: if0 not plus shl1 tfold xor
+1487: vGdgUSXuktmzTHwimk5Ie3Bc  15                        [ 5]: fold or plus shr16 shr4
+1488: vK7ZUEXBydCley3O5Vkv412d  26                        [ 9]: and if0 not plus shr1 shr16 shr4 tfold xor
+1489: vPviEbBksyjC5MxhE2NrZo90  29                        [ 7]: and if0 or shl1 shr1 shr16 xor
+1490: vWfPhlOpF5ytqLR4Y7stxJ7P  14                        [ 6]: and if0 not shl1 shr1 xor
+1491: vbCV2DsAZfB6AngzFXe0EY3z  17                        [ 9]: and if0 not or shl1 shr1 shr16 shr4 xor
+1492: vchooST9i9zDaObozDJ2Ocdk  16                        [ 4]: fold if0 plus shr4
+1493: ve7XU4uemioXpGQPsPwFg4Yw  27                        [10]: and fold if0 not or plus shr1 shr16 shr4 xor
+1494: veqWb1vurBKXN876eTebleiJ  23                        [10]: bonus and if0 not or plus shl1 shr1 shr4 xor
+1495: vfzjBGnskrQkPTXHemcmhZFJ  28                        [ 9]: and if0 not plus shl1 shr1 shr4 tfold xor
+1496: vpVtHJKD9uOf26NMAwJcnroQ  23                        [ 9]: and if0 not plus shl1 shr1 shr16 shr4 xor
+1497: vpYbz02Q8EHK5rxBkxvk5W3w  21                        [ 9]: and fold if0 not plus shl1 shr16 shr4 xor
+1498: vrxVZjLbO0VwxR32vPs3PRIq  28                        [ 8]: and if0 not or plus shr1 tfold xor
+1499: vsKgBQLepPyppSAGPj44QEM7  28                        [ 9]: and if0 not or plus shl1 shr1 shr4 xor
+1500: vuWb2ioWr0CKwNow7IArKIQP  15                        [ 6]: if0 or plus shl1 shr16 xor
+1501: vvcPxYg38QG7RzkIhJbqbzBz  24                        [ 8]: and if0 or plus shr1 shr16 tfold xor
+1502: w0TMowhtComj6R8lq5hLoXnD  15                        [ 7]: and if0 not or shr1 shr16 xor
+1503: w0mQSP6Lckvuvf0B4GBjXQrM  21                        [ 7]: if0 not or shl1 shr4 tfold xor
+1504: w4SYGxSIBMSI7rk4RtOuz1Bm  15     SOLVED          0  [ 6]: if0 or plus shl1 shr4 tfold
+1505: w5tUT0WUmADdDcLgmZBwi2Jx  14                        [ 5]: and fold not shl1 xor
+1506: w7AASO2OyXf1HmVacBIV70Nk  17                        [ 6]: if0 plus shl1 shr1 shr4 xor
+1507: wA5StQOqW6P90SsPiLTOVOA7  19                        [ 8]: and if0 not shr1 shr16 shr4 tfold xor
+1508: wBXVPkKiAJ9fYUzxVt9I1Fl6  30                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+1509: wCRXBhr6dadAAehvWbuifIkQ  24                        [ 8]: and if0 or plus shl1 shr16 shr4 xor
+1510: wDHte7Ixpni7P6meSRkBRCHL  21                        [ 6]: and fold if0 not plus shr1
+1511: wDRqeYhxfhHSe832ByQGozUN  10     SOLVED          0  [ 4]: not or shr1 tfold
+1512: wDWjbZH0iGxwJedAN4UnRtY4   8     SOLVED          0  [ 3]: not shr4 tfold
+1513: wGZn5y4KoSTEv8mqYrN9NgbR  17                        [ 7]: and fold if0 not or shr4 xor
+1514: wKTBQVgxZdukAEP91mg8Qdpl  23                        [ 9]: and if0 not or shl1 shr16 shr4 tfold xor
+1515: wP13i9d3YoecMztAMc79i84u  14                        [ 4]: fold plus shl1 shr4
+1516: wQyUAXH9ZswY8PNaAV8feAkZ  27                        [ 9]: and if0 not or plus shl1 shr16 shr4 xor
+1517: wRTNrRyE246mFBU4DmY3Z88F  13     SOLVED          0  [ 4]: if0 plus shl1 xor
+1518: wRtkDalMaUDVE6lPcCHeR36p  12     SOLVED          0  [ 5]: and if0 plus shl1 shr4
+1519: wSCi99aK0TJYUMnqshDNy9gw  23                        [ 7]: and fold if0 plus shl1 shr16 xor
+1520: wSCs4uv5LBpUNhjwczGwwdHa   5     SOLVED          0  [ 2]: and not
+1521: wT1nmK4jZvictRjSDjE8MwSp  12     SOLVED          0  [ 4]: and or plus tfold
+1522: wTs2oAghOF908FS9UQWqtA35  26                        [10]: and fold if0 not or plus shl1 shr1 shr16 xor
+1523: wh13j3zXtvdoBGacgdg1AgjS   3     SOLVED          0  [ 1]: shr16
+1524: wipCH4UXc5dFdLv94dB2QdXd  19                        [ 8]: and if0 not or plus shl1 shr1 shr16
+1525: wlUz9Y2cwxc7VLxEeueiMXxa  19                        [ 6]: bonus and if0 plus shr1 shr16
+1526: wlvYpUBAFcrirNR5dgJWBwNO  14                        [ 6]: and if0 plus shr16 shr4 xor
+1527: wmBcoweSRq3c8al18BoEwCoe  15     SOLVED          0  [ 6]: and if0 not shr1 tfold xor
+1528: wmzMZNbMxQoAG3ya7ABznixJ  10     SOLVED          0  [ 3]: plus shl1 tfold
+1529: wnWf7xUmpIUME3unA9oK00Q4  20                        [ 6]: and fold if0 plus shr1 shr4
+1530: wp9cqsBBqzOMf5Lq8NrNIDGT  30                        [ 6]: and if0 or plus shr4 tfold
+1531: wqeALcDBFBLMgK8byU9yL3Zo   4     SOLVED          0  [ 1]: xor
+1532: wtlUETSU46AzE1eFkPA1mYYN  28                        [ 9]: and if0 not or plus shl1 shr1 shr16 shr4
+1533: wwX46bGhlQPOLBeh7Pty7BYs   9     SOLVED          0  [ 4]: and if0 shr16 shr4
+1534: wxc6AZBw7aniDpBzNMIk5z8w  12     SOLVED          0  [ 6]: and if0 or shl1 shr1 shr16
+1535: wyE31rg0vlzCrc3TXqvS2Smd  25                        [ 9]: and fold if0 not or plus shl1 shr16 xor
+1536: wyRkigWQT1sw6CE8iUKgGI0D  12     SOLVED          0  [ 5]: fold not shl1 shr4 xor
+1537: x02gHsJgpE7ReYJ2yRpSPDuu  21                        [ 8]: bonus and if0 not or shr1 shr16 xor
+1538: x1FbLsuucIVPOL6EBd10Q1hL  27                        [ 9]: and fold if0 not or plus shl1 shr1 xor
+1539: x374CKJ6Swg2pPlSrb7a5y5r  27                        [ 7]: and if0 plus shl1 shr1 shr4 xor
+1540: x55SMuLpvK2OVjLEwAzBJ20P   5     SOLVED          0  [ 2]: not shr1
+1541: x5spUbOl3H27SbLJfBzVXRPW   8     SOLVED          0  [ 4]: not shl1 shr16 xor
+1542: xA2jYr4jrPpSQpvdgAseakJX  28                        [10]: and if0 or plus shl1 shr1 shr16 shr4 tfold xor
+1543: xG5KJzOlJXAICqUItV2qwNEs  30                        [ 9]: and if0 not or plus shr1 shr4 tfold xor
+1544: xGGhRWbXADvz9jR3Je7AwnHj  16                        [ 6]: and if0 shl1 shr4 tfold xor
+1545: xHLlCAilx9p9KBWaVRWq3DzE  21                        [ 5]: and if0 or plus shr16
+1546: xNrCTsYk2BWVThBfHNxtrrua  15                        [ 6]: and if0 or plus shl1 shr16
+1547: xOSAMQYeSqjWwBL2RQhY3oiY  20                        [ 5]: and if0 or shr16 xor
+1548: xTzarqOTmE9I5E7JElfsHQPZ  29                        [ 7]: fold if0 not or plus shl1 xor
+1549: xTzkdWj9PCtUrsYpj1kwH5jU  27                        [ 7]: fold if0 not shl1 shr1 shr4 xor
+1550: xUQXXpYa3f2opV05GLANJNQz  23                        [10]: bonus and if0 not or plus shr1 shr16 shr4 xor
+1551: xaBxAjzMjedaNhI8T5tCBoXz  10     SOLVED          0  [ 3]: or shr4 tfold
+1552: xbD5PGUuUJrokUXzSEhrPXdV  25                        [ 6]: bonus and if0 plus shr4 xor
+1553: xbvvfmI9OtmTq5lnJoMeKf6S  30                        [ 9]: fold if0 not or plus shl1 shr16 shr4 xor
+1554: xeb80OCEtF2indWQEtZXcaNY  29                        [ 9]: and fold if0 or plus shl1 shr1 shr4 xor
+1555: xf1ifqoJb0FxSglhN7Y7i4mH  20                        [ 8]: and if0 not or plus shr1 shr16 shr4
+1556: xgG9FRCxbGnOePIJFS4pUgJ0  17                        [ 6]: fold if0 or shl1 shr4 xor
+1557: xjWLaVTYNDu4NdsigGstqsIU  22                        [ 7]: and if0 or plus shr4 tfold xor
+1558: xkMGzAO1HiVMfpxUBYINgwWO  21                        [ 7]: bonus and if0 or plus shl1 shr16
+1559: xlkaFjzC67KOPrM7RRnBzBSO   4     SOLVED          0  [ 2]: shr1 shr16
+1560: xpPX8PeBYSbJOkEQLYBREcG5  22                        [10]: bonus and if0 not or plus shl1 shr1 shr16 xor
+1561: xqH9fNo9gqxBa4LMiBUMQYEB  25                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+1562: xqV6Ne9M1EhpNyHaw7SLamTL  26                        [ 9]: and if0 not or plus shr1 shr4 tfold xor
+1563: xqVgwqBpyHZgKiD5PXwvXwHi  23                        [10]: bonus and if0 or plus shl1 shr1 shr16 shr4 xor
+1564: xswhSPhiXfY2bBWAVYM7cdBt  29                        [ 9]: and if0 not or plus shl1 shr1 shr4 xor
+1565: xu2MgTVaiEXtJAPfFA0F4AIH  16                        [ 6]: and if0 not plus shr1 shr4
+1566: xv4FiVG36efxTFbBbgSSZN9f  25                        [ 8]: and if0 not or shr1 shr16 tfold xor
+1567: y0lavm8WANCdEqcjnbB7AKtg  19                        [ 5]: if0 or plus shl1 shr4
+1568: y3x2ryLloGBdSBhCIEfNzn2R  21                        [ 5]: if0 or plus tfold xor
+1569: y57WPUvrSzmFirQ1vQKhAjTg  13     SOLVED          0  [ 4]: fold plus shr1 xor
+1570: y5ENMX4GBQlAMIKCRhWMrOIx  14                        [ 6]: if0 not or shr16 shr4 xor
+1571: y5PYhbFrFV65v7qJaC5DELq7  24                        [ 8]: and if0 not or plus shr4 tfold xor
+1572: y5eo2wTEAwUbVVnntDxq9apn  15                        [ 6]: fold or plus shr16 shr4 xor
+1573: y70BiRSA3wqLXSBsJojMXtkT  21                        [ 8]: bonus and if0 or shr1 shr16 shr4 xor
+1574: y8HF8PsCgDEDx9QYcT0j3V88   7     SOLVED          0  [ 3]: and shl1 shr1
+1575: y9E5UValRrfo38dytQHVww9N   9     SOLVED          0  [ 4]: not shl1 shr1 tfold
+1576: y9wkhwgWea3eOgz9BBkMQXL8  20                        [ 8]: and if0 not or shl1 shr16 shr4 xor
+1577: yALcc8JPg4bkFJpt5zAvCY9o  23                        [ 8]: if0 not or plus shr16 shr4 tfold xor
+1578: yASBb12LDICUNty6KsoOVBnl  17                        [ 7]: and if0 plus shr16 shr4 tfold xor
+1579: yApnCwu95uhUAopogTyixAcE  18                        [ 7]: if0 not or shr1 shr4 tfold xor
+1580: yEKOGL9nZtELyiLPA1JiiBd0  28                        [ 8]: and if0 not or plus shr16 shr4 xor
+1581: yEa53dHTDHJ128RmNORQsW2p  21                        [ 8]: bonus and if0 not or plus shr1 shr4
+1582: yFSegg5KzkPVU28AbH2QKmtA  23                        [ 7]: bonus and if0 shl1 shr16 shr4 xor
+1583: yNvP0hHjB49q8Yt3WEHklJ0B  25                        [ 8]: if0 not or plus shr16 shr4 tfold xor
+1584: yOms7tMGBXkK7R5EgX7Tnr3k  28                        [ 7]: and if0 or plus shl1 shr4 tfold
+1585: yS5dbtuXUijGAmltiJcOLZBh  28                        [10]: and fold if0 not or plus shl1 shr1 shr4 xor
+1586: yTWkNfFN6FXMB4j4AZUwzLqN  17                        [ 7]: and if0 not plus shr1 shr4 xor
+1587: yV4p82b7Uo5taWcpfgCrHOnx   8     SOLVED          0  [ 2]: shl1 tfold
+1588: yYbX3Z6OW1ykyJqgRcOG4DRy  25                        [10]: and fold if0 not plus shl1 shr1 shr16 shr4 xor
+1589: yaXtd3YnoqC9qNJmJBE1Rl9B  28                        [ 8]: fold if0 not or plus shr1 shr16 xor
+1590: yb5wDwGuAa1uSkZYlhZOJbGZ  22                        [ 9]: and fold if0 or plus shl1 shr1 shr16 shr4
+1591: ycbb9rqunPScajsHGwPIurQE  20                        [ 8]: and if0 not plus shl1 shr1 shr16 shr4
+1592: ydhftCsJxi4lDldmAWJJB9vO  25                        [ 8]: and if0 not or plus shr1 shr4 xor
+1593: ydj7IuL2ZZCqAJsBBtZ5BANY  28                        [ 9]: and if0 not plus shl1 shr1 shr16 shr4 xor
+1594: ygLwVEdmebiBgBcreEsLzrDf  28                        [ 7]: and fold if0 or plus shr16 shr4
+1595: yhtwlpzrwNBZNWaK8P2NeNbk  10     SOLVED          0  [ 3]: and if0 not
+1596: ykEWKANuY95tpfBKlozePsu5  15     SOLVED          0  [ 5]: if0 or shr1 shr4 tfold
+1597: ypsJLaqC8FO6Z96mSg3txo3s  29                        [ 9]: and if0 or plus shl1 shr1 shr16 shr4 xor
+1598: yulQCOjsn5ABvA7LIvCEPk9D  13     SOLVED          0  [ 5]: fold or plus shr4 xor
+1599: ywMAgTJyDmVQrwAJhhFAcFcy  26                        [ 7]: and fold if0 not or shr1 shr4
+1600: ywkPZSTGBJh8Q3jVdr5644zy  13     SOLVED          0  [ 4]: if0 not shr4 tfold
+1601: yxPNim6pcPR88pYmt7ZwEFkN  20                        [ 9]: bonus and if0 plus shl1 shr1 shr16 shr4 xor
+1602: yycVEAvqE4pf1fJExOcAz8db  28                        [10]: and if0 not or plus shl1 shr1 shr16 shr4 xor
+1603: z0xrVGx1JwnWABjzHEcACXz9  27                        [ 9]: and if0 not or plus shl1 shr1 shr4 xor
+1604: z1lsMoVb7Td2ZZM7cbuwdDdg  23                        [10]: bonus and if0 or plus shl1 shr1 shr16 shr4 xor
+1605: zDzURzDoZUoUA472kbakHDVC  17                        [ 6]: if0 not or shl1 tfold xor
+1606: zGYjkjc1kdtpRrGJ1CHQ52yd  11     SOLVED          0  [ 3]: if0 or tfold
+1607: zJ6JfkIbsHjqSxfssO6BGLRh  21                        [ 7]: and fold if0 not shl1 shr4 xor
+1608: zKB2h3Qbad1blQJEn2yYXBtr  28                        [ 9]: fold if0 not or plus shl1 shr1 shr16 xor
+1609: zPv3sAeXekYRELmOsGmGB1C5  14                        [ 5]: and if0 not plus shr1
+1610: zRCTdFx2nO1C70znWHXk883g  19                        [ 6]: if0 or plus shl1 shr1 xor
+1611: zTN74ZVMUAeaXA2QeADch3n4   7     SOLVED          0  [ 3]: not or shr16
+1612: zbwp2y3FImBXC8UUHQhJ9qTc   4     SOLVED          0  [ 1]: plus
+1613: zgPPVuVeYjCWfTeMY1o5ytyD  29                        [ 9]: and fold if0 or plus shl1 shr1 shr4 xor
+1614: zm4kBvjYNV9om2oMipsQGa8h  26                        [ 9]: and fold if0 not or shl1 shr1 shr16 xor
+1615: znxfEyn9BUZ0AMkAwPxArSXY  11     SOLVED          0  [ 3]: fold or shl1
+1616: zqtB9WhsDc9TXDPklAjYNLbF  19                        [ 6]: and fold if0 or plus shr16
+1617: zt0fkQ6HSzPyfTyapU73K6Sz  15                        [ 6]: if0 or plus shr1 shr16 xor
+1618: zvU7ExkwvPmDZd5sqAHiEjSz  14                        [ 4]: if0 or plus shl1
+1619: zxHC60T0PysvUABOhBbsvPZB  19                        [ 7]: and fold if0 plus shl1 shr1 shr4
+
+size  3: 20 / 20
+size  4: 20 / 20
+size  5: 20 / 20
+size  6: 20 / 20
+size  7: 20 / 20
+size  8: 40 / 40
+size  9: 40 / 40
+size 10: 40 / 40
+size 11: 60 / 60
+size 12: 60 / 60
+size 13: 60 / 60
+size 14: 26 / 60
+size 15: 20 / 60
+size 16:  6 / 60
+size 17:  0 / 60
+size 18:  0 / 60
+size 19:  0 / 79
+size 20:  0 / 70
+size 21:  0 / 120
+size 22:  0 / 69
+size 23:  0 / 138
+size 24:  0 / 65
+size 25:  0 / 79
+size 26:  0 / 60
+size 27:  0 / 60
+size 28:  0 / 60
+size 29:  0 / 60
+size 30:  0 / 60
+
+Total: 452 / 1620   27.9%

@@ -1,3 +1,5 @@
+#include "gen2.h"
+
 #include <assert.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -7,73 +9,6 @@
 #include <string>
 #include <list>
 #include <utility>
-
-#define ASSERT assert
-using std::string;
-
-typedef uint64_t Val;
-
-class Context
-{
-public:
-	Context(): count(0) {}
-
-	void push(Val val) { values[count++] = val; }
-	void pop() { ASSERT(count); --count; }
-
-	Val get(int id) { return values[id]; }
-
-    int count;
-    Val values[1000];
-};
-
-enum Op {
-	DUMMY_OP, // 0
-	FIRST_OP,
-	IF0 = FIRST_OP, // 1
-	FOLD,     // 2
-	NOT,
-	SHL1,     // 4
-	SHR1,
-	SHR4,     // 6
-	SHR16,
-	AND,      // 8
-	OR,
-	XOR,      // 10
-	PLUS,
-	C0,       // 12
-	C1,       // 13
-	VAR,      // 14
-	TFOLD,
-	MAX_OP
-};
-
-class Expr
-{
-public:
-	enum Flags {
-		F_CONST   = 0x1,
-		F_IN_FOLD = 0x2
-    };
-
-    int arity();
-    string code();
-    string program();
-    bool is_var(int id) { return op == VAR && var == id; }
-    bool is_const() { return flags & F_CONST; }
-    bool is_const(Val x) { return is_const() && val == x; }
-    Val eval(Context* ctx);
-    Val do_fold(Context* ctx);
-
-	Op    op;
-	Expr* parent;
-	Expr* opnd[3];
-	int   flags;
-	union {
-	    Val   val; // for const
-	    int   var; // if op is VAR
-	};
-};
 
 int Expr::arity()
 {
@@ -198,52 +133,6 @@ string Expr::program()
 	return "(lambda (x0) " + code() + ")";
 }
 
-class Callback
-{
-public:
-	virtual ~Callback() {}
-
-	virtual bool action(Expr* e, int size) {};
-};
-
-class Arena : public Callback
-{
-public:
-	Arena();
-
-    void set_callback(Callback* c) { callback_ = c; }
-    void generate(int size, int valence = 1, int args = 1);
-	void gen(int left_ops, int valence);
-
-	void emit(Op op, int var = -1);
-	void emit_fold();
-	bool action(Expr* e, int size);
-
-	int push_op(Op op, int var = -1);
-	void pop_op();
-
-    Expr* peep_arg(int arg);
-
-    virtual bool complete(Expr* e, int size);
-
-    Callback* callback_;
-    Expr* fold_lambda_;
-
-    int size_;
-    int num_vars_;
-    int count_;
-    int args_;
-    int bound_args_;
-    bool optimize_;
-    bool no_more_fold_;
-    int valence_;
-
-    int valents[30];
-    int valents_ptr;
-
-    Expr arena[1000];
-    int arena_ptr;
-};
 
 Arena::Arena()
 {
@@ -443,57 +332,67 @@ bool Arena::action(Expr* expr, int size)
 	return true;
 }
 
-class BonusArena : public Arena
-{
-public:
-	void generate(int size, int args = 1);
+/////////////////////////////////////////////////
 
-    virtual bool complete(Expr* e, int size);
-};
-
-void BonusArena::generate(int size, int args)
+void ArenaBonus::generate(int size, int args)
 {
 	no_more_fold_ = true;
     Arena::generate(size - 3, 3, 1);
 }
 
-bool BonusArena::complete(Expr* e, int size)
+bool ArenaBonus::complete(Expr* e, int size)
 {
     push_op(C1);
     push_op(AND);
     int op_ptr = push_op(IF0);
-    bool res = Arena::complete(&arena[op_ptr], size);
+    bool res = Arena::complete(&arena[op_ptr], size + 3);
     pop_op();
     pop_op();
     pop_op();
     return res;
 }
 
-class Printer : public Callback
-{
-public:
-	Printer() : count_(0) {}
-	bool action(Expr* e, int size);
+///////////////////////
 
-	int count_;
-};
+void ArenaTfold::generate(int size, int args)
+{
+	no_more_fold_ = true;
+    Arena::generate(size - 4, 1, 3);
+}
+
+bool ArenaTfold::complete(Expr* e, int size)
+{
+	fold_lambda_ = e;
+    push_op(C0);
+    push_op(VAR, 0);
+    int op_ptr = push_op(FOLD);
+    bool res = Arena::complete(&arena[op_ptr], size + 4);
+    pop_op();
+    pop_op();
+    pop_op();
+    return res;
+}
+
 
 bool Printer::action(Expr* e, int size)
 {
     count_++;
 	static int cnt = 0;
 	cnt++;
+#if 1
 	if ((cnt & 0x3fffff) == 0) printf("%9d: [%2d] %s\n", cnt, size, e->program().c_str());
-//	printf("%9d: [%2d] %s\n", cnt, size, e->program().c_str());
+#else
+	printf("%9d: [%2d] %s\n", cnt, size, e->program().c_str());
+#endif
 	return true;
 }
 
 int main()
 {
 	Printer p;
-	Arena a;
+	ArenaTfold a;
 	a.set_callback(&p);
-	a.generate(11);
+	a.generate(18);
 
 	printf("Total: %d\n", p.count_);
 

@@ -192,20 +192,11 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         }
         g.add_allowed_op(op);
     }
+    g.add_allowed_op(NOT);
     printf("start generation at %lu ms\n", timestamp() - started_);
     g.generate(size, &solver);
 
     printf("\t\t\t\t\t\t\tCHALLENGE done in %lu ms\n\n", timestamp() - started_);
-
-    // make sure we start a new challenge in a virgin timeslot.
-    int sleep_time = 15;
-    printf("sleeping for %d sec", sleep_time);
-    for (int i = 0; i < sleep_time; i++) {
-        sleep(1);
-        printf(".");
-        fflush(stdout);
-    }
-    printf("\n");
 
     return solver.win_;
 }
@@ -240,9 +231,18 @@ void Protocol::print_tasks()
         unsigned size = item["size"].asUInt();
         bool solved = item["solved"].asBool();
         int time_left = item.get("timeLeft", Json::Value(-1)).asInt();
+        string tl_str;
+        char buffer[30];
+        snprintf(buffer, sizeof(buffer), "%2d", time_left);
+        if (time_left >= 0)
+            tl_str = buffer;
         Json::Value operators = item["operators"];
-        printf("%4i: %s %3u %10s %10d     ops:%3d\n", i, item["id"].asCString(), size, solved ? "SOLVED" : "", time_left,
-            operators.size());
+        string ops_str;
+        for (int j = 0; j < operators.size(); j++)
+            ops_str += " " + operators[j].asString();
+        printf("%4i: %s %3u %10s %10s  [%2d]:%s\n", i, item["id"].asCString(), size,
+            solved ? "SOLVED" : "", tl_str.c_str(),
+            operators.size(), ops_str.c_str());
         if (size <= 30) {
             ++sizes[size];
             if (solved)
@@ -286,17 +286,29 @@ void Protocol::solve_my_tasks(int up_to_size)
                 continue;
             if (item["timeLeft"].isNumeric() && item["timeLeft"].asInt() == 0)
                 continue;
-            if (item["operators"].size() > 4)
+            if (item["operators"].size() > 6)
                 continue;
             bool has_tfold = false;
             for (int j = 0; j < item["operators"].size(); j++) {
-                if (item["operators"][j].asString() == "tfold") {
+                if (item["operators"][j].asString() == "fold") {
                     has_tfold = true;
                     break;
                 }
             }
-            if (!has_tfold)
+            if (has_tfold)
                 continue;
+
+            if (count != 0) {
+                // make sure we start a new challenge in a virgin timeslot.
+                int sleep_time = 5;
+                printf("sleeping for %d sec", sleep_time);
+                for (int i = 0; i < sleep_time; i++) {
+                    sleep(1);
+                    printf(".");
+                    fflush(stdout);
+                }
+                printf("\n");
+            }
 
             printf("\n################################ %d #################################\n", ++count);
 

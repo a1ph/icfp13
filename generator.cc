@@ -224,8 +224,15 @@ void Generator::gen()
     Op parent_op = parents[ptr]->op;
 
 	if (left > 0) {
-		if (parent_op != PLUS && parent_op != XOR && parent_op != OR)
+		if (parent_op != PLUS &&
+			parent_op != XOR &&
+			parent_op != OR &&
+			parent_op != SHL1 &&
+			parent_op != SHR1 &&
+			parent_op != SHR4 &&
+			parent_op != SHR16) {
 		    emit(Expr(C0), 0);
+	    }
 		emit(Expr(C1), 0);
 		int vars = scoped[ptr] ? 3 : 1;
 		for (int i = 0; i < vars; ++i)

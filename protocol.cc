@@ -1,4 +1,5 @@
 #include "generator.h"
+#include "analyzer.h"
 
 #include <stdio.h>
 #include <curl/curl.h>
@@ -68,6 +69,7 @@ void Protocol::train(int size)
 {
     Json::Value request;
     request["size"] = size;
+    request["operators"] = Json::Value(Json::arrayValue);
 
     Json::Value result;
     if (!send("train", request, result)) {
@@ -153,9 +155,9 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
     Json::Value response;
     request["id"] = id;
     request["arguments"] = inputs;
-    printf("req: %s\n", request.toStyledString().c_str());
+//    printf("req: %s\n", request.toStyledString().c_str());
     send("eval", request, response);
-    printf("res: %s\n", response.toStyledString().c_str());
+//    printf("res: %s\n", response.toStyledString().c_str());
 
     if (response["status"].asString() != "ok") {
         fprintf(stderr, "an error!!!\n");
@@ -163,12 +165,16 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
     }
     Generator g;
     Solver solver(id, this);
+    Analyzer a;
 
     Json::Value outputs = response["outputs"];
     for (int i = 0; i < sizeof(inp) / sizeof(*inp); i++) {
         Val out;
+        Val in = inp[i];
         sscanf(outputs[i].asCString(), "%lx", &out);
-        solver.add(inp[i], out);
+        solver.add(in, out);
+        int d = a.distance(in, out);
+        printf("  0x%016lx -> 0x%016lx : dist=%2d   %s\n", in, out, d, a.sdist(in, out).c_str());
     }
 
     for (int i = 0; i < operators.size(); i++) {

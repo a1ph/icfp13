@@ -13,7 +13,7 @@ using std::string;
 typedef uint64_t Val;
 
 enum Op {
-	ERROR_OP, // 0
+	DUMMY_OP, // 0
 	FIRST_OP,
 	IF0 = FIRST_OP, // 1
 	FOLD,     // 2

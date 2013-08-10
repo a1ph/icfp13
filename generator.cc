@@ -22,7 +22,7 @@ string itos(int i) // convert int to string
 
 Expr::Expr()
 {
-	op = ERROR_OP;
+	op = DUMMY_OP;
 	opnd[0] = opnd[1] = opnd[2] = NULL;
 }
 
@@ -221,7 +221,7 @@ void Generator::gen()
     	return;
     }
 
-    Op parent_op = parents[ptr]->op;
+    Op parent_op = ptr != 0 ? parents[ptr]->op : DUMMY_OP;
 
 	if (left > 0) {
 		if (parent_op != PLUS &&
@@ -233,7 +233,11 @@ void Generator::gen()
 			parent_op != SHR16) {
 		    emit(Expr(C0), 0);
 	    }
-		emit(Expr(C1), 0);
+		if (parent_op != SHR1 &&
+			parent_op != SHR4 &&
+			parent_op != SHR16) {
+		    emit(Expr(C1), 0);
+	    }
 		int vars = scoped[ptr] ? 3 : 1;
 		for (int i = 0; i < vars; ++i)
 		    emit(Expr(VAR, i), 0);
@@ -267,6 +271,8 @@ void Generator::gen()
 
 void Generator::built()
 {
+	static int cnt = 0;
+	if ((++cnt & 0x3fffff) == 0) printf("%9d: %s\n", cnt, arena[0].program().c_str());
 	done = !callback_->action(&arena[0]);
 }
 
@@ -301,9 +307,11 @@ bool Verifier::action(Expr* program)
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
+int cnt = 0;
 bool Printer::action(Expr* e)
 {
-    printf("%6d: %s\n", ++count, e->program().c_str());
+    //printf("%6d: %s\n", ++count, e->program().c_str());
+    cnt++;
     return true;
 }
 
@@ -340,7 +348,9 @@ int main()
     g0.add_allowed_op(PLUS);
     g0.add_allowed_op(NOT);
   //  g0.add_allowed_op(TFOLD);
-    g0.generate(6, &p);
+    g0.allow_all();
+    g0.generate(10, &p);
+    printf("%d\n", cnt);
 
 #if 0
     printf("\nTesting Verifier\n");

@@ -193,8 +193,10 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         else if (ops == "fold") op = FOLD;
         else if (ops == "if0") op = IF0;
         else {
-            fprintf(stderr, "Unknow op %s in allowed ops\n", ops.c_str());
-            exit(1);
+            fprintf(stderr, "Unknow op %s in allowed ops... allowing all\n", ops.c_str());
+            continue;
+         //   g.allow_all();
+         //   break;
         }
         g.add_allowed_op(op);
     }

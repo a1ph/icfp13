@@ -244,7 +244,7 @@ void Generator::gen()
 	}
 
 	if (left > 1) {
-		if (parent_op != NOT)
+	//	if (parent_op != NOT)
 		    emit(Expr(NOT), 1);
 		emit(Expr(SHL1), 1);
 		emit(Expr(SHR1), 1);

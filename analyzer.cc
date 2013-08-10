@@ -1,4 +1,4 @@
-#include "generator.h"
+#include "gen2.h"
 #include "analyzer.h"
 
 #include <sstream>

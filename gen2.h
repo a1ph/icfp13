@@ -62,6 +62,7 @@ public:
     bool is_var(int id) { return op == VAR && var == id; }
     bool is_const() { return flags & F_CONST; }
     bool is_const(Val x) { return is_const() && val == x; }
+    Val run(Val input);
     Val eval(Context* ctx);
     Val do_fold(Context* ctx);
 
@@ -102,7 +103,7 @@ public:
     Expr* peep_arg(int arg);
 
     void allow_all();
-    void allow_op(Op op);
+    void add_allowed_op(Op op);
    
     virtual bool complete(Expr* e, int size);
 
@@ -117,6 +118,7 @@ public:
     bool optimize_;
     bool no_more_fold_;
     int valence_;
+    bool done_;
 
     int valents[30];
     int valents_ptr;
@@ -148,4 +150,23 @@ public:
 	bool action(Expr* e, int size);
 
 	int count_;
+};
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+class Verifier: public Callback
+{
+public:
+	Verifier() : count(0) {}
+	void add(Val input, Val output);
+
+	virtual bool action(Expr* e, int size);
+
+protected:
+	typedef std::list< std::pair<Val, Val> > Pairs;
+
+	Pairs pairs;
+	int count;
 };

@@ -133,6 +133,14 @@ string Expr::program()
 	return "(lambda (x0) " + code() + ")";
 }
 
+Val Expr::run(Val input)
+{
+	Context ctx;
+	ctx.push(input);
+	return eval(&ctx);
+}
+
+///////////////////////////////////////////////
 
 Arena::Arena()
 {
@@ -148,6 +156,7 @@ void Arena::generate(int size, int valence, int args)
 	count_ = 0;
 	optimize_ = true;
 	int min_size = valence + 1;
+	done_ = false;
 	for (int sz = min_size; sz <= size; sz++) {
 		size_ = sz - 1;
 //		printf("current size %d\n", size_);
@@ -156,6 +165,8 @@ void Arena::generate(int size, int valence, int args)
 		valence_ = valence;
 		num_vars_ = args;
 	    gen(size_, 0);
+	    if (done_)
+	    	break;
 	}
 //	printf("generated: %d\n", count_);
 }
@@ -219,13 +230,16 @@ Expr* Arena::peep_arg(int arg)
 
 void Arena::emit(Op op, int var)
 {
+	if (done_)
+		return;
+
 	int my_ptr = push_op(op, var);
 
     Expr& e = arena[my_ptr];
 
 //    printf("arena: %d   size:%d\n", arena_ptr, size_);
     if (size_ == arena_ptr) {
-    	complete(&e, size_ + 1);
+    	done_ = complete(&e, size_ + 1);
     } else {
 	    gen(size_ - arena_ptr, valents_ptr);
 	}
@@ -236,7 +250,7 @@ void Arena::emit(Op op, int var)
 bool Arena::complete(Expr* e, int size)
 {
 	count_++;
-	return callback_ ? callback_->action(e, size) : true;
+	return callback_ ? !callback_->action(e, size) : false;
 }
 
 int Arena::push_op(Op op, int var)
@@ -332,6 +346,11 @@ bool Arena::action(Expr* expr, int size)
 	return true;
 }
 
+void Arena::add_allowed_op(Op op)
+{
+
+}
+
 /////////////////////////////////////////////////
 
 void ArenaBonus::generate(int size, int args)
@@ -387,6 +406,36 @@ bool Printer::action(Expr* e, int size)
 	return true;
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+void Verifier::add(Val input, Val output)
+{
+	pairs.push_back(std::pair<Val,Val>(input, output));
+}
+
+bool Verifier::action(Expr* program, int size)
+{
+	for (Pairs::iterator it = pairs.begin(); it != pairs.end(); ++it) {
+		Val actual = program->run((*it).first);
+		if (actual != (*it).second) {
+//			printf("%s failed 0x%lx -> 0x%lx\n", program->program().c_str(), (*it).first, actual);
+			return true;
+		}
+    }
+    printf("--- %6d: %s\n", ++count, program->program().c_str());
+#if 0
+	for (Pairs::iterator it = pairs.begin(); it != pairs.end(); ++it) {
+		printf("    0x%016lx -> 0x%016lx\n", (*it).first, (*it).second);
+    }
+#endif
+    return false;
+}
+
+
+#ifdef GEN2_MAIN
+
 int main()
 {
 	Printer p;
@@ -398,3 +447,5 @@ int main()
 
     return 0;
 }
+
+#endif

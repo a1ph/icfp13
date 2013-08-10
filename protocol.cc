@@ -1,4 +1,4 @@
-#include "generator.h"
+#include "gen2.h"
 #include "analyzer.h"
 
 #include <stdio.h>
@@ -69,7 +69,7 @@ void Protocol::train(int size)
 {
     Json::Value request;
     request["size"] = size;
-    request["operators"] = Json::Value(Json::arrayValue);
+    request["operators"] = "fold";//Json::Value(Json::arrayValue);
 
     Json::Value result;
     if (!send("train", request, result)) {
@@ -86,21 +86,29 @@ class Solver : public Verifier
 {
 public:
     Solver(const string& id, Protocol* protocol) : id_(id), protocol_(protocol), win_(false) {}
-    virtual bool action(Expr* program);
+    virtual bool action(Expr* program, int size);
 
     Protocol* protocol_;
     string id_;
     bool win_;
 };
 
-bool Solver::action(Expr* program)
+bool Solver::action(Expr* program, int size)
 {
+    static int cnt = 0;
+    cnt++;
+    if ((cnt & 0x3fffff) == 0) {
+        printf("??? %6d: [%d] %s                                                       \r",
+            cnt, size, program->program().c_str());
+        fflush(stdout);
+    }
     for (Pairs::iterator it = pairs.begin(); it != pairs.end(); ++it) {
         Val actual = program->run((*it).first);
         if (actual != (*it).second)
             return true;
     }
-    printf("%6d: %s\n", ++count, program->program().c_str());
+    printf("!!! %6d: [%d] %s                                                       \n",
+        ++cnt, size, program->program().c_str());
 
     Json::Value result;
     protocol_->guess(id_, program->program(), result);
@@ -163,7 +171,7 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         fprintf(stderr, "an error!!!\n");
         exit(1);
     }
-    Generator g;
+    Arena g;
     Solver solver(id, this);
     Analyzer a;
 
@@ -202,7 +210,8 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
     }
     g.add_allowed_op(NOT);
     printf("start generation at %lu ms\n", timestamp() - started_);
-    g.generate(size, &solver);
+    g.set_callback(&solver);
+    g.generate(size);
 
     printf("\t\t\t\t\t\t\tCHALLENGE done in %lu ms\n\n", timestamp() - started_);
 

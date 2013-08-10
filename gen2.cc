@@ -203,32 +203,40 @@ class Callback
 public:
 	virtual ~Callback() {}
 
-	virtual bool action(Expr* e, int size) = 0;
+	virtual bool action(Expr* e, int size) {};
 };
 
 class Arena : public Callback
 {
 public:
-	Arena(Callback* c = NULL);
+	Arena();
 
-    void generate(int size, int num_vars = 1);
+    void set_callback(Callback* c) { callback_ = c; }
+    void generate(int size, int valence = 1, int args = 1);
 	void gen(int left_ops, int valence);
 
 	void emit(Op op, int var = -1);
 	void emit_fold();
 	bool action(Expr* e, int size);
 
+	int push_op(Op op, int var = -1);
+	void pop_op();
+
     Expr* peep_arg(int arg);
+
+    virtual bool complete(Expr* e, int size);
 
     Callback* callback_;
     Expr* fold_lambda_;
 
-    int max_available_arity;
     int size_;
     int num_vars_;
     int count_;
+    int args_;
+    int bound_args_;
     bool optimize_;
     bool no_more_fold_;
+    int valence_;
 
     int valents[30];
     int valents_ptr;
@@ -237,25 +245,27 @@ public:
     int arena_ptr;
 };
 
-Arena::Arena(Callback* c)
+Arena::Arena()
 {
 //	memset(arena, 0, sizeof(arena));
 	optimize_ = true;
-	callback_ = c;
+	callback_ = NULL;
 	no_more_fold_ = false;
 }
 
-void Arena::generate(int size, int num_vars)
+void Arena::generate(int size, int valence, int args)
 {
-//	printf("generate %d %d\n", size, num_vars);
+//	printf("generate %d %d %d\n", size, valence, args);
 	count_ = 0;
 	optimize_ = true;
-	for (int sz = 2; sz <= size; sz++) {
+	int min_size = valence + 1;
+	for (int sz = min_size; sz <= size; sz++) {
 		size_ = sz - 1;
-		max_available_arity = 3;
+//		printf("current size %d\n", size_);
 		arena_ptr = 0;
 		valents_ptr = 0;
-		num_vars_ = num_vars;
+		valence_ = valence;
+		num_vars_ = args;
 	    gen(size_, 0);
 	}
 //	printf("generated: %d\n", count_);
@@ -264,16 +274,17 @@ void Arena::generate(int size, int num_vars)
 void Arena::gen(int left_ops, int valence)
 {
 //	printf("gen %d %d\n", left_ops, valence);
-	int max_valence_change = (left_ops - 1) * 2 - valence + 1;
+	int max_valence = valence_ + (left_ops - 1) * 2;
+	int min_valence = valence_ - (left_ops - 1);
 
-	if (max_valence_change >= 1) {
+	if (min_valence <= valence + 1 && valence + 1 <= max_valence) {
 		emit(C0);
 		emit(C1);
 		for (int i = 0; i < num_vars_; i++)
 			emit(VAR, i);
 	}
 
-    if (max_valence_change >= 0 && valence >= 1) {
+	if (min_valence <= valence + 0 && valence + 0 <= max_valence && valence >= 1) {
     	Expr* opnd = peep_arg(0);
     	if (!optimize_ || opnd->op != NOT) {
     	    emit(NOT);
@@ -287,7 +298,7 @@ void Arena::gen(int left_ops, int valence)
 	    }
     }
 
-    if (max_valence_change >= -1 && valence >= 2) {
+	if (min_valence <= valence - 1 && valence - 1 <= max_valence && valence >= 2) {
     	Expr* opnd1 = peep_arg(0);
     	Expr* opnd2 = peep_arg(1);
     	if (!optimize_ || !opnd1->is_const(0) && !opnd2->is_const(0)) {
@@ -298,15 +309,16 @@ void Arena::gen(int left_ops, int valence)
 	    }
     }
 
-    if (max_valence_change >= -2 && valence >= 3) {
+	if (min_valence <= valence - 2 && valence - 2 <= max_valence && valence >= 3) {
     	Expr* cond_opnd = peep_arg(0);
     	if (!optimize_ || !(cond_opnd->flags & Expr::F_CONST))
     	    emit(IF0);
     }
 
     // fold consumes at least 3 ops: fold, lambda, and its expr.
-    max_valence_change = (left_ops - 3) * 2 - valence + 1;
-    if (max_valence_change >= -1 && valence >= 2) {
+	max_valence = valence_ + (left_ops - 3) * 2;
+	min_valence = valence_ - (left_ops - 3);
+	if (min_valence <= valence - 1 && valence - 1 <= max_valence && valence >= 2) {
     	emit_fold();
     }
 }
@@ -318,8 +330,30 @@ Expr* Arena::peep_arg(int arg)
 
 void Arena::emit(Op op, int var)
 {
+	int my_ptr = push_op(op, var);
+
+    Expr& e = arena[my_ptr];
+
+//    printf("arena: %d   size:%d\n", arena_ptr, size_);
+    if (size_ == arena_ptr) {
+    	complete(&e, size_ + 1);
+    } else {
+	    gen(size_ - arena_ptr, valents_ptr);
+	}
+
+    pop_op();
+}
+
+bool Arena::complete(Expr* e, int size)
+{
+	count_++;
+	return callback_ ? callback_->action(e, size) : true;
+}
+
+int Arena::push_op(Op op, int var)
+{
 	int my_ptr = arena_ptr++;
-//	printf("+++emit %d my_ptr=%d\n", op, my_ptr);
+//	printf("push_op %d -> [%d]: ", op, my_ptr);
 	Expr& e = arena[my_ptr];
 	memset(&e, 0, sizeof(Expr));
 	e.op = op;
@@ -360,22 +394,27 @@ void Arena::emit(Op op, int var)
 
 	valents[valents_ptr++] = my_ptr;
 
-    if (size_ == arena_ptr) {
-    	if (callback_)
-    	    callback_->action(&e, size_ + 1);
-    	count_++;
-    } else {
-	    gen(size_ - arena_ptr, valents_ptr);
-	}
+//    printf("curried into: %s\n", e.code().c_str());
+//	printf("\tvalents after push_op %d\n", valents_ptr);
+	return my_ptr;
+}
+
+void Arena::pop_op()
+{
+	arena_ptr--;
+//	printf("pop_op [%d]\n", arena_ptr);
+
+	int my_ptr = arena_ptr;
+	Expr& e = arena[my_ptr];
 
     valents_ptr--;
 
+    int arity = e.arity();
+    if (e.op == FOLD)
+    	arity = 2; // special processing for the fold's lambda
 	for (int i = arity - 1; i >= 0; i--) {
 		valents[valents_ptr++] = e.opnd[i] - arena;
 	}
-
-	arena_ptr--;
-//	printf("---emit\n");
 }
 
 void Arena::emit_fold()
@@ -385,9 +424,10 @@ void Arena::emit_fold()
 
 	no_more_fold_ = true;
 	int max_size = size_ - arena_ptr - 1; // 1 takes FOLD
-    Arena fold_lambda(this);
+    Arena fold_lambda;
+    fold_lambda.set_callback(this);
     fold_lambda.no_more_fold_ = true; // disable inner folds
-    fold_lambda.generate(max_size, 3);
+    fold_lambda.generate(max_size, 1, 3);
     no_more_fold_ = false;
 }
 
@@ -403,6 +443,32 @@ bool Arena::action(Expr* expr, int size)
 	return true;
 }
 
+class BonusArena : public Arena
+{
+public:
+	void generate(int size, int args = 1);
+
+    virtual bool complete(Expr* e, int size);
+};
+
+void BonusArena::generate(int size, int args)
+{
+	no_more_fold_ = true;
+    Arena::generate(size - 3, 3, 1);
+}
+
+bool BonusArena::complete(Expr* e, int size)
+{
+    push_op(C1);
+    push_op(AND);
+    int op_ptr = push_op(IF0);
+    bool res = Arena::complete(&arena[op_ptr], size);
+    pop_op();
+    pop_op();
+    pop_op();
+    return res;
+}
+
 class Printer : public Callback
 {
 public:
@@ -416,14 +482,17 @@ bool Printer::action(Expr* e, int size)
 {
     count_++;
 	static int cnt = 0;
-	if ((++cnt & 0x3fffff) == 0) printf("%9d: [%2d] %s\n", cnt, size, e->program().c_str());
+	cnt++;
+	if ((cnt & 0x3fffff) == 0) printf("%9d: [%2d] %s\n", cnt, size, e->program().c_str());
+//	printf("%9d: [%2d] %s\n", cnt, size, e->program().c_str());
+	return true;
 }
 
 int main()
 {
 	Printer p;
-	Arena a(&p);
-	a.no_more_fold_ = true;
+	Arena a;
+	a.set_callback(&p);
 	a.generate(11);
 
 	printf("Total: %d\n", p.count_);

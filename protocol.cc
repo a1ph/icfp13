@@ -113,7 +113,7 @@ bool Solver::action(Expr* program, int size)
         printf("??? %6lu ms  %9lu: [%d] %s                                                       \n",
             elapsed, cnt, size, program->program().c_str());
         fflush(stdout);
-        if (elapsed > 6 * 60 * 1000) {
+        if (elapsed > 320 * 1000) {
             printf("\n ===================== TIME IS OUT :-(( ========================\n\n");
             return false;
         }
@@ -123,7 +123,7 @@ bool Solver::action(Expr* program, int size)
         if (actual != (*it).second)
             return true;
     }
-    printf("!!! %6lu: [%d] %s                                                       \n",
+    printf("\n!!! %6lu: [%d] %s                                                       \n",
         cnt, size, program->program().c_str());
 
     Json::Value result;
@@ -268,8 +268,8 @@ void Protocol::print_tasks()
 {
     retrieve_my_tasks();
 
-    int sizes[31];
-    int wins[31];
+    int sizes[1000];
+    int wins[1000];
     memset(sizes, 0, sizeof(sizes));
     memset(wins, 0, sizeof(wins));
 
@@ -290,7 +290,7 @@ void Protocol::print_tasks()
         printf("%4i: %s %3u %10s %10s  [%2d]:%s\n", i, item["id"].asCString(), size,
             solved ? "SOLVED" : "", tl_str.c_str(),
             operators.size(), ops_str.c_str());
-        if (size <= 30) {
+        if (size < 1000) {
             ++sizes[size];
             if (solved)
                 ++wins[size];
@@ -300,7 +300,9 @@ void Protocol::print_tasks()
 
     int total_wins = 0;
     int total = 0;
-    for (int i = 3; i <= 30; i++) {
+    for (int i = 3; i < 1000; i++) {
+        if (sizes[i] == 0)
+            continue;
         printf("size %2d: %2d / %2d\n", i, wins[i], sizes[i]);
         total_wins += wins[i];
         total += sizes[i];

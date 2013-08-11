@@ -181,25 +181,6 @@ void Arena::generate(int size, int valence, int args)
 //	printf("generated: %d\n", count_);
 }
 
-void Arena::try_emit(Op op, int left_ops, int valence)
-{
-	int max_valence = valence_ + (left_ops - 1) * 2;
-	int min_valence = valence_ - (left_ops - 1);
-
-    if (!allowed_ops_.has(op))
-    	return;
-
-    int arity = Expr::arity(op);
-	if (min_valence <= valence - arity + 1 && valence - arity + 1 <= max_valence && valence >= arity) {
-		if (op == VAR) {
-			for (int i = 0; i < num_vars_; i++)
-				emit(VAR, i);
-		} else {
-	        emit(op);
-	    }
-    }
-}
-
 void Arena::gen(int left_ops, int valence)
 {
 //	printf("gen %d %d\n", left_ops, valence);
@@ -256,6 +237,40 @@ void Arena::gen(int left_ops, int valence)
 Expr* Arena::peep_arg(int arg)
 {
 	return &arena[valents[valents_ptr - arg - 1]];
+}
+
+void Arena::try_emit(Op op, int left_ops, int valence)
+{
+	int max_valence = valence_ + (left_ops - 1) * 2;
+	int min_valence = valence_ - (left_ops - 1);
+
+    if (!allowed_ops_.has(op))
+    	return;
+
+    int arity = Expr::arity(op);
+
+    // ensure we don't miss a fold if it's required
+    if (!no_more_fold_ && allowed_ops_.has(FOLD)) {
+    	int new_valence = valence - arity + 1;
+    	int new_left_ops = left_ops - 1;
+
+        // folds valency of 2
+        if (new_valence > 2)
+        	new_left_ops -= allowed_ops_.has(IF0) ? (new_valence - 2) / 2 : new_valence - 2; // need to consume extra valence
+        else
+        	new_left_ops += 2 - new_valence; // need to generate extra valence
+    	if (new_left_ops < 3)
+    		return; // no chance fold will fit after this op
+    }
+
+	if (min_valence <= valence - arity + 1 && valence - arity + 1 <= max_valence && valence >= arity) {
+		if (op == VAR) {
+			for (int i = 0; i < num_vars_; i++)
+				emit(VAR, i);
+		} else {
+	        emit(op);
+	    }
+    }
 }
 
 void Arena::emit(Op op, int var)

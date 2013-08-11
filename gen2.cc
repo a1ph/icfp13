@@ -163,6 +163,9 @@ void Arena::generate(int size, int valence, int args)
 	count_ = 0;
 	optimize_ = true;
 	int min_size = valence + 1;
+	allowed_ops_.add(C0);
+	allowed_ops_.add(C1);
+	allowed_ops_.add(VAR);
 	done_ = false;
 	for (int sz = min_size; sz <= size; sz++) {
 		size_ = sz - 1;
@@ -183,9 +186,17 @@ void Arena::try_emit(Op op, int left_ops, int valence)
 	int max_valence = valence_ + (left_ops - 1) * 2;
 	int min_valence = valence_ - (left_ops - 1);
 
+    if (!allowed_ops_.has(op))
+    	return;
+
     int arity = Expr::arity(op);
 	if (min_valence <= valence - arity + 1 && valence - arity + 1 <= max_valence && valence >= arity) {
-	    emit(op);
+		if (op == VAR) {
+			for (int i = 0; i < num_vars_; i++)
+				emit(VAR, i);
+		} else {
+	        emit(op);
+	    }
     }
 }
 
@@ -195,10 +206,10 @@ void Arena::gen(int left_ops, int valence)
 	int max_valence = valence_ + (left_ops - 1) * 2;
 	int min_valence = valence_ - (left_ops - 1);
 
-	if (min_valence <= valence - 2 && valence - 2 <= max_valence && valence >= 3 && allowed_ops_.has(IF0)) {
+	if (allowed_ops_.has(IF0) && valence >= 3) {
     	Expr* cond_opnd = peep_arg(0);
     	if (!optimize_ || !(cond_opnd->flags & Expr::F_CONST))
-    	    emit(IF0);
+    	    try_emit(IF0, left_ops, valence);
     }
 
     // fold consumes at least 3 ops: fold, lambda, and its expr.
@@ -208,37 +219,38 @@ void Arena::gen(int left_ops, int valence)
     	emit_fold();
     }
 
-	if (min_valence <= valence + 1 && valence + 1 <= max_valence) {
-		emit(C0);
-		emit(C1);
-		for (int i = 0; i < num_vars_; i++)
-			emit(VAR, i);
+	try_emit(C0, left_ops, valence);
+	try_emit(C1, left_ops, valence);
+    try_emit(VAR, left_ops, valence);
+
+    if (valence >= 1) {
+		Expr* opnd = peep_arg(0);
+		if (!optimize_ || opnd->op != NOT) {
+		    try_emit(NOT, left_ops, valence);
+	    }
+	    // Do not shift 0
+		if (!optimize_ || !opnd->is_const(0)) {
+	    	try_emit(SHL1, left_ops, valence);
+	    }
+	    if (!optimize_ || !opnd->is_const(0) && !opnd->is_const(1)) {
+	    	try_emit(SHR1, left_ops, valence);
+	    	try_emit(SHR4, left_ops, valence);
+	    	try_emit(SHR16, left_ops, valence);
+	    }
 	}
 
-	if (min_valence <= valence + 0 && valence + 0 <= max_valence && valence >= 1) {
-    	Expr* opnd = peep_arg(0);
-    	if (!optimize_ || opnd->op != NOT) {
-    	    emit(NOT);
-        }
-        // Do not shift 0
-    	if (!optimize_ || !opnd->is_const(0)) {
-	    	emit(SHL1);
-	    	emit(SHR1);
-	    	emit(SHR4);
-	    	emit(SHR16);
+	if (valence >= 2) {
+		Expr* opnd1 = peep_arg(0);
+		Expr* opnd2 = peep_arg(1);
+		if (!optimize_ || !opnd1->is_const(0) && !opnd2->is_const(0)) {
+	    	try_emit(PLUS, left_ops, valence);
+	    	try_emit(OR, left_ops, valence);
+	    	try_emit(XOR, left_ops, valence);
+	    	try_emit(AND, left_ops, valence);
 	    }
-    }
+	}
 
-	if (min_valence <= valence - 1 && valence - 1 <= max_valence && valence >= 2) {
-    	Expr* opnd1 = peep_arg(0);
-    	Expr* opnd2 = peep_arg(1);
-    	if (!optimize_ || !opnd1->is_const(0) && !opnd2->is_const(0)) {
-	    	emit(PLUS);
-	    	emit(OR);
-	    	emit(XOR);
-	    	emit(AND);
-	    }
-    }
+
 }
 
 Expr* Arena::peep_arg(int arg)
@@ -351,6 +363,7 @@ void Arena::emit_fold()
     Arena fold_lambda;
     fold_lambda.set_callback(this);
     fold_lambda.no_more_fold_ = true; // disable inner folds
+    fold_lambda.allowed_ops_ = allowed_ops_;
     fold_lambda.generate(max_size, 1, 3);
     no_more_fold_ = false;
 }
@@ -369,7 +382,7 @@ bool Arena::action(Expr* expr, int size)
 
 void Arena::add_allowed_op(Op op)
 {
-
+	allowed_ops_.add(op);
 }
 
 /////////////////////////////////////////////////
@@ -419,10 +432,10 @@ bool Printer::action(Expr* e, int size)
     count_++;
 	static int cnt = 0;
 	cnt++;
-#if 1
-	if ((cnt & 0x3fffff) == 0) printf("%9d: [%2d] %s\n", cnt, size, e->program().c_str());
-#else
+#ifdef GEN2
 	printf("%9d: [%2d] %s\n", cnt, size, e->program().c_str());
+#else
+	if ((cnt & 0x3fffff) == 0) printf("%9d: [%2d] %s\n", cnt, size, e->program().c_str());
 #endif
 	return true;
 }
@@ -459,15 +472,21 @@ void Generator::generate(int size)
 	if (mode_tfold_) {
 		ArenaTfold a;
 		a.set_callback(callback_);
+		a.allowed_ops_ = allowed_ops_;
 		a.generate(size);
+		printf("count=%d\n", a.count_);
 	} else if (mode_bonus_) {
 		ArenaBonus a;
 		a.set_callback(callback_);
+		a.allowed_ops_ = allowed_ops_;
 		a.generate(size);
+		printf("count=%d\n", a.count_);
 	} else {
 		Arena a;
 		a.set_callback(callback_);
+		a.allowed_ops_ = allowed_ops_;
 		a.generate(size);
+		printf("count=%d\n", a.count_);
 	}
 }
 
@@ -476,8 +495,10 @@ void Generator::generate(int size)
 int main()
 {
 	Printer p;
-	ArenaTfold a;
+	Arena a;
 	a.set_callback(&p);
+	a.add_allowed_op(IF0);
+	a.add_allowed_op(FOLD);
 	a.generate(GEN2);
 
 	printf("Total: %d\n", p.count_);

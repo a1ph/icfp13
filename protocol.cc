@@ -1,6 +1,9 @@
+#define __STDC_FORMAT_MACROS
+
 #include "gen2.h"
 #include "analyzer.h"
 
+#include <inttypes.h>
 #include <stdio.h>
 #include <curl/curl.h>
 #include <jsoncpp/json/json.h>
@@ -104,7 +107,7 @@ bool Solver::action(Expr* program, int size)
     static long cnt = 0;
     cnt++;
     if ((cnt & 0x3fffff) == 0) {
-        printf("??? %6lu: [%d] %s                                                       \r",
+        printf("??? %6lu: [%d] %s                                                       \n",
             cnt, size, program->program().c_str());
         fflush(stdout);
     }
@@ -114,7 +117,7 @@ bool Solver::action(Expr* program, int size)
             return true;
     }
     printf("!!! %6lu: [%d] %s                                                       \n",
-        ++cnt, size, program->program().c_str());
+        cnt, size, program->program().c_str());
 
     Json::Value result;
     protocol_->guess(id_, program->program(), result);
@@ -150,14 +153,6 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
                    0x0, 0x1, 2, 3, 4, 5,
                    0xaa5555aa5555aaaa,
                    0xcc660330660f0cc0,
-                   0xff00000000000000,
-                   0x00ff000000000000,
-                   0x0000ff0000000000,
-                   0x000000ff00000000,
-                   0x00000000ff000000,
-                   0x0000000000ff0000,
-                   0x000000000000ff00,
-                   0x00000000000000ff,
                    6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 23, 47, 48, 53, 63, 80, 81, 99, 120, 183, 246
     };
 
@@ -168,10 +163,12 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         inp[inp_size++] = (1ul << i) - 1;
     for (int i = 1; i < 64; i++)
         inp[inp_size++] = (1ul << i);
-    fir (int i = 1; i < 8; i++)
+    for (int i = 1; i < 8; i++)
         inp[inp_size++] = 0xfful << (i*8);
+    for (int i = 0; i < sizeof(inp1) / sizeof(*inp1); i++)
+        inp[inp_size++] = inp1[i];
 
-    Json::Value inputs;
+    Json::Value inputs(Json::arrayValue);
     for (int i = 0; i < inp_size; i++) {
         char buffer[100];
         snprintf(buffer, sizeof(buffer), "0x%"PRIx64, inp[i]);
@@ -201,7 +198,7 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         sscanf(outputs[i].asCString(), "%"PRIx64, &out);
         solver.add(in, out);
         int d = a.distance(in, out);
-        printf("  0x%016"PRIx64" -> 0x%016"PRIx64" : dist=%2d   %s\n", in, out, d, a.sdist(in, out).c_str());
+        printf("  0x%016"PRIx64" -> 0x%016"PRIx64" : dist=%2d\n", in, out, d);
     }
 
     for (int i = 0; i < operators.size(); i++) {
@@ -230,7 +227,7 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         }
         g.add_allowed_op(op);
     }
-    g.add_allowed_op(NOT);
+    //g.add_allowed_op(NOT);
     printf("start generation at %lu ms\n", timestamp() - started_);
     g.set_callback(&solver);
     g.generate(size);
@@ -373,6 +370,7 @@ bool Protocol::send(const char* command, const Json::Value& request, Json::Value
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, response);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, this);
     curl_easy_setopt(curl, CURLOPT_TIMEOUT, 30);
+    curl_easy_setopt(curl, CURLOPT_PROXY, "");
 
     // Perform the request, res will get the return code 
     CURLcode res = curl_easy_perform(curl);

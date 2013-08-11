@@ -101,11 +101,11 @@ public:
     Protocol* protocol_;
     string id_;
     bool win_;
+    long cnt;
 };
 
 bool Solver::action(Expr* program, int size)
 {
-    static long cnt = 0;
     cnt++;
     if ((cnt & 0x7fffff) == 0) {
         long ts = timestamp();
@@ -214,6 +214,7 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
     Generator g;
     Solver solver(id, this);
     Analyzer a;
+    solver.cnt = 0;
 
     int properties = 0;
     Json::Value outputs = response["outputs"];
@@ -277,7 +278,7 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
     g.set_callback(&solver);
     g.generate(size);
 
-    printf("\t\t\t\t\t\t\tCHALLENGE done in %lu ms\n\n", timestamp() - started_);
+    printf("\t\t\t\t\t\t\tCHALLENGE done in %lu ms   %f ops/ms\n\n", timestamp() - started_, 1. * solver.cnt / (timestamp() - started_));
 
     return solver.win_;
 }

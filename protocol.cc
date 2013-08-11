@@ -159,12 +159,13 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
     inp[inp_size++] = 0xB445FBB8CDDCF9F8;
     inp[inp_size++] = 0;
     inp[inp_size++] = -1;
-    for (int i = 63; i > 0; i--)
+/*    for (int i = 63; i > 0; i--)
         inp[inp_size++] = (1ul << i) - 1;
     for (int i = 1; i < 64; i++)
         inp[inp_size++] = (1ul << i);
-    for (int i = 1; i < 8; i++)
+*/    for (int i = 1; i < 8; i++)
         inp[inp_size++] = 0xfful << (i*8);
+
     for (int i = 0; i < sizeof(inp1) / sizeof(*inp1); i++)
         inp[inp_size++] = inp1[i];
 
@@ -325,8 +326,8 @@ void Protocol::solve_my_tasks(int up_to_size)
                 continue;
             if (item["timeLeft"].isNumeric() && item["timeLeft"].asInt() == 0)
                 continue;
-            if (item["operators"].size() > 6)
-                continue;
+  //          if (item["operators"].size() > 7)
+  //              continue;
             bool has_tfold = false;
             for (int j = 0; j < item["operators"].size(); j++) {
                 if (item["operators"][j].asString() == "fold") {
@@ -334,8 +335,8 @@ void Protocol::solve_my_tasks(int up_to_size)
                     break;
                 }
             }
-            if (has_tfold)
-                continue;
+ //           if (has_tfold)
+ //               continue;
 
             if (count != 0) {
                 // make sure we start a new challenge in a virgin timeslot.

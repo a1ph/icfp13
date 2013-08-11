@@ -247,6 +247,12 @@ void Arena::try_emit(Op op, int left_ops, int valence)
     if (!allowed_ops_.has(op))
     	return;
 
+    if (left_ops == 1) {
+    	if (op == SHL1  && (properties_ & NO_TOP_SHL1)) return;
+    	if (op == SHR1  && (properties_ & NO_TOP_SHR1)) return;
+    	if (op == SHR4  && (properties_ & NO_TOP_SHR4)) return;
+    	if (op == SHR16 && (properties_ & NO_TOP_SHR16)) return;
+    }
     int arity = Expr::arity(op);
 
     // ensure we don't miss a fold if it's required
@@ -499,6 +505,7 @@ void Generator::generate(int size)
 	} else {
 		Arena a;
 		a.set_callback(callback_);
+		a.set_properties(properties_);
 		a.allowed_ops_ = allowed_ops_;
 		a.generate(size);
 		printf("count=%d\n", a.count_);

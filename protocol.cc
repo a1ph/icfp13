@@ -110,7 +110,7 @@ bool Solver::action(Expr* program, int size)
     if ((cnt & 0x7fffff) == 0) {
         long ts = timestamp();
         long elapsed = ts - started_;
-        printf("??? %6lu ms  %9lu: [%d] %s                                                       \n",
+        printf("??? %6lu ms  %9lu: [%d] %s     \n",
             elapsed, cnt, size, program->program().c_str());
         fflush(stdout);
         if (elapsed > 320 * 1000) {
@@ -123,7 +123,7 @@ bool Solver::action(Expr* program, int size)
         if (actual != (*it).second)
             return true;
     }
-    printf("\n!!! %6lu: [%d] %s                                                       \n",
+    printf("\n!!! %6lu: [%d] %s    \n",
         cnt, size, program->program().c_str());
 
     Json::Value result;
@@ -215,6 +215,7 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
     Solver solver(id, this);
     Analyzer a;
 
+    int properties = 0;
     Json::Value outputs = response["outputs"];
     for (int i = 0; i < inp_size; i++) {
         Val out;
@@ -223,7 +224,13 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         solver.add(in, out);
         int d = a.distance(in, out);
         printf("  0x%016"PRIx64" -> 0x%016"PRIx64" : dist=%2d   0x%016"PRIx64"\n", in, out, d, in^out);
+        if (out & 1)   properties |= NO_TOP_SHL1;
+        if (out >> 63) properties |= NO_TOP_SHR1;
+        if (out >> 60) properties |= NO_TOP_SHR4;
+        if (out >> 48) properties |= NO_TOP_SHR16;
     }
+    printf("properties = 0x%x\n", properties);
+    g.set_properties(properties);
 
     for (int i = 0; i < operators.size(); i++) {
         string ops = operators[i].asString();

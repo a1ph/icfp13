@@ -13,6 +13,13 @@ using std::string;
 
 typedef uint64_t Val;
 
+enum {
+    NO_TOP_SHL1  = 0x01,
+    NO_TOP_SHR1  = 0x02,
+    NO_TOP_SHR4  = 0x04,
+    NO_TOP_SHR16 = 0x08
+};
+
 class Context
 {
 public:
@@ -111,6 +118,7 @@ public:
 	Arena();
 
     void set_callback(Callback* c) { callback_ = c; }
+    void set_properties(int p) { properties_ = p; }
     void generate(int size, int valence = 1, int args = 1);
 	void gen(int left_ops, int valence);
 
@@ -141,6 +149,7 @@ public:
     bool no_more_fold_;
     int valence_;
     bool done_;
+    int properties_;
 
     OpSet allowed_ops_;
 
@@ -198,16 +207,18 @@ protected:
 class Generator
 {
 public:
-	Generator() : callback_(NULL), mode_bonus_(false), mode_tfold_(false) {}
+	Generator() : callback_(NULL), mode_bonus_(false), mode_tfold_(false), properties_(0) {}
 	void set_callback(Callback* c) { callback_ = c; }
 	void generate(int size);
 
+    void set_properties(int p) { properties_ = p; }
     void add_allowed_op(Op op) { allowed_ops_.add(op); }
 
     bool mode_bonus_;
     bool mode_tfold_;
 
     OpSet allowed_ops_;
+    int properties_;
 
     Callback* callback_;
 };

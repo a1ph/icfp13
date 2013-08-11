@@ -10,7 +10,7 @@
 #include <list>
 #include <utility>
 
-int Expr::arity()
+int Expr::arity(Op op)
 {
 	switch (op)
 	{
@@ -40,6 +40,11 @@ int Expr::arity()
             fprintf(stderr, "bad op at arity\n");
             exit(1);
 	}
+}
+
+int Expr::arity()
+{
+	return arity(op);
 }
 
 Val Expr::eval(Context* ctx)
@@ -140,7 +145,9 @@ Val Expr::run(Val input)
 	return eval(&ctx);
 }
 
-///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 
 Arena::Arena()
 {
@@ -169,6 +176,17 @@ void Arena::generate(int size, int valence, int args)
 	    	break;
 	}
 //	printf("generated: %d\n", count_);
+}
+
+void Arena::try_emit(Op op, int left_ops, int valence)
+{
+	int max_valence = valence_ + (left_ops - 1) * 2;
+	int min_valence = valence_ - (left_ops - 1);
+
+    int arity = Expr::arity(op);
+	if (min_valence <= valence - arity + 1 && valence - arity + 1 <= max_valence && valence >= arity) {
+	    emit(op);
+    }
 }
 
 void Arena::gen(int left_ops, int valence)
@@ -453,14 +471,14 @@ void Generator::generate(int size)
 	}
 }
 
-#ifdef GEN2_MAIN
+#ifdef GEN2
 
 int main()
 {
 	Printer p;
 	ArenaTfold a;
 	a.set_callback(&p);
-	a.generate(18);
+	a.generate(GEN2);
 
 	printf("Total: %d\n", p.count_);
 

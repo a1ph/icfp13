@@ -77,6 +77,7 @@ public:
     };
 
     int arity();
+    static int arity(Op op);
     string code();
     string program();
     bool is_var(int id) { return op == VAR && var == id; }
@@ -113,6 +114,7 @@ public:
     void generate(int size, int valence = 1, int args = 1);
 	void gen(int left_ops, int valence);
 
+    void try_emit(Op op, int left_ops, int valence);
 	void emit(Op op, int var = -1);
 	void emit_fold();
 	bool action(Expr* e, int size);

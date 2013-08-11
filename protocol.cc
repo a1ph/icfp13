@@ -161,11 +161,15 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
                    6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 23, 47, 48, 53, 63, 80, 81, 99, 120, 183, 246
     };
 
-    for (int i = 0; i < 64; i++)
-        inp[inp_size++] = (1ul << i) - 1;
+    inp[inp_size++] = 0xB445FBB8CDDCF9F8;
+    inp[inp_size++] = 0;
     inp[inp_size++] = -1;
+    for (int i = 63; i > 0; i--)
+        inp[inp_size++] = (1ul << i) - 1;
     for (int i = 1; i < 64; i++)
         inp[inp_size++] = (1ul << i);
+    fir (int i = 1; i < 8; i++)
+        inp[inp_size++] = 0xfful << (i*8);
 
     Json::Value inputs;
     for (int i = 0; i < inp_size; i++) {

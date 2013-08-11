@@ -4,6 +4,7 @@
 #include <assert.h>
 #include <stdint.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <sstream>
 #include <string>
 #include <list>
@@ -24,6 +25,7 @@ Expr::Expr()
 {
 	op = DUMMY_OP;
 	opnd[0] = opnd[1] = opnd[2] = NULL;
+	count = 0;
 }
 
 Expr::Expr(Op op, Expr* e1, Expr* e2, Expr* e3)
@@ -32,7 +34,7 @@ Expr::Expr(Op op, Expr* e1, Expr* e2, Expr* e3)
     opnd[0] = e1;
     opnd[1] = e2;
     opnd[2] = e3;
-    count = e3 ? 3 : e2 ? 2 : e1 ? 1 : 0;
+    count = 0;
 }
 
 Expr::Expr(Op op, int var_id)
@@ -46,10 +48,6 @@ Expr::Expr(Op op, int var_id)
 
 Expr::~Expr()
 {
-/*	delete opnd[0];
-	delete opnd[1];
-    delete opnd[2];
-*/
 }
 
 string Expr::program()
@@ -140,140 +138,286 @@ string Expr::code()
     }
 }
 
+int Expr::arity()
+{
+    switch (op) {
+    case C0:    return 0;
+    case C1:    return 0;
+    case VAR:   return 0;
+
+    case NOT:   return 1;
+    case SHL1:  return 1;
+    case SHR1:  return 1;
+    case SHR4:  return 1;
+    case SHR16: return 1;
+
+    case PLUS: return 2;
+    case AND:  return 2;
+    case OR:   return 2;
+    case XOR:  return 2;
+
+    case IF0:  return 3;
+    case FOLD: return 3;
+
+    default:
+        fprintf(stderr, "Error: Unknown op %d\n", op);
+        ASSERT(0); 
+    }
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
+
+Generator::Generator()
+{
+	mode_tfold_ = false;
+	mode_bonus_ = false;
+}
 
 void Generator::allow_all()
 {
 	for (int op = FIRST_OP; op < MAX_OP; op++)
 		add_allowed_op((Op)op);
-	allowed_ops_.del(TFOLD);
 }
 
-void Generator::generate(int size, Callback* callback)
+void Generator::generate(int size)
 {
 	ASSERT(size > 1);
-    done = false;
-    callback_ = callback;
-	left = size - 1;
-	ptr = 0;
-	next_opnd = 1;
-	scoped[0] = false;
 	allow_fold = true;
-	if (allowed_ops_.has(TFOLD))
-		allowed_ops_.add(FOLD);
 	allowed_ops_.add(C0);
 	allowed_ops_.add(C1);
 	allowed_ops_.add(VAR);
+	count_ = 0;
     printf("allowed ops=%x\n", allowed_ops_.set_);
-	gen();
+	for (int sz = 3; sz <= size; sz++) {
+	    done = false;
+		left_ = sz - 1;
+		cur_size_ = sz;
+		ptr_ = 0;
+		next_opnd_ = 1;
+		arg_ptr_ = 0;
+		dummy_root.op = DUMMY_OP;
+		push_arg(&dummy_root);
+		gen(left_, 1);
+	}
+	printf("Processes %d items\n", count_);
 }
 
-void Generator::emit(Expr e, int opnds)
+void Generator::push_arg(Expr* owner)
 {
-	if (done)
-		return;
+//	printf("push_arg %d\n", arg_ptr_+1);
+    args_[arg_ptr_++] = owner;
+}
 
-    if (!allowed_ops_.has(e.op) && e.op != FOLD) { // FOLD processed in gen
-//    	printf("return %d is not allowed\n", e.op);
+Expr* Generator::pop_arg()
+{
+//	printf("pop_arg %d\n", arg_ptr_ - 1);
+	ASSERT(arg_ptr_ > 0);
+	return args_[--arg_ptr_];
+}
+
+Expr* Generator::peep_arg()
+{
+	ASSERT(arg_ptr_ > 0);
+	return args_[arg_ptr_ - 1];
+}
+
+void Generator::push_op(Op op, int var)
+{
+    if (!allowed_ops_.has(op) && op != FOLD) { // FOLD processed in gen
     	return;
     }
 
-	--left;
-	int save_next_opnd = next_opnd;
+	int my_ptr = ptr_;
+	int my_opnds = next_opnd_;
+	Expr& e = arena[my_ptr];
+	e.op = op;
+
+    Expr* owner = pop_arg();
+    if (my_ptr == 0)
+    	e.scoped = false;
+    else
+    	e.scoped = owner->scoped || (owner->op == FOLD && owner->count == 2);
+    owner->opnd[owner->count++] = &e;
+    e.parent = owner;
+
+	int opnds = e.arity();
 	for (int i = 0; i < opnds; i++) {
-		scoped[next_opnd] = scoped[ptr];
-		parents[next_opnd] = &arena[ptr];
-		e.opnd[i] = &arena[next_opnd++];
+//		scoped[next_opnd_] = scoped[ptr_];
+		push_arg(&e);
 	}
-	if (e.op == FOLD)
-		scoped[save_next_opnd + 2] = true;
-	arena[ptr++] = e;
-	bool was_tfold = false;
-	if (ptr == 1 && e.op == FOLD && allowed_ops_.has(TFOLD)) {
-		arena[save_next_opnd] = Expr(VAR, 0);
-		arena[save_next_opnd + 1] = Expr(C0);
-		ptr += 2;
-		left -= 2;
-		was_tfold = true;
+/*
+		parent[next_opnd_] = &arena[ptr_];
+		e.opnd[i] = &arena[next_opnd_];
+		next_opnd_++;
 	}
-	gen();
-	if (was_tfold) {
-		ptr -= 2;
-		left += 2;
-	}
-	next_opnd = save_next_opnd;
-	ptr--;
-	++left;
+*/
+	if (op == VAR)
+		e.id = var;
+//	if (op == FOLD)
+//		scoped[my_opnds + 2] = true;
+	if (op == FOLD)
+		--left_; // for lambda
+
+	--left_;
+	++ptr_;
+
 }
 
-void Generator::gen()
+void Generator::pop_op()
 {
-	if (next_opnd == ptr) {
+    Expr& e = arena[--ptr_];
+    int arity = e.arity();
+    for (int i = 0; i < arity; i++)
+        pop_arg();
+    push_arg(e.parent);
+    e.parent->count--;
+	next_opnd_ -= e.arity();
+	if (e.op == FOLD)
+		++left_; // for lambda
+	++left_;
+}
+
+void Generator::emit(Op op, int var)
+{
+//	printf("+++emit: %d\n", op);
+	if (done)
+		return;
+
+    int my_ptr = ptr_;
+    push_op(op, var);
+
+/*
+	bool is_tfold = false;
+	if (my_ptr == 0 && mode_tfold_) {
+		ASSERT(op == FOLD);
+		push_op(VAR, 0);
+		push_op(C0);
+//		arena[ptr_] = DUMMY_OP;
+		left--;
+		is_tfold = true;
+	}
+*/
+
+	gen(left_, arg_ptr_);
+/*
+	if (is_tfold) {
+		left++;
+		pop_op();
+		pop_op();
+	}
+*/
+    pop_op();
+//	printf("---emit: %d\n", op);
+}
+
+void Generator::gen(int left, int free_args)
+{
+//	printf("gen: %d %d\n", left, free_args);
+	if (free_args == 0) {
+		// no more free args. closed.
 		built();
 		return;
 	}
 
-    if (ptr == 0 && left > 3 && allowed_ops_.has(TFOLD)) {
+    if (ptr_ == 0 && mode_tfold_) {
+    	if (left < 5)
+    		return;
+        push_op(FOLD);
+        push_op(VAR, 0);
+        push_op(C0);
     	allowed_ops_.del(FOLD);
-    	emit(Expr(FOLD), 3);
+    	gen(left - 4, free_args);
+    	allowed_ops_.add(FOLD);
+    	pop_op();
+    	pop_op();
+    	pop_op();
     	return;
     }
 
-    Op parent_op = ptr != 0 ? parents[ptr]->op : DUMMY_OP;
+    if (ptr_ == 0 && mode_bonus_) {
+    	if (left < 6)
+    		return;
+    	push_op(IF0);
+    	push_op(AND);
+    	push_op(C1);
+    	gen(left - 3, free_args + 2);
+    	pop_op();
+    	pop_op();
+    	pop_op();
+    	return;
+    }
 
-	if (left > 0) {
+    Expr* parent = peep_arg();
+    Op parent_op = parent->op;
+
+	if (left >= 4) {
+		emit(IF0);
+	}
+
+	if (left >= 5) {
+		if (allowed_ops_.has(FOLD)) {
+			allowed_ops_.del(FOLD);
+//			--left_;
+		    emit(FOLD);
+//		    ++left_;
+			allowed_ops_.add(FOLD);
+	    }
+	}
+
+    // can't emit 0-arity op unless it's the last op
+	if (free_args > 1 || left == 1) {
+	//	ASSERT(left != 1 || free_args == 1);
 		if (parent_op != PLUS &&
 			parent_op != XOR &&
 			parent_op != OR &&
 			parent_op != SHL1 &&
 			parent_op != SHR1 &&
 			parent_op != SHR4 &&
-			parent_op != SHR16) {
-		    emit(Expr(C0), 0);
+			parent_op != SHR16 &&
+			(parent_op != IF0 || parent->count > 0)) {
+		    emit(C0);
 	    }
 		if (parent_op != SHR1 &&
 			parent_op != SHR4 &&
-			parent_op != SHR16) {
-		    emit(Expr(C1), 0);
+			parent_op != SHR16 &&
+			(parent_op != IF0 || parent->count > 0)) {
+		    emit(C1);
 	    }
-		int vars = scoped[ptr] ? 3 : 1;
+
+    	bool scoped = parent->scoped || (parent_op == FOLD && parent->count == 2);
+
+		int vars = scoped ? 3 : 1;
 		for (int i = 0; i < vars; ++i)
-		    emit(Expr(VAR, i), 0);
+		    emit(VAR, i);
 	}
 
-	if (left > 1) {
-	//	if (parent_op != NOT)
-		    emit(Expr(NOT), 1);
-		emit(Expr(SHL1), 1);
-		emit(Expr(SHR1), 1);
-		emit(Expr(SHR4), 1);
-		emit(Expr(SHR16), 1);
+	if (left >= 2) {
+		if (parent_op != NOT)
+		    emit(NOT, 1);
+		emit(SHL1);
+		emit(SHR1);
+		emit(SHR4);
+		emit(SHR16);
 	}
 
 	if (left > 2) {
-		emit(Expr(PLUS), 2);
-		emit(Expr(AND), 2);
-		emit(Expr(OR), 2);
-		emit(Expr(XOR), 2);
+		emit(PLUS);
+		emit(AND);
+		emit(OR);
+		emit(XOR);
 	}
 
-	if (left > 3) {
-		emit(Expr(IF0), 3);
-		if (allowed_ops_.has(FOLD)) {
-			allowed_ops_.del(FOLD);
-		    emit(Expr(FOLD), 3);
-			allowed_ops_.add(FOLD);
-	    }
-	}
 }
 
 void Generator::built()
 {
-	static int cnt = 0;
-	if ((++cnt & 0x3fffff) == 0) printf("%9d: %s\n", cnt, arena[0].program().c_str());
-	done = !callback_->action(&arena[0]);
+	Expr* root = &arena[0];
+	int size = cur_size_;
+	count_++;
+	if ((count_ & 0x3fffff) == 0) printf("%9d: [%d] %s\n", count_, size, root->program().c_str());
+	done = callback_ ? !callback_->action(root, size) : false;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -285,7 +429,7 @@ void Verifier::add(Val input, Val output)
 	pairs.push_back(std::pair<Val,Val>(input, output));
 }
 
-bool Verifier::action(Expr* program)
+bool Verifier::action(Expr* program, int size)
 {
 	for (Pairs::iterator it = pairs.begin(); it != pairs.end(); ++it) {
 		Val actual = program->run((*it).first);
@@ -308,16 +452,16 @@ bool Verifier::action(Expr* program)
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 int cnt = 0;
-bool Printer::action(Expr* e)
+bool Printer::action(Expr* e, int size)
 {
-    //printf("%6d: %s\n", ++count, e->program().c_str());
+    printf("%6d: [%d] %s\n", ++cnt, size, e->program().c_str());
     cnt++;
     return true;
 }
 
-#ifdef TEST
+#ifdef GEN_MAIN
 
-int main()
+int main(int argc, char* argv[])
 {
     printf("Hello alph!\n");
 
@@ -342,15 +486,19 @@ int main()
     printf("%s\n", e->program().c_str());
     printf("0x%016lx\n", e->run(0x70605040302));
 
+    int size = 4;
+    if (argc >= 2) size = atoi(argv[1]);
+
     printf("\nTesting Generator\n");
     Generator g0;
     Printer p;
     g0.add_allowed_op(PLUS);
     g0.add_allowed_op(NOT);
-  //  g0.add_allowed_op(TFOLD);
     g0.allow_all();
-    g0.generate(10, &p);
-    printf("%d\n", cnt);
+//    g0.mode_bonus_ = true;
+//    g0.mode_tfold_ = true;
+//    g0.set_callback(&p);
+    g0.generate(size);
 
 #if 0
     printf("\nTesting Verifier\n");

@@ -29,7 +29,7 @@ enum Op {
 	C0,       // 12
 	C1,       // 13
 	VAR,      // 14
-	TFOLD,
+//	TFOLD,
 	MAX_OP
 };
 
@@ -82,6 +82,8 @@ public:
     Val run(Val input);
 	Val eval(Context* ctx);
 
+	int arity();
+
     string program();
 
 private:
@@ -94,6 +96,8 @@ private:
     int   id; // for VAR
 	int   count;
 	Expr* opnd[3];
+	Expr* parent;
+	bool  scoped;
 };
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -104,7 +108,7 @@ class Callback
 {
 public:
 	virtual ~Callback() {}
-	virtual bool action(Expr* e) = 0;
+	virtual bool action(Expr* e, int size) = 0;
 };
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -114,25 +118,41 @@ public:
 class Generator
 {
 public:
-    void generate(int size, Callback* callback = NULL);
+	Generator();
+
+    void generate(int size);
+    void set_callback(Callback* c) { callback_ = c; }
     void add_allowed_op(Op op) { allowed_ops_.add(op); }
     void allow_all();
 
+	bool mode_tfold_;
+	bool mode_bonus_;
+
 private:
-	void gen();
-    void emit(Expr e, int opnds);
+	void gen(int left, int free_args);
+    void emit(Op op, int var = -1);
+    void push_op(Op op, int var = -1);
+    void pop_op();
 	void built();
+
+	void push_arg(Expr* owner);
+	Expr* pop_arg();
+	Expr* peep_arg();
 
     Expr* program;
 
-    bool scoped[50];
-	Expr arena[50];
-	Expr* parents[50];
-	int ptr;
-	int next_opnd;
-	int left;
+    Expr dummy_root;
 
-	int count;
+	Expr arena[200];
+//	Expr* parent[200];
+	Expr* args_[200];
+	int ptr_;
+	int arg_ptr_;
+	int next_opnd_;
+	int left_;
+	int cur_size_;
+
+	int count_;
 	bool done;
 	bool allow_fold;
 
@@ -152,7 +172,7 @@ public:
 	Verifier() : count(0) {}
 	void add(Val input, Val output);
 
-	virtual bool action(Expr* program);
+	virtual bool action(Expr* program, int size);
 
 protected:
 	typedef std::list< std::pair<Val, Val> > Pairs;
@@ -169,7 +189,7 @@ class Printer: public Callback
 {
 public:
 	Printer() : count(0) {}
-    virtual bool action(Expr* e);
+    virtual bool action(Expr* e, int size);
 
 private:
 	int count;

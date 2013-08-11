@@ -223,11 +223,22 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         sscanf(outputs[i].asCString(), "%"PRIx64, &out);
         solver.add(in, out);
         int d = a.distance(in, out);
-        printf("  0x%016"PRIx64" -> 0x%016"PRIx64" : dist=%2d   0x%016"PRIx64"\n", in, out, d, in^out);
+//        printf("  0x%016"PRIx64" -> 0x%016"PRIx64" : dist=%2d   0x%016"PRIx64"\n", in, out, d, in^out);
         if (out & 1)   properties |= NO_TOP_SHL1;
         if (out >> 63) properties |= NO_TOP_SHR1;
         if (out >> 60) properties |= NO_TOP_SHR4;
         if (out >> 48) properties |= NO_TOP_SHR16;
+        printf("  ");
+        for (int i = 0; i < 64; i++) {
+            printf("%d", in >= (1ul<<63));
+            in <<= 1;
+        }
+        printf(" -> ");
+        for (int i = 0; i < 64; i++) {
+            printf("%d", out >= (1ul<<63));
+            out <<= 1;
+        }
+        printf("\n");
     }
     printf("properties = 0x%x\n", properties);
     g.set_properties(properties);

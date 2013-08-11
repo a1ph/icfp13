@@ -31,6 +31,8 @@ long timestamp()
 #endif
 }
 
+long started_;
+
 class Protocol
 {
 public:
@@ -56,7 +58,6 @@ private:
 
     CURL *curl;
     ostream* stream_;
-    long started_;
     Json::Value my_tasks_;
 };
 
@@ -106,10 +107,16 @@ bool Solver::action(Expr* program, int size)
 {
     static long cnt = 0;
     cnt++;
-    if ((cnt & 0x3fffff) == 0) {
-        printf("??? %6lu: [%d] %s                                                       \n",
-            cnt, size, program->program().c_str());
+    if ((cnt & 0x7fffff) == 0) {
+        long ts = timestamp();
+        long elapsed = ts - started_;
+        printf("??? %6lu ms  %9lu: [%d] %s                                                       \n",
+            elapsed, cnt, size, program->program().c_str());
         fflush(stdout);
+        if (elapsed > 6 * 60 * 1000) {
+            printf("\n ===================== TIME IS OUT :-(( ========================\n\n");
+            return false;
+        }
     }
     for (Pairs::iterator it = pairs.begin(); it != pairs.end(); ++it) {
         Val actual = program->run((*it).first);

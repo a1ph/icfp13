@@ -270,14 +270,18 @@ void Protocol::print_tasks()
 
     int sizes[1000];
     int wins[1000];
+    int lost[1000];
     memset(sizes, 0, sizeof(sizes));
     memset(wins, 0, sizeof(wins));
+    memset(lost, 0, sizeof(lost));
 
     for (int i = 0; i < my_tasks_.size(); i++) {
         const Json::Value& item = my_tasks_[i];
         unsigned size = item["size"].asUInt();
         bool solved = item["solved"].asBool();
         int time_left = item.get("timeLeft", Json::Value(-1)).asInt();
+        if (time_left == 0 && !solved)
+            lost[size]++;
         string tl_str;
         char buffer[30];
         snprintf(buffer, sizeof(buffer), "%2d", time_left);
@@ -303,7 +307,7 @@ void Protocol::print_tasks()
     for (int i = 3; i < 1000; i++) {
         if (sizes[i] == 0)
             continue;
-        printf("size %2d: %2d / %2d\n", i, wins[i], sizes[i]);
+        printf("size %2d: %3d / %3d  (%d)\n", i, wins[i], sizes[i], lost[i]);
         total_wins += wins[i];
         total += sizes[i];
     }

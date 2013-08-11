@@ -177,6 +177,19 @@ void Arena::gen(int left_ops, int valence)
 	int max_valence = valence_ + (left_ops - 1) * 2;
 	int min_valence = valence_ - (left_ops - 1);
 
+	if (min_valence <= valence - 2 && valence - 2 <= max_valence && valence >= 3 && allowed_ops_.has(IF0)) {
+    	Expr* cond_opnd = peep_arg(0);
+    	if (!optimize_ || !(cond_opnd->flags & Expr::F_CONST))
+    	    emit(IF0);
+    }
+
+    // fold consumes at least 3 ops: fold, lambda, and its expr.
+	int fold_max_valence = valence_ + (left_ops - 3) * 2;
+	int fold_min_valence = valence_ - (left_ops - 3);
+	if (fold_min_valence <= valence - 1 && valence - 1 <= fold_max_valence && valence >= 2) {
+    	emit_fold();
+    }
+
 	if (min_valence <= valence + 1 && valence + 1 <= max_valence) {
 		emit(C0);
 		emit(C1);
@@ -207,19 +220,6 @@ void Arena::gen(int left_ops, int valence)
 	    	emit(XOR);
 	    	emit(AND);
 	    }
-    }
-
-	if (min_valence <= valence - 2 && valence - 2 <= max_valence && valence >= 3) {
-    	Expr* cond_opnd = peep_arg(0);
-    	if (!optimize_ || !(cond_opnd->flags & Expr::F_CONST))
-    	    emit(IF0);
-    }
-
-    // fold consumes at least 3 ops: fold, lambda, and its expr.
-	max_valence = valence_ + (left_ops - 3) * 2;
-	min_valence = valence_ - (left_ops - 3);
-	if (min_valence <= valence - 1 && valence - 1 <= max_valence && valence >= 2) {
-    	emit_fold();
     }
 }
 
@@ -324,6 +324,9 @@ void Arena::emit_fold()
 {
 	if (no_more_fold_)
 		return;
+
+    if (!allowed_ops_.has(FOLD))
+    	return;
 
 	no_more_fold_ = true;
 	int max_size = size_ - arena_ptr - 1; // 1 takes FOLD
@@ -433,6 +436,22 @@ bool Verifier::action(Expr* program, int size)
     return false;
 }
 
+void Generator::generate(int size)
+{
+	if (mode_tfold_) {
+		ArenaTfold a;
+		a.set_callback(callback_);
+		a.generate(size);
+	} else if (mode_bonus_) {
+		ArenaBonus a;
+		a.set_callback(callback_);
+		a.generate(size);
+	} else {
+		Arena a;
+		a.set_callback(callback_);
+		a.generate(size);
+	}
+}
 
 #ifdef GEN2_MAIN
 

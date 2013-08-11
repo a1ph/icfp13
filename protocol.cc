@@ -14,12 +14,18 @@ using std::stringstream;
 using std::ostream;
 using std::string;
 
-uint64_t timestamp()
+long timestamp()
 {
+    struct timeval tv;
+    if (gettimeofday(&tv, NULL) < 0)
+        return 0;
+    return (static_cast<long>(tv.tv_sec) * 1000) + tv.tv_usec / 1000;
+#if 0
     struct timespec ts;
     if (clock_gettime(CLOCK_MONOTONIC, &ts) != 0)
         return 0;
     return ts.tv_sec * 1000ul + ts.tv_nsec / 1000000;
+#endif
 }
 
 class Protocol
@@ -47,7 +53,7 @@ private:
 
     CURL *curl;
     ostream* stream_;
-    uint64_t started_;
+    long started_;
     Json::Value my_tasks_;
 };
 
@@ -95,10 +101,10 @@ public:
 
 bool Solver::action(Expr* program, int size)
 {
-    static int cnt = 0;
+    static long cnt = 0;
     cnt++;
     if ((cnt & 0x3fffff) == 0) {
-        printf("??? %6d: [%d] %s                                                       \r",
+        printf("??? %6lu: [%d] %s                                                       \r",
             cnt, size, program->program().c_str());
         fflush(stdout);
     }
@@ -107,7 +113,7 @@ bool Solver::action(Expr* program, int size)
         if (actual != (*it).second)
             return true;
     }
-    printf("!!! %6d: [%d] %s                                                       \n",
+    printf("!!! %6lu: [%d] %s                                                       \n",
         ++cnt, size, program->program().c_str());
 
     Json::Value result;
@@ -121,9 +127,9 @@ bool Solver::action(Expr* program, int size)
     if (result["status"] == "mismatch") {
         Json::Value values = result["values"];
         Val inp, out;
-        sscanf(values[0].asCString(), "%lx", &inp);
-        sscanf(values[1].asCString(), "%lx", &out);
-        printf("parsed 0x%lx 0x%lx\n", inp, out);
+        sscanf(values[0u].asCString(), "%"PRIx64, &inp);
+        sscanf(values[1u].asCString(), "%"PRIx64, &out);
+        printf("parsed 0x%"PRIx64" 0x%"PRIx64"\n", inp, out);
         add(inp, out);
         return true;
     }
@@ -136,26 +142,35 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
     started_ = timestamp();
     printf("Challenge ACCEPTED:\nid: %s\nsize: %d\noperators: %s", id.c_str(), size, operators.toStyledString().c_str());
 
-    Val inp[] = { 0xB445FBB8CDDCF9F8, 0xEFE7EA693DD952DE, 0x6D326AEEB275CF14, 0xBB5F96D91F43B9F3,
-                  0xF246BDD3CFDEE59E, 0x28E6839E4B1EEBC1, 0x9273A5C811B2217B, 0xA841129BBAB18B3E,
-                  0x0, 0x1, 2, 3, 4, 5,
-                  0xaa5555aa5555aaaa,
-                  0xcc660330660f0cc0,
-                  0xff00000000000000,
-                  0x00ff000000000000,
-                  0x0000ff0000000000,
-                  0x000000ff00000000,
-                  0x00000000ff000000,
-                  0x0000000000ff0000,
-                  0x000000000000ff00,
-                  0x00000000000000ff,
-                  6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 23, 47, 48, 53, 63, 80, 81, 99, 120, 183, 246
+    Val inp[256];
+    int inp_size = 0;
+
+    Val inp1[] = { 0xB445FBB8CDDCF9F8, 0xEFE7EA693DD952DE, 0x6D326AEEB275CF14, 0xBB5F96D91F43B9F3,
+                   0xF246BDD3CFDEE59E, 0x28E6839E4B1EEBC1, 0x9273A5C811B2217B, 0xA841129BBAB18B3E,
+                   0x0, 0x1, 2, 3, 4, 5,
+                   0xaa5555aa5555aaaa,
+                   0xcc660330660f0cc0,
+                   0xff00000000000000,
+                   0x00ff000000000000,
+                   0x0000ff0000000000,
+                   0x000000ff00000000,
+                   0x00000000ff000000,
+                   0x0000000000ff0000,
+                   0x000000000000ff00,
+                   0x00000000000000ff,
+                   6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 23, 47, 48, 53, 63, 80, 81, 99, 120, 183, 246
     };
 
+    for (int i = 0; i < 64; i++)
+        inp[inp_size++] = (1ul << i) - 1;
+    inp[inp_size++] = -1;
+    for (int i = 1; i < 64; i++)
+        inp[inp_size++] = (1ul << i);
+
     Json::Value inputs;
-    for (int i = 0; i < sizeof(inp) / sizeof(*inp); i++) {
+    for (int i = 0; i < inp_size; i++) {
         char buffer[100];
-        snprintf(buffer, sizeof(buffer), "0x%lx", inp[i]);
+        snprintf(buffer, sizeof(buffer), "0x%"PRIx64, inp[i]);
         inputs[i] = buffer;
     }
 
@@ -171,24 +186,26 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         fprintf(stderr, "an error!!!\n");
         exit(1);
     }
-    Arena g;
+    Generator g;
     Solver solver(id, this);
     Analyzer a;
 
     Json::Value outputs = response["outputs"];
-    for (int i = 0; i < sizeof(inp) / sizeof(*inp); i++) {
+    for (int i = 0; i < inp_size; i++) {
         Val out;
         Val in = inp[i];
-        sscanf(outputs[i].asCString(), "%lx", &out);
+        sscanf(outputs[i].asCString(), "%"PRIx64, &out);
         solver.add(in, out);
         int d = a.distance(in, out);
-        printf("  0x%016lx -> 0x%016lx : dist=%2d   %s\n", in, out, d, a.sdist(in, out).c_str());
+        printf("  0x%016"PRIx64" -> 0x%016"PRIx64" : dist=%2d   %s\n", in, out, d, a.sdist(in, out).c_str());
     }
 
     for (int i = 0; i < operators.size(); i++) {
         string ops = operators[i].asString();
         Op op;
-        if (ops == "tfold") op = TFOLD;
+        if (ops == "tfold") {
+            g.mode_tfold_ = true;
+        }
         else if (ops == "xor") op = XOR;
         else if (ops == "and") op = AND;
         else if (ops == "plus") op = PLUS;
@@ -200,8 +217,9 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         else if (ops == "shr16") op = SHR16;
         else if (ops == "fold") op = FOLD;
         else if (ops == "if0") op = IF0;
-        else {
+        else if (ops == "bonus") {
             fprintf(stderr, "Unknow op %s in allowed ops... allowing all\n", ops.c_str());
+            g.mode_bonus_ = true;
             continue;
          //   g.allow_all();
          //   break;
@@ -406,8 +424,8 @@ int main(int argc, char* argv[])
         p.train(atoi(argv[2]));
     else if (arg == "chal" && argc > 3) {
         Json::Value allowed;
-        allowed[0] = "and";
-        allowed[1] = "not";
+        allowed[0u] = "and";
+        allowed[1u] = "not";
         p.challenge(argv[2], atoi(argv[3]), allowed);
     }
 

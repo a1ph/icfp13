@@ -156,21 +156,37 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
     int inp_size = 0;
 
     Val inp1[] = { 0xB445FBB8CDDCF9F8, 0xEFE7EA693DD952DE, 0x6D326AEEB275CF14, 0xBB5F96D91F43B9F3,
-                   0xF246BDD3CFDEE59E, 0x28E6839E4B1EEBC1, 0x9273A5C811B2217B, 0xA841129BBAB18B3E,
                    0x0, 0x1, 2, 3, 4, 5,
                    0xaa5555aa5555aaaa,
                    0xcc660330660f0cc0,
-                   6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 23, 47, 48, 53, 63, 80, 81, 99, 120, 183, 246
+                   6, 7, 10, 11, 15, 16, 53, 63, 120, 183, 246,
+                   0x0000000000000001,
+                   0x0000000000000200,
+                   0x0000000000040000,
+                   0x0000000008000000,
+                   0x0000001000000000,
+                   0x0000200000000000,
+                   0x0040000000000000,
+                   0x8000000000000000,
+                   0x0001001300000000,
+                   0xFFFEFFECFFFFFFFF
     };
 
     inp[inp_size++] = 0xB445FBB8CDDCF9F8;
+    inp[inp_size++] = 0x0f0f0f0f0f0f0000;
+    inp[inp_size++] = 0x0f0f0f0f0f1f0000;
+    inp[inp_size++] = 0x0f0f0f0f1f0f0000;
+    inp[inp_size++] = 0x0f0f0f1f0f0f0000;
+    inp[inp_size++] = 0x0f0f1f0f0f0f0000;
+    inp[inp_size++] = 0x0f1f0f0f0f0f0000;
+    inp[inp_size++] = 0x1f0f0f0f0f0f0000;
     inp[inp_size++] = 0;
     inp[inp_size++] = -1;
 /*    for (int i = 63; i > 0; i--)
         inp[inp_size++] = (1ul << i) - 1;
     for (int i = 1; i < 64; i++)
         inp[inp_size++] = (1ul << i);
-*/    for (int i = 1; i < 8; i++)
+*/    for (int i = 0; i < 8; i++)
         inp[inp_size++] = 0xfful << (i*8);
 
     for (int i = 0; i < sizeof(inp1) / sizeof(*inp1); i++)
@@ -206,7 +222,7 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         sscanf(outputs[i].asCString(), "%"PRIx64, &out);
         solver.add(in, out);
         int d = a.distance(in, out);
-        printf("  0x%016"PRIx64" -> 0x%016"PRIx64" : dist=%2d\n", in, out, d);
+        printf("  0x%016"PRIx64" -> 0x%016"PRIx64" : dist=%2d   0x%016"PRIx64"\n", in, out, d, in^out);
     }
 
     for (int i = 0; i < operators.size(); i++) {

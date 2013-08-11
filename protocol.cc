@@ -206,6 +206,7 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         Op op;
         if (ops == "tfold") {
             g.mode_tfold_ = true;
+            continue;
         }
         else if (ops == "xor") op = XOR;
         else if (ops == "and") op = AND;
@@ -219,11 +220,13 @@ bool Protocol::challenge(const string& id, int size, const Json::Value& operator
         else if (ops == "fold") op = FOLD;
         else if (ops == "if0") op = IF0;
         else if (ops == "bonus") {
-            fprintf(stderr, "Unknow op %s in allowed ops... allowing all\n", ops.c_str());
             g.mode_bonus_ = true;
             continue;
          //   g.allow_all();
          //   break;
+        } else {
+            fprintf(stderr, "Unknow op %s in allowed ops... allowing all\n", ops.c_str());
+            exit(1);
         }
         g.add_allowed_op(op);
     }
